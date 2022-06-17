@@ -65,7 +65,7 @@ background-image: url('../img/fondo.jpg');
 @media screen and (max-width : 700px) {
   .headerr{
     width: 101%;
-    height: 360px;
+    height: 480px;
   }
   
 }
@@ -708,6 +708,7 @@ transform: translate(-40%);}
 @media screen and (min-width: 768px) {
   li.dropdown:hover > .dropdown-menu {
     display: block; } }
+    
 
 @media screen and (min-width: 280px) and (max-width: 762px) {
   .navbar .nav > li:not(#boton-contacto) {
@@ -752,7 +753,7 @@ transform: translate(-40%);}
   #boton-contacto {
     position: relative; }
   header #logo {
-    width: 60%;
+    width: 40%;
     height: 70px;
     position: absolute;
     top: 0;
@@ -880,11 +881,12 @@ transform: translate(-40%);}
   .navbar .nav > li:not(#boton-contacto) a {
     padding: 2.6em .6em;
     color: #26599b;
-    font-size: 14px;
+    font-size: 10px;
     text-transform: none; }
   header #logo {
     top: 0;
-    left: -2%; }
+    left: -2%; 
+  width: 20%;}
   #carrusel {
     height: 400px; }
     #carrusel .carousel-inner {
@@ -1180,6 +1182,402 @@ transform: translate(-40%);}
           margin: auto; }
 
 
+
+          @media screen and (max-width:520px){
+
+  
+            #epson, #servicios-epson, #pnp, .accion {
+              
+              height: 900px;
+              padding: 3em 4em;
+              font-size: 18px;
+              color: #4b626d; }
+              #epson{
+                margin-top: 90px;
+              }
+              #epson h2, #servicios-epson h2, #pnp h2, .accion h2 {
+                font-size: 35px;
+                color: #4b626d;
+                margin: .5em 0; }
+              #epson a:hover, #servicios-epson a:hover, #pnp a:hover, .accion a:hover, #epson a:focus, #servicios-epson a:focus, #pnp a:focus, .accion a:focus {
+                text-decoration: none; }
+              #epson .ver-mas, #servicios-epson .ver-mas, #pnp .ver-mas, .accion .ver-mas, #epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #epson #boton-lista, #servicios-epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #servicios-epson #boton-lista, #pnp #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #pnp #boton-lista, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+                width: 70%;
+                margin: 1em 0; }
+            
+            #servicios-epson {
+              height: 1500px;
+              background: #eeeeee;
+              text-align: center; 
+                 margin-right: 0px; 
+                 margin-left: 0px;}
+              #servicios-epson img {
+                width: 30%;
+                margin: auto; }
+              #servicios-epson h3 {
+                font-size: 21px; 
+                color: #4b626d;
+              }
+            
+              
+            #reparacion {
+              height: 650px;
+              font-size: 18px; 
+              margin-right: 0px; 
+              margin-left: 0px;
+            
+            }
+              #reparacion h2 {
+                font-size: 35px;
+                margin: .5em 0; }
+              #reparacion #cub-reparacion {
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7); }
+                #reparacion #cub-reparacion #rep {
+                  width: 100%;
+                  height: 800px;
+                  padding: 3em;
+                  color: #4b626d;;
+                  background: #eeeeee; }
+                  #reparacion #cub-reparacion #rep li {
+                    list-style: none;
+                    padding: .5em; }
+                  #reparacion #cub-reparacion #rep span {
+                    font-size: 25px;
+                    padding-right: .5em; }
+                #reparacion #cub-reparacion #modelos-epson {
+                  height: 900px;
+                  background: #fbfbfc;
+                  padding: 3em; 
+                  margin-right: 0px;
+                  margin-left: 0px;}
+                  #reparacion #cub-reparacion #modelos-epson .modelos {
+                    margin: 1em 2em;
+                    border: 1px solid #cfd6db;
+                    padding: 1em;
+                    height: 150px;
+                    position: relative;
+                    background: white; }
+                    #reparacion #cub-reparacion #modelos-epson .modelos p {
+                      position: absolute;
+                      bottom: 0;
+                      left: 0;
+                      background: #ECEFF1;
+                      width: 100%;
+                      text-align: center;
+                      height: 30px;
+                      font-weight: bold; }
+                  #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                    background: transparent; }
+                    #reparacion #cub-reparacion #modelos-epson #boton-lista:focus {
+                      outline: none; }
+                  #reparacion #cub-reparacion #modelos-epson .ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                    position: absolute;
+                    bottom: 2em;
+                    left: 0;
+                    right: 0;
+                    width: 40%;
+                    margin: auto; }
+              
+            }
+
+
+            @media screen and (max-width:670px){
+
+  
+              #epson, #servicios-epson, #pnp, .accion {
+                
+                height: 900px;
+                padding: 3em 4em;
+                font-size: 18px;
+                color: #4b626d; }
+                #epson{
+                  margin-top: 90px;
+                }
+                #epson h2, #servicios-epson h2, #pnp h2, .accion h2 {
+                  font-size: 35px;
+                  color: #4b626d;
+                  margin: .5em 0; }
+                #epson a:hover, #servicios-epson a:hover, #pnp a:hover, .accion a:hover, #epson a:focus, #servicios-epson a:focus, #pnp a:focus, .accion a:focus {
+                  text-decoration: none; }
+                #epson .ver-mas, #servicios-epson .ver-mas, #pnp .ver-mas, .accion .ver-mas, #epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #epson #boton-lista, #servicios-epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #servicios-epson #boton-lista, #pnp #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #pnp #boton-lista, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+                  width: 70%;
+                  margin: 1em 0; }
+              
+              #servicios-epson {
+                height: 1500px;
+                background: #eeeeee;
+                text-align: center; 
+                   margin-right: 0px; 
+                   margin-left: 0px;}
+                #servicios-epson img {
+                  width: 30%;
+                  margin: auto; }
+                #servicios-epson h3 {
+                  font-size: 21px; 
+                  color: #4b626d;
+                }
+              
+                
+              #reparacion {
+                height: 650px;
+                font-size: 18px; 
+                margin-right: 0px; 
+                margin-left: 0px;
+              
+              }
+                #reparacion h2 {
+                  font-size: 35px;
+                  margin: .5em 0; }
+                #reparacion #cub-reparacion {
+                  height: 100%;
+                  background: rgba(0, 0, 0, 0.7); }
+                  #reparacion #cub-reparacion #rep {
+                    width: 100%;
+                    height: 800px;
+                    padding: 3em;
+                    color: #4b626d;;
+                    background: #eeeeee; }
+                    #reparacion #cub-reparacion #rep li {
+                      list-style: none;
+                      padding: .5em; }
+                    #reparacion #cub-reparacion #rep span {
+                      font-size: 25px;
+                      padding-right: .5em; }
+                  #reparacion #cub-reparacion #modelos-epson {
+                    height: 900px;
+                    background: #fbfbfc;
+                    padding: 3em; 
+                    margin-right: 0px;
+                    margin-left: 0px;}
+                    #reparacion #cub-reparacion #modelos-epson .modelos {
+                      margin: 1em 2em;
+                      border: 1px solid #cfd6db;
+                      padding: 1em;
+                      height: 150px;
+                      position: relative;
+                      background: white; }
+                      #reparacion #cub-reparacion #modelos-epson .modelos p {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background: #ECEFF1;
+                        width: 100%;
+                        text-align: center;
+                        height: 30px;
+                        font-weight: bold; }
+                    #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                      background: transparent; }
+                      #reparacion #cub-reparacion #modelos-epson #boton-lista:focus {
+                        outline: none; }
+                    #reparacion #cub-reparacion #modelos-epson .ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                      position: absolute;
+                      bottom: 2em;
+                      left: 0;
+                      right: 0;
+                      width: 40%;
+                      margin: auto; }
+                
+              }
+        
+
+              @media screen and (max-width:700px){
+
+  
+                #epson, #servicios-epson, #pnp, .accion {
+                  
+                  height: 900px;
+                  padding: 3em 4em;
+                  font-size: 18px;
+                  color: #4b626d; }
+                  #epson{
+                    margin-top: 90px;
+                  }
+                  #epson h2, #servicios-epson h2, #pnp h2, .accion h2 {
+                    font-size: 35px;
+                    color: #4b626d;
+                    margin: .5em 0; }
+                  #epson a:hover, #servicios-epson a:hover, #pnp a:hover, .accion a:hover, #epson a:focus, #servicios-epson a:focus, #pnp a:focus, .accion a:focus {
+                    text-decoration: none; }
+                  #epson .ver-mas, #servicios-epson .ver-mas, #pnp .ver-mas, .accion .ver-mas, #epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #epson #boton-lista, #servicios-epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #servicios-epson #boton-lista, #pnp #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #pnp #boton-lista, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+                    width: 70%;
+                    margin: 1em 0; }
+                
+                #servicios-epson {
+                  height: 1500px;
+                  background: #eeeeee;
+                  text-align: center; 
+                     margin-right: 0px; 
+                     margin-left: 0px;}
+                  #servicios-epson img {
+                    width: 30%;
+                    margin: auto; }
+                  #servicios-epson h3 {
+                    font-size: 21px; 
+                    color: #4b626d;
+                  }
+                
+                  
+                #reparacion {
+                  height: 650px;
+                  font-size: 18px; 
+                  margin-right: 0px; 
+                  margin-left: 0px;
+                
+                }
+                  #reparacion h2 {
+                    font-size: 35px;
+                    margin: .5em 0; }
+                  #reparacion #cub-reparacion {
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.7); }
+                    #reparacion #cub-reparacion #rep {
+                      width: 100%;
+                      height: 800px;
+                      padding: 3em;
+                      color: #4b626d;;
+                      background: #eeeeee; }
+                      #reparacion #cub-reparacion #rep li {
+                        list-style: none;
+                        padding: .5em; }
+                      #reparacion #cub-reparacion #rep span {
+                        font-size: 25px;
+                        padding-right: .5em; }
+                    #reparacion #cub-reparacion #modelos-epson {
+                      height: 900px;
+                      background: #fbfbfc;
+                      padding: 3em; 
+                      margin-right: 0px;
+                      margin-left: 0px;}
+                      #reparacion #cub-reparacion #modelos-epson .modelos {
+                        margin: 1em 2em;
+                        border: 1px solid #cfd6db;
+                        padding: 1em;
+                        height: 150px;
+                        position: relative;
+                        background: white; }
+                        #reparacion #cub-reparacion #modelos-epson .modelos p {
+                          position: absolute;
+                          bottom: 0;
+                          left: 0;
+                          background: #ECEFF1;
+                          width: 100%;
+                          text-align: center;
+                          height: 30px;
+                          font-weight: bold; }
+                      #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                        background: transparent; }
+                        #reparacion #cub-reparacion #modelos-epson #boton-lista:focus {
+                          outline: none; }
+                      #reparacion #cub-reparacion #modelos-epson .ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                        position: absolute;
+                        bottom: 2em;
+                        left: 0;
+                        right: 0;
+                        width: 40%;
+                        margin: auto; }
+                  
+                }
+
+
+                @media screen and (max-width:770px){
+
+  
+                  #epson, #servicios-epson, #pnp, .accion {
+                    
+                    height: 900px;
+                    padding: 3em 4em;
+                    font-size: 18px;
+                    color: #4b626d; }
+                    #epson{
+                      margin-top: 90px;
+                    }
+                    #epson h2, #servicios-epson h2, #pnp h2, .accion h2 {
+                      font-size: 35px;
+                      color: #4b626d;
+                      margin: .5em 0; }
+                    #epson a:hover, #servicios-epson a:hover, #pnp a:hover, .accion a:hover, #epson a:focus, #servicios-epson a:focus, #pnp a:focus, .accion a:focus {
+                      text-decoration: none; }
+                    #epson .ver-mas, #servicios-epson .ver-mas, #pnp .ver-mas, .accion .ver-mas, #epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #epson #boton-lista, #servicios-epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #servicios-epson #boton-lista, #pnp #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #pnp #boton-lista, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+                      width: 70%;
+                      margin: 1em 0; }
+                  
+                  #servicios-epson {
+                    height: 1500px;
+                    background: #eeeeee;
+                    text-align: center; 
+                       margin-right: 0px; 
+                       margin-left: 0px;}
+                    #servicios-epson img {
+                      width: 30%;
+                      margin: auto; }
+                    #servicios-epson h3 {
+                      font-size: 21px; 
+                      color: #4b626d;
+                    }
+                  
+                    
+                  #reparacion {
+                    height: 650px;
+                    font-size: 18px; 
+                    margin-right: 0px; 
+                    margin-left: 0px;
+                  
+                  }
+                    #reparacion h2 {
+                      font-size: 35px;
+                      margin: .5em 0; }
+                    #reparacion #cub-reparacion {
+                      height: 100%;
+                      background: rgba(0, 0, 0, 0.7); }
+                      #reparacion #cub-reparacion #rep {
+                        width: 100%;
+                        height: 800px;
+                        padding: 3em;
+                        color: #4b626d;;
+                        background: #eeeeee; }
+                        #reparacion #cub-reparacion #rep li {
+                          list-style: none;
+                          padding: .5em; }
+                        #reparacion #cub-reparacion #rep span {
+                          font-size: 25px;
+                          padding-right: .5em; }
+                      #reparacion #cub-reparacion #modelos-epson {
+                        height: 900px;
+                        background: #fbfbfc;
+                        padding: 3em; 
+                        margin-right: 0px;
+                        margin-left: 0px;}
+                        #reparacion #cub-reparacion #modelos-epson .modelos {
+                          margin: 1em 2em;
+                          border: 1px solid #cfd6db;
+                          padding: 1em;
+                          height: 150px;
+                          position: relative;
+                          background: white; }
+                          #reparacion #cub-reparacion #modelos-epson .modelos p {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            background: #ECEFF1;
+                            width: 100%;
+                            text-align: center;
+                            height: 30px;
+                            font-weight: bold; }
+                        #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                          background: transparent; }
+                          #reparacion #cub-reparacion #modelos-epson #boton-lista:focus {
+                            outline: none; }
+                        #reparacion #cub-reparacion #modelos-epson .ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+                          position: absolute;
+                          bottom: 2em;
+                          left: 0;
+                          right: 0;
+                          width: 40%;
+                          margin: auto; }
+                    
+                  }
+
 @media screen and (max-width:375px){
 
   
@@ -1284,7 +1682,7 @@ transform: translate(-40%);}
     
     height: 900px;
     padding: 3em 4em;
-    font-size: 18px;
+    font-size: 15px;
     color: #4b626d; }
     #epson{
       margin-top: 90px;
@@ -1375,7 +1773,7 @@ transform: translate(-40%);}
     
   }
 
-
+  
 .modal-header {
   background: #26599b;
   text-align: center; }
@@ -1430,24 +1828,7 @@ table th {
     .accion .ver-mas:hover, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista:hover, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista:hover {
       background: transparent;
       color: #ec8e39; }
-  @media screen and (max-width:375px){
-    .accion {
-      height: 400px;
-      margin-right: 0px;
-      margin-left: 0px;}
 
-      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
-        background: #ec8e39;
-        color: white;
-        margin: 0;
-        width: 100%;
-        font-size: 18px; }
-        .accion p {
-          font-size: 25px;
-          font-weight: bold;
-          letter-spacing: 2px; }
-    
-  }
   @media screen and (max-width:420px){
     .accion {
       height: 400px;
@@ -1467,6 +1848,102 @@ table th {
     
   }
 
+  @media screen and (max-width:520px){
+    .accion {
+      height: 400px;
+      margin-right: 0px;
+      margin-left: 0px;}
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
+  @media screen and (max-width:670px){
+    .accion {
+      height: 300px;
+      margin-right: 0px;
+      margin-left: 0px;}
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
+  @media screen and (max-width:700px){
+    .accion {
+      height: 300px;
+      margin-right: 0px;
+      margin-left: 0px;}
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
+
+
+  @media screen and (max-width:770px){
+    .accion {
+      height: 300px;
+      margin-right: 0px;
+      margin-left: 0px;}
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
+
+
+  @media screen and (max-width:375px){
+    .accion {
+      height: 400px;
+      margin-right: 0px;
+      margin-left: 0px;
+      font-size: 18px;
+    }
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
 #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
 
   height: 450px;
@@ -1675,6 +2152,290 @@ table th {
   }
 
 
+  
+@media screen and (max-width : 520px){
+  
+  #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+  
+    height: 950px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-mant-pc{
+      margin-top: 90px;
+    }
+    #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+      width: 70%; }
+  
+  #reparaciones {
+    height: 1520px;
+    background: #263238;
+    color: #ECEFF1;
+    position: relative; }
+    #reparaciones img {
+      width: 100%;
+      position: absolute;
+      top: 25%; }
+    #reparaciones h2 {
+      color: white; }
+    #reparaciones h3 {
+      font-size: 30px;
+      font-weight: bold; }
+    #reparaciones li {
+      list-style: none;
+      padding: .4em; }
+      #reparaciones li span {
+        font-size: 25px;
+        margin-right: .3em; }
+  
+  #equipos-demandados {
+    background: #ECEFF1;
+    height: 300px; }
+    #equipos-demandados h2 {
+      margin-bottom: 1em; }
+    #equipos-demandados img {
+      margin: auto; }
+    #equipos-demandados #equip-1 {
+      width: 30%; }
+    #equipos-demandados #equip-2 {
+      width: 55%; }
+    #equipos-demandados #equip-3 {
+      width: 65%; }
+  
+  #soporte img {
+    width: 80%; }
+  
+  #cont-pnp {
+    height: 450px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-pnp h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-pnp img {
+      width: 70%; }
+  
+  }
+
+  
+@media screen and (max-width : 670px){
+  
+  #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+  
+    height: 950px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-mant-pc{
+      margin-top: 90px;
+    }
+    #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+      width: 70%; }
+  
+  #reparaciones {
+    height: 1520px;
+    background: #263238;
+    color: #ECEFF1;
+    position: relative; }
+    #reparaciones img {
+      width: 100%;
+      position: absolute;
+      top: 25%; }
+    #reparaciones h2 {
+      color: white; }
+    #reparaciones h3 {
+      font-size: 30px;
+      font-weight: bold; }
+    #reparaciones li {
+      list-style: none;
+      padding: .4em; }
+      #reparaciones li span {
+        font-size: 25px;
+        margin-right: .3em; }
+  
+  #equipos-demandados {
+    background: #ECEFF1;
+    height: 300px; }
+    #equipos-demandados h2 {
+      margin-bottom: 1em; }
+    #equipos-demandados img {
+      margin: auto; }
+    #equipos-demandados #equip-1 {
+      width: 30%; }
+    #equipos-demandados #equip-2 {
+      width: 55%; }
+    #equipos-demandados #equip-3 {
+      width: 65%; }
+  
+  #soporte img {
+    width: 80%; }
+  
+  #cont-pnp {
+    height: 450px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-pnp h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-pnp img {
+      width: 70%; }
+  
+  }
+
+
+  @media screen and (max-width : 700px){
+  
+    #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+    
+      height: 950px;
+      padding: 3em 4em;
+      font-size: 18px;
+      color: #607D8B; }
+      #cont-mant-pc{
+        margin-top: 90px;
+      }
+      #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+        font-size: 35px;
+        color: #4b626d;
+        margin: .5em 0; }
+      #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+        width: 70%; }
+    
+    #reparaciones {
+      height: 1520px;
+      background: #263238;
+      color: #ECEFF1;
+      position: relative; }
+      #reparaciones img {
+        width: 100%;
+        position: absolute;
+        top: 25%; }
+      #reparaciones h2 {
+        color: white; }
+      #reparaciones h3 {
+        font-size: 30px;
+        font-weight: bold; }
+      #reparaciones li {
+        list-style: none;
+        padding: .4em; }
+        #reparaciones li span {
+          font-size: 25px;
+          margin-right: .3em; }
+    
+    #equipos-demandados {
+      background: #ECEFF1;
+      height: 300px; }
+      #equipos-demandados h2 {
+        margin-bottom: 1em; }
+      #equipos-demandados img {
+        margin: auto; }
+      #equipos-demandados #equip-1 {
+        width: 30%; }
+      #equipos-demandados #equip-2 {
+        width: 55%; }
+      #equipos-demandados #equip-3 {
+        width: 65%; }
+    
+    #soporte img {
+      width: 80%; }
+    
+    #cont-pnp {
+      height: 450px;
+      padding: 3em 4em;
+      font-size: 18px;
+      color: #607D8B; }
+      #cont-pnp h2 {
+        font-size: 35px;
+        color: #4b626d;
+        margin: .5em 0; }
+      #cont-pnp img {
+        width: 70%; }
+    
+    }
+
+
+    @media screen and (max-width : 770px){
+  
+      #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+      
+        height: 950px;
+        padding: 3em 4em;
+        font-size: 18px;
+        color: #607D8B; }
+        #cont-mant-pc{
+          margin-top: 90px;
+        }
+        #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+          font-size: 35px;
+          color: #4b626d;
+          margin: .5em 0; }
+        #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+          width: 70%; }
+      
+      #reparaciones {
+        height: 1520px;
+        background: #263238;
+        color: #ECEFF1;
+        position: relative; }
+        #reparaciones img {
+          width: 100%;
+          position: absolute;
+          top: 25%; }
+        #reparaciones h2 {
+          color: white; }
+        #reparaciones h3 {
+          font-size: 30px;
+          font-weight: bold; }
+        #reparaciones li {
+          list-style: none;
+          padding: .4em; }
+          #reparaciones li span {
+            font-size: 25px;
+            margin-right: .3em; }
+      
+      #equipos-demandados {
+        background: #ECEFF1;
+        height: 300px; }
+        #equipos-demandados h2 {
+          margin-bottom: 1em; }
+        #equipos-demandados img {
+          margin: auto; }
+        #equipos-demandados #equip-1 {
+          width: 30%; }
+        #equipos-demandados #equip-2 {
+          width: 55%; }
+        #equipos-demandados #equip-3 {
+          width: 65%; }
+      
+      #soporte img {
+        width: 80%; }
+      
+      #cont-pnp {
+        height: 450px;
+        padding: 3em 4em;
+        font-size: 18px;
+        color: #607D8B; }
+        #cont-pnp h2 {
+          font-size: 35px;
+          color: #4b626d;
+          margin: .5em 0; }
+        #cont-pnp img {
+          width: 70%; }
+      
+      }
+
 /*REDES SERV*/
 #cont-redes, #servicios-redes, #promocion-redes {
   height: 400px;
@@ -1781,65 +2542,6 @@ table th {
     background-size: cover; }
 
 
-@media screen and (max-width: 375px) {
-  .cont-social-media, #productos-social, #promocion-social {
- 
-   height: 500px;
-    padding: 3em 4em;
-    font-size: 18px;
-    color: #607D8B; }
-  
-  .cont-social-media3{
-    height: 800px;
-  }
-  .cont-social-media4{
-    height: 1000px;
-  }
-  
-    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
-      font-size: 35px;
-      color: #4b626d;
-      margin: .5em 0; }
-    .cont-social-media img, #productos-social img, #promocion-social img {
-      width: 70%; }
-      .cont-social-media2{
-        margin-top: 90px;
-        height: 1100px;
-      }
-  
-  #productos-social {
-    background: #ECEFF1;
-    text-align: center; 
-    height: 1700px;
-  }
-    #productos-social h2 {
-      margin: 0 0 2em 0; }
-    #productos-social h3 {
-      font-size: 21px; 
-      color: #4b626d;}
-    #productos-social img {
-      width: 70%;
-      margin: auto; }
-  
-  #promocion-social {
-    background: white;
-    height: 600px; }
-    #promocion-social h4 {
-      font-size: 21px;
-      font-weight: bold; }
-    #promocion-social .caso-exito {
-      height: 100%;
-      background-image: url("../img/pegoccidente-ig.png");
-      background-repeat: no-repeat;
-      background-size: cover; }
-
-      #equipo {
-        height: 670px;
-        background: #26599b;
-        padding: .5em 3em; 
-      }
-  
-}
 
 @media screen and (max-width: 420px) {
   .cont-social-media, #productos-social, #promocion-social {
@@ -1900,6 +2602,313 @@ table th {
       }
   
 }
+
+@media screen and (max-width: 520px) {
+  .cont-social-media, #productos-social, #promocion-social {
+ 
+   height: 500px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+  
+  .cont-social-media3{
+    height: 800px;
+  }
+  .cont-social-media4{
+    height: 1000px;
+  }
+  
+    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    .cont-social-media img, #productos-social img, #promocion-social img {
+      width: 70%; }
+      .cont-social-media2{
+        margin-top: 90px;
+        height: 900px;
+      }
+  
+  #productos-social {
+    background: #ECEFF1;
+    text-align: center; 
+    height: 1800px;
+  }
+    #productos-social h2 {
+      margin: 0 0 2em 0; }
+    #productos-social h3 {
+      font-size: 21px; 
+      color: #4b626d;}
+    #productos-social img {
+      width: 40%;
+      margin: auto; }
+  
+  #promocion-social {
+    background: white;
+    height: 600px; }
+    #promocion-social h4 {
+      font-size: 21px;
+      font-weight: bold; }
+    #promocion-social .caso-exito {
+      height: 100%;
+      background-image: url("../img/pegoccidente-ig.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+      #equipo {
+        height: 670px;
+        background: #26599b;
+        padding: .5em 3em; 
+      }
+  
+}
+
+
+
+@media screen and (max-width: 670px) {
+  .cont-social-media, #productos-social, #promocion-social {
+ 
+   height: 500px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+  
+  .cont-social-media3{
+    height: 800px;
+  }
+  .cont-social-media4{
+    height: 1000px;
+  }
+  
+    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    .cont-social-media img, #productos-social img, #promocion-social img {
+      width: 70%; }
+      .cont-social-media2{
+        margin-top: 90px;
+        height: 900px;
+      }
+  
+  #productos-social {
+    background: #ECEFF1;
+    text-align: center; 
+    height: 1800px;
+  }
+    #productos-social h2 {
+      margin: 0 0 2em 0; }
+    #productos-social h3 {
+      font-size: 21px; 
+      color: #4b626d;}
+    #productos-social img {
+      width: 40%;
+      margin: auto; }
+  
+  #promocion-social {
+    background: white;
+    height: 600px; }
+    #promocion-social h4 {
+      font-size: 21px;
+      font-weight: bold; }
+    #promocion-social .caso-exito {
+      height: 100%;
+      background-image: url("../img/pegoccidente-ig.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+      #equipo {
+        height: 670px;
+        background: #26599b;
+        padding: .5em 3em; 
+      }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .cont-social-media, #productos-social, #promocion-social {
+ 
+   height: 500px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+  
+  .cont-social-media3{
+    height: 800px;
+  }
+  .cont-social-media4{
+    height: 1000px;
+  }
+  
+    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    .cont-social-media img, #productos-social img, #promocion-social img {
+      width: 70%; }
+      .cont-social-media2{
+        margin-top: 90px;
+        height: 900px;
+      }
+  
+  #productos-social {
+    background: #ECEFF1;
+    text-align: center; 
+    height: 1800px;
+  }
+    #productos-social h2 {
+      margin: 0 0 2em 0; }
+    #productos-social h3 {
+      font-size: 21px; 
+      color: #4b626d;}
+    #productos-social img {
+      width: 40%;
+      margin: auto; }
+  
+  #promocion-social {
+    background: white;
+    height: 600px; }
+    #promocion-social h4 {
+      font-size: 21px;
+      font-weight: bold; }
+    #promocion-social .caso-exito {
+      height: 100%;
+      background-image: url("../img/pegoccidente-ig.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+      #equipo {
+        height: 670px;
+        background: #26599b;
+        padding: .5em 3em; 
+      }
+  
+}
+
+
+@media screen and (max-width: 770px) {
+  .cont-social-media, #productos-social, #promocion-social {
+ 
+   height: 500px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+  
+  .cont-social-media3{
+    height: 800px;
+  }
+  .cont-social-media4{
+    height: 1000px;
+  }
+  
+    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    .cont-social-media img, #productos-social img, #promocion-social img {
+      width: 70%; }
+      .cont-social-media2{
+        margin-top: 90px;
+        height: 900px;
+      }
+  
+  #productos-social {
+    background: #ECEFF1;
+    text-align: center; 
+    height: 1800px;
+  }
+    #productos-social h2 {
+      margin: 0 0 2em 0; }
+    #productos-social h3 {
+      font-size: 21px; 
+      color: #4b626d;}
+    #productos-social img {
+      width: 20%;
+      margin: auto; }
+  
+  #promocion-social {
+    background: white;
+    height: 600px; }
+    #promocion-social h4 {
+      font-size: 21px;
+      font-weight: bold; }
+    #promocion-social .caso-exito {
+      height: 100%;
+      background-image: url("../img/pegoccidente-ig.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+      #equipo {
+        height: 670px;
+        background: #26599b;
+        padding: .5em 3em; 
+      }
+  
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+  .cont-social-media, #productos-social, #promocion-social {
+ 
+   height: 500px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+  
+  .cont-social-media3{
+    height: 800px;
+  }
+  .cont-social-media4{
+    height: 1000px;
+  }
+  
+    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    .cont-social-media img, #productos-social img, #promocion-social img {
+      width: 70%; }
+      .cont-social-media2{
+        margin-top: 90px;
+        height: 1100px;
+      }
+  
+  #productos-social {
+    background: #ECEFF1;
+    text-align: center; 
+    height: 1700px;
+  }
+    #productos-social h2 {
+      margin: 0 0 2em 0; }
+    #productos-social h3 {
+      font-size: 21px; 
+      color: #4b626d;}
+    #productos-social img {
+      width: 70%;
+      margin: auto; }
+  
+  #promocion-social {
+    background: white;
+    height: 600px; }
+    #promocion-social h4 {
+      font-size: 21px;
+      font-weight: bold; }
+    #promocion-social .caso-exito {
+      height: 100%;
+      background-image: url("../img/pegoccidente-ig.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+      #equipo {
+        height: 670px;
+        background: #26599b;
+        padding: .5em 3em; 
+      }
+  
+}
+
 
 .contacto-serv {
   height: 700px;
@@ -2177,6 +3186,279 @@ table th {
   
 }
 
+@media screen and (max-width: 520px) {
+  #software-administrativo, #beneficios-software, #programas-administrativos {
+    height: 800px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #4b626d; }
+    #software-administrativo{
+      margin-top: 90px;
+      height: 1200px;
+    }
+    #software-administrativo h2, #beneficios-software h2, #programas-administrativos h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #software-administrativo img, #beneficios-software img, #programas-administrativos img {
+      width: 90%; }
+  
+  #beneficios-software {
+    background: #eeeeee;
+    text-align: center;
+    color: white;
+    height: 1000px; }
+    #beneficios-software h2 {
+      color: #4b626d; }
+    #beneficios-software .beneficios {
+      margin: 2em 0; }
+      #beneficios-software .beneficios img {
+        width: 30%;
+        margin: auto; }
+      #beneficios-software .beneficios h3 {
+        font-size: 21px; 
+      color: #4b626d;}
+  
+  #servicios-software {
+    height: 900px;
+    background-image: url("../img/laptop2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+    font-size: 18px;
+    color: #607D8B; }
+    #servicios-software h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #servicios-software li {
+      list-style: none;
+      padding: .5em;
+      color: #41545e; }
+      #servicios-software li span {
+        font-size: 25px;
+        padding-right: .5em; }
+    #servicios-software hr {
+      border-color: #607D8B; }
+  
+  #programas-administrativos .programa-1 {
+    width: 60%; }
+  
+  #programas-administrativos .programa-2 {
+    width: 100%; }
+  
+  #programas-administrativos .programa-3 {
+    width: 100%; }
+  
+  
+}
+
+@media screen and (max-width: 670px) {
+  #software-administrativo, #beneficios-software, #programas-administrativos {
+    height: 800px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #4b626d; }
+    #software-administrativo{
+      margin-top: 90px;
+      height: 1200px;
+    }
+    #software-administrativo h2, #beneficios-software h2, #programas-administrativos h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #software-administrativo img, #beneficios-software img, #programas-administrativos img {
+      width: 90%; }
+  
+  #beneficios-software {
+    background: #eeeeee;
+    text-align: center;
+    color: white;
+    height: 1000px; }
+    #beneficios-software h2 {
+      color: #4b626d; }
+    #beneficios-software .beneficios {
+      margin: 2em 0; }
+      #beneficios-software .beneficios img {
+        width: 30%;
+        margin: auto; }
+      #beneficios-software .beneficios h3 {
+        font-size: 21px; 
+      color: #4b626d;}
+  
+  #servicios-software {
+    height: 900px;
+    background-image: url("../img/laptop2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+    font-size: 18px;
+    color: #607D8B; }
+    #servicios-software h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #servicios-software li {
+      list-style: none;
+      padding: .5em;
+      color: #41545e; }
+      #servicios-software li span {
+        font-size: 25px;
+        padding-right: .5em; }
+    #servicios-software hr {
+      border-color: #607D8B; }
+  
+  #programas-administrativos .programa-1 {
+    width: 60%; }
+  
+  #programas-administrativos .programa-2 {
+    width: 100%; }
+  
+  #programas-administrativos .programa-3 {
+    width: 100%; }
+  
+  
+}
+
+
+@media screen and (max-width: 700px) {
+  #software-administrativo, #beneficios-software, #programas-administrativos {
+    height: 800px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #4b626d; }
+    #software-administrativo{
+      margin-top: 90px;
+      height: 1200px;
+    }
+    #software-administrativo h2, #beneficios-software h2, #programas-administrativos h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #software-administrativo img, #beneficios-software img, #programas-administrativos img {
+      width: 90%; }
+  
+  #beneficios-software {
+    background: #eeeeee;
+    text-align: center;
+    color: white;
+    height: 1000px; }
+    #beneficios-software h2 {
+      color: #4b626d; }
+    #beneficios-software .beneficios {
+      margin: 2em 0; }
+      #beneficios-software .beneficios img {
+        width: 20%;
+        margin: auto; }
+      #beneficios-software .beneficios h3 {
+        font-size: 21px; 
+      color: #4b626d;}
+  
+  #servicios-software {
+    height: 900px;
+    background-image: url("../img/laptop2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+    font-size: 18px;
+    color: #607D8B; }
+    #servicios-software h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #servicios-software li {
+      list-style: none;
+      padding: .5em;
+      color: #41545e; }
+      #servicios-software li span {
+        font-size: 25px;
+        padding-right: .5em; }
+    #servicios-software hr {
+      border-color: #607D8B; }
+  
+  #programas-administrativos .programa-1 {
+    width: 60%; }
+  
+  #programas-administrativos .programa-2 {
+    width: 100%; }
+  
+  #programas-administrativos .programa-3 {
+    width: 100%; }
+  
+  
+}
+
+
+@media screen and (max-width: 770px) {
+  #software-administrativo, #beneficios-software, #programas-administrativos {
+    height: 800px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #4b626d; }
+    #software-administrativo{
+      margin-top: 90px;
+      height: 1200px;
+    }
+    #software-administrativo h2, #beneficios-software h2, #programas-administrativos h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #software-administrativo img, #beneficios-software img, #programas-administrativos img {
+      width: 90%; }
+  
+  #beneficios-software {
+    background: #eeeeee;
+    text-align: center;
+    color: white;
+    height: 1000px; }
+    #beneficios-software h2 {
+      color: #4b626d; }
+    #beneficios-software .beneficios {
+      margin: 2em 0; }
+      #beneficios-software .beneficios img {
+        width: 20%;
+        margin: auto; }
+      #beneficios-software .beneficios h3 {
+        font-size: 21px; 
+      color: #4b626d;}
+  
+  #servicios-software {
+    height: 900px;
+    background-image: url("../img/laptop2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+    font-size: 18px;
+    color: #607D8B; }
+    #servicios-software h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #servicios-software li {
+      list-style: none;
+      padding: .5em;
+      color: #41545e; }
+      #servicios-software li span {
+        font-size: 25px;
+        padding-right: .5em; }
+    #servicios-software hr {
+      border-color: #607D8B; }
+  
+  #programas-administrativos .programa-1 {
+    width: 60%; }
+  
+  #programas-administrativos .programa-2 {
+    width: 100%; }
+  
+  #programas-administrativos .programa-3 {
+    width: 100%; }
+  
+  
+}
 
 
 #todos-planes {
@@ -2395,6 +3677,187 @@ table th {
                 padding: 0.5em 3em;
             }
 }
+
+@media screen and (max-width: 520px){
+
+  #nosotros {
+    margin-top: 120px;
+    height: 900px;
+    padding: 0em 3em;
+    color: #607D8B;
+    font-size: 18px; }
+    #nosotros h2 {
+      font-size: 40px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #nosotros #zona-prin {
+      height: 550px; }
+      #nosotros #zona-prin img {
+        margin: 3em auto;
+        width: 80%; }
+
+        #empresa {
+  
+          height: 1400px;
+          background-image: url("../img/nube.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          font-size: 18px; }
+          #empresa #cub-emp {
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3em;
+            color: white; }
+            #empresa #cub-emp h2 {
+              text-align: center;
+              font-size: 45px; }
+            #empresa #cub-emp span {
+              font-size: 35px;
+              padding: .5em; }
+        
+              #equipo {
+                height: 1670px;
+                background: #26599b;
+                padding: 0.5em 3em;
+            }
+}
+
+@media screen and (max-width: 670px){
+
+  #nosotros {
+    margin-top: 120px;
+    height: 900px;
+    padding: 0em 3em;
+    color: #607D8B;
+    font-size: 18px; }
+    #nosotros h2 {
+      font-size: 40px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #nosotros #zona-prin {
+      height: 550px; }
+      #nosotros #zona-prin img {
+        margin: 3em auto;
+        width: 80%; }
+
+        #empresa {
+  
+          height: 1500px;
+          background-image: url("../img/nube.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          font-size: 18px; }
+          #empresa #cub-emp {
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3em;
+            color: white; }
+            #empresa #cub-emp h2 {
+              text-align: center;
+              font-size: 45px; }
+            #empresa #cub-emp span {
+              font-size: 35px;
+              padding: .5em; }
+        
+              #equipo {
+                height: 1670px;
+                background: #26599b;
+                padding: 0.5em 3em;
+            }
+}
+
+@media screen and (max-width: 700px){
+
+  #nosotros {
+    margin-top: 120px;
+    height: 900px;
+    padding: 0em 3em;
+    color: #607D8B;
+    font-size: 18px; }
+    #nosotros h2 {
+      font-size: 40px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #nosotros #zona-prin {
+      height: 550px; }
+      #nosotros #zona-prin img {
+        margin: 3em auto;
+        width: 80%; }
+
+        #empresa {
+  
+          height: 1500px;
+          background-image: url("../img/nube.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          font-size: 18px; }
+          #empresa #cub-emp {
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3em;
+            color: white; }
+            #empresa #cub-emp h2 {
+              text-align: center;
+              font-size: 45px; }
+            #empresa #cub-emp span {
+              font-size: 35px;
+              padding: .5em; }
+        
+              #equipo {
+                height: 1670px;
+                background: #26599b;
+                padding: 0.5em 3em;
+            }
+}
+
+@media screen and (max-width: 770px){
+
+  #nosotros {
+    margin-top: 120px;
+    height: 900px;
+    padding: 0em 3em;
+    color: #607D8B;
+    font-size: 18px; }
+    #nosotros h2 {
+      font-size: 40px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #nosotros #zona-prin {
+      height: 550px; }
+      #nosotros #zona-prin img {
+        margin: 3em auto;
+        width: 80%; }
+
+        #empresa {
+  
+          height: 1500px;
+          background-image: url("../img/nube.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          font-size: 18px; }
+          #empresa #cub-emp {
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3em;
+            color: white; }
+            #empresa #cub-emp h2 {
+              text-align: center;
+              font-size: 45px; }
+            #empresa #cub-emp span {
+              font-size: 35px;
+              padding: .5em; }
+        
+              #equipo {
+                height: 1670px;
+                background: #26599b;
+                padding: 0.5em 3em;
+            }
+}
+
 
 
 
