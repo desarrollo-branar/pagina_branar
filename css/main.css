@@ -1,0 +1,3390 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "segoe ui";
+}
+
+body {
+  font-family: "segoe ui";
+  background: #eeeeee; 
+}
+/*Header*/
+  .headerr{
+   width: 100%;
+   height: 684px;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding-top: 150px; 
+background-image: url('../img/fondo.jpg');
+      }
+
+      .l-diag {
+        transform: translatey(1px);
+        background: #ffff;
+        width: 100%;
+        height: 100px;
+        clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+        margin-top: 35px;
+    }
+
+
+.row {
+  width: 101%; 
+  
+}
+
+@media screen and (max-width : 375px) {
+  .headerr{
+    width: 101%;
+    height: 360px;
+  }
+  
+}
+@media screen and (max-width : 420px) {
+  .headerr{
+    width: 101%;
+    height: 360px;
+  }
+  
+}
+@media screen and (max-width : 520px) {
+  .headerr{
+    width: 101%;
+    height: 360px;
+  }
+  
+}
+@media screen and (max-width : 670px) {
+  .headerr{
+    width: 100%;
+    height: 360px;
+  }
+  
+}
+@media screen and (max-width : 700px) {
+  .headerr{
+    width: 101%;
+    height: 360px;
+  }
+  
+}
+
+
+/*Redes facebook*/
+.centrarr{
+  text-align: center;
+}
+.centrarr a{
+  color: #2d7cd6;
+}
+
+.centrarr a:hover{
+  color: white;
+}
+
+
+.redes{
+  text-align: center;
+ 
+  background-color: #ffffff;
+ }
+ 
+ /*Formulario de contacto*/
+.contacto {
+  width: 100%;
+  background: #fff;
+  background: url("../img/fondo.jpg");
+  padding-bottom: 70px; }
+  .contacto .l-diag2 {
+    transform: translatey(-1px);
+    background: #ffffff;
+    width: 100%;
+    height: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0); }
+  .contacto .titulo-seccion {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 70px;
+    border-top: solid 0px transparent; }
+    .contacto .titulo-seccion h2 {
+      font-weight: bold;
+      font-size: 40px;
+      color: #fff;
+      border-bottom: solid 2px #ec8e39;
+      text-align: center; }
+  .contacto form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    border-radius: 20px; }
+    .contacto form h3 {
+      color: #ec8e39;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 26px; }
+    .contacto form label {
+      width: 70%;
+      display: block;
+      margin: 5px auto;
+      font-size: 20px; }
+    .contacto form input {
+      display: block;
+      margin: auto;
+      width: 70%;
+      border: none;
+      border-bottom: solid 1px #000;
+      font-size: 16px;
+      margin-bottom: 50px; }
+    .contacto form textarea {
+      display: block;
+      margin: auto;
+      width: 70%;
+      border: none;
+      border-bottom: solid 1px #000;
+      font-size: 16px;
+      margin-bottom: 20px;
+      min-width: 70%;
+      max-width: 70%;
+      min-height: 100px;
+      max-height: 300px; }
+    .contacto form input:focus {
+      border: none; }
+    .contacto form button {
+      margin: auto;
+      display: block;
+      padding: 10px 20px;
+      background: #fff;
+      border: solid 1px #ec8e39;
+      color: #ec8e39;
+      cursor: pointer; }
+  .contacto h3 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26px; }
+  .contacto p {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; }
+  .contacto .mapa {
+    width: 100%; }
+    .contacto .mapa iframe {
+      width: 90%;
+      display: flex;
+      margin: auto; }
+
+
+      /*MENU*/
+.container-fluid {
+  padding-right: -15px;
+  padding-left: -15px; }
+
+.ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+  width: 27%;
+  height: 60px;
+  margin: auto;
+  font-size: 20px;
+  border: 4px solid #ec8e39;
+  text-align: center;
+  padding: .5em;
+  color: #ec8e39;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .ver-mas:hover, #reparacion #cub-reparacion #modelos-epson #boton-lista:hover {
+    background: #ec8e39;
+    color: white; }
+
+.navbar {
+  background: white;
+  height: 100px;
+  position: relative;
+  -webkit-box-shadow: 0 0 7px gray;
+  box-shadow: 0 0 7px gray; }
+  .navbar ul {
+    margin-right: 2%; }
+  .navbar .nav > li:not(#boton-contacto) {
+    margin: 0 .1em;
+    text-transform: uppercase;
+    background: #f8f9fa; }
+    .navbar .nav > li:not(#boton-contacto) a {
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding: 2.3em 1.2em;
+      color: #26599b;
+    font-weight: 700;
+  }
+
+    .navbar .nav > li:not(#boton-contacto) ul li a {
+      padding: 1em;
+      text-transform: capitalize; }
+      .navbar .nav > li:not(#boton-contacto) ul li a:hover {
+        color: rgba(0, 57, 90, 0.6);
+        font-weight: bold; }
+    .navbar .nav > li:not(#boton-contacto) .active {
+      background: #f2f4f5;
+      border-bottom: 5px solid #ec8e39;
+      color: #ec8e39; }
+  .navbar .nav > li:not(#boton-contacto) > a:hover, .navbar .nav > li:not(#boton-contacto) > a:focus {
+    background: #ECEFF1;
+    border-bottom: 6px solid #ec8e39;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+  .navbar #boton-contacto {
+    margin: 1.5em;
+    color: #01579B;
+    position: relative;
+    right: 0;
+    top: 15%;
+  }
+    
+
+.navbar .navbar-toggle {
+  position: relative;
+  right: 1em;
+  top: 1.5em;
+  background-color: #26599b }
+
+.navbar .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
+.dropdown-large {
+  position: static !important; }
+
+.dropdown-menu-large {
+  width: 40%;
+  margin: auto;
+  padding: 20px 0px; 
+transform: translate(-40%);}
+  .dropdown-menu-large li > ul {
+    padding: 0;
+    margin: 0; }
+    .dropdown-menu-large li > ul li {
+      list-style: none; }
+      .dropdown-menu-large li > ul li a {
+        width: 500px;
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.428571429;
+        color: #333333;
+        white-space: normal; }
+        .dropdown-menu-large li > ul li a:hover, .dropdown-menu-large li > ul li a:focus {
+          text-decoration: none;
+          color: #262626;
+          background-color: #f5f5f5; }
+  .dropdown-menu-large .dropdown-header {
+    color: #428bca;
+    font-size: 18px; }
+
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0;
+    margin-right: 0; }
+    .dropdown-menu-large li {
+      margin-bottom: 30px; }
+      .dropdown-menu-large li:last-child {
+        margin-bottom: 0; }
+    .dropdown-menu-large .dropdown-header {
+      padding: 3px 15px !important; } }
+
+  header #logo {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 20; 
+  margin-left: 5%;}
+    header #logo figure {
+      width: 100%;
+      height: 100px; }
+      header #logo figure img {
+        margin-top: .5em;
+        width: 100%;
+        height: 80%; }
+
+.form-group {
+  position: relative; }
+  .form-group .help-block {
+    position: absolute;
+    bottom: -2em;
+    font-size: 14px; }
+
+#carrusel {
+  height: 400px; }
+  #carrusel .container {
+    margin-top: 20px; }
+  #carrusel .carousel-indicators .active {
+    background-color: #2980b9; }
+  #carrusel .carousel-inner {
+    height: 500px; }
+    #carrusel .carousel-inner img {
+      width: 100%;
+      max-height: 700px; }
+  #carrusel .carousel-control {
+    width: 0; }
+    #carrusel .carousel-control .glyphicon-chevron-left, #carrusel .carousel-control .icon-prev {
+      left: 1em; }
+    #carrusel .carousel-control .glyphicon-chevron-right, #carrusel .carousel-control .icon-next {
+      right: 1em; }
+  #carrusel .carousel-control.left,
+  #carrusel .carousel-control.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-image: none;
+    background-repeat: no-repeat;
+    text-shadow: none;
+    padding: 1em; }
+    #carrusel .carousel-control.left span,
+    #carrusel .carousel-control.right span {
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.3);
+      padding: .4em;
+      height: 50px;
+      width: 50px;
+      }
+    #carrusel .carousel-control.left:hover,
+    #carrusel .carousel-control.right:hover {
+      opacity: .7;
+      filter: alpha(opacity=70); }
+  #carrusel .carousel-control .glyphicon-chevron-left,
+  #carrusel .carousel-control .glyphicon-chevron-right,
+  #carrusel .carousel-control .icon-prev,
+  #carrusel .carousel-control .icon-next {
+    position: absolute;
+    top: 35%;
+    z-index: 5;
+    display: inline-block; }
+
+#beneficios {
+  height: 250px;
+  text-align: center;
+  background: #ffb733;
+  color: white;
+  font-size: 18px; }
+  #beneficios .info {
+    padding: 3em 2em;
+    height: 100%; }
+    #beneficios .info:nth-child(2) {
+      background: #faa200; }
+    #beneficios .info:nth-child(3) {
+      background: #e69500; }
+  #beneficios span {
+    font-size: 50px; }
+
+#principal {
+  height: 1000px;
+  background: white;
+  padding: 2em 3em; }
+  #principal h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #41545e;
+    letter-spacing: 1.5px;
+    margin: 1em 0; }
+  #principal .servicios {
+    width: 80%;
+    height: 300px;
+    margin: 1em auto;
+    text-align: center; }
+    #principal .servicios:hover .circ {
+      background: #ec8e39;
+      border: none; }
+    #principal .servicios:hover .circ span {
+      color: white; }
+    #principal .servicios .circ {
+      width: 50%;
+      height: 150px;
+      background: #fefefe;
+      border: 3px solid #26599b;
+      -webkit-box-shadow: 0 0 7px gray;
+      box-shadow: 0 0 7px gray;
+      margin: 2em auto;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #principal .servicios .circ span {
+        font-size: 60px;
+        margin: auto;
+        color: #26599b }
+    #principal .servicios h2 {
+      font-size: 27px;
+      color: #607D8B; }
+  #principal a:hover {
+    text-decoration: none; }
+
+#promocion {
+  height: 450px;
+  background-image: url("../img/astronauta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  #promocion .cub-promocion {
+    height: 100%;
+    background: rgba(21, 101, 192, 0.7);
+    text-align: center;
+    color: white;
+    padding: 3em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #promocion .cub-promocion .prom-cont {
+      width: 85%;
+      margin: auto;
+      font-size: 18px; }
+      #promocion .cub-promocion .prom-cont h2 {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      #promocion .cub-promocion .prom-cont p {
+        padding: 2em 4em; }
+      #promocion .cub-promocion .prom-cont .ver-mas, #promocion .cub-promocion .prom-cont #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion .cub-promocion .prom-cont #boton-lista {
+        width: 35%;
+        height: 60px;
+        padding: .4em;
+        background: #ec8e39;
+        color: white; }
+        #promocion .cub-promocion .prom-cont .ver-mas:hover, #promocion .cub-promocion .prom-cont #reparacion #cub-reparacion #modelos-epson #boton-lista:hover, #reparacion #cub-reparacion #modelos-epson #promocion .cub-promocion .prom-cont #boton-lista:hover {
+          background: transparent;
+          color: #ec8e39; }
+  #promocion a:hover {
+    text-decoration: none; }
+
+#promocion-2 {
+  height: 580px;
+  padding: 2em 3em;
+  font-size: 18px;
+  color: #607D8B; }
+  #promocion-2 a:hover {
+    text-decoration: none; }
+  #promocion-2 .prom {
+    position: relative;
+    height: 100%; }
+    #promocion-2 .prom img {
+      position: absolute;
+      top: 25%; }
+    #promocion-2 .prom h3 {
+      font-size: 50px;
+      padding-left: 0;
+      margin-bottom: 1em; }
+  #promocion-2 .ver-mas, #promocion-2 #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion-2 #boton-lista {
+    width: 70%;
+    height: 60px;
+    }
+
+#promocion-3 {
+  height: 580px;
+  background: rgba(166, 222, 255, 0.6);
+  padding: 2em 3em;
+  font-size: 18px;
+  color: #607D8B;
+  text-align: justify; }
+  #promocion-3 a:hover {
+    text-decoration: none; }
+  #promocion-3 .prom {
+    position: relative;
+    height: 100%; }
+    #promocion-3 .prom img {
+      position: absolute;
+      top: 15%; }
+    #promocion-3 .prom h3 {
+      font-size: 50px;
+      margin-bottom: 1em;
+      padding-left: 0; }
+  #promocion-3 .ver-mas, #promocion-3 #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion-3 #boton-lista {
+    width: 70%;
+    height: 60px;
+    margin: 1em 0; }
+
+    /*NOSOTROS*/
+#sobre-branar {
+  height: 850px;
+  padding: .3em 3em;
+  text-align: center;
+  font-size: 18px;
+  color: #1a1a1a; 
+}
+#sobre-branar li{
+  text-align: justify;
+}
+  #sobre-branar #detalles {
+    width: 80%;
+    margin: 2em auto;
+    margin-bottom: 3em; }
+  #sobre-branar h4 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: .5em; }
+  #sobre-branar #experiencia {
+    font-size: 20px; }
+    #sobre-branar #experiencia .icono-exp {
+      width: 40%;
+      height: 150px;
+      background: #ec8e39;
+      border-radius: 50%;
+      margin: 1em auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 2em; }
+      #sobre-branar #experiencia .icono-exp i {
+        font-size: 70px;
+        color: white; }
+
+#clientes {
+  height: 410px;
+  background-image: url("../img/clientes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  #clientes .cu-cli {
+    height: 410px;
+    background: rgba(21, 101, 192, 0.7);
+    padding: 2em; }
+    #clientes .cu-cli img {
+      border-radius: 50%;
+      width: 80%;
+      margin: auto; }
+    #clientes .cu-cli h3 {
+      color: white;
+      font-size: 50px;
+      margin: .2em 0;
+      text-align: center; }
+
+#testimonios {
+  height: 700px;
+  background: #FFF;
+  padding: 1em 3em; }
+  #testimonios h3 {
+    color: #607D8B;
+    font-size: 50px;
+    margin: .5em 0;
+    text-align: center; }
+  #testimonios .testi {
+    height: 500px;
+    font-size: 17px; }
+    #testimonios .testi .descrip-testi {
+      color: #a3a09d; }
+    #testimonios .testi .triangulo {
+      height: 280px;
+      background: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid #CFD8DC;
+      padding: 2em;
+      position: relative; }
+      #testimonios .testi .triangulo:before {
+        content: '';
+        border-style: solid;
+        border-width: 20px 20px 22px 20px;
+        border-color: #FFF
+ transparent
+ transparent
+ transparent;
+        position: absolute;
+        left: 46%;
+        top: 100%;
+        z-index: 10;
+        margin-top: -1px; }
+      #testimonios .testi .triangulo:after {
+        content: '';
+        border-style: solid;
+        border-width: 21px 21px 21px 21px;
+        border-color: #CFD8DC
+ transparent
+ transparent
+ transparent;
+        position: absolute;
+        left: 45.6%;
+        top: 100%;
+        z-index: 1; }
+      #testimonios .testi .triangulo .comillas {
+        font-size: 70px;
+        color: #ec8e39; }
+    #testimonios .testi .foto-testi {
+      position: relative;
+      height: 160px;
+      width: 30%;
+      border-radius: 50%;
+      border: 3px solid #CFD8DC;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      bottom: 1em; }
+      #testimonios .testi .foto-testi img {
+        width: 90%;
+        height: 140px;
+        margin: auto;
+        border-radius: 50%; }
+    #testimonios .testi .nombre-testi {
+      position: absolute;
+      right: 3em;
+      bottom: 1em;
+      text-align: center; }
+      #testimonios .testi .nombre-testi p:first-child {
+        font-size: 35px; }
+      #testimonios .testi .nombre-testi p:nth-child(2) {
+        font-size: 17px; }
+
+#partners {
+  height: 260px;
+  background: #f2f4f5;
+  padding: 1em 3em; }
+  #partners img {
+    margin: .5em; }
+  #partners .marcas {
+    height: 200px;
+    padding: 2em; }
+  #partners .marc-1 img {
+    padding-top: 2em; }
+  #partners h3 {
+    color: #607D8B;
+    font-size: 50px;
+    margin: .3em 0;
+    text-align: center; }
+
+#equipo {
+  height: 670px;
+  background: #26599b;
+  padding: .5em 3em; 
+}
+  #equipo h3 {
+    font-size: 50px;
+    margin: .5em 0;
+    color: white;
+    text-align: center; }
+  #equipo .miembros {
+    width: 100%;
+    height: 420px;
+    background: white;
+    text-align: center;
+    padding: 1em;
+    margin: 0; }
+    #equipo .miembros img {
+      width: 100%;
+      height: 310px; }
+    #equipo .miembros .cargo {
+      width: 100%;
+      height: 50px;
+      padding: .5em; }
+      #equipo .miembros .cargo p {
+        color: #263238;
+        font-size: 25px;
+        font-weight: bold; }
+        #equipo .miembros .cargo p + p {
+          font-size: 18px;
+          font-weight: lighter; }
+
+          /*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+  li.dropdown:hover > .dropdown-menu {
+    display: block; } }
+
+@media screen and (min-width: 280px) and (max-width: 762px) {
+  .navbar .nav > li:not(#boton-contacto) {
+    z-index: 30;
+    background: #263238; }
+    .navbar .nav > li:not(#boton-contacto) a {
+      padding: 1em;
+      color: white; }
+    .navbar .nav > li:not(#boton-contacto):first-child a {
+      background: #304047;
+      border: none; }
+    .navbar .nav > li:not(#boton-contacto) ul li a {
+      padding: .3em;
+      font-size: 14px; }
+  .navbar .navbar-nav > li > .dropdown-menu {
+    background: #1c2429; }
+  .navbar .nav > li:not(#boton-contacto) > a:hover,
+  .navbar .nav > li:not(#boton-contacto) > a:focus .nav > li:not(#boton-contacto) > a:active {
+    background: #263238;
+    border: none;
+    color: #ec8e39; }
+  .navbar #boton-contacto {
+    width: 99.5%;
+    margin: 0em;
+    background: #E53935;
+    position: relative;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray; }
+    .navbar #boton-contacto a {
+      border-radius: 0;
+      font-size: 20px;
+      padding: 1em; }
+      .navbar #boton-contacto a:hover {
+        background: #b61b17; }
+  #carrusel {
+    height: 200px; }
+    #carrusel .carousel-inner {
+      height: 200px; }
+      #carrusel .carousel-inner img {
+        max-height: 300px; }
+  #boton-contacto {
+    position: relative; }
+  header #logo {
+    width: 60%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20; }
+    header #logo figure {
+      width: 100%;
+      height: 100px; }
+      header #logo figure img {
+        width: 60%;
+        height: 60%; }
+  #beneficios {
+    height: 700px;
+    font-size: 18px; }
+    #beneficios .info {
+      height: 250px; }
+  #principal {
+    height: 1500px;
+    padding: 4em 1.5em; }
+    #principal h1 {
+      font-size: 35px; }
+    #principal .servicios {
+      width: 80%;
+      height: 300px; }
+      #principal .servicios .circ {
+        width: 80%;
+        height: 100px; }
+        #principal .servicios .circ span {
+          font-size: 40px; }
+      #principal .servicios h2 {
+        font-size: 20px; }
+    #principal .ver-mas, #principal #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #principal #boton-lista {
+      width: 70%;
+      height: 90px; }
+  #promocion {
+    height: 720px; }
+    #promocion .cub-promocion .prom-cont {
+      text-align: left;
+      padding: 2em 0; }
+      #promocion .cub-promocion .prom-cont h2 {
+        padding-left: 0;
+        font-size: 35px; }
+      #promocion .cub-promocion .prom-cont p {
+        padding: 1em 0;
+        font-size: 17px; }
+      #promocion .cub-promocion .prom-cont .ver-mas, #promocion .cub-promocion .prom-cont #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion .cub-promocion .prom-cont #boton-lista {
+        width: 100%;
+        height: 90px; }
+  #promocion-2 {
+    height: 720px; }
+    #promocion-2 .prom img {
+      display: none; }
+    #promocion-2 .prom h3 {
+      font-size: 35px; }
+    #promocion-2 .prom p {
+      font-size: 17px; }
+    #promocion-2 .ver-mas, #promocion-2 #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion-2 #boton-lista {
+      margin-top: 2em;
+      width: 100%;
+      height: 70px; }
+  #promocion-3 {
+    height: 700px;
+    text-align: left; }
+    #promocion-3 .prom img {
+      display: none; }
+    #promocion-3 .prom h3 {
+      font-size: 35px;
+      margin-bottom: 1em; }
+    #promocion-3 .prom p {
+      font-size: 17px; }
+    #promocion-3 .ver-mas, #promocion-3 #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion-3 #boton-lista {
+      width: 100%;
+      height: 70px;
+      margin: 1em 0; }
+  #sobre-branar {
+    height: 1100px;
+    padding: 3em 1.5em;
+    text-align: left;
+    font-size: 17px; }
+    #sobre-branar h4 {
+      font-size: 35px;
+      padding-left: 0;
+      margin: .5em 0; }
+  #clientes {
+    height: 420px; }
+    #clientes .cu-cli {
+      height: 420px;
+      padding: 2.5em 1.5em; }
+      #clientes .cu-cli img {
+        border-radius: 50%;
+        width: 80%;
+        margin: 1em auto; }
+      #clientes .cu-cli h3 {
+        font-size: 35px;
+        margin: .2em 0;
+        text-align: center; }
+  #contacto {
+    height: 1700px; }
+    #contacto h3 {
+      color: #607D8B;
+      font-size: 35px;
+      margin: .3em 0; }
+    #contacto .cu-contac {
+      height: 920px;
+      padding: 2em .5em; }
+      #contacto .cu-contac #titulo-form {
+        height: 240px;
+        padding: .7em; }
+      #contacto .cu-contac #formulario {
+        width: 90%;
+        height: 750px;
+        margin: 3em auto; }
+        #contacto .cu-contac #formulario form .input-group textarea {
+          max-height: 170px; }
+        #contacto .cu-contac #formulario form .input-group #contenido {
+          height: 170px; }
+        #contacto .cu-contac #formulario form .button {
+          width: 80%;
+          text-align: center; }
+          #contacto .cu-contac #formulario form .button input {
+            font-size: 17px; }
+  }
+
+@media screen and (min-width: 763px) and (max-width: 1024px) {
+  .navbar .nav > li:not(#boton-contacto) a {
+    padding: 2.6em .6em;
+    color: #26599b;
+    font-size: 14px;
+    text-transform: none; }
+  header #logo {
+    top: 0;
+    left: -2%; }
+  #carrusel {
+    height: 400px; }
+    #carrusel .carousel-inner {
+      height: 400px; }
+      #carrusel .carousel-inner img {
+        max-height: 400px; }
+  #beneficios {
+    height: 300px;
+    font-size: 18px; }
+    #beneficios .info {
+      height: 300px; }
+  #principal {
+    height: 1050px;
+    padding: 4em 1.5em; }
+    #principal .ver-mas, #principal #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #principal #boton-lista {
+      width: 40%;
+      height: 70px; }
+    #principal .servicios .circ {
+      width: 50%;
+      height: 120px; }
+      #principal .servicios .circ span {
+        font-size: 50px; }
+    #principal .servicios h2 {
+      font-size: 20px; }
+  #promocion {
+    height: 720px; }
+    #promocion .cub-promocion .prom-cont {
+      text-align: left;
+      padding: 2em 0; }
+      #promocion .cub-promocion .prom-cont h2 {
+        padding-left: 0; }
+      #promocion .cub-promocion .prom-cont p {
+        padding: 1em 0; }
+      #promocion .cub-promocion .prom-cont .ver-mas, #promocion .cub-promocion .prom-cont #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion .cub-promocion .prom-cont #boton-lista {
+        width: 50%;
+        height: 70px; }
+  #promocion-2 .prom {
+    position: relative;
+    height: 100%; }
+    #promocion-2 .prom img {
+      top: 45%; }
+  #promocion-3 {
+    height: 680px; }
+    #promocion-3 .prom {
+      text-align: left; }
+      #promocion-3 .prom img {
+        position: absolute;
+        top: 15%; }
+    #promocion-3 .ver-mas, #promocion-3 #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #promocion-3 #boton-lista {
+      width: 70%;
+      height: 60px;
+      margin: 1em 0; }
+  #sobre-branar {
+    height: 800px;
+    padding: 3em 1.5em;
+    text-align: left;
+    font-size: 17px; }
+    #sobre-branar h4 {
+      font-size: 35px;
+      padding-left: 0;
+      margin: .5em 0; }
+    #sobre-branar #experiencia {
+      text-align: center; }
+      #sobre-branar #experiencia .icono-exp {
+        width: 40%;
+        height: 130px;
+        background: #ec8e39;
+        border-radius: 50%;
+        margin: 1em auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 2em; }
+        #sobre-branar #experiencia .icono-exp i {
+          font-size: 60px;
+          color: white; }
+  #clientes {
+    height: 320px; }
+  #contacto .cu-contac #titulo-form {
+    height: 180px;
+    padding: 1em; }
+  #contacto .cu-contac #formulario {
+    width: 65%; }
+    #contacto .cu-contac #formulario form .input-group textarea {
+      max-width: 600px; }
+    #contacto .cu-contac #formulario form .button {
+      width: 80%; }
+      #contacto .cu-contac #formulario form .button input {
+        width: 60%; }
+   }
+
+#gracias {
+  height: 385px;
+  padding: 3em;
+  color: #607D8B; }
+  #gracias h1 {
+    font-size: 55px;
+    margin: .5em 0;
+    color: #4b626d; }
+  #gracias p {
+    font-size: 18px; }
+    #gracias p + p {
+      margin-top: 1.3em; }
+  #gracias a:hover {
+    text-decoration: none; }
+  #gracias img {
+    width: 100%;
+    height: 80%; }
+
+#intereses {
+  height: 600px;
+  background: #f8f9fa;
+  padding: 3em;
+  font-size: 18px;
+  color: #607D8B; }
+  #intereses p:first-of-type {
+    font-size: 25px; }
+  #intereses a:hover {
+    text-decoration: none; }
+  #intereses .interes {
+    height: 380px;
+    background: white;
+    padding: 1em;
+    -webkit-box-shadow: 0 0 7px gray;
+    box-shadow: 0 0 7px gray;
+    margin: 2em 0; }
+    #intereses .interes:hover, #intereses .interes:focus {
+      -webkit-box-shadow: 0 0 14px gray;
+      box-shadow: 0 0 14px gray; }
+    #intereses .interes h2 {
+      text-align: center;
+      color: #607D8B; }
+    #intereses .interes .img-interes {
+      height: 250px; }
+      #intereses .interes .img-interes img {
+        width: 100%;
+        height: 100%; }
+
+.banner1, .banner-mant-epson, .banner-mant-pc, .banner-pnp, .banner-redes, .banner-web, .banner-social-media, .banner-soft-adm, .banner2, .banner-hostyplace, .banner-servi-pack, .banner-maxibanda, .banner3, .banner4 {
+  height: 200px;
+  background-image: url("../img/servicios.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .banner1 .cub-banner, .banner-mant-epson .cub-banner, .banner-mant-pc .cub-banner, .banner-pnp .cub-banner, .banner-redes .cub-banner, .banner-web .cub-banner, .banner-social-media .cub-banner, .banner-soft-adm .cub-banner, .banner2 .cub-banner, .banner-hostyplace .cub-banner, .banner-servi-pack .cub-banner, .banner-maxibanda .cub-banner, .banner3 .cub-banner, .banner4 .cub-banner {
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3em 4em; }
+    .banner1 .cub-banner h1, .banner-mant-epson .cub-banner h1, .banner-mant-pc .cub-banner h1, .banner-pnp .cub-banner h1, .banner-redes .cub-banner h1, .banner-web .cub-banner h1, .banner-social-media .cub-banner h1, .banner-soft-adm .cub-banner h1, .banner2 .cub-banner h1, .banner-hostyplace .cub-banner h1, .banner-servi-pack .cub-banner h1, .banner-maxibanda .cub-banner h1, .banner3 .cub-banner h1, .banner4 .cub-banner h1 {
+      font-size: 60px;
+      color: white;
+      letter-spacing: 1.5px; }
+
+#todos-servicios {
+  height: 2900px;
+  padding: 5em 3em;
+  background: #FAFAFA;
+  color: #607D8B; }
+  #todos-servicios .serv {
+    margin: 2.5em 0;
+    height: 850px;
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px #c0cad1;
+    box-shadow: 0 0 10px #c0cad1;
+    position: relative; }
+    #todos-servicios .serv .img-serv {
+      height: 200px; }
+      #todos-servicios .serv .img-serv img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 100%; }
+    #todos-servicios .serv .cont-serv {
+      padding: 2em;
+      text-align: justify;
+      font-size: 17px; }
+      #todos-servicios .serv .cont-serv h2 {
+        color: #41545e; }
+      #todos-servicios .serv .cont-serv .ver-mas, #todos-servicios .serv .cont-serv #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #todos-servicios .serv .cont-serv #boton-lista {
+        width: 80%;
+        font-size: 18px;
+        margin: auto;
+        position: absolute;
+        bottom: 5%; }
+    #todos-servicios .serv:hover {
+      -webkit-box-shadow: 0 0 14px #9aaab4;
+      box-shadow: 0 0 14px #9aaab4; }
+  #todos-servicios a:hover {
+    text-decoration: none; }
+
+@media screen and (min-width: 280px) and (max-width: 762px) {
+  #todos-servicios {
+    height: 6000px; } }
+
+@media screen and (min-width: 763px) and (max-width: 1024px) {
+  #todos-servicios {
+    height: 3200px; } }
+
+.banner-mant-epson {
+  background-image: url("../img/impresora-epson.png"); }
+
+  /*EPSON SERV*/
+
+#epson, #servicios-epson, #pnp, .accion {
+  
+  height: 470px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #4b626d; }
+  #epson{
+    margin-top: 90px;
+  }
+  #epson h2, #servicios-epson h2, #pnp h2, .accion h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #epson a:hover, #servicios-epson a:hover, #pnp a:hover, .accion a:hover, #epson a:focus, #servicios-epson a:focus, #pnp a:focus, .accion a:focus {
+    text-decoration: none; }
+  #epson .ver-mas, #servicios-epson .ver-mas, #pnp .ver-mas, .accion .ver-mas, #epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #epson #boton-lista, #servicios-epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #servicios-epson #boton-lista, #pnp #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #pnp #boton-lista, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+    width: 70%;
+    margin: 1em 0; }
+
+#servicios-epson {
+  height: 380px;
+  background: #eeeeee;
+  text-align: center; }
+  #servicios-epson img {
+    width: 60%;
+    margin: auto; }
+  #servicios-epson h3 {
+    font-size: 21px; 
+    color: #4b626d;
+  }
+
+
+
+
+
+  #reparacion {
+    height: 650px;
+    font-size: 18px; }
+    #reparacion h2 {
+      font-size: 35px;
+      margin: .5em 0; }
+    #reparacion #cub-reparacion {
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); }
+      #reparacion #cub-reparacion #rep {
+        height: 100%;
+        padding: 3em;
+        color: #4b626d;;
+        background: #eeeeee; }
+        #reparacion #cub-reparacion #rep li {
+          list-style: none;
+          padding: .5em; }
+        #reparacion #cub-reparacion #rep span {
+          font-size: 25px;
+          padding-right: .5em; }
+      #reparacion #cub-reparacion #modelos-epson {
+        height: 100%;
+        background: #fbfbfc;
+        padding: 3em; }
+        #reparacion #cub-reparacion #modelos-epson .modelos {
+          margin: 1em 2em;
+          border: 1px solid #cfd6db;
+          padding: 1em;
+          height: 150px;
+          position: relative;
+          background: white; }
+          #reparacion #cub-reparacion #modelos-epson .modelos p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #ECEFF1;
+            width: 100%;
+            text-align: center;
+            height: 30px;
+            font-weight: bold; }
+        #reparacion #cub-reparacion #modelos-epson #boton-lista {
+          background: transparent; }
+          #reparacion #cub-reparacion #modelos-epson #boton-lista:focus {
+            outline: none; }
+        #reparacion #cub-reparacion #modelos-epson .ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+          position: absolute;
+          bottom: 2em;
+          left: 0;
+          right: 0;
+          width: 40%;
+          margin: auto; }
+
+
+@media screen and (max-width:375px){
+
+  
+#epson, #servicios-epson, #pnp, .accion {
+  
+  height: 900px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #4b626d; }
+  #epson{
+    margin-top: 90px;
+  }
+  #epson h2, #servicios-epson h2, #pnp h2, .accion h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #epson a:hover, #servicios-epson a:hover, #pnp a:hover, .accion a:hover, #epson a:focus, #servicios-epson a:focus, #pnp a:focus, .accion a:focus {
+    text-decoration: none; }
+  #epson .ver-mas, #servicios-epson .ver-mas, #pnp .ver-mas, .accion .ver-mas, #epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #epson #boton-lista, #servicios-epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #servicios-epson #boton-lista, #pnp #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #pnp #boton-lista, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+    width: 70%;
+    margin: 1em 0; }
+
+#servicios-epson {
+  height: 1300px;
+  background: #eeeeee;
+  text-align: center; 
+     margin-right: 0px; 
+     margin-left: 0px;}
+  #servicios-epson img {
+    width: 60%;
+    margin: auto; }
+  #servicios-epson h3 {
+    font-size: 21px; 
+    color: #4b626d;
+  }
+
+  
+#reparacion {
+  height: 650px;
+  font-size: 18px; 
+  margin-right: 0px; 
+  margin-left: 0px;
+
+}
+  #reparacion h2 {
+    font-size: 35px;
+    margin: .5em 0; }
+  #reparacion #cub-reparacion {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); }
+    #reparacion #cub-reparacion #rep {
+      width: 100%;
+      height: 800px;
+      padding: 3em;
+      color: #4b626d;;
+      background: #eeeeee; }
+      #reparacion #cub-reparacion #rep li {
+        list-style: none;
+        padding: .5em; }
+      #reparacion #cub-reparacion #rep span {
+        font-size: 25px;
+        padding-right: .5em; }
+    #reparacion #cub-reparacion #modelos-epson {
+      height: 900px;
+      background: #fbfbfc;
+      padding: 3em; 
+      margin-right: 0px;
+      margin-left: 0px;}
+      #reparacion #cub-reparacion #modelos-epson .modelos {
+        margin: 1em 2em;
+        border: 1px solid #cfd6db;
+        padding: 1em;
+        height: 150px;
+        position: relative;
+        background: white; }
+        #reparacion #cub-reparacion #modelos-epson .modelos p {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: #ECEFF1;
+          width: 100%;
+          text-align: center;
+          height: 30px;
+          font-weight: bold; }
+      #reparacion #cub-reparacion #modelos-epson #boton-lista {
+        background: transparent; }
+        #reparacion #cub-reparacion #modelos-epson #boton-lista:focus {
+          outline: none; }
+      #reparacion #cub-reparacion #modelos-epson .ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+        position: absolute;
+        bottom: 2em;
+        left: 0;
+        right: 0;
+        width: 40%;
+        margin: auto; }
+  
+}
+@media screen and (max-width:420px){
+
+  
+  #epson, #servicios-epson, #pnp, .accion {
+    
+    height: 900px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #4b626d; }
+    #epson{
+      margin-top: 90px;
+    }
+    #epson h2, #servicios-epson h2, #pnp h2, .accion h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #epson a:hover, #servicios-epson a:hover, #pnp a:hover, .accion a:hover, #epson a:focus, #servicios-epson a:focus, #pnp a:focus, .accion a:focus {
+      text-decoration: none; }
+    #epson .ver-mas, #servicios-epson .ver-mas, #pnp .ver-mas, .accion .ver-mas, #epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #epson #boton-lista, #servicios-epson #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #servicios-epson #boton-lista, #pnp #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #pnp #boton-lista, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+      width: 70%;
+      margin: 1em 0; }
+  
+  #servicios-epson {
+    height: 1500px;
+    background: #eeeeee;
+    text-align: center; 
+       margin-right: 0px; 
+       margin-left: 0px;}
+    #servicios-epson img {
+      width: 60%;
+      margin: auto; }
+    #servicios-epson h3 {
+      font-size: 21px; 
+      color: #4b626d;
+    }
+  
+    
+  #reparacion {
+    height: 650px;
+    font-size: 18px; 
+    margin-right: 0px; 
+    margin-left: 0px;
+  
+  }
+    #reparacion h2 {
+      font-size: 35px;
+      margin: .5em 0; }
+    #reparacion #cub-reparacion {
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); }
+      #reparacion #cub-reparacion #rep {
+        width: 100%;
+        height: 800px;
+        padding: 3em;
+        color: #4b626d;;
+        background: #eeeeee; }
+        #reparacion #cub-reparacion #rep li {
+          list-style: none;
+          padding: .5em; }
+        #reparacion #cub-reparacion #rep span {
+          font-size: 25px;
+          padding-right: .5em; }
+      #reparacion #cub-reparacion #modelos-epson {
+        height: 900px;
+        background: #fbfbfc;
+        padding: 3em; 
+        margin-right: 0px;
+        margin-left: 0px;}
+        #reparacion #cub-reparacion #modelos-epson .modelos {
+          margin: 1em 2em;
+          border: 1px solid #cfd6db;
+          padding: 1em;
+          height: 150px;
+          position: relative;
+          background: white; }
+          #reparacion #cub-reparacion #modelos-epson .modelos p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #ECEFF1;
+            width: 100%;
+            text-align: center;
+            height: 30px;
+            font-weight: bold; }
+        #reparacion #cub-reparacion #modelos-epson #boton-lista {
+          background: transparent; }
+          #reparacion #cub-reparacion #modelos-epson #boton-lista:focus {
+            outline: none; }
+        #reparacion #cub-reparacion #modelos-epson .ver-mas, #reparacion #cub-reparacion #modelos-epson #boton-lista {
+          position: absolute;
+          bottom: 2em;
+          left: 0;
+          right: 0;
+          width: 40%;
+          margin: auto; }
+    
+  }
+
+
+.modal-header {
+  background: #26599b;
+  text-align: center; }
+  .modal-header h4 {
+    font-size: 30px;
+    color: white; }
+  .modal-header .close {
+    font-size: 45px; }
+
+.modal-content {
+  height: 600px; }
+
+table th {
+  background: rgba(166, 222, 255, 0.6);
+  text-align: center; }
+
+#pnp {
+  height: 1000px; }
+  #pnp .servicios-pnp {
+    margin: 3em 0;
+    position: relative; }
+    #pnp .servicios-pnp img {
+      width: 70%;
+      margin-top: 15%; }
+    #pnp .servicios-pnp li {
+      list-style: none;
+      padding: .2em; }
+      #pnp .servicios-pnp li span {
+        font-size: 30px;
+        padding-right: .5em; }
+
+.accion {
+  height: 180px;
+  background: #26599b;
+  color: white; 
+  margin-right: 0px;
+  margin-left: 0px;}
+
+
+  .accion p {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px; }
+  .accion a:hover, .accion a:focus {
+    text-decoration: none; }
+  .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+    background: #ec8e39;
+    color: white;
+    margin: 0;
+    width: 100%;
+    font-size: 22px; }
+    .accion .ver-mas:hover, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista:hover, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista:hover {
+      background: transparent;
+      color: #ec8e39; }
+  @media screen and (max-width:375px){
+    .accion {
+      height: 400px;
+      margin-right: 0px;
+      margin-left: 0px;}
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
+  @media screen and (max-width:420px){
+    .accion {
+      height: 400px;
+      margin-right: 0px;
+      margin-left: 0px;}
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
+
+#cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+
+  height: 450px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #607D8B; }
+  #cont-mant-pc{
+    margin-top: 90px;
+  }
+  #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+    width: 70%; }
+
+#reparaciones {
+  height: 680px;
+  background: #263238;
+  color: #ECEFF1;
+  position: relative; }
+  #reparaciones img {
+    width: 100%;
+    position: absolute;
+    top: 25%; }
+  #reparaciones h2 {
+    color: white; }
+  #reparaciones h3 {
+    font-size: 30px;
+    font-weight: bold; }
+  #reparaciones li {
+    list-style: none;
+    padding: .4em; }
+    #reparaciones li span {
+      font-size: 25px;
+      margin-right: .3em; }
+
+#equipos-demandados {
+  background: #ECEFF1;
+  height: 300px; }
+  #equipos-demandados h2 {
+    margin-bottom: 1em; }
+  #equipos-demandados img {
+    margin: auto; }
+  #equipos-demandados #equip-1 {
+    width: 30%; }
+  #equipos-demandados #equip-2 {
+    width: 55%; }
+  #equipos-demandados #equip-3 {
+    width: 65%; }
+
+#soporte img {
+  width: 80%; }
+
+#cont-pnp {
+  height: 450px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #607D8B; }
+  #cont-pnp h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #cont-pnp img {
+    width: 70%; }
+
+
+@media screen and (max-width : 375px){
+  
+#cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+
+  height: 950px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #607D8B; }
+  #cont-mant-pc{
+    margin-top: 90px;
+  }
+  #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+    width: 70%; }
+
+#reparaciones {
+  height: 1520px;
+  background: #263238;
+  color: #ECEFF1;
+  position: relative; }
+  #reparaciones img {
+    width: 100%;
+    position: absolute;
+    top: 25%; }
+  #reparaciones h2 {
+    color: white; }
+  #reparaciones h3 {
+    font-size: 30px;
+    font-weight: bold; }
+  #reparaciones li {
+    list-style: none;
+    padding: .4em; }
+    #reparaciones li span {
+      font-size: 25px;
+      margin-right: .3em; }
+
+#equipos-demandados {
+  background: #ECEFF1;
+  height: 300px; }
+  #equipos-demandados h2 {
+    margin-bottom: 1em; }
+  #equipos-demandados img {
+    margin: auto; }
+  #equipos-demandados #equip-1 {
+    width: 30%; }
+  #equipos-demandados #equip-2 {
+    width: 55%; }
+  #equipos-demandados #equip-3 {
+    width: 65%; }
+
+#soporte img {
+  width: 80%; }
+
+#cont-pnp {
+  height: 450px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #607D8B; }
+  #cont-pnp h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #cont-pnp img {
+    width: 70%; }
+
+}
+
+@media screen and (max-width : 420px){
+  
+  #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+  
+    height: 950px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-mant-pc{
+      margin-top: 90px;
+    }
+    #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+      width: 70%; }
+  
+  #reparaciones {
+    height: 1520px;
+    background: #263238;
+    color: #ECEFF1;
+    position: relative; }
+    #reparaciones img {
+      width: 100%;
+      position: absolute;
+      top: 25%; }
+    #reparaciones h2 {
+      color: white; }
+    #reparaciones h3 {
+      font-size: 30px;
+      font-weight: bold; }
+    #reparaciones li {
+      list-style: none;
+      padding: .4em; }
+      #reparaciones li span {
+        font-size: 25px;
+        margin-right: .3em; }
+  
+  #equipos-demandados {
+    background: #ECEFF1;
+    height: 300px; }
+    #equipos-demandados h2 {
+      margin-bottom: 1em; }
+    #equipos-demandados img {
+      margin: auto; }
+    #equipos-demandados #equip-1 {
+      width: 30%; }
+    #equipos-demandados #equip-2 {
+      width: 55%; }
+    #equipos-demandados #equip-3 {
+      width: 65%; }
+  
+  #soporte img {
+    width: 80%; }
+  
+  #cont-pnp {
+    height: 450px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-pnp h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-pnp img {
+      width: 70%; }
+  
+  }
+
+
+/*REDES SERV*/
+#cont-redes, #servicios-redes, #promocion-redes {
+  height: 400px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #607D8B; }
+  #cont-redes h2, #servicios-redes h2, #promocion-redes h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #cont-redes img, #servicios-redes img, #promocion-redes img {
+    width: 90%; }
+
+#servicios-redes {
+  background: #ECEFF1;
+  text-align: center;
+  height: 800px; }
+  #servicios-redes .serv-redes {
+    margin: 2em 0; }
+    #servicios-redes .serv-redes h3 {
+      font-size: 21px; }
+    #servicios-redes .serv-redes img {
+      width: 50%;
+      margin: auto; }
+
+#cont-web, #adaptable, #autogestionable {
+  height: 400px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #607D8B; }
+  #cont-web h2, #adaptable h2, #autogestionable h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #cont-web img, #adaptable img, #autogestionable img {
+    width: 100%; }
+
+#promocion-web {
+  height: 1470px;
+  background-image: url("../img/web.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  #promocion-web .cub-web {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3em;
+    color: white;
+    text-align: center; }
+    #promocion-web .cub-web h3 {
+      font-size: 35px;
+      margin-bottom: 2em; }
+    #promocion-web .cub-web img {
+      width: 80%;
+      margin: auto; }
+
+#adaptable {
+  height: 400px;
+  background: #ECEFF1; }
+  #adaptable img {
+    width: 45%;
+    height: 300px; }
+
+.cont-social-media, #productos-social, #promocion-social {
+ 
+  height: 450px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #607D8B; }
+
+
+  .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  .cont-social-media img, #productos-social img, #promocion-social img {
+    width: 70%; }
+    .cont-social-media2{
+      margin-top: 90px;
+    }
+
+#productos-social {
+  background: #ECEFF1;
+  text-align: center; }
+  #productos-social h2 {
+    margin: 0 0 2em 0; }
+  #productos-social h3 {
+    font-size: 21px; 
+    color: #4b626d;}
+  #productos-social img {
+    width: 70%;
+    margin: auto; }
+
+#promocion-social {
+  background: white;
+  height: 600px; }
+  #promocion-social h4 {
+    font-size: 21px;
+    font-weight: bold; }
+  #promocion-social .caso-exito {
+    height: 100%;
+    background-image: url("../img/pegoccidente-ig.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+
+@media screen and (max-width: 375px) {
+  .cont-social-media, #productos-social, #promocion-social {
+ 
+   height: 500px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+  
+  .cont-social-media3{
+    height: 800px;
+  }
+  .cont-social-media4{
+    height: 1000px;
+  }
+  
+    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    .cont-social-media img, #productos-social img, #promocion-social img {
+      width: 70%; }
+      .cont-social-media2{
+        margin-top: 90px;
+        height: 1100px;
+      }
+  
+  #productos-social {
+    background: #ECEFF1;
+    text-align: center; 
+    height: 1700px;
+  }
+    #productos-social h2 {
+      margin: 0 0 2em 0; }
+    #productos-social h3 {
+      font-size: 21px; 
+      color: #4b626d;}
+    #productos-social img {
+      width: 70%;
+      margin: auto; }
+  
+  #promocion-social {
+    background: white;
+    height: 600px; }
+    #promocion-social h4 {
+      font-size: 21px;
+      font-weight: bold; }
+    #promocion-social .caso-exito {
+      height: 100%;
+      background-image: url("../img/pegoccidente-ig.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+      #equipo {
+        height: 670px;
+        background: #26599b;
+        padding: .5em 3em; 
+      }
+  
+}
+
+@media screen and (max-width: 420px) {
+  .cont-social-media, #productos-social, #promocion-social {
+ 
+   height: 500px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+  
+  .cont-social-media3{
+    height: 800px;
+  }
+  .cont-social-media4{
+    height: 1000px;
+  }
+  
+    .cont-social-media h2, #productos-social h2, #promocion-social h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    .cont-social-media img, #productos-social img, #promocion-social img {
+      width: 70%; }
+      .cont-social-media2{
+        margin-top: 90px;
+        height: 900px;
+      }
+  
+  #productos-social {
+    background: #ECEFF1;
+    text-align: center; 
+    height: 1800px;
+  }
+    #productos-social h2 {
+      margin: 0 0 2em 0; }
+    #productos-social h3 {
+      font-size: 21px; 
+      color: #4b626d;}
+    #productos-social img {
+      width: 70%;
+      margin: auto; }
+  
+  #promocion-social {
+    background: white;
+    height: 600px; }
+    #promocion-social h4 {
+      font-size: 21px;
+      font-weight: bold; }
+    #promocion-social .caso-exito {
+      height: 100%;
+      background-image: url("../img/pegoccidente-ig.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+      #equipo {
+        height: 670px;
+        background: #26599b;
+        padding: .5em 3em; 
+      }
+  
+}
+
+.contacto-serv {
+  height: 700px;
+  background: #DAEBF2;
+  padding: 4em; }
+  .contacto-serv form {
+    height: 550px;
+    background: white; }
+    .contacto-serv form #titulo-form {
+      height: 130px;
+      padding: 1.5em 3em 1em 4em;
+      text-align: left;
+      color: #171e21;
+      border-top: 20px solid #ec8e39; }
+      .contacto-serv form #titulo-form h5 {
+        font-size: 35px;
+        letter-spacing: 1.5px;
+        margin-bottom: .5em; }
+    .contacto-serv form #campos-form {
+      width: 100%;
+      position: relative;
+      text-align: center;
+      top: 7%; }
+      .contacto-serv form #campos-form .input-group {
+        width: 90%;
+        margin: 1.5em auto;
+        font-size: 18px; }
+        .contacto-serv form #campos-form .input-group input {
+          height: 40px; }
+        .contacto-serv form #campos-form .input-group .input, .contacto-serv form #campos-form .input-group select {
+          width: 100%;
+          padding: 1em;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 3px solid rgba(141, 213, 255, 0.6);
+          border-radius: 3px;
+          color: #566f7c; }
+          .contacto-serv form #campos-form .input-group .input:hover, .contacto-serv form #campos-form .input-group select:hover {
+            border-color: rgba(90, 194, 255, 0.6); }
+          .contacto-serv form #campos-form .input-group .input:focus, .contacto-serv form #campos-form .input-group select:focus {
+            border-color: rgba(0, 121, 192, 0.6);
+            border-width: 4px;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s; }
+        .contacto-serv form #campos-form .input-group select {
+          padding: .5em 1em; }
+          .contacto-serv form #campos-form .input-group select option {
+            background: #fbfbfc; }
+            .contacto-serv form #campos-form .input-group select option:last-child {
+              border-bottom: 1px solid #26599b }
+      .contacto-serv form #campos-form .button {
+        width: 80%;
+        margin: auto; }
+        .contacto-serv form #campos-form .button input {
+          width: 80%;
+          height: 60px;
+          background: #FFCC29;
+          border: none;
+          border-radius: 10px;
+          color: #2c3940;
+          letter-spacing: 2px;
+          font-size: 20px;
+          font-weight: bold;
+          text-transform: uppercase; }
+          .contacto-serv form #campos-form .button input:hover {
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+            -webkit-transform: scale(1.04, 1.04);
+            -ms-transform: scale(1.04, 1.04);
+            transform: scale(1.04, 1.04); }
+    .contacto-serv form input:focus, .contacto-serv form textarea:focus {
+      outline: none; }
+/*PROFIT*/
+#software-administrativo, #beneficios-software, #programas-administrativos {
+  height: 400px;
+  padding: 3em 4em;
+  font-size: 18px;
+  color: #4b626d; }
+  #software-administrativo{
+    margin-top: 90px;
+    height: 500px;
+  }
+  #software-administrativo h2, #beneficios-software h2, #programas-administrativos h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #software-administrativo img, #beneficios-software img, #programas-administrativos img {
+    width: 90%; }
+
+#beneficios-software {
+  background: #eeeeee;
+  text-align: center;
+  color: white;
+  height: 400px; }
+  #beneficios-software h2 {
+    color: #4b626d; }
+  #beneficios-software .beneficios {
+    margin: 2em 0; }
+    #beneficios-software .beneficios img {
+      width: 40%;
+      margin: auto; }
+    #beneficios-software .beneficios h3 {
+      font-size: 21px; 
+    color: #4b626d;}
+
+#servicios-software {
+  height: 650px;
+  background-image: url("../img/laptop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3em;
+  font-size: 18px;
+  color: #607D8B; }
+  #servicios-software h2 {
+    font-size: 35px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #servicios-software li {
+    list-style: none;
+    padding: .5em;
+    color: #41545e; }
+    #servicios-software li span {
+      font-size: 25px;
+      padding-right: .5em; }
+  #servicios-software hr {
+    border-color: #607D8B; }
+
+#programas-administrativos .programa-1 {
+  width: 60%; }
+
+#programas-administrativos .programa-2 {
+  width: 100%; }
+
+#programas-administrativos .programa-3 {
+  width: 100%; }
+
+
+@media screen and (max-width: 375px) {
+  #software-administrativo, #beneficios-software, #programas-administrativos {
+    height: 800px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #4b626d; }
+    #software-administrativo{
+      margin-top: 90px;
+      height: 1200px;
+    }
+    #software-administrativo h2, #beneficios-software h2, #programas-administrativos h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #software-administrativo img, #beneficios-software img, #programas-administrativos img {
+      width: 90%; }
+  
+  #beneficios-software {
+    background: #eeeeee;
+    text-align: center;
+    color: white;
+    height: 1000px; }
+    #beneficios-software h2 {
+      color: #4b626d; }
+    #beneficios-software .beneficios {
+      margin: 2em 0; }
+      #beneficios-software .beneficios img {
+        width: 40%;
+        margin: auto; }
+      #beneficios-software .beneficios h3 {
+        font-size: 21px; 
+      color: #4b626d;}
+  
+  #servicios-software {
+    height: 900px;
+    background-image: url("../img/laptop2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+    font-size: 18px;
+    color: #607D8B; }
+    #servicios-software h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #servicios-software li {
+      list-style: none;
+      padding: .5em;
+      color: #41545e; }
+      #servicios-software li span {
+        font-size: 25px;
+        padding-right: .5em; }
+    #servicios-software hr {
+      border-color: #607D8B; }
+  
+  #programas-administrativos .programa-1 {
+    width: 60%; }
+  
+  #programas-administrativos .programa-2 {
+    width: 100%; }
+  
+  #programas-administrativos .programa-3 {
+    width: 100%; }
+  
+  
+}
+
+@media screen and (max-width: 420px) {
+  #software-administrativo, #beneficios-software, #programas-administrativos {
+    height: 800px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #4b626d; }
+    #software-administrativo{
+      margin-top: 90px;
+      height: 1200px;
+    }
+    #software-administrativo h2, #beneficios-software h2, #programas-administrativos h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #software-administrativo img, #beneficios-software img, #programas-administrativos img {
+      width: 90%; }
+  
+  #beneficios-software {
+    background: #eeeeee;
+    text-align: center;
+    color: white;
+    height: 1000px; }
+    #beneficios-software h2 {
+      color: #4b626d; }
+    #beneficios-software .beneficios {
+      margin: 2em 0; }
+      #beneficios-software .beneficios img {
+        width: 40%;
+        margin: auto; }
+      #beneficios-software .beneficios h3 {
+        font-size: 21px; 
+      color: #4b626d;}
+  
+  #servicios-software {
+    height: 900px;
+    background-image: url("../img/laptop2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+    font-size: 18px;
+    color: #607D8B; }
+    #servicios-software h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #servicios-software li {
+      list-style: none;
+      padding: .5em;
+      color: #41545e; }
+      #servicios-software li span {
+        font-size: 25px;
+        padding-right: .5em; }
+    #servicios-software hr {
+      border-color: #607D8B; }
+  
+  #programas-administrativos .programa-1 {
+    width: 60%; }
+  
+  #programas-administrativos .programa-2 {
+    width: 100%; }
+  
+  #programas-administrativos .programa-3 {
+    width: 100%; }
+  
+  
+}
+
+
+
+#todos-planes {
+  height: 1500px;
+  color: #607D8B; }
+  #todos-planes .plan {
+    height: 500px;
+    background: white;
+    padding: 5em 3em;
+    font-size: 18px; }
+    #todos-planes .plan h2 {
+      font-size: 40px; }
+    #todos-planes .plan img {
+      width: 100%;
+      height: 350px; }
+    #todos-planes .plan .ver-mas, #todos-planes .plan #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #todos-planes .plan #boton-lista {
+      width: 50%;
+      font-size: 18px;
+      margin: auto;
+      position: absolute;
+      bottom: -45%;
+      background: #ec8e39;
+      color: white; }
+      #todos-planes .plan .ver-mas:hover, #todos-planes .plan #reparacion #cub-reparacion #modelos-epson #boton-lista:hover, #reparacion #cub-reparacion #modelos-epson #todos-planes .plan #boton-lista:hover {
+        background: transparent;
+        color: #ec8e39; }
+    #todos-planes .plan:nth-child(2) {
+      color: white;
+      background: #26599b }
+    #todos-planes .plan:nth-child(3) {
+      color: #ECEFF1;
+      background: #263238; }
+  #todos-planes a:hover {
+    text-decoration: none; }
+
+@media screen and (min-width: 280px) and (max-width: 762px) {
+  #todos-planes {
+    height: 1500px; }
+    #todos-planes .plan {
+      height: 400px; }
+      #todos-planes .plan img {
+        display: none; } }
+
+@media screen and (min-width: 763px) and (max-width: 1024px) {
+  #todos-planes {
+    height: 1500px; }
+    #todos-planes .plan {
+      height: 400px; }
+      #todos-planes .plan .ver-mas, #todos-planes .plan #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson #todos-planes .plan #boton-lista {
+        width: 80%;
+        bottom: -35%; } }
+/*NOSOTROSS*/
+#nosotros {
+  margin-top: 120px;
+  height: 400px;
+  padding: 0em 3em;
+  color: #607D8B;
+  font-size: 18px; }
+  #nosotros h2 {
+    font-size: 40px;
+    color: #4b626d;
+    margin: .5em 0; }
+  #nosotros #zona-prin {
+    height: 550px; }
+    #nosotros #zona-prin img {
+      margin: 3em auto;
+      width: 80%; }
+
+#empresa {
+  
+  height: 800px;
+  background-image: url("../img/nube.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 18px; }
+  #empresa #cub-emp {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3em;
+    color: white; }
+    #empresa #cub-emp h2 {
+      text-align: center;
+      font-size: 45px; }
+    #empresa #cub-emp span {
+      font-size: 35px;
+      padding: .5em; }
+
+#equipo-emp {
+  height: 500px; }
+
+.banner4 {
+  background-image: url("../img/empleo.png"); }
+
+#empleo {
+  height: 650px;
+  padding: 5em 3em;
+  text-align: center;
+  background: white;
+  color: #607D8B; }
+  #empleo h2 {
+    color: #41545e;
+    font-size: 40px; }
+  #empleo p {
+    font-size: 23px; }
+  #empleo .areas {
+    margin: 2em 0; }
+    #empleo .areas h3 {
+      font-size: 20px; }
+    #empleo .areas .ofert {
+      width: 40%;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid #26599b;
+      margin: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-shadow: 0 0 7px #cfd6db;
+      box-shadow: 0 0 7px #cfd6db; }
+      #empleo .areas .ofert i {
+        font-size: 40px;
+        margin: auto;
+        color: #26599b }
+
+
+@media screen and (max-width: 375px){
+
+  #nosotros {
+    margin-top: 120px;
+    height: 900px;
+    padding: 0em 3em;
+    color: #607D8B;
+    font-size: 18px; }
+    #nosotros h2 {
+      font-size: 40px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #nosotros #zona-prin {
+      height: 550px; }
+      #nosotros #zona-prin img {
+        margin: 3em auto;
+        width: 80%; }
+
+        #empresa {
+  
+          height: 1400px;
+          background-image: url("../img/nube.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          font-size: 18px; }
+          #empresa #cub-emp {
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3em;
+            color: white; }
+            #empresa #cub-emp h2 {
+              text-align: center;
+              font-size: 45px; }
+            #empresa #cub-emp span {
+              font-size: 35px;
+              padding: .5em; }
+        
+              #equipo {
+                height: 1670px;
+                background: #26599b;
+                padding: 0.5em 3em;
+            }
+}
+
+
+
+@media screen and (max-width: 420px){
+
+  #nosotros {
+    margin-top: 120px;
+    height: 900px;
+    padding: 0em 3em;
+    color: #607D8B;
+    font-size: 18px; }
+    #nosotros h2 {
+      font-size: 40px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #nosotros #zona-prin {
+      height: 550px; }
+      #nosotros #zona-prin img {
+        margin: 3em auto;
+        width: 80%; }
+
+        #empresa {
+  
+          height: 1400px;
+          background-image: url("../img/nube.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          font-size: 18px; }
+          #empresa #cub-emp {
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3em;
+            color: white; }
+            #empresa #cub-emp h2 {
+              text-align: center;
+              font-size: 45px; }
+            #empresa #cub-emp span {
+              font-size: 35px;
+              padding: .5em; }
+        
+              #equipo {
+                height: 1670px;
+                background: #26599b;
+                padding: 0.5em 3em;
+            }
+}
+
+
+
+#ofertas {
+  height: 850px;
+  background-image: url("../img/escritorio.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  #ofertas #cub-ofert {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3em; }
+    #ofertas #cub-ofert h2 {
+      color: white;
+      text-align: center;
+      font-size: 40px; }
+    #ofertas #cub-ofert form {
+      height: 700px;
+      background: white; }
+      #ofertas #cub-ofert form #titulo-form {
+        height: 130px;
+        padding: 1.5em 3em 1em 4em;
+        text-align: left;
+        color: #171e21;
+        border-top: 20px solid #ec8e39; }
+        #ofertas #cub-ofert form #titulo-form h3 {
+          margin: 0;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 27px;
+          font-weight: bold; }
+        #ofertas #cub-ofert form #titulo-form p {
+          position: relative;
+          bottom: -2em;
+          font-size: 16px; }
+      #ofertas #cub-ofert form #campos-form {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        top: 7%; }
+        #ofertas #cub-ofert form #campos-form .input-group {
+          width: 80%;
+          margin: 1.5em auto;
+          font-size: 18px; }
+          #ofertas #cub-ofert form #campos-form .input-group input {
+            height: 40px; }
+          #ofertas #cub-ofert form #campos-form .input-group .input, #ofertas #cub-ofert form #campos-form .input-group select {
+            width: 100%;
+            padding: 1em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 3px solid rgba(141, 213, 255, 0.6);
+            border-radius: 3px;
+            color: #566f7c; }
+            #ofertas #cub-ofert form #campos-form .input-group .input:hover, #ofertas #cub-ofert form #campos-form .input-group select:hover {
+              border-color: rgba(90, 194, 255, 0.6); }
+            #ofertas #cub-ofert form #campos-form .input-group .input:focus, #ofertas #cub-ofert form #campos-form .input-group select:focus {
+              border-color: rgba(0, 121, 192, 0.6);
+              border-width: 4px;
+              -webkit-transition: .5s;
+              -o-transition: .5s;
+              transition: .5s; }
+          #ofertas #cub-ofert form #campos-form .input-group select {
+            padding: .5em 1em; }
+            #ofertas #cub-ofert form #campos-form .input-group select option {
+              background: #fbfbfc; }
+              #ofertas #cub-ofert form #campos-form .input-group select option:last-child {
+                border-bottom: 1px solid #26599b }
+        #ofertas #cub-ofert form #campos-form .button {
+          width: 80%;
+          margin: auto; }
+          #ofertas #cub-ofert form #campos-form .button input {
+            width: 80%;
+            height: 60px;
+            background: #FFCC29;
+            border: none;
+            border-radius: 10px;
+            color: #2c3940;
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase; }
+            #ofertas #cub-ofert form #campos-form .button input:hover {
+              -webkit-transition: .3s;
+              -o-transition: .3s;
+              transition: .3s;
+              -webkit-transform: scale(1.04, 1.04);
+              -ms-transform: scale(1.04, 1.04);
+              transform: scale(1.04, 1.04); }
+        #ofertas #cub-ofert form #campos-form .custom-input-file {
+          width: 40%;
+          height: 50px;
+          overflow: hidden;
+          position: relative;
+          cursor: pointer;
+          border: 3px solid rgba(90, 194, 255, 0.6);
+          float: right;
+          margin: 0 3em 3em 0;
+          font-size: 18px;
+          font-weight: bold;
+          padding: .5em;
+          border-radius: 15px;
+          color: #26599b;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          transition: .5s; }
+          #ofertas #cub-ofert form #campos-form .custom-input-file .input-file {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            font-size: 10000px;
+            border: 10000px solid transparent;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            position: absolute;
+            right: -1000px;
+            top: -1000px;
+            cursor: pointer; }
+          #ofertas #cub-ofert form #campos-form .custom-input-file:hover {
+            background: rgba(90, 194, 255, 0.6);
+            color: white;
+            border: none; }
+      #ofertas #cub-ofert form input:focus, #ofertas #cub-ofert form select:focus {
+        outline: none; }
+
+.banner5 {
+  height: 200px;
+  background-image: url("../img/contacto.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .banner5 .cub-banner {
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3em 4em; }
+    .banner5 .cub-banner h1 {
+      font-size: 60px;
+      color: white;
+      letter-spacing: 1.5px; }
+
+#contact {
+  height: 1100px;
+  padding: 5em 3em; }
+  #contact .formulario form {
+    height: 800px;
+    background: rgba(0, 105, 166, 0.1); }
+    #contact .formulario form #titulo-form {
+      height: 200px;
+      padding: 1.5em 3em 1em 4em;
+      text-align: left;
+      color: white; }
+      #contact .formulario form #titulo-form h3 {
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 27px;
+        font-weight: bold; }
+      #contact .formulario form #titulo-form p {
+        position: relative;
+        bottom: -2em;
+        font-size: 16px; }
+    #contact .formulario form #campos-form {
+      width: 100%;
+      position: relative;
+      text-align: center;
+      top: 7%; }
+      #contact .formulario form #campos-form .input-group {
+        width: 80%;
+        margin: 1.5em auto;
+        font-size: 18px; }
+        #contact .formulario form #campos-form .input-group input {
+          height: 40px; }
+        #contact .formulario form #campos-form .input-group .input, #contact .formulario form #campos-form .input-group select {
+          width: 100%;
+          padding: 1em;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          border: none;
+          border: 3px solid rgba(141, 213, 255, 0.6);
+          color: #566f7c; }
+          #contact .formulario form #campos-form .input-group .input textarea, #contact .formulario form #campos-form .input-group select textarea {
+            min-width: 100px;
+            max-width: 400px;
+            min-height: 200px;
+            max-height: 300px; }
+          #contact .formulario form #campos-form .input-group .input:hover, #contact .formulario form #campos-form .input-group select:hover {
+            border-color: rgba(90, 194, 255, 0.6); }
+          #contact .formulario form #campos-form .input-group .input:focus, #contact .formulario form #campos-form .input-group select:focus {
+            border-color: rgba(0, 121, 192, 0.6); }
+        #contact .formulario form #campos-form .input-group select {
+          padding: .5em 1em; }
+        #contact .formulario form #campos-form .input-group #mensaje {
+          height: 150px; }
+      #contact .formulario form #campos-form .button {
+        width: 80%;
+        margin: auto; }
+        #contact .formulario form #campos-form .button input {
+          width: 80%;
+          height: 60px;
+          background: #FFCC29;
+          border: none;
+          border-radius: 10px;
+          color: #2c3940;
+          letter-spacing: 2px;
+          font-size: 20px;
+          font-weight: bold;
+          text-transform: uppercase; }
+          #contact .formulario form #campos-form .button input:hover {
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+            -webkit-transform: scale(1.04, 1.04);
+            -ms-transform: scale(1.04, 1.04);
+            transform: scale(1.04, 1.04); }
+    #contact .formulario form input:focus, #contact .formulario form textarea:focus {
+      outline: none; }
+  #contact a:hover, #contact a:focus {
+    text-decoration: none; }
+  #contact #dat-emp {
+    width: 80%;
+    background: #4b626d;
+    height: 550px;
+    text-align: center;
+    padding: 1em;
+    color: white; }
+    #contact #dat-emp .icono-emp {
+      width: 25%;
+      height: 80px;
+      background: white;
+      border-radius: 50%;
+      border: 2px solid #26599b;
+      margin: .5em auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      #contact #dat-emp .icono-emp i {
+        margin: auto;
+        font-size: 30px;
+        color: #26599b }
+    #contact #dat-emp .dat {
+      height: 25%;
+      border-bottom: 1px solid white; }
+
+.social-media {
+  margin: 1em auto; }
+  .social-media i {
+    font-size: 40px;
+    margin: .2em; }
+  .social-media i[class*="icon-twitter"] {
+    color: #29B6F6; }
+  .social-media i[class*="icon-linkedin"] {
+    color: #0288D1; }
+  .social-media i[class*="icon-facebook"] {
+    color: #01579B; }
+  .social-media i[class*="icon-instagram"] {
+    color: #FF5722; }
+
+.triangulo {
+  height: 250px;
+  background: #62808e;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #CFD8DC;
+  padding: 2em;
+  position: relative; }
+  .triangulo:before {
+    content: '';
+    border-style: solid;
+    border-width: 45px 45px 45px 45px;
+    border-color: #62808e transparent transparent transparent;
+    position: absolute;
+    left: 42%;
+    top: 100%;
+    z-index: 10;
+    margin-top: -1px; }
+
+
+    .titulos__linkh2 {
+      position: relative;
+      margin: auto;
+      text-align: center;
+      line-height: 5vw;
+      font-size: 35px;
+      color: #275a9d;
+      width: 70vw;
+      font-weight: 700;
+      text-shadow: 0 2px 2px #8d9b9b;
+      border-bottom: 1px solid #8d9b9b;
+      -webkit-box-shadow: 0 4px 6px -6px #8d9b9b;
+      -moz-box-shadow: 0 4px 6px -6px #8d9b9b;
+      box-shadow: 0 6px 6px -6px #8d9b9b;
+      margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 375px){
+
+    .titulos__linkh2 {
+      position: relative;
+ 
+      text-align: center;
+      line-height: 5vw;
+      font-size: 20px;
+     margin-top: 10px;
+      width: 70vw;
+      font-weight: 700;
+      text-shadow: 0 2px 2px #8d9b9b;
+      border-bottom: 1px solid #8d9b9b;
+      -webkit-box-shadow: 0 4px 6px -6px #8d9b9b;
+      -moz-box-shadow: 0 4px 6px -6px #8d9b9b;
+      box-shadow: 0 6px 6px -6px #8d9b9b;
+      margin-bottom: 20px;
+  }
+    
+  }
+
+
+  @media screen and (max-width: 420px){
+
+    .titulos__linkh2 {
+      position: relative;
+ 
+      text-align: center;
+      line-height: 5vw;
+      font-size: 25px;
+     margin-top: 10px;
+      width: 70vw;
+      font-weight: 700;
+      text-shadow: 0 2px 2px #8d9b9b;
+      border-bottom: 1px solid #8d9b9b;
+      -webkit-box-shadow: 0 4px 6px -6px #8d9b9b;
+      -moz-box-shadow: 0 4px 6px -6px #8d9b9b;
+      box-shadow: 0 6px 6px -6px #8d9b9b;
+      margin-bottom: 20px;
+  }
+    
+  }
+
+    .contenedor-texto .titulo {
+      font-size: 30px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    
+    .contenedor-texto .mascota {
+      font-weight: bold;
+      color: #ffff;
+      font-style: normal;
+    }
+    
+/* --- -- Styles Servicios -- --- */
+
+.section-service {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #828282;
+  width: 100%;
+}
+
+
+/*Boton plegable*/
+.menu-btn{
+  position:absolute;
+  cursor:pointer;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  font-size: 1.5rem;
+  display: none;
+}
+
+/*Slider*/
+
+.container-slider {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  
+  position: relative;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+  height: 30vw;
+  margin-left: -100%;
+}
+
+.slider__section {
+  width: 100%;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  width: 8vh;
+  height: 6vh;
+  background: rgba(148, 159, 160, 0.3);
+  color: #696969;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5vh;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  text-shadow: 2px 2px 7px #222222;
+  color: rgba(207, 222, 223, 0.884);
+}
+
+.slider__btn--right {
+  right: -0.7vw;
+}
+
+.slider__btn--left {
+  left: -0.7vw;
+}
+
+
+/* PRODUCTOS HOME*/
+
+
+
+/*--- --SECCIÓN DE PRODUCTOS-- ---*/
+
+.section-product {
+  width: 90vw;
+  margin: auto;
+
+}
+
+
+
+/* --- --- CAROUSEL --- --- */
+
+.carousel-s {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.carousel__contenedor {
+  width: 85%;
+  height: 300px;
+  margin-left: 7vw;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+
+
+
+
+.carousel__lista {
+  overflow: hidden;
+  position: relative;
+
+}
+
+.carousel__elemento {
+  text-align: center;
+}
+
+
+
+/*Contenedor principal*/
+
+.sliderprod {
+  width: 100%;
+
+}
+
+
+
+.container-p{
+  width: 100%;
+  height: 10vh;
+  margin-left: 0;
+  margin-bottom: 2vw;
+  display: inline-block;
+
+}
+
+.mySlides {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.descripcion {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  color: #1f1f1f;
+  width: 45vw;
+  
+transform: translateY(20px);
+}
+
+.texto {
+
+  text-align: justify;
+  font-size: 20px;
+}
+
+.descripcion h2 {
+  font-size: 2.6vw;
+  color: #ec8e39;
+}
+
+.descripcion b {
+  color: #222222;
+  font-size: 3.5vw;
+}
+
+.descripcion p {
+  margin-top: 15px;
+  color: rgb(95, 89, 89);
+}
+
+.categoria {
+  font-size: 2.4vw;
+  color: rgb(95, 89, 89);
+}
+
+.mySlides img {
+  position: relative;
+  display: inline-block;
+  left: 14vw;
+  top: -15vw;
+  width: 22vw;
+  height: 40vh;
+  object-fit: contain;
+}
+
+
+
+.active {
+  background: none;
+  filter: none;
+}
+
+.slider_img {
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  width: 150px;
+  height: 280px;
+}
+
+.slider_section {
+   position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+/* RESPONSIVE*/
+
+@media screen and (max-width: 375px){
+   
+ 
+  .slider {
+      display: flex;
+      width: 400%;
+      height: 40vw;
+      margin-left: -100%;
+  }
+  .carousel__anterior,
+  .carousel__siguiente {
+  
+      position: absolute;
+      width: 6vw;
+      height: 7vw;
+      background: rgba(148, 159, 160, 0.4);
+      color: #EC8E39;
+      top: 40%;
+      transform: translateY(-60%);
+      font-size: 3vh;
+      font-weight: bold;
+      font-family: monospace;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+ 
+ 
+  
+  .descripcion {
+      display: inline-block;
+      position: relative;
+      font-size: 15px;
+      color: #000000;
+      padding-right: 20%;
+
+      width: 300px;
+      
+
+  }
+  .mySlides img {
+      width: 50%;
+      height: 50%;
+  margin-top: 100px;
+  }
+  .circulo {
+      background: none;
+      box-shadow: none;
+      width: 0;
+      height: 0;
+  }
+
+  .categoria {
+      font-size: 20px;
+  }
+  .descripcion h2 {
+      font-size: 20px;
+  }
+  .descripcion b {
+      color: #222222;
+      font-size: 20px;
+  }
+  .descripcion p {
+      line-height: 5vw;
+  }
+  .carousel__lista {
+      position: relative;
+      top: 15px;
+  }
+  
+  .texto {
+  
+      text-align: justify;
+      font-size: 15px;
+  }
+.sliderprod{
+  text-align: left;
+}
+.carousel__contenedor{
+  margin-top: -100px;
+}
+.slider_img {
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  width: 90px;
+  height: 280px;
+}
+
+}
+
+
+/*Slider*/
+
+.container-slider {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  
+  position: relative;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+  height: 30vw;
+  margin-left: -100%;
+}
+
+.slider__section {
+  width: 100%;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  width: 8vh;
+  height: 6vh;
+  background: rgba(148, 159, 160, 0.3);
+  color: #696969;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5vh;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  text-shadow: 2px 2px 7px #222222;
+  color: rgba(207, 222, 223, 0.884);
+}
+
+.slider__btn--right {
+  right: -0.7vw;
+}
+
+.slider__btn--left {
+  left: -0.7vw;
+}
+
+
+/*intercalation*/
+
+.intercalation-container {
+  position: relative;
+  z-index: 8;
+}
+
+.inter-imagen {
+  position: relative;
+  display: inline-block;
+  height: 30vw;
+}
+
+.inter-imagen img {
+  position: relative;
+  object-fit: cover;
+  display: inline-block;
+  width: 70vw;
+  background-color: none;
+  margin: auto;
+}
+
+.intercalation {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  left: 5vw;
+  right: 5vw;
+  margin-right: 5vw;
+  z-index: 3;
+  text-align: center;
+}
+
+.intercalation p {
+  display: inline-block;
+  font-size: 18px;
+  margin: auto;
+}
+
+.lista {
+  font-size: 18px;
+  color: #2f2f2f;
+}
+
+.lista::marker{
+  color:#ec8e39;
+}
+
+.lista span {
+  color: #2f2f2f;
+}
+
+.intercalation h3 {
+  font-size: 5vw;
+  color: #2f2f2f;
+  margin: auto;
+}
+
+.intercalation b {
+  color: #2f2f2f;
+}
+
+.intercalation a {
+  font-size: 20px;
+  color: #ec8e39;
+}
+
+.intercalation a:hover {
+  
+  color: #275a9d;
+}
+
+/* PLANES SOCIAL MEDIA*/
+
+/** ========================
+   * Contenedor
+   ============================*/
+   .pricing-wrapper {
+    width: 960px;
+    margin: 40px auto 0;
+  }
+  
+  .pricing-table {
+    margin: 0 10px;
+    text-align: center;
+    width: 300px;
+    float: left;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  
+  .pricing-table:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+  
+  .pricing-title {
+    color: #FFF;
+    background: #26599b;
+    padding: 20px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+  
+  .pricing-table.recommended .pricing-title {
+    background: #ec8e39;
+  }
+  
+  .pricing-table.recommended .pricing-action {
+    background: #26599b;
+  }
+  
+  .pricing-table .price {
+    background: #eeeeee;
+    font-size: 3.4em;
+    font-weight: 700;
+    padding: 20px 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+  
+  .pricing-table .price sup {
+    font-size: 0.4em;
+    position: relative;
+    left: 5px;
+  }
+  
+  .table-list {
+    background: #FFF;
+    color: #403d3a;
+  }
+  
+  .table-list p {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 8px;
+  }
+  
+ 
+  .table-list li span {
+    font-weight: 400;
+  }
+  
+  .table-list li span.unlimited {
+    color: #FFF;
+    background: #e95846;
+    font-size: 0.9em;
+    padding: 5px 7px;
+    display: inline-block;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+  }
+  
+  
+  .table-list li:nth-child(2n) {
+    background: #F0F0F0;
+  }
+  
+  .table-buy {
+    background: #FFF;
+    padding: 15px;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .table-buy p {
+    float: left;
+    color: #37353a;
+    font-weight: 700;
+    font-size: 2.4em;
+  }
+  
+  .table-buy p sup {
+    font-size: 0.5em;
+    position: relative;
+    left: 5px;
+  }
+  
+  .table-buy .pricing-action {
+    float: right;
+    color: #FFF;
+    background: #ec8e39;
+    padding: 10px 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  
+  .table-buy .pricing-action:hover {
+    background: #cf4f3e;
+  }
+  
+  .recommended .table-buy .pricing-action:hover {
+    background: #228799;  
+  }
+
+
+
+   /** ================
+   * Responsive
+   ===================*/
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .pricing-wrapper {
+      width: 768px;
+    }
+  
+    .pricing-table {
+      width: 236px;
+    }
+    
+    .table-list li {
+      font-size: 1.3em;
+    }
+  
+  
+    .pricing-table2 {
+      width: 236px;
+      height: 600px;
+    }
+    
+    .table-list2 li {
+      font-size: 1.3em;
+    }
+
+   }
+  
+   @media only screen and (max-width: 767px) {
+    .pricing-wrapper {
+      width: 420px;
+    }
+  
+    .pricing-table {
+      display: block;
+      float: none;
+      margin: 0 0 20px 0;
+      width: 100%;
+    }
+  
+  
+   
+
+   
+
+   }
+  
+  @media screen and (max-width: 479px) {
+    .pricing-wrapper {
+      width: 300px;
+     
+    }
+ 
+  } 
+  
