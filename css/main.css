@@ -33,17 +33,25 @@ background-image: url('../img/fondo.jpg');
   width: 101%; 
   
 }
-
-@media screen and (max-width : 375px) {
+@media screen and (max-width : 800px) {
   .headerr{
     width: 101%;
-    height: 360px;
+    height: 480px;
   }
   
 }
-@media screen and (max-width : 420px) {
+
+
+@media screen and (max-width : 700px) {
   .headerr{
     width: 101%;
+    height: 480px;
+  }
+  
+}
+@media screen and (max-width : 670px) {
+  .headerr{
+    width: 100%;
     height: 360px;
   }
   
@@ -55,20 +63,24 @@ background-image: url('../img/fondo.jpg');
   }
   
 }
-@media screen and (max-width : 670px) {
+
+
+@media screen and (max-width : 420px) {
   .headerr{
-    width: 100%;
+    width: 101%;
     height: 360px;
   }
   
 }
-@media screen and (max-width : 700px) {
+
+@media screen and (max-width : 375px) {
   .headerr{
     width: 101%;
-    height: 480px;
+    height: 360px;
   }
   
 }
+
 
 
 /*Redes facebook*/
@@ -211,11 +223,11 @@ background-image: url('../img/fondo.jpg');
   box-shadow: 0 0 7px gray; }
   .navbar ul {
     margin-right: 2%; }
-  .navbar .nav > li:not(#boton-contacto) {
+  .navbar .nav > li {
     margin: 0 .1em;
     text-transform: uppercase;
     background: #f8f9fa; }
-    .navbar .nav > li:not(#boton-contacto) a {
+    .navbar .nav > li a {
       font-size: 17px;
       letter-spacing: 2px;
       padding: 2.3em 1.2em;
@@ -225,7 +237,8 @@ background-image: url('../img/fondo.jpg');
 
     .navbar .nav > li:not(#boton-contacto) ul li a {
       padding: 1em;
-      text-transform: capitalize; }
+      text-transform: capitalize; 
+     }
       .navbar .nav > li:not(#boton-contacto) ul li a:hover {
         color: rgba(0, 57, 90, 0.6);
         font-weight: bold; }
@@ -713,21 +726,27 @@ transform: translate(-40%);}
 @media screen and (min-width: 280px) and (max-width: 762px) {
   .navbar .nav > li:not(#boton-contacto) {
     z-index: 30;
-    background: #263238; }
+   background-color: #ffffff; }
     .navbar .nav > li:not(#boton-contacto) a {
       padding: 1em;
-      color: white; }
+      color: #26599b;
+      font-size: 14px;}
     .navbar .nav > li:not(#boton-contacto):first-child a {
-      background: #304047;
+      background: #ffffff;
       border: none; }
     .navbar .nav > li:not(#boton-contacto) ul li a {
       padding: .3em;
-      font-size: 14px; }
+      display: block;
+			justify-content: space-between;
+			font-size: 14px;
+			text-decoration: none;
+			padding-top: -20px;
+       }
   .navbar .navbar-nav > li > .dropdown-menu {
     background: #1c2429; }
   .navbar .nav > li:not(#boton-contacto) > a:hover,
   .navbar .nav > li:not(#boton-contacto) > a:focus .nav > li:not(#boton-contacto) > a:active {
-    background: #263238;
+   
     border: none;
     color: #ec8e39; }
   .navbar #boton-contacto {
@@ -876,6 +895,142 @@ transform: translate(-40%);}
           #contacto .cu-contac #formulario form .button input {
             font-size: 17px; }
   }
+
+
+  .menusub{
+    position: absolute;
+    background: #ffffff;
+    margin: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  .menusub li a{
+    display: block;
+    padding: 2px;
+      justify-content: space-between;
+      font-size: 18px;
+    text-decoration: none;
+  }
+  .menusub li:hover{
+    visibility: visible;
+    opacity: 1;
+    padding: 10px;
+  }
+  .submenu{
+    position: absolute;
+    background: #ffffff;
+  
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  
+  .submenu li a{
+    display: block;
+    padding: 2px;
+      justify-content: space-between;
+      font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    padding: 10px;
+  }
+  
+  .prof{
+    padding: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    background-color:#275a9d ;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  @media screen and (max-width: 700px){
+    .submenu{
+    display:block;
+    position: absolute;
+    background: #ffffff;
+    margin: 0px;
+    visibility: hidden;
+    opacity: 0;
+
+    width:150px;
+    transform: translate(100%);
+  }
+    .submenu li a{
+      display: block;
+      justify-content: space-between;
+      font-size: 12px;
+      text-decoration: none;
+      padding: 0px;
+      visibility: visible;
+    }
+    
+  
+    .menu li:hover .submenu{
+      visibility: visible;
+      opacity: 1;
+  
+    }
+  
+    
+  
+    .prof{
+      padding: 20px;
+      font-size: 16px;
+      color: #ffffff;
+      background-color:#275a9d ;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 350px){
+  
+    .submenu{
+      display:block;
+      position: absolute;
+      background: #ffffff;
+      margin: -5px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1.5s;
+      width:150px;
+      height: 100%;
+    }
+      .submenu li a{
+        display: block;
+        justify-content: space-between;
+        font-size: 14px;
+        text-decoration: none;
+        padding-top: -20px;
+      }
+      
+    
+      .menu li:hover .submenu{
+        visibility: visible;
+        opacity: 1;
+    
+      }
+    
+      
+    
+      .prof{
+        padding: 20px;
+        font-size: 16px;
+        color: #ffffff;
+        background-color:#275a9d ;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+      }
+  }
+
 
 @media screen and (min-width: 763px) and (max-width: 1024px) {
   .navbar .nav > li:not(#boton-contacto) a {
@@ -2131,6 +2286,28 @@ table th {
     
   }
 
+  @media screen and (max-width:900px){
+    .accion {
+      height: 300px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 30%;
+    }
+
+      .accion .ver-mas, .accion #reparacion #cub-reparacion #modelos-epson #boton-lista, #reparacion #cub-reparacion #modelos-epson .accion #boton-lista {
+        background: #ec8e39;
+        color: white;
+        margin: 0;
+        width: 100%;
+        font-size: 18px; }
+        .accion p {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2px; }
+    
+  }
+
+
 
   @media screen and (max-width:375px){
     .accion {
@@ -2222,289 +2399,76 @@ table th {
 
 
 
-@media screen and (max-width : 420px){
+    @media screen and (max-width : 900px){
   
-  #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
-  
-    height: 950px;
-    padding: 3em 4em;
-    font-size: 18px;
-    color: #607D8B; }
-    #cont-mant-pc{
-      margin-top: 90px;
-    }
-    #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
-      font-size: 35px;
-      color: #4b626d;
-      margin: .5em 0; }
-    #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
-      width: 70%; }
-  
-  #reparaciones {
-    height: 1520px;
-    background: #263238;
-    color: #ECEFF1;
-    position: relative; }
-    #reparaciones img {
-      width: 100%;
-      position: absolute;
-      top: 25%; }
-    #reparaciones h2 {
-      color: white; }
-    #reparaciones h3 {
-      font-size: 30px;
-      font-weight: bold; }
-    #reparaciones li {
-      list-style: none;
-      padding: .4em; }
-      #reparaciones li span {
-        font-size: 25px;
-        margin-right: .3em; }
-  
-  #equipos-demandados {
-    background: #ECEFF1;
-    height: 300px; }
-    #equipos-demandados h2 {
-      margin-bottom: 1em; }
-    #equipos-demandados img {
-      margin: auto; }
-    #equipos-demandados #equip-1 {
-      width: 30%; }
-    #equipos-demandados #equip-2 {
-      width: 55%; }
-    #equipos-demandados #equip-3 {
-      width: 65%; }
-  
-  #soporte img {
-    width: 80%; }
-  
-  #cont-pnp {
-    height: 450px;
-    padding: 3em 4em;
-    font-size: 18px;
-    color: #607D8B; }
-    #cont-pnp h2 {
-      font-size: 35px;
-      color: #4b626d;
-      margin: .5em 0; }
-    #cont-pnp img {
-      width: 70%; }
-  
-  }
-
-
-  
-@media screen and (max-width : 520px){
-  
-  #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
-  
-    height: 950px;
-    padding: 3em 4em;
-    font-size: 18px;
-    color: #607D8B; }
-    #cont-mant-pc{
-      margin-top: 90px;
-    }
-    #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
-      font-size: 35px;
-      color: #4b626d;
-      margin: .5em 0; }
-    #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
-      width: 70%; }
-  
-  #reparaciones {
-    height: 1520px;
-    background: #263238;
-    color: #ECEFF1;
-    position: relative; }
-    #reparaciones img {
-      width: 100%;
-      position: absolute;
-      top: 25%; }
-    #reparaciones h2 {
-      color: white; }
-    #reparaciones h3 {
-      font-size: 30px;
-      font-weight: bold; }
-    #reparaciones li {
-      list-style: none;
-      padding: .4em; }
-      #reparaciones li span {
-        font-size: 25px;
-        margin-right: .3em; }
-  
-  #equipos-demandados {
-    background: #ECEFF1;
-    height: 300px; }
-    #equipos-demandados h2 {
-      margin-bottom: 1em; }
-    #equipos-demandados img {
-      margin: auto; }
-    #equipos-demandados #equip-1 {
-      width: 30%; }
-    #equipos-demandados #equip-2 {
-      width: 55%; }
-    #equipos-demandados #equip-3 {
-      width: 65%; }
-  
-  #soporte img {
-    width: 80%; }
-  
-  #cont-pnp {
-    height: 450px;
-    padding: 3em 4em;
-    font-size: 18px;
-    color: #607D8B; }
-    #cont-pnp h2 {
-      font-size: 35px;
-      color: #4b626d;
-      margin: .5em 0; }
-    #cont-pnp img {
-      width: 70%; }
-  
-  }
-
-  
-@media screen and (max-width : 670px){
-  
-  #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
-  
-    height: 950px;
-    padding: 3em 4em;
-    font-size: 18px;
-    color: #607D8B; }
-    #cont-mant-pc{
-      margin-top: 90px;
-    }
-    #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
-      font-size: 35px;
-      color: #4b626d;
-      margin: .5em 0; }
-    #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
-      width: 70%; }
-  
-  #reparaciones {
-    height: 1520px;
-    background: #263238;
-    color: #ECEFF1;
-    position: relative; }
-    #reparaciones img {
-      width: 100%;
-      position: absolute;
-      top: 25%; }
-    #reparaciones h2 {
-      color: white; }
-    #reparaciones h3 {
-      font-size: 30px;
-      font-weight: bold; }
-    #reparaciones li {
-      list-style: none;
-      padding: .4em; }
-      #reparaciones li span {
-        font-size: 25px;
-        margin-right: .3em; }
-  
-  #equipos-demandados {
-    background: #ECEFF1;
-    height: 300px; }
-    #equipos-demandados h2 {
-      margin-bottom: 1em; }
-    #equipos-demandados img {
-      margin: auto; }
-    #equipos-demandados #equip-1 {
-      width: 30%; }
-    #equipos-demandados #equip-2 {
-      width: 55%; }
-    #equipos-demandados #equip-3 {
-      width: 65%; }
-  
-  #soporte img {
-    width: 80%; }
-  
-  #cont-pnp {
-    height: 450px;
-    padding: 3em 4em;
-    font-size: 18px;
-    color: #607D8B; }
-    #cont-pnp h2 {
-      font-size: 35px;
-      color: #4b626d;
-      margin: .5em 0; }
-    #cont-pnp img {
-      width: 70%; }
-  
-  }
-
-
-  @media screen and (max-width : 700px){
-  
-    #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
-    
-      height: 950px;
-      padding: 3em 4em;
-      font-size: 18px;
-      color: #607D8B; }
-      #cont-mant-pc{
-        margin-top: 90px;
+      #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+      
+        height: 650px;
+        padding: 3em 4em;
+        font-size: 18px;
+        color: #607D8B; }
+        #cont-mant-pc{
+          margin-top: 90px;
+        }
+        #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+          font-size: 35px;
+          color: #4b626d;
+          margin: .5em 0; }
+        #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+          width: 70%; }
+      
+      #reparaciones {
+        height: 920px;
+        background: #263238;
+        color: #ECEFF1;
+        position: relative; }
+        #reparaciones img {
+          width: 100%;
+          position: absolute;
+          top: 25%; }
+        #reparaciones h2 {
+          color: white; }
+        #reparaciones h3 {
+          font-size: 30px;
+          font-weight: bold; }
+        #reparaciones li {
+          list-style: none;
+          padding: .4em; }
+          #reparaciones li span {
+            font-size: 25px;
+            margin-right: .3em; }
+      
+      #equipos-demandados {
+        background: #ECEFF1;
+        height: 300px; }
+        #equipos-demandados h2 {
+          margin-bottom: 1em; }
+        #equipos-demandados img {
+          margin: auto; }
+        #equipos-demandados #equip-1 {
+          width: 30%; }
+        #equipos-demandados #equip-2 {
+          width: 55%; }
+        #equipos-demandados #equip-3 {
+          width: 65%; }
+      
+      #soporte img {
+        width: 80%; }
+      
+      #cont-pnp {
+        height: 450px;
+        padding: 3em 4em;
+        font-size: 18px;
+        color: #607D8B; }
+        #cont-pnp h2 {
+          font-size: 35px;
+          color: #4b626d;
+          margin: .5em 0; }
+        #cont-pnp img {
+          width: 70%; }
+      
       }
-      #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
-        font-size: 35px;
-        color: #4b626d;
-        margin: .5em 0; }
-      #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
-        width: 70%; }
-    
-    #reparaciones {
-      height: 1520px;
-      background: #263238;
-      color: #ECEFF1;
-      position: relative; }
-      #reparaciones img {
-        width: 100%;
-        position: absolute;
-        top: 25%; }
-      #reparaciones h2 {
-        color: white; }
-      #reparaciones h3 {
-        font-size: 30px;
-        font-weight: bold; }
-      #reparaciones li {
-        list-style: none;
-        padding: .4em; }
-        #reparaciones li span {
-          font-size: 25px;
-          margin-right: .3em; }
-    
-    #equipos-demandados {
-      background: #ECEFF1;
-      height: 300px; }
-      #equipos-demandados h2 {
-        margin-bottom: 1em; }
-      #equipos-demandados img {
-        margin: auto; }
-      #equipos-demandados #equip-1 {
-        width: 30%; }
-      #equipos-demandados #equip-2 {
-        width: 55%; }
-      #equipos-demandados #equip-3 {
-        width: 65%; }
-    
-    #soporte img {
-      width: 80%; }
-    
-    #cont-pnp {
-      height: 450px;
-      padding: 3em 4em;
-      font-size: 18px;
-      color: #607D8B; }
-      #cont-pnp h2 {
-        font-size: 35px;
-        color: #4b626d;
-        margin: .5em 0; }
-      #cont-pnp img {
-        width: 70%; }
-    
-    }
+ 
 
 
     @media screen and (max-width : 770px){
@@ -2578,75 +2542,364 @@ table th {
       }
 
 
-      @media screen and (max-width : 900px){
+    
+
+
+        @media screen and (max-width : 700px){
   
-        #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
-        
-          height: 650px;
-          padding: 3em 4em;
-          font-size: 18px;
-          color: #607D8B; }
-          #cont-mant-pc{
-            margin-top: 90px;
+          #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+          
+            height: 950px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-mant-pc{
+              margin-top: 90px;
+            }
+            #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+              width: 70%; }
+          
+          #reparaciones {
+            height: 1520px;
+            background: #263238;
+            color: #ECEFF1;
+            position: relative; }
+            #reparaciones img {
+              width: 100%;
+              position: absolute;
+              top: 25%; }
+            #reparaciones h2 {
+              color: white; }
+            #reparaciones h3 {
+              font-size: 30px;
+              font-weight: bold; }
+            #reparaciones li {
+              list-style: none;
+              padding: .4em; }
+              #reparaciones li span {
+                font-size: 25px;
+                margin-right: .3em; }
+          
+          #equipos-demandados {
+            background: #ECEFF1;
+            height: 300px; }
+            #equipos-demandados h2 {
+              margin-bottom: 1em; }
+            #equipos-demandados img {
+              margin: auto; }
+            #equipos-demandados #equip-1 {
+              width: 30%; }
+            #equipos-demandados #equip-2 {
+              width: 55%; }
+            #equipos-demandados #equip-3 {
+              width: 65%; }
+          
+          #soporte img {
+            width: 80%; }
+          
+          #cont-pnp {
+            height: 450px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-pnp h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-pnp img {
+              width: 70%; }
+          
           }
-          #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
-            font-size: 35px;
-            color: #4b626d;
-            margin: .5em 0; }
-          #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
-            width: 70%; }
+  
+        @media screen and (max-width : 670px){
+  
+          #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+          
+            height: 750px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-mant-pc{
+              margin-top: 90px;
+            }
+            #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+              width: 70%; }
+          
+          #reparaciones {
+            height: 1000px;
+            background: #263238;
+            color: #ECEFF1;
+            position: relative; }
+            #reparaciones img {
+              width: 100%;
+              position: absolute;
+              top: 25%; }
+            #reparaciones h2 {
+              color: white; }
+            #reparaciones h3 {
+              font-size: 30px;
+              font-weight: bold; }
+            #reparaciones li {
+              list-style: none;
+              padding: .4em; }
+              #reparaciones li span {
+                font-size: 25px;
+                margin-right: .3em; }
+          
+          #equipos-demandados {
+            background: #ECEFF1;
+            height: 300px; }
+            #equipos-demandados h2 {
+              margin-bottom: 1em; }
+            #equipos-demandados img {
+              margin: auto; }
+            #equipos-demandados #equip-1 {
+              width: 30%; }
+            #equipos-demandados #equip-2 {
+              width: 55%; }
+            #equipos-demandados #equip-3 {
+              width: 65%; }
+          
+          #soporte img {
+            width: 80%; }
+          
+          #cont-pnp {
+            height: 450px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-pnp h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-pnp img {
+              width: 70%; }
+          
+          }
+
+
+        @media screen and (max-width : 520px){
+  
+          #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+          
+            height: 950px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-mant-pc{
+              margin-top: 90px;
+            }
+            #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+              width: 70%; }
+          
+          #reparaciones {
+            height: 1520px;
+            background: #263238;
+            color: #ECEFF1;
+            position: relative; }
+            #reparaciones img {
+              width: 100%;
+              position: absolute;
+              top: 25%; }
+            #reparaciones h2 {
+              color: white; }
+            #reparaciones h3 {
+              font-size: 30px;
+              font-weight: bold; }
+            #reparaciones li {
+              list-style: none;
+              padding: .4em; }
+              #reparaciones li span {
+                font-size: 25px;
+                margin-right: .3em; }
+          
+          #equipos-demandados {
+            background: #ECEFF1;
+            height: 300px; }
+            #equipos-demandados h2 {
+              margin-bottom: 1em; }
+            #equipos-demandados img {
+              margin: auto; }
+            #equipos-demandados #equip-1 {
+              width: 30%; }
+            #equipos-demandados #equip-2 {
+              width: 55%; }
+            #equipos-demandados #equip-3 {
+              width: 65%; }
+          
+          #soporte img {
+            width: 80%; }
+          
+          #cont-pnp {
+            height: 450px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-pnp h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-pnp img {
+              width: 70%; }
+          
+          }
         
-        #reparaciones {
-          height: 920px;
-          background: #263238;
-          color: #ECEFF1;
-          position: relative; }
-          #reparaciones img {
-            width: 100%;
-            position: absolute;
-            top: 25%; }
-          #reparaciones h2 {
-            color: white; }
-          #reparaciones h3 {
-            font-size: 30px;
-            font-weight: bold; }
-          #reparaciones li {
-            list-style: none;
-            padding: .4em; }
-            #reparaciones li span {
-              font-size: 25px;
-              margin-right: .3em; }
+
+
+        @media screen and (max-width : 420px){
+  
+          #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+          
+            height: 950px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-mant-pc{
+              margin-top: 90px;
+            }
+            #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+              width: 70%; }
+          
+          #reparaciones {
+            height: 1520px;
+            background: #263238;
+            color: #ECEFF1;
+            position: relative; }
+            #reparaciones img {
+              width: 100%;
+              position: absolute;
+              top: 25%; }
+            #reparaciones h2 {
+              color: white; }
+            #reparaciones h3 {
+              font-size: 30px;
+              font-weight: bold; }
+            #reparaciones li {
+              list-style: none;
+              padding: .4em; }
+              #reparaciones li span {
+                font-size: 25px;
+                margin-right: .3em; }
+          
+          #equipos-demandados {
+            background: #ECEFF1;
+            height: 300px; }
+            #equipos-demandados h2 {
+              margin-bottom: 1em; }
+            #equipos-demandados img {
+              margin: auto; }
+            #equipos-demandados #equip-1 {
+              width: 30%; }
+            #equipos-demandados #equip-2 {
+              width: 55%; }
+            #equipos-demandados #equip-3 {
+              width: 65%; }
+          
+          #soporte img {
+            width: 80%; }
+          
+          #cont-pnp {
+            height: 450px;
+            padding: 3em 4em;
+            font-size: 18px;
+            color: #607D8B; }
+            #cont-pnp h2 {
+              font-size: 35px;
+              color: #4b626d;
+              margin: .5em 0; }
+            #cont-pnp img {
+              width: 70%; }
+          
+          }
         
-        #equipos-demandados {
-          background: #ECEFF1;
-          height: 300px; }
-          #equipos-demandados h2 {
-            margin-bottom: 1em; }
-          #equipos-demandados img {
-            margin: auto; }
-          #equipos-demandados #equip-1 {
-            width: 30%; }
-          #equipos-demandados #equip-2 {
-            width: 55%; }
-          #equipos-demandados #equip-3 {
-            width: 65%; }
         
-        #soporte img {
-          width: 80%; }
-        
-        #cont-pnp {
-          height: 450px;
-          padding: 3em 4em;
-          font-size: 18px;
-          color: #607D8B; }
-          #cont-pnp h2 {
-            font-size: 35px;
-            color: #4b626d;
-            margin: .5em 0; }
-          #cont-pnp img {
-            width: 70%; }
-        
-        }
+          
+
+@media screen and (max-width : 375px){
+  
+  #cont-mant-pc, #reparaciones, #equipos-demandados, #soporte {
+  
+    height: 950px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-mant-pc{
+      margin-top: 90px;
+    }
+    #cont-mant-pc h2, #reparaciones h2, #equipos-demandados h2, #soporte h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-mant-pc img, #reparaciones img, #equipos-demandados img, #soporte img {
+      width: 70%; }
+  
+  #reparaciones {
+    height: 1600px;
+    background: #263238;
+    color: #ECEFF1;
+    position: relative; }
+    #reparaciones img {
+      width: 100%;
+      position: absolute;
+      top: 25%; }
+    #reparaciones h2 {
+      color: white; }
+    #reparaciones h3 {
+      font-size: 30px;
+      font-weight: bold; }
+    #reparaciones li {
+      list-style: none;
+      padding: .4em; }
+      #reparaciones li span {
+        font-size: 25px;
+        margin-right: .3em; }
+  
+  #equipos-demandados {
+    background: #ECEFF1;
+    height: 300px; }
+    #equipos-demandados h2 {
+      margin-bottom: 1em; }
+    #equipos-demandados img {
+      margin: auto; }
+    #equipos-demandados #equip-1 {
+      width: 30%; }
+    #equipos-demandados #equip-2 {
+      width: 55%; }
+    #equipos-demandados #equip-3 {
+      width: 65%; }
+  
+  #soporte img {
+    width: 80%; }
+  
+  #cont-pnp {
+    height: 450px;
+    padding: 3em 4em;
+    font-size: 18px;
+    color: #607D8B; }
+    #cont-pnp h2 {
+      font-size: 35px;
+      color: #4b626d;
+      margin: .5em 0; }
+    #cont-pnp img {
+      width: 70%; }
+  
+  }
 
       
 
@@ -2755,7 +3008,9 @@ table th {
     background-repeat: no-repeat;
     background-size: cover; }
 
-
+    .cont-social-media3{
+      margin-top: 90px;
+    }
 
 @media screen and (max-width: 420px) {
   .cont-social-media, #productos-social, #promocion-social {
@@ -4774,6 +5029,472 @@ transform: translateY(20px);
 }
 
 /* RESPONSIVE*/
+
+
+@media screen and (max-width: 870px){
+   
+ 
+  .slider {
+      display: flex;
+      width: 400%;
+      height: 40vw;
+      margin-left: -100%;
+  }
+  .carousel__anterior,
+  .carousel__siguiente {
+  
+      position: absolute;
+      width: 6vw;
+      height: 7vw;
+      background: rgba(148, 159, 160, 0.4);
+      color: #EC8E39;
+      top: 40%;
+      transform: translateY(-60%);
+      font-size: 3vh;
+      font-weight: bold;
+      font-family: monospace;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+ 
+ 
+  
+  .descripcion {
+      display: inline-block;
+      position: relative;
+      font-size: 18px;
+      color: #000000;
+      padding-right: 20%;
+
+      width: 650px;
+      
+
+  }
+  .mySlides img {
+      width: 40%;
+      height: 70%;
+  margin-top: 100px;
+  transform: translate(40%);
+  }
+  .circulo {
+      background: none;
+      box-shadow: none;
+      width: 0;
+      height: 0;
+  }
+
+  .categoria {
+      font-size: 20px;
+  }
+  .descripcion h2 {
+      font-size: 20px;
+  }
+  .descripcion b {
+      color: #222222;
+      font-size: 20px;
+  }
+  .descripcion p {
+      line-height: 5vw;
+  }
+  .carousel__lista {
+      position: relative;
+      top: 15px;
+  }
+  
+  .texto {
+  
+      text-align: justify;
+      font-size: 15px;
+  }
+.sliderprod{
+  text-align: left;
+}
+.carousel__contenedor{
+  margin-top: -100px;
+}
+.slider_img {
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  width: 90px;
+  height: 280px;
+}
+
+}
+
+
+
+@media screen and (max-width: 775px){
+   
+ 
+  .slider {
+      display: flex;
+      width: 400%;
+      height: 40vw;
+      margin-left: -100%;
+  }
+  .carousel__anterior,
+  .carousel__siguiente {
+  
+      position: absolute;
+      width: 6vw;
+      height: 7vw;
+      background: rgba(148, 159, 160, 0.4);
+      color: #EC8E39;
+      top: 40%;
+      transform: translateY(-60%);
+      font-size: 3vh;
+      font-weight: bold;
+      font-family: monospace;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+ 
+ 
+  
+  .descripcion {
+      display: inline-block;
+      position: relative;
+      font-size: 18px;
+      color: #000000;
+      padding-right: 20%;
+
+      width: 600px;
+      
+
+  }
+  .mySlides img {
+      width: 40%;
+      height: 40%;
+  margin-top: 100px;
+  transform: translate(30%);
+  }
+  .circulo {
+      background: none;
+      box-shadow: none;
+      width: 0;
+      height: 0;
+  }
+
+  .categoria {
+      font-size: 20px;
+  }
+  .descripcion h2 {
+      font-size: 20px;
+  }
+  .descripcion b {
+      color: #222222;
+      font-size: 20px;
+  }
+  .descripcion p {
+      line-height: 5vw;
+  }
+  .carousel__lista {
+      position: relative;
+      top: 15px;
+  }
+  
+  .texto {
+  
+      text-align: justify;
+      font-size: 15px;
+  }
+.sliderprod{
+  text-align: left;
+}
+.carousel__contenedor{
+  margin-top: -100px;
+}
+.slider_img {
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+
+  width: 100px;
+  height: 280px;
+}
+
+}
+
+@media screen and (max-width: 670px){
+   
+ 
+  .slider {
+      display: flex;
+      width: 400%;
+      height: 40vw;
+      margin-left: -100%;
+  }
+  .carousel__anterior,
+  .carousel__siguiente {
+  
+      position: absolute;
+      width: 6vw;
+      height: 7vw;
+      background: rgba(148, 159, 160, 0.4);
+      color: #EC8E39;
+      top: 40%;
+      transform: translateY(-60%);
+      font-size: 3vh;
+      font-weight: bold;
+      font-family: monospace;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+ 
+ 
+  
+  .descripcion {
+      display: inline-block;
+      position: relative;
+      font-size: 15px;
+      color: #000000;
+      padding-right: 20%;
+
+      width: 500px;
+      
+
+  }
+  .mySlides img {
+      width: 50%;
+      height: 50%;
+  margin-top: 100px;
+  }
+  .circulo {
+      background: none;
+      box-shadow: none;
+      width: 0;
+      height: 0;
+  }
+
+  .categoria {
+      font-size: 20px;
+  }
+  .descripcion h2 {
+      font-size: 20px;
+  }
+  .descripcion b {
+      color: #222222;
+      font-size: 20px;
+  }
+  .descripcion p {
+      line-height: 5vw;
+  }
+  .carousel__lista {
+      position: relative;
+      top: 15px;
+  }
+  
+  .texto {
+  
+      text-align: justify;
+      font-size: 15px;
+  }
+.sliderprod{
+  text-align: left;
+}
+.carousel__contenedor{
+  margin-top: -100px;
+}
+.slider_img {
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  width: 90px;
+  height: 280px;
+}
+
+}
+
+@media screen and (max-width: 520px){
+   
+ 
+  .slider {
+      display: flex;
+      width: 400%;
+      height: 40vw;
+      margin-left: -100%;
+  }
+  .carousel__anterior,
+  .carousel__siguiente {
+  
+      position: absolute;
+      width: 6vw;
+      height: 7vw;
+      background: rgba(148, 159, 160, 0.4);
+      color: #EC8E39;
+      top: 40%;
+      transform: translateY(-60%);
+      font-size: 3vh;
+      font-weight: bold;
+      font-family: monospace;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+ 
+ 
+  
+  .descripcion {
+      display: inline-block;
+      position: relative;
+      font-size: 15px;
+      color: #000000;
+      padding-right: 20%;
+
+      width: 450px;
+      
+
+  }
+  .mySlides img {
+      width: 50%;
+      height: 50%;
+  margin-top: 100px;
+  }
+  .circulo {
+      background: none;
+      box-shadow: none;
+      width: 0;
+      height: 0;
+  }
+
+  .categoria {
+      font-size: 20px;
+  }
+  .descripcion h2 {
+      font-size: 20px;
+  }
+  .descripcion b {
+      color: #222222;
+      font-size: 20px;
+  }
+  .descripcion p {
+      line-height: 5vw;
+  }
+  .carousel__lista {
+      position: relative;
+      top: 15px;
+  }
+  
+  .texto {
+  
+      text-align: justify;
+      font-size: 15px;
+  }
+.sliderprod{
+  text-align: left;
+}
+.carousel__contenedor{
+  margin-top: -100px;
+}
+.slider_img {
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  width: 90px;
+  height: 280px;
+}
+
+}
+
+@media screen and (max-width: 420px){
+   
+ 
+  .slider {
+      display: flex;
+      width: 400%;
+      height: 40vw;
+      margin-left: -100%;
+  }
+  .carousel__anterior,
+  .carousel__siguiente {
+  
+      position: absolute;
+      width: 6vw;
+      height: 7vw;
+      background: rgba(148, 159, 160, 0.4);
+      color: #EC8E39;
+      top: 40%;
+      transform: translateY(-60%);
+      font-size: 3vh;
+      font-weight: bold;
+      font-family: monospace;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+ 
+ 
+  
+  .descripcion {
+      display: inline-block;
+      position: relative;
+      font-size: 15px;
+      color: #000000;
+      padding-right: 20%;
+
+      width: 300px;
+      
+
+  }
+  .mySlides img {
+      width: 50%;
+      height: 50%;
+  margin-top: 100px;
+  }
+  .circulo {
+      background: none;
+      box-shadow: none;
+      width: 0;
+      height: 0;
+  }
+
+  .categoria {
+      font-size: 20px;
+  }
+  .descripcion h2 {
+      font-size: 20px;
+  }
+  .descripcion b {
+      color: #222222;
+      font-size: 20px;
+  }
+  .descripcion p {
+      line-height: 5vw;
+  }
+  .carousel__lista {
+      position: relative;
+      top: 15px;
+  }
+  
+  .texto {
+  
+      text-align: justify;
+      font-size: 15px;
+  }
+.sliderprod{
+  text-align: left;
+}
+.carousel__contenedor{
+  margin-top: -100px;
+}
+.slider_img {
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  width: 90px;
+  height: 280px;
+}
+
+}
+
 
 @media screen and (max-width: 375px){
    
