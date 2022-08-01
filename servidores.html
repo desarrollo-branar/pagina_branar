@@ -9,105 +9,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="icon" href="img/logo-branar.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+      <link rel="stylesheet" type="text/css" href="./css/icon.css">
+      <link rel="stylesheet" type="text/css" href="./css/menu.css">
+      <script src="http://code.jquery.com/jquery-latest.js"></script><script src="./js/menu.js"></script>
+      <link rel="icon" href="img/logo-branar.ico">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/proyecto-branar/iconos.css">
   <script src="./js/main.js"></script>
+  <script src="./js/menunav.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+
+
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 
 </head>
 <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0" nonce="OqbZNH4G"></script>
+    <header>
+      <div class="menu_bar">
+          <a href="#" class="bt-menu"><img src="./img/logo.png" alt=""><span class="icon-list2"><i class="fa-solid fa-bars"></i></span></a>
+      </div>
+  
+      <nav>
+          <ul>
+              <li><a href="" class="log"><img src="./img/logo.png" alt=""></a></li>
+              <li><a href="index.html"><span class="icon-house"></span>Inicio</a></li>
+             
+              <li class="submenu">
+                  <a href="#"><span class="icon-rocket"></span>Servicios<span class="caret icon-arrow-down6"></span></a>
+                  <ul class="children">
+                      <li><a href="mantenimiento-impresoras-epson.html">Csa Epson <span class="icon-dot"></span></a></li>
+                      <li><a href="instalacion-redes.html">infraestructura <span class="icon-dot"></span></a></li>
+                      <li><a href="social-media.html">Marketing <span class="icon-dot"></span></a></li>
+                      <li><a href="software-administrativo.html">Profit Plus <span class="icon-dot"></span></a></li>
+                      <li><a href="mantenimiento-computadoras.html">Service-Pack <span class="icon-dot"></span></a></li>
+                      <li><a href="servidores.html">Virtualización <span class="icon-dot"></span></a></li>
+                  </ul>
+              </li>
+              <li class="submenu">
+                  <a href="#"><span class="icon-rocket"></span>Productos<span class="caret icon-arrow-down6"></span></a>
+                  <ul class="children">
+                      <li><a href="productos.html#2">Equipos <span class="icon-dot"></span></a></li>
+                      <li><a href="productos.html#3">Repuestos<span class="icon-dot"></span></a></li>
+                      <li><a href="productos.html#4">Consumibles <span class="icon-dot"></span></a></li>
+                      <li><a href="productos.html#5">Redes <span class="icon-dot"></span></a></li>
+                      <li><a href="productos.html#7">Seguridad <span class="icon-dot"></span></a></li>
+                      <li><a href="productos.html#8">Accesorios <span class="icon-dot"></span></a></li>
+                  </ul>
+              </li>
+              <li><a href="sobre-nosotros.html"><span class="icon-house"></span>Nosotros</a></li>
+              <li><a href="index.html#contacto"><span class="icon-mail"></span>Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
 
-	<div class="contenedor">
-		<header class="row">
+
+    <div class="social-bar">
     
-			<nav class="navbar navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>                        
-						</button>
-						<a class="navbar-brand" href="index.html">
-							<div id="logo" class="col-md-2 col-xs-2 col-sm-3">
-								<figure>
-									<img src="img/logo.png" alt="logo-Branar" title="Branar - Servicios en Tecnología" >
-								</figure>
-							</div> 
-						</a>
-					</div>
-					<div class="collapse navbar-collapse menu" id="menu">
-						        <ul class="nav navbar-nav navbar-right ">
-                          <li><a href="index.html" >Inicio</a></li>
-                          <li class="dropdown dropdown-large">
-                          <a href="#" class="active">Servicios <b class="caret"></b></a>
-                            <ul class="dropdown-menu dropdown-menu-large ">
-                                <li class="col-sm-6">
-                                    <ul>
-       
-                                      <li><a href="epson.html">Epson</a></li>
-                                      <li><a href="infra.html">Infraestructura</a></li>
-                                      <li><a href="social.html">Marketing</a></li>
-                                    
-                                      
-                                      <li><a href="profit.html">Profit Plus</a></li>
-                                  </ul>
-                                </li>
-                                <li class="col-sm-6">
-                                    <ul>
-                                        
-                                           
-                                      <li><a href="servi.html">Service-Pack</a></li>
-                                      <li><a href="servidores.html">Virtualización</a></li>
-                                       </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown dropdown-large">
-                            <a href="#">Productos <b class="caret"></b></a>
-                              <ul class="dropdown-menu dropdown-menu-large row">
-                                  <li class="col-sm-6">
-                                      <ul>
-                                        
-                                        <li><a href="productos.html#1">Equipos</a></li>
-                                        <li><a href="productos.html#2">Repuestos</a></li>
-                                        <li><a href="productos.html#3">Consumibles</a></li>
-                                       
-                                     
-                                        <li><a href="productos.html#4">Redes</a></li>
-                                      </ul>
-                                  </li>
-                                  <li class="col-sm-6">
-                                      <ul>
-                                        <li><a href="productos.html#5">Infraestructura</a></li>
-                                        
-                                        <li><a href="productos.html#6">Seguridad</a></li>
-                                      
-                                      
-
-                                        <li><a href="productos.html#7">Accesorios</a></li>
-                                           </ul>
-                                  </li>
-                              </ul>
-                          </li>
-                      
-                          <li><a href="nosotros.html">Nosotros</a></li>
-                          <li><a href="index.html#3">Contacto</a></li>
-                          <li><a href="https://forms.office.com/r/e0qVz4qn20">Help Desk</a></li>
-                                   </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-   
+      <a class="icon icon-insta" href="https://www.instagram.com/contactobranar/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a class="icon icon-facebook" href="https://es-la.facebook.com/BranarContacto/" target="_blank"><i class="fa fa-facebook-square"> <br></i></a>
+      <a class="icon icon-youtube" href="https://ve.linkedin.com/company/branar-c-a-" target="_blank"><i class="fa fa-linkedin"></i></a> 
+      <a class="icon icon-ws" href="https://wa.me/message/GZDFOHPWZTTAB1" target="_blank"><i class="fa fa-whatsapp"></i></a>
+</div>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    
+    <br>
+    <br>
+    <br>
+    <br>
     <section class="cont-social-media row cont-social-media2">
         <div class="col-md-6 col-md-offset-1">
           <h2>Servidores virtuales</h2>
@@ -128,60 +104,74 @@
             </p>
             </div>
           </section>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-columna">
-            <a href="#"><img src="img/Logooo.png" class="logooo"></a>
+
+
+<br>
+<br>
+<br>
+
+          <section class="accion row">
+            <div class="col-md-7">
+              <p>¡Obtenga su servicio Hosting y Correo corporativo con nosotros!</p>
             </div>
-            <div class="footer-columna">
-                <h3>Dirección</h3>
-               <h4> <span class="fa fa-map-marker"></span> Avenida Libertador, cruce con calle 41 local #41-12, sector oeste. Barquisimeto, Estado Lara.</h4>
-                <br>
-               <h4><span class="fa fa-phone"></span> 0251-4453083 - +58 412-3290719</h4>
+            <div class="col-md-4">
+              <a href="https://forms.office.com/r/yzJLFu9ctY">
+                <p class="ver-mas">Solicitar servicio</p>
+              </a>
+            </div>
+          </section>
+
+          <footer>
+            <div class="row">
+             <div class="col-md-3 col-sm-4">
+              <img src="img/logoblanco.png" class="img-responsive" alt="Logo fondo oscuro de branar" title="Branar - Servicios en Tecnología">
+              <p class="letra-blanca">Nuestra misión es suplir a nuestros clientes con soluciones tecnológicas actualizadas y satisfacer todos sus requerimientos infomáticos relacionados con:
                <br>
-                <h4><span class="fa fa-envelope"></span> contacto@branar.com</h4>
-            </div>       
-            
-            <div class="footer-columna">
-                <ul class="footer-links">
-                    <h3>Enlaces de interés</h3>
-                        
-                       <h4> <li><a href="prod.html">Nuestros Productos</a></li></h4>
-                        <br>
-                       <h4><li><a href="#">Nuestros servicios</a></li></h4>
-                       <br>
-                       <h4> <li><a href="index.html#4">Nuestros Contactos</a></li></h4>
-                        
-                      </ul>
-                    
-                  </div>
-        </div>
-        <hr>
-        <br>
-                <div class="container-footer">
-                  <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <div class="centrarr">
-                      <p class="copyright-text">Copyright &copy; - 2022 Derechos reservados por 
-                  <a href="#">Branar C.A.</a>
-                  </p></div>
-                    </div>
-          
-                    <div class="col-md-4 col-sm-6 col-xs-15 right social-icons cent3">
-                      <ul class="social-icons">
-                        <li><a class="insta" href="https://www.instagram.com/contactobranar/?hl=es"><i class="fa fa-instagram"></i></a></li>
-                        <li><a class="facebook" href="https://es-la.facebook.com/BranarContacto/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="linkedin" href="https://ve.linkedin.com/company/branar-c-a-"><i class="fa fa-linkedin"></i></a></li>   
-                    <li><a class="ws" href="https://wa.me/message/GZDFOHPWZTTAB1" ><i class="fa fa-whatsapp"></i></a></li>   
-                </ul>
-                    <br>
-                  
-                    </div>
-                  </div>
-                </div>
+               -El control de los procesos.
+               <br>
+               -La comunicación.
+               <br>
+               -Los sistemas de gestión.
+               <br>
+               -La seguridad de los recursos.</p>
             </div>
-          </footer>
+            <div class="col-md-3 col-sm-4">
+              <h5>Menú</h5>
+              <ul>
+               <li><a href="index.html" class="activo">Inicio</a></li>
+               <li><a href="servicios.html">Servicios</a></li>
+               <li><a href="servicios.html">Productos</a></li>
+               <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+               
+               <li><a href="index.html#contacto">Contacto</a></li>
+             </ul>
+           </div>
+           <div class="col-md-3 col-sm-4">
+            <h5>Servicios</h5>
+            <ul>
+              <li><a href="mantenimiento-impresoras-epson.html" >CSA Epson</a></li>
+              <li><a href="instalacion-redes.html">Redes e infraestructura</a></li>
+              <li><a href="social-media.html">Marketing Digital</a></li>
+              <li><a href="software-administrativo.html">Sistema administrativo Profit Plus</a></li>
+              <li><a href="mantenimiento-computadoras.html">Mantenimiento de equipos</a></li>
+              <li><a href="servidores.html">Virtualización</a></li>
+              
+           </ul>
+           </div>
+           <div class="col-md-3">
+            <h5>Contacto</h5>
+            <ul>
+             <li> <span class="letra-blanca">Teléfono: </span> (0251) – 4453083 / 0412 - 3290719</li>
+             <li> <span class="letra-blanca">Dirección: </span> Av. Libertador, Cruce Calle 41, Local 41-12. Barquisimeto-Lara.</li>
+             <li> <span class="letra-blanca">Correo: </span> contacto@branar.com</li>
+           </ul>
+           </div>
+           </div>
+           <div class="row" id="pie-pagina">
+             <hr>
+             <p>&copy; 2022 Branar C.A. Todos los derechos reservados</p>
+           </div>
+           </footer>
     
     <a href="nuevo/index.php"></a>
     

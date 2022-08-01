@@ -10,7 +10,7 @@ html {
 	position: fixed;
 	right: 0;
 	top: 20%;
-	font-size: 1.5rem;
+	font-size: 3rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -26,24 +26,24 @@ html {
 }
 
 .icon-facebook {
-	background: #2e406e;
+	background: #ec8e39;
 }
 
 .icon-twitter {
-	background: #339ec5;
+	background: #ec8e39;
 }
 
 .icon-youtube {
-	background: #007cb6;
+	background: #ec8e39;
 }
 
-.icon-instagram {
-	background: rgb(228, 64, 94);
+.icon-insta {
+	background: #ec8e39;
 }
 
 
 .icon-ws{
-    background:#00bb2d;
+    background:#ec8e39;
 }
 .icon:first-child {
 	border-radius: 1rem 0 0 0;
@@ -72,7 +72,7 @@ html {
 		position: fixed;
 		right: 0;
 		top: 25%;
-		font-size: 1.2rem;
+		font-size: 3rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
