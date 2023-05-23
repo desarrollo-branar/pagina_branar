@@ -66,7 +66,7 @@
             <div class="cont-menu-logo">
                 <a href=""><img src="./assets/images/navbar-logo.png" alt="" class="menu-logo"></a>
             </div>
-            <ul>
+            <ul class="nav">
                 <li><a href="index.html" class="underline">Inicio</a></li>
                
                 <li class="menu">
@@ -94,10 +94,40 @@
                 <li><a href="sobre-nosotros.html" class="underline"><span class="icon-house"></span>Nosotros</a></li>
                 <li><a href="index.html#contacto" class="underline"><span class="icon-mail"></span>Contacto</a></li>
             </ul>
-        <div class="menu-icon inactive">
-            <ion-icon name="reorder-four-outline"></ion-icon>
-        </div>
+            <div class="menu-icon inactive">
+                <ion-icon name="reorder-four-outline" id="icon-hamburguer"></ion-icon>
+            </div>
         </nav>
+        <div class="mobile-navbar">
+            <ul>
+                <li><a href="index.html" class="underline">Inicio</a></li>
+               
+                <li class="mobile-menu">
+                    <a href="#" class="line-down underline" id="submenu-down">Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="mantenimiento-impresoras-epson.html" class="underline">Csa Epson <span class="icon-dot"></span></a></li>
+                        <li><a href="instalacion-redes.html" class="underline">infraestructura <span class="icon-dot"></span></a></li>
+                        <li><a href="social-media.html" class="underline">Marketing <span class="icon-dot"></span></a></li>
+                        <li><a href="software-administrativo.html" class="underline">Profit Plus <span class="icon-dot"></span></a></li>
+                        <li><a href="mantenimiento-computadoras.html" class="underline">Service-Pack <span class="icon-dot"></span></a></li>
+                        <li><a href="servidores.html" class="underline">Virtualización <span class="icon-dot"></span></a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu">
+                    <a href="#" class="line-down underline" id="submenu-down">Productos<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="productos.html#2" class="underline">Equipos</a></li>
+                        <li><a href="productos.html#3" class="underline">Repuesto</a></li>
+                        <li><a href="productos.html#4" class="underline">Consumibles</a></li>
+                        <li><a href="productos.html#5" class="underline">Redes</a></li>
+                        <li><a href="productos.html#7" class="underline">Seguridad</a></li>
+                        <li><a href="productos.html#8" class="underline">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre-nosotros.html" class="underline">Nosotros</a></li>
+                <li><a href="index.html#contacto" class="underline">Contacto</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- main -->
@@ -233,7 +263,7 @@
     <h3 >Nuestros servicios</h3>
     Slider automático -->
 
-   <div class="container-slider" id="1">
+<!--   <div class="container-slider" id="1">
 
         <div class="slider" id="slider">
             <div class="slider__section">
