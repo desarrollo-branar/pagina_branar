@@ -172,7 +172,7 @@ header {
 	max-height: 0;
 	overflow: hidden;
 	padding-left: 20px;
-	transition: max-height 0.3s ease;
+	transition: max-height 0.5s ease;
 }
 
 @media only screen and (max-width: 810px) {
