@@ -165,9 +165,10 @@ header {
 }
 
 .mobile-menu .mobile-submenu{
-	display: none;
-	transition: 0.3s ease all;
-	transform: translatey(-200px);
+	max-height: 0;
+	overflow: hidden;
+	padding-left: 20px;
+	transition: max-height 0.3s ease;
 }
 
 @media only screen and (max-width: 810px) {
