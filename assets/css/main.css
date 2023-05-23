@@ -3,13 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 :root {
-  --font-family: 'Roboto', sans-serif;
-
-  --white: #fff;
-  --black: #000;
-
+	--font-family: 'Roboto', sans-serif;
+  
+	--white: #fff;
+	--black: #000;
+	--dark-blue: #003399;  
+	--light-blue: #275a9d;
+	--gris: #eff1f3;
+	--orange:#ec8e39;
+	
+	--sm: 14px;
+	--md: 18px;
+	--lg: 24px;
 }
 
 body{
