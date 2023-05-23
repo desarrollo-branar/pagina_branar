@@ -66,7 +66,7 @@ header {
 
 .navbar {
 	display: grid;
-	grid-template-columns: 1fr 1fr auto;
+	grid-template-columns: 1fr 1fr;
 	align-items: center;
 }
 
@@ -125,8 +125,62 @@ header {
 
 .menu-icon ion-icon{
 	font-size: var(--lg);
+    cursor: pointer;
 }
 
+/* ---- mobile-navbar ---- */
+
+.mobile-navbar {
+    background: var(--white);
+
+    position: absolute;
+	top: 91px;
+    left: -250px;
+    width: 250px;
+	height: 100vh;
+    overflow-y: auto;
+    transition: 0.4s;
+	display: none;
+}
+
+.mobile-navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	width: 100%;
+	transition: 0.3s ease all;
+}
+
+.mobile-navbar ul li {
+	margin-bottom: 14px;
+	width: 90%;
+}
+
+.mobile-navbar ul li a{
+	width: 100%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mobile-menu .mobile-submenu{
+	display: none;
+	transition: 0.3s ease all;
+	transform: translatey(-200px);
+}
+
+@media only screen and (max-width: 810px) {
+    .navbar .nav{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+	.mobile-navbar {
+		display: block;
+	}
+}
 
 /* 
 header {
