@@ -573,6 +573,13 @@ main {
     max-width: 45vw;
   }
 }
+
+@media only screen and (max-width:1000px) {
+  .capacitacion {
+    background-position: left;
+}
+}
+
 @media only screen and (max-width:946px) {
   .group-service{
     display: grid;
