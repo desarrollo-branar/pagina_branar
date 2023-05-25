@@ -746,21 +746,19 @@ main {
     height: 200px;
   }
   .encabezado h1 {
-    line-height: 6vh;
+    line-height: 4vh;
     font-size: 30px;
   }
 
   .encabezado h1::after {
-    display: inline-block;
-    left: 15%;
-    width: 30%;
+    display: none;
   }
 
   .subtitle{
     font-size: var(--md);
   }
   .group-service .service {
-    width: 90%;
+    width: 95%;
   }
   .group-service .service .sub-title {
     font-size: 15px;
@@ -774,9 +772,7 @@ main {
   }
 
   .encabezado .title-h2::after {
-    left: 3%;
-    top: 50%;
-    width: 38%;
+    display: none;
   }
   .encabezado p {
     font-size: var(--md);
