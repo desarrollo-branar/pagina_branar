@@ -181,7 +181,7 @@ main {
 
 /* ---- capacitacion ---- */
 .capacitacion {
-  background: url('/assets/images/capacitacion-banner.png');
+  background: url('../../assets/images/capacitacion-banner.png');
   background-size: cover;
   background-position: center;
 
