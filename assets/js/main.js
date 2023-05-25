@@ -1,7 +1,7 @@
 // scrolled
 
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
+    const header = document.querySelector('.header');
     const navbar = document.querySelector('.nav');
 
     if (window.scrollY > 0) {
