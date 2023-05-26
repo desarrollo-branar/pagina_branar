@@ -191,6 +191,9 @@
 	.menu-icon ion-icon{
 		font-size: 34px;
 	}
+	.mobile-navbar ul li a{
+		font-size: var(--md);
+	}
 }
 @media only screen and (max-width: 400px) {
 	.menu-logo{

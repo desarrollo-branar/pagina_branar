@@ -307,6 +307,12 @@
         grid-template-columns: repeat(1, 1fr);
         margin: 12px;
     }
+    .contactanos {
+        flex-direction: column;
+    }
+    .contactanos h2 {
+        line-height: 4vh;
+    }
 }
 @media only screen and (max-width: 400px) {
     .services-csa header h2 {
