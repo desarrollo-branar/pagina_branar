@@ -300,7 +300,14 @@
         height: 220px;
     }
 }
+@media only screen and (max-width: 450px) {
 
+    .reparaciones-equipos .impresoras div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 12px;
+    }
+}
 @media only screen and (max-width: 400px) {
     .services-csa header h2 {
         line-height: 3vh;
