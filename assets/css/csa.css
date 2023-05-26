@@ -314,7 +314,7 @@
         line-height: 4vh;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
     .services-csa header h2 {
         line-height: 3vh;
         font-size: var(--lg);
@@ -322,6 +322,9 @@
     .reparaciones-equipos .lista-reparaciones header h2 {
         line-height: 5vh;
         font-size: var(--lg);
+    }
+    .reparaciones-equipos .lista-reparaciones ul li {
+        padding-right: 12px;
     }
     .reparaciones-equipos .lista-reparaciones ul li p {
         margin-bottom: 0;
