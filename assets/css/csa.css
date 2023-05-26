@@ -5,6 +5,7 @@
     --black: #000;
     --dark-blue: #003399;
     --light-blue: #275a9d;
+    --blue: #275a9d;
     --azul-claro: #e6edf7;
     --gris: #eff1f3;
     --orange: #ec8e39;
@@ -217,6 +218,29 @@
     font-weight: 600;
     font-size: var(--md);
 }
+
+/* ---- contactanos ---- */
+
+.contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 24px;
+}
+
+.contactanos h2 {
+    line-height: 7vh;
+    font-size: 38px;
+    color: var(--light-blue);
+    font-weight: 600;
+    text-shadow: 0 2px 2px #5a5e5e;
+    padding-bottom: 20px;
+}
+.contactanos a {
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width: 730px) {
     .container-service-csa .article-csa div h2 {
         line-height: 5vh;
