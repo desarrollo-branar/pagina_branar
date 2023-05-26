@@ -187,8 +187,26 @@
 	}
 }
 
+@media only screen and (max-width: 450px) {
+	.menu-icon ion-icon{
+		font-size: 34px;
+	}
+}
 @media only screen and (max-width: 400px) {
 	.menu-logo{
 		width: 80%;
+	}
+	.menu-icon ion-icon{
+		font-size: 34px;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.menu-logo{
+		width: 80%;
+	}
+	.menu-icon ion-icon{
+		font-size: 34px;
 	}
 }
