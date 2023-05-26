@@ -172,7 +172,6 @@
 .reparaciones-equipos .lista-reparaciones ul li {
     width: 100%;
     padding-bottom: 12px;
-    font-size: var(--lg);
     color: var(--white);
     display: flex;
     align-items: center;
@@ -181,6 +180,10 @@
 .reparaciones-equipos .lista-reparaciones ul li p {
     margin-bottom: 0;
     padding-left: 5%;
+    font-size: var(--lg);
+}
+.reparaciones-equipos .lista-reparaciones ul li ion-icon {
+    font-size: var(--md);
 }
 .reparaciones-equipos .impresoras div {
     display: grid;
@@ -240,7 +243,42 @@
     text-decoration: none;
 }
 
+@media only screen and (max-width: 870px)  {
+    .servicios-csa {
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+    }
+    .servicios-csa article {
+        margin-left: 0;
+    }
+    .servicios-csa div{
+        margin: auto;
+    }
+    .servicios-csa div:hover{
+        width: 95%;
+        box-shadow: 5px 8px 8px rgba(0, 0, 10, 0.41);
+    }
 
+    .reparaciones-equipos {
+        grid-template-columns: 1fr;
+    }
+    .reparaciones-equipos ul {
+        margin: auto;
+    }
+    .reparaciones-equipos .impresoras div {
+        margin: auto;
+        gap: 24px;
+    }
+    .reparaciones-equipos .impresoras div div {
+        width: 90%;
+        margin: auto;
+        margin-top: 24px;
+    }
+
+    .contactanos h2{
+        font-size: var(--lg);
+    }
+}
 @media only screen and (max-width: 730px) {
     .container-service-csa .article-csa div h2 {
         line-height: 5vh;
@@ -260,5 +298,30 @@
     }
     .banner-top {
         height: 220px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .services-csa header h2 {
+        line-height: 3vh;
+        font-size: var(--lg);
+    }
+    .reparaciones-equipos .lista-reparaciones header h2 {
+        line-height: 5vh;
+        font-size: var(--lg);
+    }
+    .reparaciones-equipos .lista-reparaciones ul li p {
+        margin-bottom: 0;
+        padding-left: 5%;
+        font-size: var(--md);
+    }
+    .reparaciones-equipos .lista-reparaciones ul li ion-icon {
+        display: none;
+    }
+
+    .reparaciones-equipos .impresoras div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 12px;
     }
 }
