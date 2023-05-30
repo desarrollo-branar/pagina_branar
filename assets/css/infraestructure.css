@@ -1,0 +1,208 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+  
+    --white: #fff;
+    --black: #000;
+    --dark-blue: #003399;
+    --light-blue: #275a9d;
+    --blue: #275a9d;
+    --azul-claro: #e6edf7;
+    --gris: #eff1f3;
+    --orange: #ec8e39;
+  
+    --facebook: #3b5998;
+    --instagram: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    ;
+    --linkedin: #0e76a8;
+    --whatsapp: #2db742;
+  
+    --sm: 14px;
+    --md: 18px;
+    --lg: 24px;
+}
+
+main {
+    margin-bottom: 24px;
+}
+
+/* ---- banner-top ---- */
+.banner-top {
+    background: url('../../assets/images/banfondo.jpg');
+    background-size: cover;
+    background-position: center;
+  
+    width: 100%;
+    height: 300px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-top h1 {
+    color: var(--white);
+    text-align: center;
+    padding: 24px;
+}
+
+/* ---- info descripcion ---- */
+.info-service-art {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    place-items: center;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+
+    margin: 48px 24px 24px 24px;
+}
+
+.info-service-art article h2 {
+    font-size: 30px;
+    color: var(--light-blue);
+    font-weight: 600;
+}
+
+.info-service-art article p {
+    font-size: var(--lg);
+
+    margin-top: 24px;
+    padding-left: 12px;
+}
+
+.info-service-art img {
+    width: 80%;
+}
+
+/* ---- principales servicios ---- */
+.service-primary {
+    background: var(--gris);
+}
+
+.header-serv {
+    margin: auto;
+    margin-top: 34px;
+    margin-bottom: 40px;
+}
+
+.header-serv h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue);
+    text-align: center;
+}
+
+.service-primary {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    padding: 24px;
+}
+.service-primary .service-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.service-primary article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    padding: 12px;
+
+    background: var(--orange);
+    border-radius: 10px;
+}
+
+.service-primary article div .icon-inf {
+    color: var(--white);
+    font-size: 48px;
+}
+
+.service-primary article div h3 {
+    color: var(--white);
+    font-size: var(--sm);
+    text-align: center;
+    padding-top: 14px;
+}
+
+/* ---- microsof 365 ---- */
+.service-microsoft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 24px;
+
+    margin: 38px 24px 24px 24px;
+}
+
+.service-microsoft div img {
+    width: 100%;
+}
+
+.service-microsoft article h2 {
+    font-size: 30px;
+    color: var(--light-blue);
+    font-weight: 600;
+}
+
+.service-microsoft article p {
+    font-size: var(--md);
+}
+
+@media  only screen and (max-width: 850px) {
+    .info-service-art article h2 {
+        line-height: 5vh;
+        font-size: 30px;
+        color: var(--light-blue);
+        font-weight: 600;
+    }
+    
+    .info-service-art article p {
+        font-size: var(--md);
+    
+        margin-top: 24px;
+        padding-left: 12px;
+    }
+
+    .info-service-art img {
+        width: 90%;
+    }
+    .header-serv h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .service-microsoft article h2 {
+        font-size: var(--lg);
+        color: var(--light-blue);
+        font-weight: 600;
+    }
+    
+}
+
+@media  only screen and (max-width: 640px) {
+    .banner-top {
+        height: 200px;
+    }
+    .info-service-art {
+        grid-template-columns: 1fr;
+    }
+    .info-service-art img {
+        width: 50%;
+    }
+
+    .service-microsoft {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 24px;
+    
+        margin: 38px 24px 24px 24px;
+    }
+}

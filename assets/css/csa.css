@@ -55,7 +55,7 @@
     position: relative;
     line-height: 5vh;
     font-size: 38px;
-    color: #275a9d;
+    color: var(--light-blue);
     font-weight: 600;
 }
 .container-service-csa .article-csa p {
