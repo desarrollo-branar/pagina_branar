@@ -102,6 +102,7 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     overflow-x: scroll;
+    margin-bottom: 24px;
 }
 
 .service-primary article div{
