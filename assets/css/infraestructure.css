@@ -14,43 +14,53 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+}
+.banner-top > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.338);
+    z-index: 1;
 }
 
 .banner-top h1 {
     color: var(--white);
     text-align: center;
     font-size: var(--xlg);
-    
+    z-index: 2;
     padding: 24px;
 }
 
 /* ---- info descripcion ---- */
 .info-service-art {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
     place-items: center;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.1);
 
-    margin: 48px 24px 24px 24px;
+    width: 80vw;
+    margin: 24px auto 0px auto;
+    padding: 24px;
 }
 
 .info-service-art article h2 {
-    font-size: 30px;
+    font-size: var(--lg);
     color: var(--light-blue);
     font-weight: 600;
 }
 
 .info-service-art article p {
-    font-size: var(--lg);
+    font-size: var(--md);
 
     margin-top: 24px;
-    padding-left: 12px;
 }
 
-.info-service-art img {
-    width: 80%;
-}
+.info-service-art img { width: 90%; }
 
 /* ---- principales servicios ---- */
 .service-primary {
