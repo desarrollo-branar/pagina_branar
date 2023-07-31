@@ -33,12 +33,12 @@
 .container-service-csa .article-csa div h2 {
     position: relative;
     line-height: 5vh;
-    font-size: 38px;
+    font-size: var(--lg);
     color: var(--light-blue);
     font-weight: 600;
 }
 .container-service-csa .article-csa p {
-    font-size: var(--lg);
+    font-size: var(--md);
 
     margin-top: 24px;
     padding-left: 12px;
@@ -108,6 +108,7 @@
 }
 .servicios-csa div p {
     padding: 0;
+    font-size: var(--sm);
 }
 
 .servicios-csa div .svg-inline--fa {
@@ -132,7 +133,7 @@
 .reparaciones-equipos .lista-reparaciones header h2 {
     position: relative;
     line-height: 7vh;
-    font-size: 38px;
+    font-size: var(--lg);
     color: var(--white);
     font-weight: 600;
     text-align: center;
@@ -159,7 +160,7 @@
 .reparaciones-equipos .lista-reparaciones ul li p {
     margin-bottom: 0;
     padding-left: 5%;
-    font-size: var(--lg);
+    font-size: var(--md);
 }
 .reparaciones-equipos .lista-reparaciones ul li ion-icon {
     font-size: var(--md);
