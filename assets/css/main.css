@@ -209,13 +209,19 @@ main {
 }
 
 .cards-container{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card_service{
-  width: 100%;
+  width: calc(25% - 2rem);
+  margin: 1rem;
   cursor: pointer;
 }
 
@@ -358,19 +364,19 @@ main {
 }
 
 @media screen and (max-width: 64rem){
-  .col{
+  .card_service{
     width: calc(33.333333% - 2rem);
   }
 }
 
 @media screen and (max-width: 48rem){
-  .col{
+  .card_service{
     width: calc(50% - 2rem);
   }
 }
 
 @media screen and (max-width: 32rem){
-  .col{
+  .card_service{
     width: 100%;
     margin: 0 0 2rem 0;
   }
