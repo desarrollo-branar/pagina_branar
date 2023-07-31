@@ -28,7 +28,7 @@ html{
   --whatsapp: #2db742;
 
   --sm: 1.2rem;
-	--md: 1.8rem;
+	--md: 1.4rem;
 	--lg: 2.4rem;
   --xlg: 3rem;
 }
@@ -460,7 +460,7 @@ main {
   position: relative;
   line-height: 7vh;
   font-weight: 700;
-  color: var(--dark-blue);
+  color: var(--light-blue);
 } 
 .promotion h3::after{
   border-bottom: 3px solid var(--orange);
