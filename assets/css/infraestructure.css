@@ -4,12 +4,12 @@ main {
 
 /* ---- banner-top ---- */
 .banner-top {
-    background: url('../../assets/images/banfondo.jpg');
+    background: url('../../assets/images/connection-industry.jpeg');
     background-size: cover;
     background-position: center;
   
     width: 100%;
-    height: 200px;
+    height: 250px;
     
     display: flex;
     align-items: center;
