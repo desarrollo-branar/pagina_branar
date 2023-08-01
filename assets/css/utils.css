@@ -1,0 +1,109 @@
+
+/* Header para secciones */
+.sec_header { margin: 40px auto; text-align: center; }
+
+.sec_header h3{
+    text-align: center;
+    font-size: var(--lg);
+    color: #275a9d;
+    font-weight: 600;
+    text-shadow: 0 2px 2px #5a5e5e;
+}
+.sec_header p{ font-size: var(--md); }
+.list .sec_header p{ font-size: var(--md); }
+
+/* Seccion de articulo con imagen*/
+.service_article {
+    margin: 100px auto 0px auto;
+}
+
+.article_image_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.article_image_list span { font-size: var(--md); }
+.article_image_list p { font-size: var(--sm); }
+
+/* list */
+.list {
+    padding: 0;
+    padding: 12px;
+}
+.list div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+    margin-bottom: 12px;
+}
+.list  p {
+    font-size: var(--md);
+    margin: 0;
+}
+
+.aside_div {
+    background-color: var(--light-blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.border_img_large {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+.border_img_wide{
+    border-radius: 62% 38% 72% 28% / 27% 57% 43% 73%;
+}
+
+.img_women {
+    width: 50%;
+    justify-content: center;
+}
+
+.general-margin{
+    margin: 100px 24px 0px 24px;
+}
+
+.text-left{
+    text-align: justify;
+}
+
+.img_plana{
+    width: 80%;
+    height: 400px;
+}
+
+/* ---- contactanos ---- */
+.contactanos {
+    background-color: var(--light-blue);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: center;
+    margin: 24px 0;
+    padding: 12px;
+}
+
+.contactanos h2 {
+    font-size: var(--lg);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.contactanos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.contactanos a .svg-inline--fa{
+    font-size: var(--lg);
+}
+.contactanos a:hover{
+    color: var(--white);
+}
