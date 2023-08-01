@@ -181,7 +181,6 @@
 }
 
 .content-design span { font-size: var(--md); }
-.content-design p { font-size: var(--sm); }
 
 .reparaciones-equipos {
     display: grid;
@@ -268,26 +267,6 @@
     font-size: var(--md);
 }
 
-/* ---- contactanos ---- */
-
-.contactanos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 24px;
-}
-
-.contactanos h2 {
-    line-height: 7vh;
-    font-size: 38px;
-    color: var(--light-blue);
-    font-weight: 600;
-    text-shadow: 0 2px 2px #5a5e5e;
-    padding-bottom: 20px;
-}
-.contactanos a {
-    text-decoration: none;
-}
 
 @media only screen and (max-width: 870px)  {
     .servicios-csa {
