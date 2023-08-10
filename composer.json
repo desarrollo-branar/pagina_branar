@@ -1,0 +1,15 @@
+{
+    "name": "branar/blog",
+    "autoload": {
+        "psr-4": {
+            "Branar\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mrandersoncordero",
+            "email": "acorderofigueroa7@gmail.com"
+        }
+    ],
+    "require": {}
+}
