@@ -40,12 +40,12 @@
                 <li class="mobile-menu" id="submenu-down">
                     <a href="#" class="line-down underline" >Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
                     <ul class="mobile-submenu">
-                        <li><a href="csa.html" class="underline">Csa Epson <span class="icon-dot"></span></a></li>
-                        <li><a href="infraestructure.html" class="underline">Infraestructura <span class="icon-dot"></span></a></li>
-                        <li><a href="social-media.html" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
-                        <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
-                        <li><a href="servipack.html" class="underline">ServiPack<span class="icon-dot"></span></a></li>
-                        <li><a href="devweb.html" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
+                        <li><a href="../service/csa" class="underline">Csa Epson <span class="icon-dot"></span></a></li>
+                        <li><a href="../service/infraestructure" class="underline">Infraestructura <span class="icon-dot"></span></a></li>
+                        <li><a href="../service/socialmedia" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
+                        <li><a href="../service/profitplus" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
+                        <li><a href="../service/servipack" class="underline">ServiPack<span class="icon-dot"></span></a></li>
+                        <li><a href="../service/web-development" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
                     </ul>
                 </li>
                 <li class="mobile-menu" id="submenu-down">
@@ -59,8 +59,8 @@
                         <li><a href="productos.html#8" class="underline">Accesorios</a></li>
                     </ul>
                 </li>
-                <li><a href="aboutme.html" class="underline">Nosotros</a></li>
-                <li><a href="contact.html" class="underline">Contacto</a></li>
+                <li><a href="../about/" class="underline">Nosotros</a></li>
+                <li><a href="../contact/" class="underline">Contacto</a></li>
             </ul>
         </div>
     </header>
