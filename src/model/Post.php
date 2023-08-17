@@ -24,11 +24,11 @@ class Post extends Connection{
         $this->description = $description;
     }
 
-    public function getTitle(){
+    public function getTitle(): string {
         return $this->title;
     }
 
-    public function getDescription(){
+    public function getDescription(): string {
         return $this->description;
     }
 
@@ -123,7 +123,7 @@ class Post extends Connection{
         return $this->message;
     }
 
-    public static function getAll(){
+    public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM posts');
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -131,7 +131,7 @@ class Post extends Connection{
         return $result;
     }
 
-    public function getPostById(int $id){
+    public function getPostById(int $id): array {
         $db = new Connection();
         $query = $db->connect()->prepare('SELECT * FROM posts WHERE id = :id');
         $query->execute(['id' => $id]);
@@ -140,7 +140,7 @@ class Post extends Connection{
         return $result;
     }
 
-    private function uniqueTitle(){
+    private function uniqueTitle(): array {
         $db = new Connection();
         $query = $db->connect()->prepare('SELECT * FROM posts WHERE title = :title');
         $query->execute(['title' => $this->getTitle()]);
@@ -159,7 +159,7 @@ class Post extends Connection{
         }
     }
 
-    private function fileNameToLowerAndSplit() {
+    private function fileNameToLowerAndSplit(): string {
         $filename = str_replace(' ', '-', $this->getTitle());
         $filename = $filename.'.html';
         $filename = strtolower($filename);

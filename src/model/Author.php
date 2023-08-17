@@ -15,7 +15,7 @@ class Author extends User{
         parent::__construct($username, $first_name, $last_name, $email);
     }
 
-    public static function getAll(){
+    public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM authors');
         return $result = $query->fetchAll(PDO::FETCH_ASSOC);

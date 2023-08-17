@@ -11,14 +11,14 @@ class Role extends Connection{
         $this->name = $name;
     }
 
-    public function getName(){
+    public function getName(): string {
         return $this->name;
     }
     
-    public static function createRole(string $name){
+    public function createRole(){
         $db = new Connection();
         $query = $db->connect()->prepare('INSERT INTO roles(name) VALUES(:name)');
-        $query->execute(['name' => $name]);
+        $query->execute(['name' => $this->getName()]);
         $result = $query;
     
         return $result;
@@ -36,7 +36,7 @@ class Role extends Connection{
         return $result;
     }
 
-    public function getAll(){
+    public static function getAll(): array{
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM roles');
         $result = $query->fetchAll(PDO::FETCH_ASSOC);

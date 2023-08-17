@@ -11,7 +11,7 @@ class Category extends Connection{
         $this->name = $name;
     }
 
-    public function getName(){
+    public function getName(): string {
         return $this->name;
     }
 
@@ -36,7 +36,7 @@ class Category extends Connection{
         return $result;
     }
 
-    public function getAll(){
+    public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM categories');
         $query->execute();

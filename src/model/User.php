@@ -15,26 +15,28 @@ class User extends Connection{
         parent::__construct();
     }
 
-    protected function getUsername() {
+    protected function getUsername(): string {
         return $this->username;
     }
 
-    protected function getEmail() {
+    protected function getEmail(): string {
         return $this->email;
     }
 
-    protected function getFistName(){
+    protected function getFistName(): string {
         return $this->first_name;
     }
 
-    protected function getLastName(){
+    protected function getLastName(): string {
         return $this->last_name;
     }
 
-    public static function getAll(){
+    public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM users');
-        return $result = $query->fetchAll(PDO::FETCH_ASSOC);
+        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
     }
 
     public function createUser(
