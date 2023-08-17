@@ -17,6 +17,7 @@
                         <li><a href="../service/web-development" class="underline">Desarrollo Web<span class="icon-dot"></span></a></li>
                     </ul>
                 </li>
+                <li><a href="../blog/" class="underline"><span class="icon-mail"></span>Blog</a></li>
                 <li class="menu">
                     <a href="#" class="line-down underline">Productos<ion-icon name="caret-down-outline"></ion-icon></a>
                     <ul class="submenu">
