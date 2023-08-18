@@ -80,6 +80,7 @@
                         <li><a href="../pagina_branar/service/web-development" class="underline">Desarrollo Web<span class="icon-dot"></span></a></li>
                     </ul>
                 </li>
+                <li><a href="../pagina_branar/blog/" class="underline"><span class="icon-mail"></span>Blog</a></li>
                 <li class="menu">
                     <a href="#" class="line-down underline">Productos<ion-icon name="caret-down-outline"></ion-icon></a>
                     <ul class="submenu">
@@ -111,6 +112,7 @@
                         <li><a href="../pagina_branar/service/web-development" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
                     </ul>
                 </li>
+                <li><a href="../pagina_branar/blog/" class="underline">Blog</a></li>
                 <li class="mobile-menu" id="submenu-down">
                     <a href="#" class="line-down underline" id="submenu-down-two">Productos<ion-icon name="caret-down-outline"></ion-icon></a>
                     <ul class="mobile-submenu">
