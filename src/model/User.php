@@ -5,6 +5,13 @@ use Branar\Blog\includes\Connection;
 use PDO;
 
 class User extends Connection{
+    public array $message = [
+        'response' => false,
+        'message' => '',
+        'color' => '',
+        'content' => ''
+    ];
+
     public function __construct(
         protected string $username, 
         public string $first_name,
@@ -81,5 +88,47 @@ class User extends Connection{
         $result = $query;
 
         return $result;
+    }
+
+    public static function login(string $mail, string $password): array {
+        $db = new Connection();
+        $query = $db->connect()->prepare('SELECT * FROM users WHERE email = :email && password = :password');
+        $query->execute([
+            'email' => $mail,
+            'password' => $password
+        ]);
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+
+        if ($result) {
+
+            $message['response'] = true;
+            $message['message'] = 'Ususario encontrado';
+            $message['color'] = 'success';
+            $message['content'] = $result;
+            return $message;
+            
+        }else{
+            $message['response'] = false;
+            $message['message'] = 'Lo sentimos su usario y/o contrasenia son incorrectos';
+            $message['color'] = 'danger';
+            $message['content'] = $result;
+            return $message;
+        }
+    }
+
+    public static function checkStatusUser(array $value): array {
+        if ($value['content']['status'] == 'disabled') {
+            $message['response'] = false;
+            $message['message'] = 'Lo sentimos su usuario se encuentra deshabilitado';
+            $message['color'] = 'warning';
+            $message['content'] = $value['content'];
+            return $message;
+        }else{
+            $message['response'] = true;
+            $message['message'] = "Bienvenido {$value['content']['username']}";
+            $message['color'] = 'success';
+            $message['content'] = $value['content'];
+            return $message;
+        }
     }
 }

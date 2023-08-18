@@ -1,7 +1,7 @@
 <?php
 
 namespace Branar\Blog\model;
-
+session_start();
 class Navegation {
     
     // Obtener la URL actual

@@ -55,14 +55,15 @@ class Post extends Connection{
                 fclose($gestor);
 
                 $db = new Connection();
-                $query = $db->connect()->prepare('INSERT INTO posts(title, description, author_id, category_id, featured_image, file) VALUES(:title, :description, :author_id, :category_id, :featured_image, :file)');
+                $query = $db->connect()->prepare('INSERT INTO posts(title, description, author_id, category_id, featured_image, file, status) VALUES(:title, :description, :author_id, :category_id, :featured_image, :file, :status)');
                 $query->execute([
                     'title' => $this->getTitle(),
                     'description' => $this->getDescription(),
                     'author_id' => $author_id,
                     'category_id' => $category_id,
                     'featured_image' => $featured_image,
-                    'file' => $file_name
+                    'file' => $file_name,
+                    'status' => false
                 ]);
                 $result = $query;
 
@@ -126,6 +127,19 @@ class Post extends Connection{
     public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM posts');
+        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+
+    public static function getAllThePublishingInformation(): array {
+        $db = new Connection();
+        $query = $db->connect()->query("SELECT p.id as post_id, p.title, p.description, p.author_id, p.category_id, p.views, p.file, p.status, p.featured_image,p.created_at,
+        a.id , a.user_id, a.picture,
+        u.first_name , u.last_name
+        FROM posts p
+        INNER JOIN authors a ON p.author_id = a.id
+        INNER JOIN users u ON a.user_id = u.id");
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
