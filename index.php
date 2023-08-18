@@ -12,6 +12,10 @@ $route->add("index/", "pages/index.php");
 $route->add('about/', 'pages/about.php');
 $route->add('contact/', 'pages/contact.php');
 
+# Login
+$route->add('login/', 'pages/login.php');
+$route->add('login/checklogin/', 'src/controller/login_proceso.php');
+
 # service/
 $route->add('service/csa', 'pages/csa.php');
 $route->add('service/web-development', 'pages/devweb.php');
@@ -22,3 +26,4 @@ $route->add('service/socialmedia', 'pages/social-media.php');
 
 # blog
 $route->add('blog/', './src/views/home.php');
+$route->add('admin_blog/', './src/views/admin_dashboard.php');
