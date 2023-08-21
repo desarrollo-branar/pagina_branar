@@ -106,3 +106,12 @@ main {
 .yellow {
     background-color: rgba(255, 255, 0, 0.3);
 }
+
+.cont-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    
+    margin-bottom: 12px;
+}
