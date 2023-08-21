@@ -3,7 +3,7 @@
 use Branar\Blog\model\Navegation;
 use Branar\Blog\model\User;
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email = Navegation::validateInput($_POST['email']);
     $password = Navegation::validateInput($_POST['password']);
@@ -14,11 +14,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($login['response'] == true) {
 
         $checkStatus = User::checkStatusUser($login);
-        
+
         // Validamos que esta activo
         if ($checkStatus['response'] == true) {
             if ($checkStatus['content']['role_id'] == 1) {
                 $_SESSION['user_data'] = [
+                    'id' => $checkStatus['content']['id'],
                     'username' => $checkStatus['content']['username'],
                     'first_name' => $checkStatus['content']['first_name'],
                     'last_name' => $checkStatus['content']['last_name'],
@@ -26,9 +27,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                     'status' => $checkStatus['content']['status'],
                     'role' => $checkStatus['content']['role_id']
                 ];
-                header('Location: ../../admin_blog/');
-            }else{
+                header('Location: ../../blog/admin_blog');
+            } else {
                 $_SESSION['user_data'] = [
+                    'id' => $checkStatus['content']['id'],
                     'username' => $checkStatus['content']['username'],
                     'first_name' => $checkStatus['content']['first_name'],
                     'last_name' => $checkStatus['content']['last_name'],
@@ -36,15 +38,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                     'status' => $checkStatus['content']['status'],
                     'role' => $checkStatus['content']['role_id']
                 ];
-                header('Location: ../../admin_blog/');
+                header('Location: ../../login/');
             }
-        }else{
+        } else {
             dd($checkStatus);
         }
-    }else{
+    } else {
         dd($login);
     }
-
-}else{
+} else {
     echo 'no es post';
 }
