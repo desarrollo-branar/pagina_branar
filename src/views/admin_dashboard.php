@@ -7,12 +7,15 @@ use Branar\Blog\model\Label;
 
 ?>
 <main>
-    <h1>BLOG</h1>
     <div class="container">
         <header class="header_post_title">
-            <h2>Admin Dashboard</h2>
+            <h1>Admin Dashboard</h1>
         </header>
-
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Create Post
+        </button>
+        <?php require_once './src/views/form_population_create.php'; ?>
         <section class="container_post">
 
         <?php
@@ -21,7 +24,7 @@ use Branar\Blog\model\Label;
             foreach ($posts as $key => $post) {
                 if($post['status'] == true){ ?>
                     <article class="wrapper_post">
-                        <header class="header_post" style="background-image: url(../post_image/tecnology_image.jpeg);">
+                        <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}": "../post_image/tecnology_image.jpeg"?>);">
                             <div>
                                 <h3><?= $post['title'] ?></h3>
                             </div>
@@ -37,6 +40,11 @@ use Branar\Blog\model\Label;
                             </div>
                             <p><?= $post['description'] ?></p>
                         </div>
+                        <div class="cont-buttons">
+                            <a href="">Ver mas</a>
+                            <a href="javascript:void(0);" class="edit-post-link" data-post-id="<?= $post['post_id'] ?>" data-bs-target="#editPostModal-<?= $post['id'] ?>">Editar Post</a>
+
+                        </div>
                         <address class="info_author_post">
                             <div>
                                 <p><span>Autor: </span><?= $post['first_name'].' '.$post['last_name']?></p>
@@ -49,8 +57,33 @@ use Branar\Blog\model\Label;
             }
         ?>
         </section>
-
+        <?php require_once './src/views/form_population_edit.php'; ?>
     </div>
 </main>
 
-<?php require_once './templates/footer.php'; ?>
+<script>
+$(document).ready(function() {
+    // Manejar el clic en el enlace "Editar Post"
+    $('.edit-post-link').click(function() {
+        var postId = $(this).data('post-id');
+        var modalId = $(this).data('bs-target'); // Obtener el ID del modal
+        var url = './edit_post/' + postId; // Construir la URL
+
+        $.ajax({
+            url: url,
+            method: 'GET',
+            success: function(response) {
+                console.log(response)
+                $(modalId + ' .modal-content').html(response); // Usar el ID del modal para abrir el modal correcto
+                $(modalId).modal('show');
+            },
+            error: function() {
+                console.log(response);
+                alert('Error al cargar los datos del post.');
+            }
+        });
+    });
+});
+</script>
+
+<?php require_once './templates/footer-blog.php'; ?>
