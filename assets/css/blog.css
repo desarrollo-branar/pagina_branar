@@ -1,6 +1,26 @@
-:root{
-    --red: red;
-    --blue: blue;
+:root {
+	--font-family: 'Roboto', sans-serif;
+  
+	--white: #fff;
+	--black: #000;
+	--dark-blue: #0a3b9d;  
+	--light-blue: #275a9d;
+    --azul-claro:#e6edf7;
+	--gris: #eff1f3;
+	--orange:#ec8e39;
+	--green: #2ea940;
+    --red: #ba1919;
+    --blude: blue;
+
+    --facebook: #3b5998;
+    --instagram: linear-gradient( #405DE6,#5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);;
+	--linkedin: #0e76a8;
+    --whatsapp: #2db742;
+
+    --sm: 1.2rem;
+	--md: 1.4rem;
+	--lg: 2.4rem;
+    --xlg: 3rem;
 }
 
 main {
@@ -37,10 +57,11 @@ main {
     align-items: center;
     justify-content: center;
 }
-.header_post div h3{
+.header_post div h3, h2{
     color: var(--white);
     font-size: var(--md);
     text-transform: capitalize;
+    text-align: center;
 }
 
 .content_post{
