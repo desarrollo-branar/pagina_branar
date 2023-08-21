@@ -55,8 +55,8 @@ class Author extends User{
         return $result;
     }
 
-    public function getAuthorById(int $id){
-        $query = $this->connect()->prepare('SELECT * FROM authors WHERE id = :id');
+    public function getAuthorByUserId(int $id){
+        $query = $this->connect()->prepare('SELECT * FROM authors WHERE user_id = :id');
         $query->execute(['id' => $id]);
         $result = $query->fetch(PDO::FETCH_ASSOC);
 
