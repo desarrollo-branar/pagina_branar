@@ -1,18 +1,30 @@
 <?php
 include_once './templates/header_blog.php';
 ?>
+<style>
 
-<main class="container">
-    <form action="checklogin/" method="post" class="container">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+#auth-container {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+}
+</style>
+<main class="container h-100">
+
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-5 col-lg-5 pt-2 pl-5 pr-5 pb-5" id="auth-container">
+
+            <img src="../assets/images/navbar-logo.png" class="img-fluid rounded mx-auto d-block pb-4" style="max-width: 30%;">
+
+            <form method="POST" action="./checklogin/" class="container">
+                <div class="form-group mt-2">
+                    <input type="email" class="form-control" name="email" placeholder="Enter email">
+                </div>
+                <div class="form-group mt-2">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <button class="btn btn-primary btn-block mt-5" type="submit">Sign in</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" name="password" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary mt-2">Submit</button>
-    </form>
+    </div>
 </main>
