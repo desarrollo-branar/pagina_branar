@@ -95,8 +95,8 @@ class Post extends Connection{
         $uniqueTitle = $this->uniqueTitle();
 
         $post = $this->getPostById($id);
-        $old_file_path = "./entries/{$post[0]['file']}";
-        $new_file_path = "./entries/{$file_name}";
+        $old_file_path = "./src/entries/{$post[0]['file']}";
+        $new_file_path = "./src/entries/{$file_name}";
 
         if ( $post[0]['title'] !== $this->getTitle() ) {
             $file_name = $this->fileNameToLowerAndSplit();
@@ -104,19 +104,34 @@ class Post extends Connection{
         }
 
         $db = new Connection();
-        $query = $db->connect()->prepare('UPDATE posts SET  title = :title, description = :description, author_id = :author_id, category_id = :category_id, featured_image = :featured_image, file = :file, status = :status, updated_at = :updated_at WHERE id = :id');
-        $query->execute([
-            'title' => $this->getTitle(),
-            'description' => $this->getDescription(),
-            'author_id' => $author_id,
-            'category_id' => $category_id,
-            'featured_image' => $featured_image,
-            'file' => $file_name,
-            'status' => $status,
-            'updated_at' => $updated_at,
-            'id' => $id
-        ]);
-        $result = $query;
+        if ($featured_image != '' || !empty($featured_image)) {
+            $query = $db->connect()->prepare('UPDATE posts SET title = :title, description = :description, author_id = :author_id, category_id = :category_id, featured_image = :featured_image, file = :file, status = :status, updated_at = :updated_at WHERE id = :id');
+            $query->execute([
+                'title' => $this->getTitle(),
+                'description' => $this->getDescription(),
+                'author_id' => $author_id,
+                'category_id' => $category_id,
+                'featured_image' => $featured_image,
+                'file' => $file_name,
+                'status' => $status,
+                'updated_at' => $updated_at,
+                'id' => $id
+            ]);
+            $result = $query;
+        }else{
+            $query = $db->connect()->prepare('UPDATE posts SET title = :title, description = :description, author_id = :author_id, category_id = :category_id, file = :file, status = :status, updated_at = :updated_at WHERE id = :id');
+            $query->execute([
+                'title' => $this->getTitle(),
+                'description' => $this->getDescription(),
+                'author_id' => $author_id,
+                'category_id' => $category_id,
+                'file' => $file_name,
+                'status' => $status,
+                'updated_at' => $updated_at,
+                'id' => $id
+            ]);
+            $result = $query;
+        }
 
         $this->message['response'] = true;
         $this->message['message'] = 'Publicacion actualizada con exito';
@@ -139,7 +154,7 @@ class Post extends Connection{
         u.first_name , u.last_name
         FROM posts p
         INNER JOIN authors a ON p.author_id = a.id
-        INNER JOIN users u ON a.user_id = u.id");
+        INNER JOIN users u ON a.user_id = u.id ORDER BY p.status");
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
