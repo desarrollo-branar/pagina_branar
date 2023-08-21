@@ -21,8 +21,7 @@ use Branar\Blog\model\Label;
         <?php
 
             $posts = Post::getAllThePublishingInformation();
-            foreach ($posts as $key => $post) {
-                if($post['status'] == true){ ?>
+            foreach ($posts as $key => $post) {?>
                     <article class="wrapper_post">
                         <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}": "../post_image/tecnology_image.jpeg"?>);">
                             <div>
@@ -35,27 +34,24 @@ use Branar\Blog\model\Label;
                             $labels = Label::getPostLabelById($post['post_id']);
                             foreach($labels as $key => $label) { ?>
                                 <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
-                    <?php   }
-                            ?>
+                      <?php } ?>
                             </div>
                             <p><?= $post['description'] ?></p>
                         </div>
                         <div class="cont-buttons">
-                            <a href="">Ver mas</a>
-                            <a href="javascript:void(0);" class="edit-post-link" data-post-id="<?= $post['post_id'] ?>" data-bs-target="#editPostModal-<?= $post['id'] ?>">Editar Post</a>
-
+                            <a href="" class="btn btn-primary">Ver mas</a>
+                            <a href="javascript:void(0);" class="edit-post-link btn btn-warning" data-post-id="<?= $post['post_id'] ?>" data-bs-target="#editPostModal-<?= $post['id'] ?>">Editar Post</a>
                         </div>
                         <address class="info_author_post">
                             <div>
                                 <p><span>Autor: </span><?= $post['first_name'].' '.$post['last_name']?></p>
                                 <p><span>Fecha de publicacion: </span><?php $date=date_create($post['created_at']); echo date_format($date,"d-m-Y");?></p>
                                 <p><span><i class="fa-solid fa-eye"></i></span> <?= $post['views'] != null ? $post['views'] : '0'?></p>
+                                <p><span>Status: </span><?= $post['status'] == 0 ? 'Habilitado' : 'Deshabilitado' ?></p>
                             </div>
                         </address>
                     </article>
-               <?php }
-            }
-        ?>
+               <?php } ?>
         </section>
         <?php require_once './src/views/form_population_edit.php'; ?>
     </div>
@@ -67,7 +63,7 @@ $(document).ready(function() {
     $('.edit-post-link').click(function() {
         var postId = $(this).data('post-id');
         var modalId = $(this).data('bs-target'); // Obtener el ID del modal
-        var url = './edit_post/' + postId; // Construir la URL
+        var url = './get_data_post/' + postId; // Construir la URL
 
         $.ajax({
             url: url,
