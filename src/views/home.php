@@ -37,6 +37,9 @@ use Branar\Blog\model\Label;
                             </div>
                             <p><?= $post['description'] ?></p>
                         </div>
+                        <div class="cont-buttons">
+                            <a href="" class="btn btn-primary">Ver mas</a>
+                        </div>
                         <address class="info_author_post">
                             <div>
                                 <p><span>Autor: </span><?= $post['first_name'].' '.$post['last_name']?></p>
