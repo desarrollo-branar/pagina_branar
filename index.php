@@ -26,4 +26,8 @@ $route->add('service/socialmedia', 'pages/social-media.php');
 
 # blog
 $route->add('blog/', './src/views/home.php');
-$route->add('admin_blog/', './src/views/admin_dashboard.php');
+$route->add('blog/admin_blog', './src/views/admin_dashboard.php');
+$route->add('create_post/', 'src/controller/create_post.php');
+$route->add('blog/edit_post/{id}', 'src/controller/get_post_data.php');
+
+$route->notFound('./pages/404.php');
