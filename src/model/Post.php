@@ -40,7 +40,7 @@ class Post extends Connection{
 
         $file_name = $this->fileNameToLowerAndSplit();
 
-        $gestor = fopen("./entries/{$file_name}", "w");
+        $gestor = fopen("./src/entries/{$file_name}", "a+");
 
         # Crear contenido del html
         $content_html = "<!DOCTYPE html>\n<html lang='en'>\n<head>\n\t<meta charset='UTF-8'>\n\t<meta name='viewport' content='width=device-width, initial-scale=1.0'>\n\t<title>Document</title>\n</head>\n<body>\n\n</body>\n</html>";
@@ -63,7 +63,7 @@ class Post extends Connection{
                     'category_id' => $category_id,
                     'featured_image' => $featured_image,
                     'file' => $file_name,
-                    'status' => false
+                    'status' => 0
                 ]);
                 $result = $query;
 
@@ -145,7 +145,7 @@ class Post extends Connection{
         return $result;
     }
 
-    public function getPostById(int $id): array {
+    public static function getPostById(int $id): array {
         $db = new Connection();
         $query = $db->connect()->prepare('SELECT * FROM posts WHERE id = :id');
         $query->execute(['id' => $id]);
