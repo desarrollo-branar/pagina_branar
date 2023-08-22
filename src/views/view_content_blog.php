@@ -1,9 +1,11 @@
 <?php
 include_once './templates/header_blog.php';
 include_once './templates/navbar.php';
+
 use Branar\Blog\model\Navegation;
 use Branar\Blog\model\Post;
 use Branar\Blog\model\Category;
+use Branar\Blog\functions\UtilFunctions;
 use JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
 
 $id = Navegation::validateInput($params['id']);
@@ -22,9 +24,11 @@ $post = Post::getPostById($id);
         <?php
         $category = Category::getAll();
         
-        foreach ($category as $key => $value) { ?>
+        foreach ($category as $key => $value) { 
+          $category_name = UtilFunctions::split_letter($value['name'], 'upper');
+          ?>
           <li>
-            <a href="" class="p-2"><?= $value['name'] ?></a>
+            <a href="../blog_category/<?= UtilFunctions::split_letter($value['name'], 'split') ?>" class="p-2"><?= $category_name ?></a>
           </li>
   <?php } ?>
       </ul>
@@ -53,7 +57,7 @@ $post = Post::getPostById($id);
   h1.innerText = title;
   description.innerText = "<?= $post[0]['description']?>";
 
-  header_card.style.backgroundImage = "url('../post_image/<?= $post[0]['featured_image']?>')";
+  header_card.style.backgroundImage = "url('../post_image/<?= $post[0]['featured_image'] ? $post[0]['featured_image']: 'tecnology_image.jpeg'?>')";
 
 </script>
 
