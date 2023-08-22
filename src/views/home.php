@@ -19,9 +19,9 @@ use Branar\Blog\model\Label;
 
             $posts = Post::getAllThePublishingInformation();
             foreach ($posts as $key => $post) {
-                if($post['status'] == true){ ?>
+                if($post['status'] == 0){ ?>
                     <article class="wrapper_post">
-                        <header class="header_post" style="background-image: url(../post_image/tecnology_image.jpeg);">
+                        <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}": "../post_image/tecnology_image.jpeg"?>);">
                             <div>
                                 <h3><?= $post['title'] ?></h3>
                             </div>
@@ -38,7 +38,7 @@ use Branar\Blog\model\Label;
                             <p><?= $post['description'] ?></p>
                         </div>
                         <div class="cont-buttons">
-                            <a href="" class="btn btn-primary">Ver mas</a>
+                            <a href="../blog_content/<?= $post['post_id'] ?>" class="btn btn-primary">Ver mas</a>
                         </div>
                         <address class="info_author_post">
                             <div>

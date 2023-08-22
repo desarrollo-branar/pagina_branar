@@ -39,7 +39,7 @@ use Branar\Blog\model\Label;
                             <p><?= $post['description'] ?></p>
                         </div>
                         <div class="cont-buttons">
-                            <a href="" class="btn btn-primary">Ver mas</a>
+                            <a href="../blog_content/<?= $post['post_id'] ?>" class="btn btn-primary">Ver mas</a>
                             <a href="javascript:void(0);" class="edit-post-link btn btn-warning" data-post-id="<?= $post['post_id'] ?>" data-bs-target="#editPostModal-<?= $post['id'] ?>">Editar Post</a>
                         </div>
                         <address class="info_author_post">
