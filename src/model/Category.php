@@ -36,6 +36,15 @@ class Category extends Connection{
         return $result;
     }
 
+    public static function getCategoryByName(string $name){
+        $db = new Connection();
+        $query = $db->connect()->prepare('SELECT * FROM categories WHERE name = :name');
+        $query->execute(['name' => $name]);
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+
     public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM categories');
