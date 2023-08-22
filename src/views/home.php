@@ -1,6 +1,7 @@
 <?php
 include_once './templates/header_blog.php';
 include_once './templates/navbar.php';
+
 use Branar\Blog\model\Navegation;
 use Branar\Blog\model\Post;
 use Branar\Blog\model\Label;
@@ -15,41 +16,42 @@ use Branar\Blog\model\Label;
 
         <section class="container_post">
 
-        <?php
+            <?php
 
-            $posts = Post::getAllThePublishingInformation();
-            foreach ($posts as $key => $post) {
-                if($post['status'] == 0){ ?>
-                    <article class="wrapper_post">
-                        <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}": "../post_image/tecnology_image.jpeg"?>);">
-                            <div>
-                                <h3><?= $post['title'] ?></h3>
-                            </div>
-                        </header>
-                        <div class="content_post">
-                            <div class="labels">
-                            <?php
-                            $labels = Label::getPostLabelById($post['post_id']);
-                            foreach($labels as $key => $label) { ?>
-                                <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
-                    <?php   }
-                            ?>
-                            </div>
-                            <p><?= $post['description'] ?></p>
-                        </div>
-                        <div class="cont-buttons">
-                            <a href="../blog_content/<?= $post['post_id'] ?>" class="btn btn-primary">Ver mas</a>
-                        </div>
-                        <address class="info_author_post">
-                            <div>
-                                <p><span>Autor: </span><?= $post['first_name'].' '.$post['last_name']?></p>
-                                <p><span>Fecha de publicacion: </span><?php $date=date_create($post['created_at']); echo date_format($date,"d-m-Y");?></p>
-                                <p><span><i class="fa-solid fa-eye"></i></span> <?= $post['views'] != null ? $post['views'] : '0'?></p>
-                            </div>
-                        </address>
-                    </article>
-               <?php }
-            }
+        $posts = Post::getAllThePublishingInformation();
+        foreach ($posts as $key => $post) {
+        if ($post['status'] == 0) { ?>
+            <article class="wrapper_post">
+                <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}" : "../post_image/tecnology_image.jpeg" ?>);">
+                    <div>
+                        <h3><?= $post['title'] ?></h3>
+                    </div>
+                </header>
+                <div class="content_post">
+                    <div class="labels">
+                        <?php
+                        $labels = Label::getPostLabelById($post['post_id']);
+                        foreach ($labels as $key => $label) { ?>
+                            <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
+                        <?php   }
+                        ?>
+                    </div>
+                    <p><?= $post['description'] ?></p>
+                </div>
+                <div class="cont-buttons">
+                    <a href="../Blog/<?= $post['post_id'] ?>" class="btn btn-primary">Ver mas</a>
+                </div>
+                <address class="info_author_post">
+                    <div>
+                        <p><span>Autor: </span><?= $post['first_name'] . ' ' . $post['last_name'] ?></p>
+                        <p><span>Fecha de publicacion: </span><?php $date = date_create($post['created_at']);
+                                                                echo date_format($date, "d-m-Y"); ?></p>
+                        <p><span><i class="fa-solid fa-eye"></i></span> <?= $post['views'] != null ? $post['views'] : '0' ?></p>
+                    </div>
+                </address>
+            </article>
+        <?php }
+        }
         ?>
         </section>
 
