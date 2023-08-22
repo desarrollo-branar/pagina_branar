@@ -147,6 +147,15 @@ class Post extends Connection{
         return $result;
     }
 
+    public static function getPostById(int $id): array {
+        $db = new Connection();
+        $query = $db->connect()->prepare('SELECT * FROM posts WHERE id = :id');
+        $query->execute(['id' => $id]);
+        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+
     public static function getAllThePublishingInformation(): array {
         $db = new Connection();
         $query = $db->connect()->query("SELECT p.id as post_id, p.title, p.description, p.author_id, p.category_id, p.views, p.file, p.status, p.featured_image,p.created_at,
@@ -160,15 +169,22 @@ class Post extends Connection{
         return $result;
     }
 
-    public static function getPostById(int $id): array {
+    public static function getPostByCategoryId(int $id) {
         $db = new Connection();
-        $query = $db->connect()->prepare('SELECT * FROM posts WHERE id = :id');
+        $query = $db->connect()->prepare("SELECT p.id as post_id, p.title, p.description, p.author_id, p.category_id, p.views, p.file, p.status, p.featured_image,p.created_at,
+        a.id , a.user_id, a.picture,
+        u.first_name , u.last_name
+        FROM posts p
+        INNER JOIN authors a ON p.author_id = a.id
+        INNER JOIN users u ON a.user_id = u.id
+        WHERE p.category_id = :id");
         $query->execute(['id' => $id]);
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
-    }
 
+    }
+    
     private function uniqueTitle(): array {
         $db = new Connection();
         $query = $db->connect()->prepare('SELECT * FROM posts WHERE title = :title');
