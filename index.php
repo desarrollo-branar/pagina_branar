@@ -33,4 +33,10 @@ $route->add('create_post/', 'src/controller/create_post.php');
 $route->add('blog/get_data_post/{id}', 'src/controller/get_post_data.php');
 $route->add('blog/edit_post/{id}', 'src/controller/edit_post.php');
 
+
+# category
+$route->add('create_category/', 'src/controller/create_category.php');
+$route->add('edit_category/{id}', 'src/controller/edit_category.php');
+
 $route->notFound('./pages/404.php');
+
