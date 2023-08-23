@@ -31,6 +31,7 @@
                 </li>
                 <li><a href="../about/" class="underline"><span class="icon-house"></span>Nosotros</a></li>
                 <li><a href="../contact/" class="underline"><span class="icon-mail"></span>Contacto</a></li>
+                <li><a href="../login/" class="underline"><span class="icon-mail"></span>Inicia Sesion o Registrate</a></li>
             </ul>
             <div class="menu-icon inactive">
                 <ion-icon name="reorder-four-outline" id="icon-hamburguer"></ion-icon>
@@ -62,6 +63,7 @@
                 </li>
                 <li><a href="../about/" class="underline">Nosotros</a></li>
                 <li><a href="../contact/" class="underline">Contacto</a></li>
+                <li><a href="../login/" class="underline"><span class="icon-mail"></span>Inicia Sesion o Registrate</a></li>
             </ul>
         </div>
     </header>
