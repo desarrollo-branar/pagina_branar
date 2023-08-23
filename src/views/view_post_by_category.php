@@ -38,7 +38,7 @@ $data_category = Category::getCategoryByName($split_category);
                 <div class="content_post">
                     <div class="labels">
                         <?php
-                        $labels = Label::getPostLabelById($post['post_id']);
+                        $labels = Label::getPostLabelByPostId($post['post_id']);
                         foreach ($labels as $key => $label) { ?>
                             <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
                         <?php } ?>
@@ -47,11 +47,10 @@ $data_category = Category::getCategoryByName($split_category);
                 </div>
                 <div class="cont-buttons">
                     <a href="../Blog/<?= $post['post_id'] ?>" class="btn btn-primary">Ver mas</a>
-                    <?php
-                    if($_SESSION['user_data']['role'] == 1): ?>
-                    <a href="javascript:void(0);" class="edit-post-link btn btn-warning" data-post-id="<?= $post['post_id'] ?>" data-bs-target="#editPostModal-<?= $post['id'] ?>">Editar Post</a>
 
-            <?php  endif; ?>
+                <?php if( isset($_SESSION['user_data']) && $_SESSION['user_data']['role'] == 1 ): ?>
+                    <a href="javascript:void(0);" class="edit-post-link btn btn-warning" data-post-id="<?= $post['post_id'] ?>" data-bs-target="#editPostModal-<?= $post['id'] ?>">Editar Post</a>
+                <?php  endif; ?>
                 </div>
                 <address class="info_author_post">
                     <div>
@@ -59,7 +58,10 @@ $data_category = Category::getCategoryByName($split_category);
                         <p><span>Fecha de publicacion: </span><?php $date = date_create($post['created_at']);
                                                                 echo date_format($date, "d-m-Y"); ?></p>
                         <p><span><i class="fa-solid fa-eye"></i></span> <?= $post['views'] != null ? $post['views'] : '0' ?></p>
+
+                        <?php if( isset($_SESSION['user_data']) && $_SESSION['user_data']['role'] == 1 ): ?>
                         <p><span>Status: </span><?= $post['status'] == 0 ? 'Habilitado' : 'Deshabilitado' ?></p>
+                        <?php endif; ?>
                     </div>
                 </address>
             </article>
@@ -72,7 +74,68 @@ $data_category = Category::getCategoryByName($split_category);
             </div>
 <?php endif;?>
         </section>
+        <aside class="aside_blog">
+
+            <?php if( isset($_SESSION['user_data']) && $_SESSION['user_data']['role'] == 1 ): ?>
+            <div>
+                <h3>Herramientas</h3>
+                <div class="actions_blog_admin">
+                
+                    <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                        Crear Publicacion
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCategories" >
+                        Categorias
+                    </button>
+
+                    <button type="button" class="btn btn-outline-info btn-lg" data-bs-toggle="modal" data-bs-target="#modalLabels" >
+                        Etiquetas
+                    </button>
+                </div>
+            </div>
+            <?php endif; ?>
+            <div>
+                <h3>Categorias</h3>
+                <ul class="categorias border p-2">
+                <?php
+                $category = Category::getAll();
+                    
+                foreach ($category as $key => $value) { 
+                    $category_name = UtilFunctions::split_letter($value['name'], 'upper');
+                    ?>
+                    <li>
+                        <a href="../blog_category/<?= UtilFunctions::split_letter($value['name'], 'split') ?>" class="p-2"><?= $category_name ?></a>
+                    </li>
+            <?php } ?>
+                </ul>
+            </div>
+            <div>
+                <h3>Etiquetas</h3>
+                <ul class="categorias border p-2">
+                <?php
+                $category = Category::getAll();
+                    
+                foreach ($category as $key => $value) { 
+                    $category_name = UtilFunctions::split_letter($value['name'], 'upper');
+                    ?>
+                    <li>
+                        <a href="../blog_category/<?= UtilFunctions::split_letter($value['name'], 'split') ?>" class="p-2"><?= $category_name ?></a>
+                    </li>
+            <?php } ?>
+                </ul>
+            </div>
+
+        </aside>
     </div>
+    <?php if( isset($_SESSION['user_data']) && $_SESSION['user_data']['role'] == 1){
+        # Incluir modales para crear y editar si el usuario es admin
+        require_once './src/views/form_population_create.php';
+        require_once './src/views/form_population_edit.php';
+        require_once './src/views/modal_categories.php';
+        require_once './src/views/modal_labels.php';
+        }
+    ?>
 </main>
 
 <script>
