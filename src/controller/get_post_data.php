@@ -2,6 +2,7 @@
 // get_post_data.php
 use Branar\Blog\model\Post;
 use Branar\Blog\model\Category;
+use Branar\Blog\model\Label;
 
 $id = $params['id'];
 
@@ -56,8 +57,65 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($id)) {
                 <input type="file" name="file" class="form-control">
             </div>
             <input type="hidden" name="id" value=<?= $params['id'];?>>
-            <button type="submit" class="btn btn-primary mt-4">Crear publicacion</button>
+            <button type="submit" class="btn btn-primary mt-4">Editar publicacion</button>
         </form>
+
+        <div id="accordion" class="mt-4">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Etiquetas
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <form action="../edit_post_label/" method="post" class="container form_category_edit mt-2">
+                    <input type="hidden" name="post_id" value="<?= $params['id'];?>">
+                    <?php 
+                    $labels = Label::getAll(); // Obtén todas las labels de la base de datos
+                    $postLabels = Label::getPostLabelByPostId($params['id']); // Obtén las labels del post actual
+
+                    $maxCheckboxes = 3; // Establece el máximo de checkboxes permitidos
+
+                    foreach ($labels as $label): ?>
+                        <label>
+                            <input type="checkbox" name="labels[]" value="<?= $label['id'] ?>"
+                            <?php
+                            // Verifica si la label está asociada al post
+                            if (in_array($label['id'], array_column($postLabels, 'label_id'))) {
+                                echo 'checked';
+                            }
+                            ?>
+                            > <?= $label['name'] ?>
+                        </label>
+                    <?php endforeach; ?>
+
+                    <script>
+                        const checkboxes = document.querySelectorAll('input[name="labels[]"]');
+                        let checkedCount = 0;
+
+                        checkboxes.forEach(checkbox => {
+                            checkbox.addEventListener('change', () => {
+                                checkedCount = document.querySelectorAll('input[name="labels[]"]:checked').length;
+
+                                if (checkedCount > <?= $maxCheckboxes ?>) {
+                                    checkbox.checked = false;
+                                }
+                            });
+                        });
+                    </script>
+
+                    <button type="submit" class="btn btn-primary">Editar</button>
+                </form>
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 <?php }
 }else{
