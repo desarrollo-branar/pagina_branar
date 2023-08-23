@@ -39,7 +39,7 @@ use Branar\Blog\model\Category;
                     <div class="content_post">
                         <div class="labels">
                             <?php
-                            $labels = Label::getPostLabelById($post['post_id']);
+                            $labels = Label::getPostLabelByPostId($post['post_id']);
                             foreach ($labels as $key => $label) { ?>
                                 <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
                             <?php } ?>
@@ -91,7 +91,7 @@ use Branar\Blog\model\Category;
                     <div class="content_post">
                         <div class="labels">
                             <?php
-                            $labels = Label::getPostLabelById($post['post_id']);
+                            $labels = Label::getPostLabelByPostId($post['post_id']);
                             foreach ($labels as $key => $label) { ?>
                                 <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
                             <?php } ?>
@@ -129,7 +129,7 @@ use Branar\Blog\model\Category;
                         Categorias
                     </button>
 
-                    <button type="button" class="btn btn-outline-info btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                    <button type="button" class="btn btn-outline-info btn-lg" data-bs-toggle="modal" data-bs-target="#modalLabels" >
                         Etiquetas
                     </button>
                 </div>
@@ -173,6 +173,7 @@ use Branar\Blog\model\Category;
         require_once './src/views/form_population_create.php';
         require_once './src/views/form_population_edit.php';
         require_once './src/views/modal_categories.php';
+        require_once './src/views/modal_labels.php';
         }
     ?>
 </main>
