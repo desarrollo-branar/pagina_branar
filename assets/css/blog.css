@@ -191,3 +191,30 @@ main {
     font-size: var(--sm);
     padding-top: 8px;
 }
+
+
+/* ---- home ---- */
+.container_blog_home {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    justify-content: center;
+
+    margin: 24px 24px;
+}
+
+.actions_blog_admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.actions_blog_admin button { width: 100%; }
+
+.form_category_edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    gap: 12px;
+}
