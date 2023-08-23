@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     'status' => $checkStatus['content']['status'],
                     'role' => $checkStatus['content']['role_id']
                 ];
-                header('Location: ../../blog/admin_blog');
+                header('Location: ../../blog/');
             } else {
                 $_SESSION['user_data'] = [
                     'id' => $checkStatus['content']['id'],
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     'status' => $checkStatus['content']['status'],
                     'role' => $checkStatus['content']['role_id']
                 ];
-                header('Location: ../../login/');
+                header('Location: ../../blog/');
             }
         } else {
             dd($checkStatus);
