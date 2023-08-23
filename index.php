@@ -38,5 +38,10 @@ $route->add('blog/edit_post/{id}', 'src/controller/edit_post.php');
 $route->add('create_category/', 'src/controller/create_category.php');
 $route->add('edit_category/{id}', 'src/controller/edit_category.php');
 
+# label
+$route->add('create_label/', 'src/controller/create_label.php');
+$route->add('edit_label/{id}', 'src/controller/edit_label.php');
+$route->add('edit_post_label/', 'src/controller/edit_labels_of_post.php');
+
 $route->notFound('./pages/404.php');
 
