@@ -47,7 +47,7 @@ class Category extends Connection{
 
     public static function getAll(): array {
         $db = new Connection();
-        $query = $db->connect()->query('SELECT * FROM categories');
+        $query = $db->connect()->query('SELECT * FROM categories ORDER BY id ASC');
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
