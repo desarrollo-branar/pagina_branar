@@ -14,6 +14,7 @@ $route->add('contact/', 'pages/contact.php');
 
 # Login
 $route->add('login/', 'pages/login.php');
+$route->add('logout/', 'src/controller/logout.php');
 $route->add('login/checklogin/', 'src/controller/login_proceso.php');
 
 # service/
