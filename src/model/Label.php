@@ -42,15 +42,6 @@ class Label {
         return $result;
     }
 
-    public function createPostLabel(string $post_id, string $label_id) {
-        $db = new Connection();
-        $query = $db->connect()->prepare('INSERT INTO post_label(post_id, label_id) VALUES(:post_id, :label_id)');
-        $query->execute(['post_id' => $post_id, 'label_id' => $label_id]);
-        $result = $query;
-
-        return $result;
-    }
-
     public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM labels');
@@ -67,15 +58,39 @@ class Label {
         return $result;
     }
 
-    public static function getPostLabelById(int $post_id): array {
+    public static function getPostLabelByPostId(int $post_id): array {
         $db = new Connection();
-        $query = $db->connect()->prepare('SELECT * FROM post_label pl
-        INNER JOIN labels l ON pl.label_id = l.id 
+        $query = $db->connect()->prepare('SELECT pl.post_id, pl.label_id, l.id,l.name, l.color FROM post_label pl
+        INNER JOIN labels l ON pl.label_id = l.id
         WHERE post_id = :post_id');
         $query->execute(['post_id' => $post_id]);
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
+    }
+
+    public static function createPostLabel(string $post_id, string $label_id) {
+        $db = new Connection();
+        $query = $db->connect()->prepare('INSERT INTO post_label(post_id, label_id) VALUES(:post_id, :label_id)');
+        $query->execute(['post_id' => $post_id, 'label_id' => $label_id]);
+        $result = $query;
+
+        return $result;
+    }
+
+    public static function deletePostLabels(int $post_id) {
+        $db = new Connection();
+        $query = $db->connect()->prepare('DELETE FROM post_label WHERE post_id = :post_id');
+        $query->execute(['post_id' => $post_id]);
+    }
+
+    public static function getPostLabelCount(string $post_id): int {
+        $db = new Connection();
+        $query = $db->connect()->prepare('SELECT COUNT(*) as count FROM post_label WHERE post_id = :post_id');
+        $query->execute(['post_id' => $post_id]);
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+
+        return (int) $result['count'];
     }
 
 }
