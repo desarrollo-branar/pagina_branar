@@ -14,6 +14,7 @@
     <!-- STYLES -->
 	<link rel="stylesheet" href="../assets/css/blog.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/utils.css">
 
     <!-- FONT AWESONE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
