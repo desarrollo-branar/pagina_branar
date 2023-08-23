@@ -31,7 +31,11 @@
                 </li>
                 <li><a href="../about/" class="underline"><span class="icon-house"></span>Nosotros</a></li>
                 <li><a href="../contact/" class="underline"><span class="icon-mail"></span>Contacto</a></li>
+                <?php if( !isset($_SESSION['user_data']) ):?>
                 <li><a href="../login/" class="underline"><span class="icon-mail"></span>Inicia Sesion o Registrate</a></li>
+                <?php else: ?>
+                <li><a href="../logout/" class="underline"><span class="icon-mail"></span>Cerrar Sesion</a></li>
+                <?php endif; ?>
             </ul>
             <div class="menu-icon inactive">
                 <ion-icon name="reorder-four-outline" id="icon-hamburguer"></ion-icon>
