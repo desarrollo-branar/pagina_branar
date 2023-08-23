@@ -5,21 +5,27 @@ include_once './templates/navbar.php';
 use Branar\Blog\model\Navegation;
 use Branar\Blog\model\Post;
 use Branar\Blog\model\Label;
+use Branar\Blog\functions\UtilFunctions;
+use Branar\Blog\model\Category;
 ?>
 <main>
-    <div class="container">
-        <header class="header_post_title">
-            <h1>Blog</h1>
-        </header>
+    <header class="sec_header">
+        <h1>Blog</h1>
+    </header>
+<?php if(isset($_SESSION['message']) && $_SESSION['message'] !=""): ?>
+        <div class="alert alert-<?=$_SESSION['message_type'];?> alert-dismissible fade show" role="alert">
+
+        <?= $_SESSION['message']?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+<?php endif; $_SESSION['message'] = ""; $_SESSION['message_user'] = ""; ?>
+    <div class="container_blog_home">
+
     <?php if( isset($_SESSION['user_data']) ): 
         # Si existe una session ?>
 
-        <?php if($_SESSION['user_data']['role'] == 1  ): ?>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create Post</button>
-        <?php endif; ?>
-
         <section class="container_post">
-
+        
             <?php
 
             $posts = Post::getAllThePublishingInformation();
@@ -68,15 +74,6 @@ use Branar\Blog\model\Label;
                 </article>
             <?php } ?>
         </section>
-
-        
-        <?php if($_SESSION['user_data']['role'] == 1){
-        # Incluir modales para crear y editar si el usuario es admin
-        require_once './src/views/form_population_create.php';
-        require_once './src/views/form_population_edit.php';
-        }
-        ?>
-    </div>
 <?php else: ?>
 
         <section class="container_post">
@@ -115,8 +112,69 @@ use Branar\Blog\model\Label;
                 </article>
             <?php } ?>
         </section>
-    </div>
+
 <?php endif; ?>
+        <aside class="aside_blog">
+
+            <?php if( isset($_SESSION['user_data']) && $_SESSION['user_data']['role'] == 1 ): ?>
+            <div>
+                <h3>Herramientas</h3>
+                <div class="actions_blog_admin">
+                
+                    <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                        Crear Publicacion
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalCategories" >
+                        Categorias
+                    </button>
+
+                    <button type="button" class="btn btn-outline-info btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                        Etiquetas
+                    </button>
+                </div>
+            </div>
+            <?php endif; ?>
+            <div>
+                <h3>Categorias</h3>
+                <ul class="categorias border p-2">
+                <?php
+                $category = Category::getAll();
+                    
+                foreach ($category as $key => $value) { 
+                    $category_name = UtilFunctions::split_letter($value['name'], 'upper');
+                    ?>
+                    <li>
+                        <a href="../blog_category/<?= UtilFunctions::split_letter($value['name'], 'split') ?>" class="p-2"><?= $category_name ?></a>
+                    </li>
+            <?php } ?>
+                </ul>
+            </div>
+            <div>
+                <h3>Etiquetas</h3>
+                <ul class="categorias border p-2">
+                <?php
+                $category = Category::getAll();
+                    
+                foreach ($category as $key => $value) { 
+                    $category_name = UtilFunctions::split_letter($value['name'], 'upper');
+                    ?>
+                    <li>
+                        <a href="../blog_category/<?= UtilFunctions::split_letter($value['name'], 'split') ?>" class="p-2"><?= $category_name ?></a>
+                    </li>
+            <?php } ?>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+    <?php if( isset($_SESSION['user_data']) && $_SESSION['user_data']['role'] == 1){
+        # Incluir modales para crear y editar si el usuario es admin
+        require_once './src/views/form_population_create.php';
+        require_once './src/views/form_population_edit.php';
+        require_once './src/views/modal_categories.php';
+        }
+    ?>
 </main>
 
 <script>
