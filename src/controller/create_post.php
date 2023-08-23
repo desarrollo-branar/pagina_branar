@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['user_data']['email']
     );
 
-    if (isset($_FILES["file"])) {
+    if (isset($_FILES["file"]) && $_FILES["file"]['size'] > 0) {
         $image = new ImageUploader();
         $uploader = $image->uploadImage($_FILES["file"]);
 
