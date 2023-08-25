@@ -38,12 +38,32 @@ class User extends Connection{
         return $this->last_name;
     }
 
+    public function get_message(){
+        return $this->message;
+    }
+
     public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM users');
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
+    }
+
+    public static function getUserById(int $id): array {
+        $db = new Connection();
+        $query = $db->connect()->prepare('SELECT * FROM users WHERE id = :id');
+        $query->execute(['id' => $id]);
+        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+
+    public function getLastDataUser() {
+        $db = new Connection();
+        $query = $db->connect()->query('SELECT id, first_name, last_name,email FROM users ORDER BY id DESC LIMIT 1')->fetch(PDO::FETCH_ASSOC);
+
+        return $query;
     }
 
     public function createUser(
@@ -61,9 +81,21 @@ class User extends Connection{
             'role_id' => $role,
             'password' => $password
         ]);
+
         $result = $query;
 
-        return $result;
+        if ($result) {
+            $this->message['response'] = true;
+            $this->message['message'] = "Usuario {$this->getUsername()} creado con exito";
+            $this->message['color'] = 'success';
+            $this->message['content'] = $result;
+        }else{
+            $this->message['response'] = false;
+            $this->message['message'] = "Lo sentimos, el usuario {$this->getUsername()} no pudo ser procesado";
+            $this->message['color'] = 'warning';
+            $this->message['content'] = $result;
+        }
+
     }
 
     public function updateUserById(
@@ -88,6 +120,25 @@ class User extends Connection{
         $result = $query;
 
         return $result;
+    }
+
+    public function verifyUserExist(){
+        $db = new Connection();
+        $query = $db->connect()->prepare('SELECT * FROM users WHERE username = :username || email = :email');
+        $query->execute(['username' => $this->getUsername(), 'email' => $this->getEmail()]);
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+
+        if ($result) {
+            $this->message['response'] = true;
+            $this->message['message'] = "Lo sentimos, el usuario {$this->getUsername()} o el correo {$this->getEmail()} ya se encuentran registrados";
+            $this->message['color'] = 'warning';
+            $this->message['content'] = $result;
+        }else{
+            $this->message['response'] = false;
+            $this->message['message'] = "No existe el usuario";
+            $this->message['color'] = 'success';
+            $this->message['content'] = $result;
+        }
     }
 
     public static function login(string $mail, string $password): array {
@@ -130,5 +181,14 @@ class User extends Connection{
             $message['content'] = $value['content'];
             return $message;
         }
+    }
+
+    public static function enableUser(int $id) {
+        $db = new Connection();
+        $query = $db->connect()->prepare('UPDATE users SET status = :status WHERE id= :id');
+        $query->execute(['status' => 'enabled', 'id' => $id]);
+        $result = $query;
+
+        return $result;
     }
 }
