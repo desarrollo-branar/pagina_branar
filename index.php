@@ -17,6 +17,12 @@ $route->add('login/', 'pages/login.php');
 $route->add('logout/', 'src/controller/logout.php');
 $route->add('login/checklogin/', 'src/controller/login_proceso.php');
 
+# Account
+$route->add('register/account/', 'src/controller/account/register.php');
+$route->add('register/verify_account', 'src/views/verify_account.php');
+$route->add('register/resend_code/{email}', 'src/controller/account/resendCode.php');
+$route->add('confirm_account/', 'src/controller/account/confirm_account.php');
+
 # service/
 $route->add('service/csa', 'pages/csa.php');
 $route->add('service/web-development', 'pages/devweb.php');
