@@ -9,7 +9,7 @@ include_once './templates/header_blog.php';
     border-radius: 1px;
 }
 </style>
-<main class="container h-100">
+<main class="container">
 
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-sm-12 col-md-5 col-lg-5 pt-2 pl-5 pr-5 pb-5" id="auth-container">
@@ -24,7 +24,13 @@ include_once './templates/header_blog.php';
                     <input type="password" class="form-control" name="password" placeholder="Password">
                 </div>
                 <button class="btn btn-primary btn-block mt-5" type="submit">Sign in</button>
+                <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerAccount" >
+                    Crear Cuenta
+                </button>
             </form>
         </div>
     </div>
+    <?php require_once './src/views/modal_create_account.php'; ?>
 </main>
+
+<?php require_once './templates/footer-blog.php'; ?>
