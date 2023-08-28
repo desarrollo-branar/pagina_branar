@@ -24,14 +24,30 @@ class Post extends Connection{
         $this->description = $description;
     }
 
+    /**
+     * Get title 
+     *
+     * @return string
+     */
     public function getTitle(): string {
         return $this->title;
     }
-
+    /**
+     * Get Desciption
+     *
+     * @return string
+     */
     public function getDescription(): string {
         return $this->description;
     }
-
+    /**
+     * Create Post
+     *
+     * @param integer $author_id
+     * @param integer $category_id
+     * @param string $featured_image
+     * @return void
+     */
     public function createPost(
         int $author_id,
         int $category_id,
@@ -80,7 +96,17 @@ class Post extends Connection{
             return $uniqueTitle;
         }
     }
-
+    /**
+     * Update Post
+     *
+     * @param integer $author_id
+     * @param integer $category_id
+     * @param string $featured_image
+     * @param string $status
+     * @param string $updated_at
+     * @param integer $id
+     * @return void
+     */
     public function updatePost(
         int $author_id,
         int $category_id,
@@ -138,7 +164,11 @@ class Post extends Connection{
         $this->message['content'] = $result;
         return $this->message;
     }
-
+    /**
+     * Get all data post
+     *
+     * @return array
+     */
     public static function getAll(): array {
         $db = new Connection();
         $query = $db->connect()->query('SELECT * FROM posts');
@@ -146,7 +176,12 @@ class Post extends Connection{
 
         return $result;
     }
-
+    /**
+     * Get Data post for id
+     *
+     * @param integer $id
+     * @return array
+     */
     public static function getPostById(int $id): array {
         $db = new Connection();
         $query = $db->connect()->prepare('SELECT * FROM posts WHERE id = :id');
@@ -155,7 +190,11 @@ class Post extends Connection{
 
         return $result;
     }
-
+    /**
+     * Get all the data related to the post
+     *
+     * @return array
+     */
     public static function getAllThePublishingInformation(): array {
         $db = new Connection();
         $query = $db->connect()->query("SELECT p.id as post_id, p.title, p.description, p.author_id, p.category_id, p.views, p.file, p.status, p.featured_image,p.created_at,
@@ -164,6 +203,25 @@ class Post extends Connection{
         FROM posts p
         INNER JOIN authors a ON p.author_id = a.id
         INNER JOIN users u ON a.user_id = u.id ORDER BY p.status");
+        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+    /**
+     * 
+     * Get all publishing information if enabled
+     *
+     * @return array
+     */
+    public static function obtain_all_publication_information_if_enabled(): array {
+        $db = new Connection();
+        $query = $db->connect()->query("SELECT p.id as post_id, p.title, p.description, p.author_id, p.category_id, p.views, p.file, p.status, p.featured_image,p.created_at,
+        a.id , a.user_id, a.picture,
+        u.first_name , u.last_name
+        FROM posts p
+        INNER JOIN authors a ON p.author_id = a.id
+        INNER JOIN users u ON a.user_id = u.id 
+        WHERE p.status = 0 ORDER BY p.status");
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
@@ -177,7 +235,7 @@ class Post extends Connection{
         FROM posts p
         INNER JOIN authors a ON p.author_id = a.id
         INNER JOIN users u ON a.user_id = u.id
-        WHERE p.category_id = :id");
+        WHERE p.category_id = :id AND p.status = 0");
         $query->execute(['id' => $id]);
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
@@ -275,8 +333,74 @@ class Post extends Connection{
             return $result;
 
         }
+    }
+
+    public static function filter_post_if_enable($labels_ids, $categories_ids) {
+        $db = new Connection();
+    
+        
+        if (($labels_ids != '' || $labels_ids != null) && ($categories_ids != '' || $categories_ids != null)) {
+            $labels_ids_string = implode(',', $labels_ids);
+            $categories_ids_string = implode(',', $categories_ids);
+
+            $sql = "SELECT p.id as post_id, p.title, p.description, p.author_id, p.views, p.file, p.status, p.featured_image, p.created_at, p.views,
+                    GROUP_CONCAT(DISTINCT pl.label_id) AS label_ids, GROUP_CONCAT(DISTINCT c.name) AS category_names,
+                    a.id , a.user_id, a.picture, u.first_name, u.last_name
+                    FROM posts p
+                    INNER JOIN categories c ON p.category_id = c.id
+                    INNER JOIN post_label pl ON p.id = pl.post_id
+                    INNER JOIN authors a ON p.author_id = a.id
+                    INNER JOIN users u ON a.user_id = u.id
+                    WHERE pl.label_id IN ($labels_ids_string)
+                    OR p.category_id IN ($categories_ids_string)
+                    GROUP BY p.id, p.title";
+        
+            $query = $db->connect()->prepare($sql);
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+        
+            return $result;
+        }elseif ($labels_ids == '' || $labels_ids == null) {
+            $categories_ids_string = implode(',', $categories_ids);
+            $sql = "SELECT p.id as post_id, p.title, p.description, p.author_id, p.views, p.file, p.status, p.featured_image, p.created_at, p.views,
+                    GROUP_CONCAT(DISTINCT pl.label_id) AS label_ids, GROUP_CONCAT(DISTINCT c.name) AS category_names,
+                    a.id , a.user_id, a.picture, u.first_name, u.last_name
+                    FROM posts p
+                    INNER JOIN categories c ON p.category_id = c.id
+                    INNER JOIN post_label pl ON p.id = pl.post_id
+                    INNER JOIN authors a ON p.author_id = a.id
+                    INNER JOIN users u ON a.user_id = u.id
+                    WHERE p.category_id IN ($categories_ids_string)
+                    GROUP BY p.id, p.title";
+
+            $query = $db->connect()->prepare($sql);
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+            return $result;
+        }else{
+            $labels_ids_string = implode(',', $labels_ids);
+            $sql = "SELECT p.id as post_id, p.title, p.description, p.author_id, p.views, p.file, p.status, p.featured_image, p.created_at, p.views,
+                    GROUP_CONCAT(DISTINCT pl.label_id) AS label_ids, GROUP_CONCAT(DISTINCT c.name) AS category_names,
+                    a.id , a.user_id, a.picture, u.first_name, u.last_name
+                    FROM posts p
+                    INNER JOIN categories c ON p.category_id = c.id
+                    INNER JOIN post_label pl ON p.id = pl.post_id
+                    INNER JOIN authors a ON p.author_id = a.id
+                    INNER JOIN users u ON a.user_id = u.id
+                    WHERE pl.label_id IN ($labels_ids_string)
+                    GROUP BY p.id, p.title";
+
+            $query = $db->connect()->prepare($sql);
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+            return $result;
+
+        }
 
     }
+}
     
 
     // public function getContent() {
@@ -341,4 +465,3 @@ class Post extends Connection{
     //     $this->file = $title;
     //     return $title;
     // }
-}
