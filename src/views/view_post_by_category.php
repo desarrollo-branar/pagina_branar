@@ -110,21 +110,6 @@ $data_category = Category::getCategoryByName($split_category);
             <?php } ?>
                 </ul>
             </div>
-            <div>
-                <h3>Etiquetas</h3>
-                <ul class="categorias border p-2">
-                <?php
-                $category = Category::getAll();
-                    
-                foreach ($category as $key => $value) { 
-                    $category_name = UtilFunctions::split_letter($value['name'], 'upper');
-                    ?>
-                    <li>
-                        <a href="../blog_category/<?= UtilFunctions::split_letter($value['name'], 'split') ?>" class="p-2"><?= $category_name ?></a>
-                    </li>
-            <?php } ?>
-                </ul>
-            </div>
 
         </aside>
     </div>
