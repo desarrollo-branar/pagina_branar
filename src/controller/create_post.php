@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $create_post = $post->createPost($getAuthor['user_id'], $category_name, $picture_image);
 
         if ($create_post['response'] == true) {
-            header('Location: ../admin');
+            header('Location: ../blog/');
         } else {
             dd($create_post);
         }
