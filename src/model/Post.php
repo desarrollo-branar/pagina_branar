@@ -43,7 +43,7 @@ class Post extends Connection{
         $gestor = fopen("./src/entries/{$file_name}", "a+");
 
         # Crear contenido del html
-        $content_html = "<!DOCTYPE html>\n<html lang='en'>\n<head>\n\t<meta charset='UTF-8'>\n\t<meta name='viewport' content='width=device-width, initial-scale=1.0'>\n\t<title>Document</title>\n</head>\n<body>\n\n</body>\n</html>";
+        $content_html = "<div class=\"blog-card\">\n\t<header class=\"blog-card-header\">\n\t\t<div></div>\n\t\t<h1 class=\"title\"></h1>\n\t\t <p class=\"blog-card-description\"></p>\n\t</header>\n\t<div class=\"blog-card-content border p-4\">\n\t</div>\n</div>\n";
         
         $uniqueTitle = $this->uniqueTitle();
         # If el titulo no existe en la base de datos
