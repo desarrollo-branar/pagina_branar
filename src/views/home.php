@@ -154,7 +154,7 @@ use Branar\Blog\model\Category;
                 <h3>Etiquetas</h3>
                 <ul class="categorias border p-2">
                 <?php
-                $category = Category::getAll();
+                $category = Label::getAll();
                     
                 foreach ($category as $key => $value) { 
                     $category_name = UtilFunctions::split_letter($value['name'], 'upper');
@@ -165,6 +165,42 @@ use Branar\Blog\model\Category;
             <?php } ?>
                 </ul>
             </div>
+            <form action="./filtrado" method="POST">
+                <h4>Filtro</h4>
+                <div class="p-2 border">
+                    <div class="form-group">
+                        <h5>Por etiqueta</h5>
+                        <?php
+                        $category = Label::getAll();
+
+                        foreach ($category as $key => $value) {
+                            $category_name = UtilFunctions::split_letter($value['name'], 'upper');
+                            ?>
+                            <label class="d-block">
+                                <input type="checkbox" value="<?= UtilFunctions::split_letter($value['id'], 'split') ?>"
+                                    name="labels[]" id="labelCheckbox<?= $key ?>">
+                                <?= $category_name ?>
+                            </label>
+                        <?php } ?>
+                    </div>
+                    <div class="form-group mt-4">
+                        <h5>Por categoria</h5>
+                        <?php
+                        $category = Category::getAll();
+
+                        foreach ($category as $key => $value) {
+                            $category_name = UtilFunctions::split_letter($value['name'], 'upper');
+                            ?>
+                            <label class="d-block">
+                                <input type="checkbox" value="<?= UtilFunctions::split_letter($value['id'], 'split') ?>"
+                                    name="categories[]" id="categoryCheckbox<?= $key ?>">
+                                <?= $category_name ?>
+                            </label>
+                        <?php } ?>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm mt-4" style="width: 100%;">Filtrar</button>
+                </div>
+            </form>
 
         </aside>
     </div>
