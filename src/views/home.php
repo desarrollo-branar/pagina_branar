@@ -26,9 +26,7 @@ use Branar\Blog\model\Category;
 
         <section class="container_post">
         
-            <?php
-
-            $posts = Post::getAllThePublishingInformation();
+            <?php $posts = Post::getAllThePublishingInformation();
             foreach ($posts as $key => $post) { ?>
                 <article class="wrapper_post">
                     <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}" : "../post_image/tecnology_image.jpeg" ?>);">
@@ -66,7 +64,7 @@ use Branar\Blog\model\Category;
                             <?php if ($_SESSION['user_data']['role'] == 1) { 
                             # Mostrar Status del Post si el usuario es admin
                             ?>
-                            <p><span>Status: </span><?= $post['status'] == 0 ? 'Habilitado' : 'Deshabilitado' ?></p>
+                            <p><span>Status: </span><?= $post['status'] == 1 ? 'Habilitado' : 'Deshabilitado' ?></p>
                             <?php } ?>
 
                         </div>
@@ -78,39 +76,37 @@ use Branar\Blog\model\Category;
 
         <section class="container_post">
 
-            <?php
-
-            $posts = Post::getAllThePublishingInformation();
-            foreach ($posts as $key => $post) { ?>
-                <article class="wrapper_post">
-                    <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}" : "../post_image/tecnology_image.jpeg" ?>);">
-                        <div>
-                            <h3><?= $post['title'] ?></h3>
-                        </div>
-                    </header>
-                    <div class="content_post">
-                        <div class="labels">
-                            <?php
-                            $labels = Label::getPostLabelByPostId($post['post_id']);
-                            foreach ($labels as $key => $label) { ?>
-                                <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
-                            <?php } ?>
-                        </div>
-                        <p><?= $post['description'] ?></p>
+        <?php $posts = Post::obtain_all_publication_information_if_enabled();
+        foreach ($posts as $key => $post): ?>
+            <article class="wrapper_post">
+                <header class="header_post" style="background-image: url(<?= $post['featured_image'] ? "../post_image/{$post['featured_image']}" : "../post_image/tecnology_image.jpeg" ?>);">
+                    <div>
+                        <h3><?= $post['title'] ?></h3>
                     </div>
-                    <div class="cont-buttons">
-                        <a href="../Blog/<?= $post['post_id'] ?>" class="btn btn-primary">Ver mas</a>
+                </header>
+                <div class="content_post">
+                    <div class="labels">
+                        <?php
+                        $labels = Label::getPostLabelByPostId($post['post_id']);
+                        foreach ($labels as $key => $label) { ?>
+                            <span class="<?= $label['color'] ?>"><?= $label['name'] ?></span>
+                        <?php } ?>
                     </div>
-                    <address class="info_author_post">
-                        <div>
-                            <p><span>Autor: </span><?= $post['first_name'] . ' ' . $post['last_name'] ?></p>
-                            <p><span>Fecha de publicacion: </span><?php $date = date_create($post['created_at']);
-                                                                    echo date_format($date, "d-m-Y"); ?></p>
-                            <p><span><i class="fa-solid fa-eye"></i></span> <?= $post['views'] != null ? $post['views'] : '0' ?></p>
-                        </div>
-                    </address>
-                </article>
-            <?php } ?>
+                    <p><?= $post['description'] ?></p>
+                </div>
+                <div class="cont-buttons">
+                    <a href="../Blog/<?= $post['post_id'] ?>" class="btn btn-primary">Ver mas</a>
+                </div>
+                <address class="info_author_post">
+                    <div>
+                        <p><span>Autor: </span><?= $post['first_name'] . ' ' . $post['last_name'] ?></p>
+                        <p><span>Fecha de publicacion: </span><?php $date = date_create($post['created_at']);
+                                                                echo date_format($date, "d-m-Y"); ?></p>
+                        <p><span><i class="fa-solid fa-eye"></i></span> <?= $post['views'] != null ? $post['views'] : '0' ?></p>
+                    </div>
+                </address>
+            </article>     
+        <?php endforeach; ?>
         </section>
 
 <?php endif; ?>

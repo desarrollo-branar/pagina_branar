@@ -60,7 +60,7 @@ $data_category = Category::getCategoryByName($split_category);
                         <p><span><i class="fa-solid fa-eye"></i></span> <?= $post['views'] != null ? $post['views'] : '0' ?></p>
 
                         <?php if( isset($_SESSION['user_data']) && $_SESSION['user_data']['role'] == 1 ): ?>
-                        <p><span>Status: </span><?= $post['status'] == 0 ? 'Habilitado' : 'Deshabilitado' ?></p>
+                        <p><span>Status: </span><?= $post['status'] == 1 ? 'Habilitado' : 'Deshabilitado' ?></p>
                         <?php endif; ?>
                     </div>
                 </address>
