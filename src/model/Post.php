@@ -212,6 +212,73 @@ class Post extends Connection{
         return $filename;
     }
 
+    public static function filterPost($labels_ids, $categories_ids) {
+        $db = new Connection();
+
+        
+        if (($labels_ids != '' || $labels_ids != null) && ($categories_ids != '' || $categories_ids != null)) {
+            $labels_ids_string = implode(',', $labels_ids);
+            $categories_ids_string = implode(',', $categories_ids);
+
+            $sql = "SELECT p.id as post_id, p.title, p.description, p.author_id, p.views, p.file, p.status, p.featured_image, p.created_at, p.views,
+                    GROUP_CONCAT(DISTINCT pl.label_id) AS label_ids, GROUP_CONCAT(DISTINCT c.name) AS category_names,
+                    a.id , a.user_id, a.picture, u.first_name, u.last_name
+                    FROM posts p
+                    INNER JOIN categories c ON p.category_id = c.id
+                    INNER JOIN post_label pl ON p.id = pl.post_id
+                    INNER JOIN authors a ON p.author_id = a.id
+                    INNER JOIN users u ON a.user_id = u.id
+                    WHERE pl.label_id IN ($labels_ids_string)
+                    OR p.category_id IN ($categories_ids_string)
+                    GROUP BY p.id, p.title";
+        
+            $query = $db->connect()->prepare($sql);
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+        
+            return $result;
+        }elseif ($labels_ids == '' || $labels_ids == null) {
+            $categories_ids_string = implode(',', $categories_ids);
+            $sql = "SELECT p.id as post_id, p.title, p.description, p.author_id, p.views, p.file, p.status, p.featured_image, p.created_at, p.views,
+                    GROUP_CONCAT(DISTINCT pl.label_id) AS label_ids, GROUP_CONCAT(DISTINCT c.name) AS category_names,
+                    a.id , a.user_id, a.picture, u.first_name, u.last_name
+                    FROM posts p
+                    INNER JOIN categories c ON p.category_id = c.id
+                    INNER JOIN post_label pl ON p.id = pl.post_id
+                    INNER JOIN authors a ON p.author_id = a.id
+                    INNER JOIN users u ON a.user_id = u.id
+                    WHERE p.category_id IN ($categories_ids_string)
+                    GROUP BY p.id, p.title";
+
+            $query = $db->connect()->prepare($sql);
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+            return $result;
+        }else{
+            $labels_ids_string = implode(',', $labels_ids);
+            $sql = "SELECT p.id as post_id, p.title, p.description, p.author_id, p.views, p.file, p.status, p.featured_image, p.created_at, p.views,
+                    GROUP_CONCAT(DISTINCT pl.label_id) AS label_ids, GROUP_CONCAT(DISTINCT c.name) AS category_names,
+                    a.id , a.user_id, a.picture, u.first_name, u.last_name
+                    FROM posts p
+                    INNER JOIN categories c ON p.category_id = c.id
+                    INNER JOIN post_label pl ON p.id = pl.post_id
+                    INNER JOIN authors a ON p.author_id = a.id
+                    INNER JOIN users u ON a.user_id = u.id
+                    WHERE pl.label_id IN ($labels_ids_string)
+                    GROUP BY p.id, p.title";
+
+            $query = $db->connect()->prepare($sql);
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+            return $result;
+
+        }
+
+    }
+    
+
     // public function getContent() {
     //     $converter = new CommonMarkConverter(['html_input' => 'escape', 'allow_unsafe_links' => false]);
 
