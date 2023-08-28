@@ -23,9 +23,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // echo '</pre>';
 
     $posts = Post::filterPost($labels, $categories);
+    if (isset($_SESSION['user_data'])) {
+        if ($_SESSION['user_data']['role'] == 1) {
+            $posts = Post::filterPost($labels, $categories);
+        }else{
+            $posts = Post::filter_post_if_enable($labels, $categories);
+        }
+    } else {
+        $posts = Post::filter_post_if_enable($labels, $categories);
+    }
 } elseif (isset($_SESSION['data_filter'])) {
-
-    $posts = Post::filterPost($_SESSION['data_filter']['labels'], $_SESSION['data_filter']['categories']);
+    if (isset($_SESSION['user_data'])) {
+        if ($_SESSION['user_data']['role'] == 1) {
+            $posts = Post::filterPost($_SESSION['data_filter']['labels'], $_SESSION['data_filter']['categories']);
+        }else{
+            $posts = Post::filter_post_if_enable($_SESSION['data_filter']['labels'], $_SESSION['data_filter']['categories']);
+        }
+    } else {
+        $posts = Post::filter_post_if_enable($_SESSION['data_filter']['labels'], $_SESSION['data_filter']['categories']);
+    }
 }
 
 
@@ -88,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <?php if ($_SESSION['user_data']['role'] == 1) {
                                     # Mostrar Status del Post si el usuario es admin 
                                 ?>
-                                    <p><span>Status: </span><?= $post['status'] == 0 ? 'Habilitado' : 'Deshabilitado' ?></p>
+                                    <p><span>Status: </span><?= $post['status'] == 1 ? 'Habilitado' : 'Deshabilitado' ?></p>
                                 <?php } ?>
                             </div>
                         </address>
