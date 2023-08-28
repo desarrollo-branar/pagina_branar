@@ -35,7 +35,6 @@ $route->add('service/socialmedia', 'pages/social-media.php');
 $route->add('blog/', './src/views/home.php');
 $route->add('Blog/{id}', './src/views/view_content_blog.php');
 $route->add('blog_category/{title}', './src/views/view_post_by_category.php');
-$route->add('blog/admin_blog', './src/views/admin_dashboard.php');
 $route->add('create_post/', 'src/controller/create_post.php');
 $route->add('blog/get_data_post/{id}', 'src/controller/get_post_data.php');
 $route->add('blog/edit_post/{id}', 'src/controller/edit_post.php');
