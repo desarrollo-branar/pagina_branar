@@ -19,11 +19,6 @@ class Comment
         $this->content = $content;
     }
 
-    public function get_content()
-    {
-        return $this->get_content();
-    }
-
     public function get_message()
     {
         return $this->get_message();
@@ -58,7 +53,7 @@ class Comment
         $query->execute([
             'post_id' => $this->post_id,
             'user_id' => $this->user_id,
-            'content' => $this->get_content()
+            'content' => $this->content
         ]);
         $result = $query;
 
@@ -81,7 +76,7 @@ class Comment
         return $result;
     }
 
-    public function get_all_comment_data_by_post_id(int $post_id)
+    public static function get_all_comment_data_by_post_id(int $post_id)
     {
         $db = new Connection();
         $sql = "SELECT * FROM comments c
