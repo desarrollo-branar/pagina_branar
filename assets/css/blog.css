@@ -218,3 +218,17 @@ main {
     justify-content: center;
     gap: 12px;
 }
+
+/* ---- comment ---- */
+.comment {
+    border-radius: 10px;
+    padding: 12px;
+
+    background: #cecece;
+}
+.comment_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
