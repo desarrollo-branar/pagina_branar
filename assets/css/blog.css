@@ -22,9 +22,8 @@
 	--lg: 2.4rem;
     --xlg: 3rem;
 }
-
-main {
-    height: 100vh;
+li {
+    list-style: none;
 }
 .container_post {
     display: grid;
