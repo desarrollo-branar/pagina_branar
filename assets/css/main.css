@@ -558,7 +558,10 @@ main {
   width: 60%;
 }
 .contact .content-form{
+  width: 80%;
+  margin-top: 5%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -579,11 +582,11 @@ main {
   color: var(--white);
 }
 .form {
-  background: #ffffff1f;
+  width: 80%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 0 24px 24px 24px;
-
+  border: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
