@@ -9,7 +9,7 @@ include_once './templates/header_blog.php';
     border-radius: 1px;
 }
 </style>
-<main class="container">
+<main class="container" style="height: 100vh;">
 
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-sm-12 col-md-5 col-lg-5 pt-2 pl-5 pr-5 pb-5" id="auth-container">

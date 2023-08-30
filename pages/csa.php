@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/csa.css">
     <link rel="stylesheet" href="../assets/css/utils.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
 
     <!-- fontawesone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
