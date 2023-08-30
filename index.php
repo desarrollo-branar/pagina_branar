@@ -51,5 +51,7 @@ $route->add('create_label/', 'src/controller/create_label.php');
 $route->add('edit_label/{id}', 'src/controller/edit_label.php');
 $route->add('edit_post_label/', 'src/controller/edit_labels_of_post.php');
 
+# comment
+$route->add('blog/submit_comment/', './src/controller/create_comment.php');
 $route->notFound('./pages/404.php');
 
