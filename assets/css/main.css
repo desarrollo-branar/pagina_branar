@@ -112,96 +112,6 @@ main {
   color: var(--orange);
 }
 
-/* ---- section service ---- */
-
-/* .section-service{
-  background: var(--white);
-	display: flex;
-	flex-direction: column;
-	position: relative;
-
-  padding-top: 6%;
-}
-
-.section-service::after {
-	content: "";
-	width: 4px;
-	height: 90%;
-	background: var(--orange);
-	position: absolute;
-	top: 2%;
-  bottom: -5%;
-	left: calc(50% - 1px);
-}
-
-.group-service{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 100px;
-	position: relative;
-}
-
-.group-service::after {
-	content: "";
-	display: block;
-	width: 14px;
-	height: 14px;
-	border-radius: 100px;
-	background: var(--orange);
-	position: absolute;
-	top: calc(50% - 9px);
-	left: calc(50.2% - 9px);
-}
-
-.group-service .service {
-  max-width: 40vw;
-  margin: auto;
-  box-shadow: 1px 8px 8px rgba(0, 0, 10, 0.41);
-  border-radius: 15px;
-  padding: 24px;
-}
-.group-service .service .button-azul{
-  display: grid;
-  place-items: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.service .button-azul button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.group-service .service .sub-title{
-  padding-top: 14px;
-  font-weight: 500;
-}
-
-.group-service .service .title-service{
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: var(--lg);
-}
-
-.group-service .description-service {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding-top: 24px;
-}
-
-.group-service .description-service .icon-service{
-  font-size: 48px;
-  color: var(--light-blue);
-}
-
-.group-service .description-service p{
-  width: 80%;
-} */
-
 .wrapper-cards{
   width: 90%;
   margin: 24px auto;
@@ -298,7 +208,7 @@ main {
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 2rem;
+    padding: 0.5rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     outline: 1px solid transparent;
