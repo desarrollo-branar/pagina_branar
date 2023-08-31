@@ -55,3 +55,10 @@ submenuItems.forEach(function(item) {
     }
   });
 });
+
+const elementos = document.querySelectorAll('a[class="line-down underline"]');
+elementos.forEach(elemento => {
+  elemento.addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+});
