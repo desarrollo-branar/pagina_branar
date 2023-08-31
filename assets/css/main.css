@@ -102,6 +102,9 @@ main {
   left: 1%;
   width: 25%;
 }
+.encabezado p {
+  font-size: var(--md);
+}
 
 .subtitle{
   font-size: var(--md);
@@ -432,7 +435,7 @@ main {
 .encabezado .title-h2 {
   position: relative;
   line-height: 5vw;
-  font-size: 40px;
+  font-size: var(--lg);
   color: #275a9d;
   font-weight: 600;
   text-shadow: 0 2px 2px #5a5e5e;
@@ -524,7 +527,7 @@ main {
 .contact-title {
   position: relative;
   line-height: 5vw;
-  font-size: 44px;
+  font-size: var(--lg);
   color: var(--white);
   font-weight: 600;
   text-align: center;
@@ -801,6 +804,13 @@ main {
 }
 
 @media only screen and (max-width: 680px) {
+  /* ---- vars ---- */
+  :root{
+    --sm: 1rem;
+    --md: 1.2rem;
+    --lg: 2rem;
+    --xlg: 2.5rem;
+  }
   /* ---- promocion ---- */
   .promotion { width: 90%; padding: 0;}
   .promotion header { padding: 8px; }
@@ -808,6 +818,13 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
+  /* ---- vars ---- */
+  :root{
+    --sm: 1rem;
+    --md: 1.2rem;
+    --lg: 2rem;
+    --xlg: 2.5rem;
+  }
   /* ---- promocion ---- */
   .promotions-service > article {gap: 0;}
   .promotion { width: 95%; padding: 0;}
@@ -827,6 +844,13 @@ main {
 }
 
 @media only screen and (max-width: 520px) {
+  /* ---- vars ---- */
+  :root{
+    --sm: 1rem;
+    --md: 1.2rem;
+    --lg: 1.8rem;
+    --xlg: 2rem;
+  }
   /* ---- promocion ---- */
   .promotions-service > article { grid-template-columns: repeat(1, 1fr); gap: 24px;}
   .promotion { width: 87%; padding: 0;}
@@ -843,6 +867,20 @@ main {
     left: 35%;
     right: 35%;
     font-size: 12px;
+  }
+
+  /* --- cuadros de acerca de nosotros --- */
+  .about-us .circle-div {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    transition: 0.5s ease;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .encabezado p {
+    font-size: var(--sm);
+    width: 95%;
   }
 }
 @media only screen and (max-width:946px) {
@@ -945,13 +983,6 @@ main {
     grid-area: 4/1;
     padding-bottom: 34px;
   }
-  .about-us .circle-div {
-    max-width: 100%;
-    width: 80%;
-    margin: auto;
-    transition: 0.5s ease;
-
-  }
   .about-us article {
     width: 100%;
   }
@@ -1038,10 +1069,6 @@ main {
 
   .encabezado .title-h2::after {
     display: none;
-  }
-  .encabezado p {
-    font-size: var(--md);
-    width: 90%;
   }
 
   .ubicacion-title {
