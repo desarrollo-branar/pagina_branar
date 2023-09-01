@@ -271,18 +271,40 @@
         font-size: var(--lg);
     }
 }
+
+@media only screen and (max-width: 760px) {
+    .aside_div { width: 100% !important; }
+}
+
 @media only screen and (max-width: 730px) {
+    .aside_div { width: 100%; }
     .container-service-csa .article-csa div h2 {
-        line-height: 5vh;
-        font-size: 30px;
-        font-weight: 600;
+        font-size: var(--lg);
+        text-align: center;
     }
-    .container-service-csa .article-csa p {
-        font-size: var(--md);
+    .services-csa { padding: 40px; }
+    .services-csa header h2 { 
+        font-size: var(--lg);
+        line-height: 4vh;
     }
+    .services-csa header h2::after { display: none;}
+    .container-service-csa .article-csa p { font-size: var(--md); }
+
+    .contactanos {
+        grid-template-columns: 1fr !important;
+        place-items: center;
+    }
+    .services-csa { padding: 20px; }
+    .contactanos h2 { font-size: var(--md) !important; }
+    .servicios-csa article .div_serv_csa { height: 300px; }
 }
 
 @media only screen and (max-width: 640px) {
+    .content-design { grid-template-columns: 1fr; }
+    .list_service { 
+        height: 100%;
+        color: var(--black);
+    }
     .container-service-csa .article-csa {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -292,6 +314,18 @@
         height: 220px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .banner-top h1 {
+        padding: 0 !important;
+        font-size: var(--lg) !important;
+    }
+    .container-service-csa .article-csa { margin: 2%;}
+    .aside_div { height: 400px; }
+    .aside_div .img_plana { height: 300px; }
+
+}
+
 @media only screen and (max-width: 450px) {
 
     .reparaciones-equipos .impresoras div {
