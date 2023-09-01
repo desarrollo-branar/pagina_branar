@@ -143,13 +143,16 @@ main {
     
 }
 
-@media  only screen and (max-width: 640px) {
+@media  only screen and (max-width: 650px) {
     .banner-top {
-        height: 200px;
+        height: 100% !important;
     }
+    .banner-top h1 { font-size: var(--lg) !important;}
     .info-service-art {
         grid-template-columns: 1fr;
+        width: 100%;
     }
+    .info-service-art article h2 { text-align: center; }
     .info-service-art img {
         width: 50%;
     }
