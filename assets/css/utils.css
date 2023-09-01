@@ -223,7 +223,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 24px;
     z-index: 2;
 }
@@ -318,6 +317,22 @@
     margin-bottom: 0;
     font-size: var(--md) !important;
 }
+
+.personal_image {
+    width: 400px;
+    height: 400px;
+}
+@media only screen and (max-width: 840px) {
+    .box_container .box_info:last-child div {
+        padding: 24px;
+    }
+    .box_container .box_info {
+        flex-direction: column;
+    }
+    .box_info img {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 800px) {
     .form_microsoft_365 {
         grid-template-columns: 1fr;
@@ -351,6 +366,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .personal_image {
+        width: 90%;
+    }
     .laptop { display: none;}
     .general-margin { 
         margin: 40px 0 0 0 !important;
