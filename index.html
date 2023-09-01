@@ -24,7 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-
+    <link rel="stylesheet" href="./assets/css/bot.css">
     <!-- fontawesone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
@@ -32,8 +32,9 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+      
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -158,6 +159,128 @@
 
     <!-- end carrousel -->
 
+<!--BOT-->
+
+<div >
+    <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <!--<i class="material-icons">android</i>-->
+        <img class="chat-circle_robot" src="./nuevas/robot .png">
+    </div>
+    <div class="chat-box">
+        <div class="chat-box-body">
+            <!--welcome message-->
+            <div class="chat-box-welcome__header">
+                <div class="chat-box__header-text">
+                    <p3 class="chat-box-welcome__company-name">Branar C.A.</p3>
+                    <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+                </div>
+                <div id="chat-box-welcome__ava">
+                    <!--<i class="material-icons">android</i>-->
+                    <img class="chat-box-welcome_robot" src="./nuevas/robot .png">
+                </div>
+                <div class="chat-box-welcome__welcome-text">
+                    <p>¡Hola! Soy Branbot y estoy diseñado para ayudarte</p>
+                </div>
+            </div>
+            <!--chat-bot after welcome was toggled-->
+            <div id="chat-box__wraper">
+                <div class="chat-box-header">
+                    Branar C.A.
+                    <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+                </div>
+                <div class="chat-box-overlay">
+                </div>
+                <div class="chat-logs">
+                    <div id="cm-msg-0" class="chat-msg bot">
+                        <span class="msg-avatar">
+                   <!--<i class="material-icons">android</i>-->
+                   <img class="chat-box-overlay_robot" src="./nuevas/robot .png">          
+                   </span>
+                        <div class="cm-msg-text">
+                            ¡Hola! Soy Branbot y estoy diseñado para ayudarte.
+                        </div>
+                    </div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Link with href
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Link with href
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Link with href
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Link with href
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                      </div>
+                    <!--<div class="text-center"><p>loader 1</p><div class="loader1"></div></div>-->
+                    <div class="spin-container">
+                        <div class="spiner">
+                            <div aria-hidden="true"></div>
+                            <div aria-hidden="true"></div>
+                            <div aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!--chat-log-->
+            </div>
+
+        </div>
+        <div class="chat-input-box">
+            <form class="chat-input__form">
+                <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Escribir..." />
+                <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+            </form>
+            <p6 class="chat-box__sign">Desarrollado por Branar C.A.</p6>
+        </div>
+    </div>
+</div>
+<!-- end live-chat -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/js/bot.js"></script>
+
+
+
+
+<!--END BOT-->
+
+
+
     <!-- main -->
     <main>
         <!-- Servicios -->
@@ -170,7 +293,7 @@
             <article class="cards-container">
                 <div class="card_service" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" style="background-image: url(assets/images/section_csa.jpg)">
+                        <div class="front" style="background-image: url(./nuevas/epson.jpg)">
                             <div class="inner">
                                 <p>CSA EPSON</p>
                   <span>¡Mantén tus equipos en óptimas condiciones!</span>

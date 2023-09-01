@@ -131,7 +131,7 @@
 /* ---- reparacion equipos ---- */
 .list_service {
     height: 650px;
-    background-image: url("../../assets/images/graphic_design.jpg");
+    background-image: url("../../img/fondo_imp.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -139,6 +139,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .content-design {

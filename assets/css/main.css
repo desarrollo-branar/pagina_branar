@@ -509,7 +509,7 @@ main {
 /* ---- contact ---- */
 
 .contact {
-  background-image: url('../images/fondo.jpg');
+  background-image: url('../../nuevas/fondofor.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
