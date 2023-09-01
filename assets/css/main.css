@@ -814,6 +814,13 @@ main {
     transition: 0.5s ease;
   }
 }
+@media only screen and (max-width:702px) {
+
+  .encabezado .title-h2::after,
+  .contact-title::after,
+  .encabezado .title-h2::after { display: none !important; }
+}
+
 @media only screen and (max-width: 400px) {
   .encabezado p {
     font-size: var(--sm);
@@ -933,13 +940,6 @@ main {
   .encabezado .title-h2::after {
     top: 50px;
     left: 5%;
-  }
-}
-
-@media only screen and (max-width:702px) {
-
-  .encabezado .title-h2::after {
-    left: 15%;
   }
 }
 
