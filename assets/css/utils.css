@@ -306,4 +306,7 @@
         grid-template-columns: 1fr;
         place-items: center;
     }
+    .info-service-art img {
+        height: 250px !important;
+    }
 }
