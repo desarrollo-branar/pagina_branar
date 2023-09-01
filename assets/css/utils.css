@@ -284,3 +284,26 @@
         grid-area: 3 / 1 / 4 / 3; /* Definimos el área en la cuarta fila, primera columna hasta la cuarta fila, tercera columna para dispositivos más grandes */
     }
 }
+
+@media only screen and (max-width: 650px) {
+    .article_image_list {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .laptop { display: none;}
+    .general-margin { 
+        margin: 40px 0 0 0 !important;
+    }
+    .sec_header {
+        margin: auto;
+    }
+    .service_article{
+        margin: 40px 0 0 0 !important;
+    }
+    .contactanos {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
