@@ -913,6 +913,13 @@ main {
 
 }
 
+/* Estilos para dispositivos móviles (ancho de pantalla menor a 768px) */
+@media (max-width: 768px) {
+  .front, .back {
+      background-size: contain; /* Cambia el tamaño de fondo para ajustar contenido */
+  }
+}
+
 @media only screen and (max-width:711px) {
   .about-us {
     gap: 18px;
