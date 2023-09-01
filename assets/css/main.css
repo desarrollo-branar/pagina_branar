@@ -613,8 +613,8 @@ main {
 }
 .div-input .icon-input{
   position: absolute;
-  top: 32.5%;
-  left: 6%;
+  top: 20%;
+  left: 4%;
   color: var(--orange);
   font-size: var(--lg);
 }
