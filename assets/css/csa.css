@@ -313,6 +313,9 @@
     .banner-top {
         height: 220px;
     }
+    .servicios-csa {
+        margin: 0px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -321,8 +324,11 @@
         font-size: var(--lg) !important;
     }
     .container-service-csa .article-csa { margin: 2%;}
-    .aside_div { height: 400px; }
-    .aside_div .img_plana { height: 300px; }
+    .aside_div { height: 200px !important; }
+    .aside_div .img_plana {
+        height: 200px !important;
+        width: 200px;
+    }
 
 }
 
