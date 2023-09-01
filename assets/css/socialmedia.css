@@ -108,9 +108,14 @@
     
 }
 
-@media  only screen and (max-width: 640px) {
+@media  only screen and (max-width: 650px) {
     .banner-top {
-        height: 200px;
+        height: 200px !important;
+    }
+    .banner-top h1 { font-size: var(--lg) !important; }
+    .info-service-art article h2 { 
+        text-align: center;
+        font-size: var(--lg);
     }
     .info-service-art {
         grid-template-columns: 1fr;
@@ -126,5 +131,8 @@
         gap: 24px;
     
         margin: 38px 24px 24px 24px;
+    }
+    .content-design {
+        grid-template-columns: 1fr;
     }
 }
