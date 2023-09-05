@@ -132,13 +132,29 @@ main {
           justify-content: center;
 }
 
+/* Estilos CSS para las tarjetas */
 .card_service {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
   position: relative;
-  z-index: 1; /* Ajusta el z-index de las tarjetas */
+  z-index: 1;
 }
+
+/* Estilos CSS para el contenido de las tarjetas en estado normal */
+.front .inner p,
+.back .inner p {
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos CSS para el contenido de las tarjetas en estado hover */
+.container:hover .front .inner p,
+.container:hover .back .inner p {
+  z-index: 2;
+}
+
 
 .container{
   -webkit-transform-style: preserve-3d;
@@ -226,13 +242,6 @@ main {
   font-size: 18px;
 }
 
-.front .inner p,
-.back .inner p {
-  font-size: 18px;
-  position: relative; /* Agrega esta propiedad */
-  z-index: 1;
-}
-
 .container .back{
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
@@ -283,11 +292,6 @@ main {
 .front .inner span{
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
-}
-
-.container:hover .front .inner p,
-.container:hover .back .inner p {
-  z-index: 2; /* Aumenta el z-index en estado hover para que estén por encima */
 }
 
 @media screen and (max-width: 64rem){
