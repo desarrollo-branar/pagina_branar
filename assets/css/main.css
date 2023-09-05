@@ -115,6 +115,7 @@ main {
   color: var(--orange);
 }
 
+/* 
 .wrapper-cards{
   width: 90%;
   margin: 24px auto;
@@ -130,27 +131,28 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
+} 
+*/
 
 /* Estilos CSS para las tarjetas */
-.card_service {
+/* .card_service {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
   position: relative;
   z-index: 1;
-}
+} */
 
 /* Estilos CSS para el contenido de las tarjetas en estado normal */
-.front .inner p,
+/* .front .inner p,
 .back .inner p {
   font-size: 18px;
   position: relative;
   z-index: 1;
-}
+} */
 
 /* Estilos CSS para el contenido de las tarjetas en estado hover */
-.container:hover .front .inner p,
+/* .container:hover .front .inner p,
 .container:hover .back .inner p {
   z-index: 2;
 }
@@ -293,6 +295,26 @@ main {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
 }
+
+@media screen and (max-width: 64rem){
+  .card_service{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .card_service{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .card_service{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+} */
+
 
 /* ---- capacitacion ---- */
 .capacitacion {
@@ -893,25 +915,6 @@ main {
   .footer .footer-row .footer-column:nth-child(2) ul, 
   .footer .footer-row .footer-column:nth-child(3) ul {
     position: initial;
-  }
-}
-
-@media screen and (max-width: 64rem){
-  .card_service{
-    width: calc(33.333333% - 2rem);
-  }
-}
-
-@media screen and (max-width: 48rem){
-  .card_service{
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 32rem){
-  .card_service{
-    width: 100%;
-    margin: 0 0 2rem 0;
   }
 }
 
