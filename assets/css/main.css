@@ -294,25 +294,6 @@ main {
   font-size: 18px;
 }
 
-@media screen and (max-width: 64rem){
-  .card_service{
-    width: calc(33.333333% - 2rem);
-  }
-}
-
-@media screen and (max-width: 48rem){
-  .card_service{
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 32rem){
-  .card_service{
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-}
-
 /* ---- capacitacion ---- */
 .capacitacion {
   width: 100%;
@@ -912,6 +893,35 @@ main {
   .footer .footer-row .footer-column:nth-child(2) ul, 
   .footer .footer-row .footer-column:nth-child(3) ul {
     position: initial;
+  }
+}
+
+@media screen and (max-width: 64rem){
+  .card_service{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .card_service{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .card_service{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card_service:hover,
+  .container:hover .front,
+  .container:hover .back,
+  .container:hover .front .inner p,
+  .container:hover .back .inner p {
+    transform: none !important; /* Desactiva la transformación en hover en dispositivos móviles */
   }
 }
 
