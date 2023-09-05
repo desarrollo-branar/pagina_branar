@@ -142,7 +142,7 @@ main {
   z-index: 100; 
 }
 
-.container{
+.cards_container{
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 	-webkit-perspective: 1000px;
@@ -192,8 +192,8 @@ main {
             backface-visibility: hidden;
     border-radius: 10px;
 }
-.container:hover .front,
-.container:hover .back{
+.cards_container:hover .front,
+.cards_container:hover .back{
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -228,28 +228,28 @@ main {
   font-size: 18px;
 }
 
-.container .back{
+.cards_container .back{
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
-.container .front{
+.cards_container .front{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
-.container:hover .back{
+.cards_container:hover .back{
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-.container:hover .front{
+.cards_container:hover .front{
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   -webkit-transform-style: preserve-3d;
@@ -278,7 +278,6 @@ main {
 .front .inner span{
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
-  z-index: 1;
 }
 
 @media screen and (max-width: 64rem){
