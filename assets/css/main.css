@@ -921,6 +921,7 @@ main {
   .container:hover .back,
   .container:hover .front .inner p,
   .container:hover .back .inner p {
+    pointer-events: none;
     transform: none !important; /* Desactiva la transformación en hover en dispositivos móviles */
   }
 }
