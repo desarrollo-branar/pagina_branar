@@ -132,11 +132,11 @@ main {
           justify-content: center;
 }
 
-.card_service{
+.card_service {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
-  z-index: 100; 
+  z-index: 1; /* Ajusta el z-index de las tarjetas */
 }
 
 .container{
