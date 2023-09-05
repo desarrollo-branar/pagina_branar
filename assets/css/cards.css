@@ -9,7 +9,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 .container_card {
   width: 100%;
