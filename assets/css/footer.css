@@ -84,12 +84,17 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .footer_container {
-    grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 500px) {
+  .footer_column {
+    align-items: flex-start !important;
+    padding-left: 24px;
   }
   .footer_container p{
     color: #6c6c6c;
-    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer_container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
