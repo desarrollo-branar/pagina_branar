@@ -228,7 +228,7 @@ class Post extends Connection{
         FROM posts p
         INNER JOIN authors a ON p.author_id = a.id
         INNER JOIN users u ON a.user_id = u.id 
-        WHERE p.status = 0 ORDER BY p.status");
+        WHERE p.status = 1 ORDER BY p.status");
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;

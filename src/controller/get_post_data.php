@@ -44,11 +44,11 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($id)) {
                 <select class="form-select" name="status">
                 <?php
                 if ($post['status'] == 0){?>
-                    <option value="0" selected>Habilitado</option>
-                    <option value="1" >Deshabilitado</option>
+                    <option value="0" selected>Deshabilitado</option>
+                    <option value="1" >Habilitado</option>
           <?php }else{ ?>
-                    <option value="0">Habilitado</option>
-                    <option value="1" selected>Deshabilitado</option>
+                    <option value="0">Deshabilitado</option>
+                    <option value="1" selected>Habilitado</option>
           <?php } ?>
                 </select>
             </div>
