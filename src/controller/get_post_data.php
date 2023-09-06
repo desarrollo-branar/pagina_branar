@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($id)) {
     <?php
     foreach ($posts as $post) { ?>
     <div class="modal-body">
-        <form action="./edit_post/<?= $id ?>" method="post" enctype="multipart/form-data" class="container">
+        <form action="../edit_post/<?= $id ?>" method="post" enctype="multipart/form-data" class="container">
             <div class="form-group">
                 <label for="title">Titulo</label>
                 <input type="text" class="form-control" name="title" value="<?= $post['title']?>">
