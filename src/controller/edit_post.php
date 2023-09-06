@@ -36,25 +36,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($id)) {
             $update_post = $post->updatePost($data_author['id'], $category, $_FILES["file"]['name'], $status, $date->format("Y-m-d H:i:s"), $id);
 
             if ($update_post['response'] == true) {
-                echo 'actualizada';
-                dd($update_post);
+                $_SESSION['message'] = "{$post->message['message']}";
+                $_SESSION['message_type'] = 'success';
+                header('Location: ../blog/');
             }else{
-                echo 'algo salido mal al actualizar';
-                dd($update_post);
+                $_SESSION['message'] = "{$post->message['message']}";
+                $_SESSION['message_type'] = 'danger';
+                header('Location: ../blog/');
             }
         }else{
-            dd($uploader);
+            $_SESSION['message'] = "{$uploader['message']}";
+            $_SESSION['message_type'] = 'warning';
+            header('Location: ../blog/');
         }
 
     }else{
         $update_post = $post->updatePost($data_author['id'], $category,'',$status, $date->format("Y-m-d H:i:s"), $id);
 
         if ($update_post['response'] == true) {
-            echo 'actualizada';
-            dd($update_post);
+            $_SESSION['message'] = "{$post->message['message']}";
+            $_SESSION['message_type'] = 'success';
+            header('Location: ../blog/');
         }else{
-            echo 'algo salido mal al actualizar';
-            dd($update_post);
+            $_SESSION['message'] = "{$post->message['message']}";
+            $_SESSION['message_type'] = 'danger';
+            header('Location: ../blog/');
         }
     }
 }
