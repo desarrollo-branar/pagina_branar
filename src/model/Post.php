@@ -126,7 +126,7 @@ class Post extends Connection{
 
         if ( $post[0]['title'] !== $this->getTitle() ) {
             $file_name = $this->fileNameToLowerAndSplit();
-            rename($old_file_path,$new_file_path);
+            rename($old_file_path, $new_file_path);
         }
 
         $db = new Connection();
@@ -159,9 +159,16 @@ class Post extends Connection{
             $result = $query;
         }
 
-        $this->message['response'] = true;
-        $this->message['message'] = 'Publicacion actualizada con exito';
-        $this->message['content'] = $result;
+        if ($result) {
+            $this->message['response'] = true;
+            $this->message['message'] = 'Publicacion actualizada con exito';
+            $this->message['content'] = $result;
+        }else{
+            $this->message['response'] = false;
+            $this->message['message'] = 'Lo sentimos, intentalo de nuevo';
+            $this->message['content'] = $result;
+        }
+
         return $this->message;
     }
     /**
