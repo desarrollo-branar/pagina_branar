@@ -8,6 +8,16 @@ include_once './templates/header_blog.php';
     border: 1px solid #e6e6e6;
     border-radius: 1px;
 }
+
+.buttons-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.buttons-group button {
+    width: 80%;
+}
 </style>
 <main class="container" style="height: 100vh;">
 
@@ -23,10 +33,12 @@ include_once './templates/header_blog.php';
                 <div class="form-group mt-2">
                     <input type="password" class="form-control" name="password" placeholder="Password">
                 </div>
-                <button class="btn btn-primary btn-block mt-5" type="submit">Sign in</button>
-                <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerAccount" >
-                    Crear Cuenta
-                </button>
+                <div class="buttons-group mt-3">
+                    <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+                    <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerAccount" >
+                        Crear Cuenta
+                    </button>
+                </div>
             </form>
         </div>
     </div>
