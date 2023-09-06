@@ -115,6 +115,7 @@ main {
   color: var(--orange);
 }
 
+/* 
 .wrapper-cards{
   width: 90%;
   margin: 24px auto;
@@ -130,13 +131,32 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
+} 
+*/
 
-.card_service{
+/* Estilos CSS para las tarjetas */
+/* .card_service {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+} */
+
+/* Estilos CSS para el contenido de las tarjetas en estado normal */
+/* .front .inner p,
+.back .inner p {
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+} */
+
+/* Estilos CSS para el contenido de las tarjetas en estado hover */
+/* .container:hover .front .inner p,
+.container:hover .back .inner p {
+  z-index: 2;
 }
+
 
 .container{
   -webkit-transform-style: preserve-3d;
@@ -293,7 +313,8 @@ main {
     width: 100%;
     margin: 0 0 2rem 0;
   }
-}
+} */
+
 
 /* ---- capacitacion ---- */
 .capacitacion {
@@ -516,11 +537,17 @@ main {
   padding-bottom: 34px;
 }
 
+.contact .contact_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .contact .google-maps {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .contact-title {
   position: relative;
   line-height: 5vw;
@@ -539,26 +566,9 @@ main {
   left: 20%;
   width: 60%;
 }
-.ubicacion-title {
-  position: relative;
-  line-height: 5vw;
-  font-size: 44px;
-  color: var(--white);
-  font-weight: 600;
-  text-align: center;
-  margin-top: 24px;
-  margin-bottom: 34px;
-}
-.ubicacion-title::after{
-  border-bottom: 3px solid var(--orange);
-  content: ""; 
-  display: block;
-  position: absolute;
-  left: 20%;
-  width: 60%;
-}
+
 .contact .content-form{
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -714,6 +724,15 @@ main {
   }
   .promotion { width: 90%; }
 }
+
+@media only screen and (max-width: 850px) {
+  .contact .contact_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
 @media only screen and (max-width: 743px) {
   .contact .content-form {
     width: 100%;
@@ -899,6 +918,17 @@ main {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .card_service:hover,
+  .container:hover .front,
+  .container:hover .back,
+  .container:hover .front .inner p,
+  .container:hover .back .inner p {
+    pointer-events: none;
+    transform: none !important; /* Desactiva la transformación en hover en dispositivos móviles */
+  }
+}
+
 @media only screen and (max-width:789px) {
   .encabezado h1{
     line-height: 10vh;
@@ -957,6 +987,11 @@ main {
   .w-100 {
     height: 200px;
   }
+
+  .form {
+    width: 100%;
+    padding: 12px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .w-100 {
@@ -1001,6 +1036,11 @@ main {
   .contact-title {
     line-height: 8vw;
     font-size: 30px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 12px;
   }
 } 
 
