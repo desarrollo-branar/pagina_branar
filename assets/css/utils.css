@@ -384,7 +384,7 @@
         place-items: center;
     }
     .info-service-art img {
-        height: 250px !important;
+        height: 100% !important;
     }
     .contact_information {
         align-items: flex-start;

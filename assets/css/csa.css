@@ -298,6 +298,18 @@
     .services-csa { padding: 20px; }
     .contactanos h2 { font-size: var(--md) !important; }
     .servicios-csa article .div_serv_csa { height: 300px; }
+
+    .list_service {
+        height: 650px;
+        background-image: url(../../nuevas/fondo_imp.png);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-attachment: fixed;
+        color: #607D8B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -305,7 +317,21 @@
     .list_service { 
         height: 100%;
         color: var(--black);
-    }
+    
+
+
+        background-image: url(../../nuevas/fondo_imp.png);
+        background-repeat: no-repeat;
+         background-size:auto;
+        background-attachment: fixed;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+
     .container-service-csa .article-csa {
         grid-template-columns: 1fr;
         gap: 24px;
