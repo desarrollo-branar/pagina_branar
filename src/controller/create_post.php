@@ -26,24 +26,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($uploader['response'] == true) {
             $getAuthor = $author->getAuthorByUserId($_SESSION['user_data']['id']);
 
-            $create_post = $post->createPost($getAuthor['id'], $category_name, $_FILES["file"]["name"]);
+            $post->createPost($getAuthor['id'], $category_name, $_FILES["file"]["name"]);
 
-            if ($create_post['response'] == true) {
-                dd($create_post);
+            if ($post->message['response'] == true) {
+                $_SESSION['message'] = "{$post->message['message']}";
+                $_SESSION['message_type'] = 'success';
+                header('Location: ../blog/');
             } else {
-                dd($create_post);
+                $_SESSION['message'] = "{$post->message['message']}";
+                $_SESSION['message_type'] = 'danger';
+                header('Location: ../blog/');
             }
         } else {
+            $_SESSION['message'] = "{$uploader['message']}";
+            $_SESSION['message_type'] = 'warning';
+            header('Location: ../blog/');
         }
     } else {
         $getAuthor = $author->getAuthorByUserId($_SESSION['user_data']['id']);
 
-        $create_post = $post->createPost($getAuthor['user_id'], $category_name, $picture_image);
+        $post->createPost($getAuthor['user_id'], $category_name, $picture_image);
 
-        if ($create_post['response'] == true) {
+        if ($post->message['response'] == true) {
+            $_SESSION['message'] = "{$post->message['message']}";
+            $_SESSION['message_type'] = 'success';
             header('Location: ../blog/');
         } else {
-            dd($create_post);
+            $_SESSION['message'] = "{$post->message['message']}";
+            $_SESSION['message_type'] = 'danger';
+            header('Location: ../blog/');
         }
     }
 }
