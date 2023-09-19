@@ -326,29 +326,15 @@ main {
 .capacitacion div{ position: relative; }
 .capacitacion img { width: 100%; }
 
-.capacitacion a {
+.capacitacion button {
   position: absolute;
   left: 40.5%;
   right: 40.5%;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 120px;
 }
-
-.capacitacion a button {
-  padding: 12px;
-  border-radius: 5px;
-  border: none;
-
-  transform: 0.3 ease;
-
-  background: var(--orange);
-  color: var(--white);
-  font-weight: 500;
-}
-.capacitacion a button:hover {
-  box-shadow: 0 2px 4px rgba(10, 0, 0, 0.491);
-  background: var(--whie);
-  color: var(--black);
-} 
 
 /* ----- promotions -----*/
 .promotions-service{
@@ -789,7 +775,7 @@ main {
   .capacitacion img {
     height: 250px;
   }
-  .capacitacion a{
+  .capacitacion button{
     left: 40%;
   }
 
@@ -819,7 +805,7 @@ main {
     height: 150px;
   }
   .capacitacion button { width: 120px; }
-  .capacitacion a{
+  .capacitacion button{
     left: 35%;
     right: 35%;
     font-size: 12px;
