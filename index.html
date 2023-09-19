@@ -487,9 +487,9 @@
         <aside class="capacitacion">
             <div>
                 <img src="./assets/images/capacitacion-banner.png" alt="">
-                <a href="#">
-                    <button>Registrate ahora!</button>
-                </a>
+                <button type="button" class="button-promo" data-bs-toggle="modal" data-bs-target="#modalCourses" style="color: white; font-weight: bold;">
+                    Registrate ahora
+                </button>
             </div>
         </aside>
         <!-- end capacitacion -->
@@ -642,7 +642,7 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                        <select class="form-select" name="plan" id="select_plan">
+                        <select class="form-select" name="plan" id="select_plan" disabled>
                           <option id="1" value="Plan Emprendedor - Social Media">Plan Emprendedor - Social Media</option>
                           <option id="2" value="Plan Ejecutivo - Social Media">Plan Ejecutivo - Social Media</option>
                           <option id="3" value="Plan Profesional - Social Media">Plan Profesional - Social Media</option>
@@ -650,7 +650,67 @@
                         <label for="floatingSelect">Plan</label>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                  </form>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCourses" tabindex="-1" aria-labelledby="modalCourses" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalCourses">Formulario de Servicio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="email" placeholder="jhon@emil.com">
+                        <label for="floatingInput">Correo Electronico</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="full_name" placeholder="jhon2">
+                        <label for="floatingInput">Nombre Completo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="dni" placeholder="">
+                        <label for="floatingInput">Documento de Identidad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="phone_number" placeholder="comment">
+                        <label for="floatingTextarea">Numero de Telefono</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="address" placeholder="jhon2">
+                        <label for="floatingInput">Direccion</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="position" placeholder="jhon2">
+                        <label for="floatingInput">Cargo o ocupacion</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="enterprise" placeholder="jhon2">
+                        <label for="floatingInput">Empresa</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Días disponibles para realizar el curso</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Lunes a viernes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Sabatinos
+                        </label>
+                      </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
                   </form>
                 </div>
             </div>
