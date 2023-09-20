@@ -115,16 +115,10 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./nuevas/banner1.jpg" class="d-block w-100" alt="...">
+                <img src="./nuevas/banner1.jpg" class="d-block w-100" alt="Transformamos tu vision digital">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="./nuevas/banner2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./nuevas/banner1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./nuevas/banner2.jpg" class="d-block w-100" alt="...">
+                <img src="./nuevas/banner2.jpg" class="d-block w-100" alt="Grandes Oportunidades">
             </div>
         </div>
         <button class="carousel-control-prev button-carrousel-circle" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -143,7 +137,7 @@
     <div id="chat-circle" class="btn btn-raised">
         <div id="chat-overlay"></div>
         <!--<i class="material-icons">android</i>-->
-        <img class="chat-circle_robot" src="./nuevas/robot .webp">
+        <img class="chat-circle_robot" src="./nuevas/robot .webp" alt="Branbot">
     </div>
     <div class="chat-box">
         <div class="chat-box-body">
@@ -155,7 +149,7 @@
                 </div>
                 <div id="chat-box-welcome__ava">
                     <!--<i class="material-icons">android</i>-->
-                    <img class="chat-box-welcome_robot" src="./nuevas/robot .webp">
+                    <img class="chat-box-welcome_robot" src="./nuevas/robot .webp" alt="Branbot">
                 </div>
                 <div class="chat-box-welcome__welcome-text">
                     <p>¡Hola! Soy Branbot y estoy diseñado para ayudarte</p>
@@ -173,7 +167,7 @@
                     <div id="cm-msg-0" class="chat-msg bot">
                         <span class="msg-avatar">
                    <!--<i class="material-icons">android</i>-->
-                   <img class="chat-box-overlay_robot" src="./nuevas/robot .webp">          
+                   <img class="chat-box-overlay_robot" src="./nuevas/robot .webp" alt="Branbot">          
                    </span>
                         <div class="cm-msg-text">
                             ¡Hola! Soy Branbot y estoy diseñado para ayudarte.
@@ -368,7 +362,7 @@
         <!-- capacitacion -->
         <aside class="capacitacion">
             <div>
-                <img src="./assets/images/capacitacion-banner.png" alt="">
+                <img src="./assets/images/capacitacion-banner.png" alt="Capacitate con Branar">
                 <button type="button" class="button-promo" data-bs-toggle="modal" data-bs-target="#modalCourses" style="color: white; font-weight: bold;">
                     Registrate ahora
                 </button>
@@ -507,20 +501,20 @@
                 <div class="modal-body">
                 <form action="./src/controller/sendEmail.php" method="post">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="first_name" placeholder="jhon">
-                        <label for="floatingInput">Nombre</label>
+                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon">
+                        <label for="first_name">Nombre</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="last_name" placeholder="jhon2">
-                        <label for="floatingInput">Apellido</label>
+                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2">
+                        <label for="last_name">Apellido</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" name="email" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+                        <label for="email">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" name="comment" placeholder="comment"></textarea>
-                        <label for="floatingTextarea">Comentario</label>
+                        <textarea class="form-control" name="comment" id="comment" placeholder="comment"></textarea>
+                        <label for="comment">Comentario</label>
                     </div>
 
                     <div class="form-floating mb-3">
@@ -549,45 +543,45 @@
                 <div class="modal-body">
                 <form action="./src/controller/sendEmail.php" method="post">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" name="email" placeholder="jhon@emil.com">
-                        <label for="floatingInput">Correo Electronico</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="jhon@emil.com">
+                        <label for="email">Correo Electronico</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="full_name" placeholder="jhon2">
-                        <label for="floatingInput">Nombre Completo</label>
+                        <input type="text" class="form-control" name="full_name" id="full_name" placeholder="jhon2">
+                        <label for="full_name">Nombre Completo</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="dni" placeholder="">
-                        <label for="floatingInput">Documento de Identidad</label>
+                        <input type="text" class="form-control" name="dni" id="dni" placeholder="">
+                        <label for="dni">Documento de Identidad</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="phone_number" placeholder="">
-                        <label for="floatingTextarea">Numero de Telefono</label>
+                        <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="">
+                        <label for="phone_number">Numero de Telefono</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="address" placeholder="jhon2">
-                        <label for="floatingInput">Direccion</label>
+                        <input type="text" class="form-control" name="address" id="address" placeholder="jhon2">
+                        <label for="address">Direccion</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="position" placeholder="jhon2">
-                        <label for="floatingInput">Cargo o ocupacion</label>
+                        <input type="text" class="form-control" name="position" id="position" placeholder="jhon2">
+                        <label for="position">Cargo o ocupacion</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="enterprise" placeholder="jhon2">
-                        <label for="floatingInput">Empresa</label>
+                        <input type="text" class="form-control" name="enterprise" id="enterprise" placeholder="jhon2">
+                        <label for="enterprise">Empresa</label>
                     </div>
                     <div class="mb-3">
-                        <label for="">Días disponibles para realizar el curso</label>
+                        <label for="availability">Días disponibles para realizar el curso</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="availability" id="flexRadioDefault1" value="Lunes a viernes">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="availability" id="availability" value="Lunes a viernes">
+                        <label class="form-check-label" for="availability">
                             Lunes a viernes
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="availability" id="flexRadioDefault2" value="Sabatinos">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="availability" id="availability2" value="Sabatinos">
+                        <label class="form-check-label" for="availability2">
                             Sabatinos
                         </label>
                       </div>
