@@ -505,7 +505,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <form>
+                <form action="./src/controller/sendEmail.php" method="post">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="first_name" placeholder="jhon">
                         <label for="floatingInput">Nombre</label>
@@ -547,9 +547,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <form>
+                <form action="./src/controller/sendEmail.php" method="post">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="email" placeholder="jhon@emil.com">
+                        <input type="email" class="form-control" name="email" placeholder="jhon@emil.com">
                         <label for="floatingInput">Correo Electronico</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -557,11 +557,11 @@
                         <label for="floatingInput">Nombre Completo</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" name="dni" placeholder="">
+                        <input type="text" class="form-control" name="dni" placeholder="">
                         <label for="floatingInput">Documento de Identidad</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="phone_number" placeholder="comment">
+                        <input type="text" class="form-control" name="phone_number" placeholder="">
                         <label for="floatingTextarea">Numero de Telefono</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -580,13 +580,13 @@
                         <label for="">Días disponibles para realizar el curso</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="availability" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
                             Lunes a viernes
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <input class="form-check-input" type="radio" name="availability" id="flexRadioDefault2" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                             Sabatinos
                         </label>
