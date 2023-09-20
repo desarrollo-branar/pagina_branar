@@ -632,22 +632,23 @@
             </header>
             <article class="contact_container">
                 <div class="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.2299702297105!2d-69.33538428524454!3d10.080233774413554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767ab02d95f41%3A0x7704b1c5d591db07!2sBranar%20CA!5e0!3m2!1ses!2sve!4v1638893052516!5m2!1ses!2sve" width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.2299702297105!2d-69.33538428524454!3d10.080233774413554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767ab02d95f41%3A0x7704b1c5d591db07!2sBranar%20CA!5e0!3m2!1ses!2sve!4v1638893052516!5m2!1ses!2sve" width="80%" height="500" style="border:0;" allowfullscreen="" title="map" loading="lazy"></iframe> 
                 </div>
                 
                 <div>
                     <article class="content-form">
                         <form method="post" action="correo.php" class="form">
-                            <div class="div-input">
-                                <input class="input" type="text" name="nombre" placeholder="Nombre o Razon social" required>
-                                <ion-icon name="person-circle-outline" class="icon-input"></ion-icon>
+                            <div class="form-floating mb-3" style="width: 100%;">
+                                <input type="text" class="form-control" name="name" id="nombre" placeholder="Nombre o Razon social" required>
+                                <label for="nombre">Nombre o razon social</label>
                             </div>
-                            <div class="div-input">
-                                <input class="input" type="email" placeholder="example@gmail.com" name="email"  required>
-                                <ion-icon name="mail-outline" class="icon-input"></ion-icon>
+                            <div class="form-floating mb-3" style="width: 100%;">
+                                <input type="email" class="form-control" name="email" id="correo" placeholder="Nombre o Razon social" required>
+                                <label for="correo">Correo Electronico</label>
                             </div>
-                            <div class="div-input">
-                                <textarea class="input" type="text" name="mensaje"  required></textarea>
+                            <div class="form-floating mb-3" style="width: 100%;">
+                                <textarea class="form-control" name="comment" id="mensaje" placeholder="comment" style="width: 100%;"></textarea>
+                                <label for="mensaje">Mensaje</label>
                             </div>
                             <button class="button">Enviar</button>
                         </form>
