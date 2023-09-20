@@ -425,7 +425,7 @@ main {
   border: none;
   border-radius: 5px;
 
-  background-color: var(--orange);
+  background-color: var(--dark-blue);
 }
 
 .button-promo a {
