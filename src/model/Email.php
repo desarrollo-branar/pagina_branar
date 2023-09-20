@@ -36,6 +36,7 @@ class Email {
             //Recipients
             $mail->setFrom($this->email, $this->name);
             $mail->addAddress("atencionalclientebranar@gmail.com", "branar.com");     //Add a recipient
+            $mail->addReplyTo($this->email, $this->name);
             // $mail->addReplyTo('info@example.com', 'Information');
             $mail->addCC($this->email, $this->name);
             $mail->addCC('info@branar.com');
