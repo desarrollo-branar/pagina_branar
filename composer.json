@@ -11,5 +11,8 @@
             "email": "acorderofigueroa7@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/var-dumper": "^5.4",
+        "phpmailer/phpmailer": "^6.8"
+    }
 }
