@@ -346,10 +346,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .banner-top h1 {
-        padding: 0 !important;
-        font-size: var(--lg) !important;
-    }
     .container-service-csa .article-csa { margin: 2%;}
     .aside_div { height: 200px !important; }
     .aside_div .img_plana {
