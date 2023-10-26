@@ -30,11 +30,11 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'] ) ) {
             <p style='margin-bottom: 1px'>Estimado/a {$first_name} {$last_name}</p>
             <p style='margin-bottom: 1px'>Es un placer darle la bienvenida a nuestros planes de servicio personalizados. Agradecemos su interés en Branar, C.A. Estamos comprometidos a brindarle las soluciones más efectivas y adaptadas a sus necesidades.</p>
             </br>
-            <pstyle='margin-bottom: 1px'><strong>Nombre:</strong> {$first_name}</pstyle=>
-            <pstyle='margin-bottom: 1px'><strong>Apellido:</strong> {$last_name}</pstyle=>
-            <pstyle='margin-bottom: 1px'><strong>Correo Electrónico:</strong> {$email}</pstyle=>
-            <pstyle='margin-bottom: 1px'><strong>Plan Seleccionado:</strong> {$plan}</pstyle=>
-            <pstyle='margin-bottom: 1px'><strong>Comentario Adicional:</strong> {$comment}</pstyle=>
+            <p style='margin-bottom: 1px'><strong>Nombre:</strong> {$first_name}</p>
+            <p style='margin-bottom: 1px'><strong>Apellido:</strong> {$last_name}</p>
+            <p style='margin-bottom: 1px'><strong>Correo Electrónico:</strong> {$email}</p>
+            <p style='margin-bottom: 1px'><strong>Plan Seleccionado:</strong> {$plan}</p>
+            <p style='margin-bottom: 1px'><strong>Comentario Adicional:</strong> {$comment}</p>
             </br>
             <p>Nuestro equipo revisará sus preferencias y requisitos detenidamente. En breve, uno de nuestros expertos se pondrá en contacto con usted para discutir los detalles específicos del plan y responder a cualquier pregunta que pueda tener.</p>
             </p>Gracias por confiar en Branar, C.A. para sus necesidades de servicio. Esperamos tener una colaboración productiva y exitosa.</p>
