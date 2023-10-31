@@ -4,7 +4,7 @@ require_once '../../vendor/autoload.php';
 require_once '../model/Email.php';
 require_once '../model/Navegation.php';
 
-define('CLAVE', '6LcRLuEoAAAAADBWAPTI2i8gQL7_8Mwb_ilseLG7');
+define('CLAVE', '6Le2meAoAAAAAHpeI1S7054ddwoeEMfev7b0zM-B');
 
 $token = $_POST['token'];
 $action = $_POST['action'];
