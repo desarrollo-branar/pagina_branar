@@ -336,19 +336,19 @@ $(document).ready(function () {
             <div class="modal-body">
             <form action="./src/controller/sendEmail.php" method="post" id="form-plan-social-media">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon">
+                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon" required>
                     <label for="first_name">Nombre</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2">
+                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2" required>
                     <label for="last_name">Apellido</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" name="email" id="email2" placeholder="name@example.com">
+                    <input type="email" class="form-control" name="email" id="email2" placeholder="name@example.com" required>
                     <label for="email2">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" name="comment" id="comment" placeholder="comment"></textarea>
+                    <textarea class="form-control" name="comment" id="comment" placeholder="comment" required></textarea>
                     <label for="comment">Comentario</label>
                 </div>
 

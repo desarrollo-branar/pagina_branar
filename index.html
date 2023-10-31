@@ -543,11 +543,11 @@
                 <div class="modal-body">
                 <form action="./src/controller/sendEmail.php" method="post" id="form-plan-social-media">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon">
+                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon" required>
                         <label for="first_name">Nombre</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2">
+                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2" required>
                         <label for="last_name">Apellido</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -555,12 +555,12 @@
                         <label for="email2">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" name="comment" id="comment" placeholder="comment"></textarea>
+                        <textarea class="form-control" name="comment" id="comment" placeholder="comment" required></textarea>
                         <label for="comment">Comentario</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <select class="form-select" name="plan" id="select_plan">
+                        <select class="form-select" name="plan" id="select_plan" required>
                           <option id="1" value="Plan Emprendedor - Social Media">Plan Emprendedor - Social Media</option>
                           <option id="2" value="Plan Ejecutivo - Social Media">Plan Ejecutivo - Social Media</option>
                           <option id="3" value="Plan Profesional - Social Media">Plan Profesional - Social Media</option>
@@ -585,44 +585,44 @@
                 <div class="modal-body">
                 <form action="./src/controller/sendEmail.php" method="post" id="form-courses">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="jhon@emil.com">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="jhon@emil.com" required>
                         <label for="email">Correo Electronico</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="full_name" id="full_name" placeholder="jhon2">
+                        <input type="text" class="form-control" name="full_name" id="full_name" placeholder="jhon2" required>
                         <label for="full_name">Nombre Completo</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="dni" id="dni" placeholder="">
+                        <input type="text" class="form-control" name="dni" id="dni" placeholder="" required>
                         <label for="dni">Documento de Identidad</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="">
+                        <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="" required>
                         <label for="phone_number">Numero de Telefono</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="address" id="address" placeholder="jhon2">
+                        <input type="text" class="form-control" name="address" id="address" placeholder="jhon2" required>
                         <label for="address">Direccion</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="position" id="position" placeholder="jhon2">
+                        <input type="text" class="form-control" name="position" id="position" placeholder="jhon2" required>
                         <label for="position">Cargo o ocupacion</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="enterprise" id="enterprise" placeholder="jhon2">
+                        <input type="text" class="form-control" name="enterprise" id="enterprise" placeholder="jhon2" required>
                         <label for="enterprise">Empresa</label>
                     </div>
                     <div class="mb-3">
                         <label for="availability">Días disponibles para realizar el curso</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="availability" id="availability" value="Lunes a viernes">
+                        <input class="form-check-input" type="radio" name="availability" id="availability" value="Lunes a viernes" required>
                         <label class="form-check-label" for="availability">
                             Lunes a viernes
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="availability" id="availability2" value="Sabatinos">
+                        <input class="form-check-input" type="radio" name="availability" id="availability2" value="Sabatinos" required>
                         <label class="form-check-label" for="availability2">
                             Sabatinos
                         </label>
