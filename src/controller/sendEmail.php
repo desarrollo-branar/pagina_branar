@@ -22,12 +22,12 @@ $response = curl_exec($cu);
 curl_close($cu);
 
 $datos = json_decode($response, true);
-print_r($datos);
+
 if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
   $email = Navegation::validateInput($_POST['email']);
 
   if ($datos['action'] == 'courses' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email']) ) { # Correo para los registros de Cursos Branar
-    echo 'courses';
+  
 
     $asunto = 'Inscripcion de cursos';
     $full_name = Navegation::validateInput($_POST['full_name']);
@@ -73,7 +73,11 @@ if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
     
     $email = new Email($email, $asunto, $body, $full_name); 
 
-    $email->sendEmail();
+    // Llama al método sendEmail y captura la respuesta
+    $emailResponse = $email->sendEmail();
+
+    // Devuelve la respuesta como JSON
+    echo json_encode($emailResponse);
   }elseif ($datos['action'] != 'courses' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) { # Correo para los planes de servicio
     
     $asunto = '¡Bienvenido a nuestros planes de servicio personalizados!';
@@ -115,8 +119,13 @@ if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
 
     $email = new Email($email, $asunto, $body, $first_name.' '.$last_name); 
 
-    $email->sendEmail();
+    // Llama al método sendEmail y captura la respuesta
+    $emailResponse = $email->sendEmail();
+
+    // Devuelve la respuesta como JSON
+    echo json_encode($emailResponse);
   }
 }else{
-  echo "ERES UN ROBOT";
+  $response = array("success" => false, "message" => "ERES UN ROBOT");
+  echo json_encode($response);
 }
