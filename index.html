@@ -48,31 +48,64 @@
 <script src="https://www.google.com/recaptcha/api.js?render=6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7"></script>
 <script>
     $(document).ready(function () {
-        $('#button_courses').click(function(){
+        $('#button_courses').click(function(event){
+            event.preventDefault(); // Evita la acción predeterminada del botón
+    
             grecaptcha.ready(function() {
                 grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {action: 'courses'}).then(function(token) {
-                    // Add your logic to submit to your backend server here.
+                    // Agrega el token al formulario
                     $('#form-courses').prepend(`<input type="hidden" name="token" value="${token}">`);
                     $('#form-courses').prepend(`<input type="hidden" name="action" value="courses">`);
-                    $('#form-courses').submit();
+                    
+                    // Envía el formulario por AJAX
+                    $.ajax({
+                        type: "POST",
+                        url: "./src/controller/sendEmail.php",
+                        data: $('#form-courses').serialize(), // Serializa el formulario
+                        success: function(response) {
+                            // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
+                            alert(response);
+                            // Puedes redirigir aquí si es necesario
+                        },
+                        error: function(xhr, status, error) {
+                            // Maneja errores de AJAX, si es necesario
+                            console.log("Error: " + error);
+                        }
+                    });
                 });
             });
         });
-    });
-
-    $(document).ready(function () {
-        $('#button_plan_social_media').click(function(){
+    
+        $('#button_plan_social_media').click(function(event){
+            event.preventDefault(); // Evita la acción predeterminada del botón
+    
             grecaptcha.ready(function() {
                 grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {action: 'plan_social_media'}).then(function(token) {
-                    // Add your logic to submit to your backend server here.
+                    // Agrega el token al formulario
                     $('#form-plan-social-media').prepend(`<input type="hidden" name="token" value="${token}">`);
                     $('#form-plan-social-media').prepend(`<input type="hidden" name="action" value="plan_social_media">`);
-                    $('#form-plan-social-media').submit();
+    
+                    // Envía el formulario por AJAX
+                    $.ajax({
+                        type: "POST",
+                        url: "./src/controller/sendEmail.php",
+                        data: $('#form-plan-social-media').serialize(), // Serializa el formulario
+                        success: function(response) {
+                            // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
+                            alert(response);
+                            // Puedes redirigir aquí si es necesario
+                        },
+                        error: function(xhr, status, error) {
+                            // Maneja errores de AJAX, si es necesario
+                            console.log("Error: " + error);
+                        }
+                    });
                 });
             });
         });
     });
-</script>
+    </script>
+    
 </head>
 <body>
     <!-- navbar -->
