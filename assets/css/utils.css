@@ -212,7 +212,7 @@
 .box_container .box_info:last-child p{ font-size: var(--md); }
 
 .box_info img {
-    width: 100%;
+    width: 500px;
 }
 /* ---- text-cita ---- */
 /* Estilo de citas */
