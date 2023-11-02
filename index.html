@@ -1,458 +1,826 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-57GHTKM');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="¿Desea invertir en Tecnologias de Información? Branar C.A. brinda servicios Avanzados en Tecnología a pequeñas y medianas empresas venezolanas...">
+    <meta name="keywords" content="empresas en tecnologia,servicios en tecnologia,empresas informaticas">
+    <meta name="google-site-verification" content="24wjTYuMbQJIbk8lDwHf2x-FJY-INU-8Ifl9ao7-cpM" />
+    <title>Servicios en Tecnología - Branar C.A</title>
 
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-57GHTKM');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/favicon-32x32.png">
 
-  <title>Servicios en Tecnología - Branar C.A</title>
-  <meta name="description" content="¿Desea invertir en Tecnologias de Información? Branar C.A. brinda servicios Avanzados en Tecnología a pequeñas y medianas empresas venezolanas...">
-  <meta name="keywords" content="empresas en tecnologia,servicios en tecnologia,empresas informaticas">
-  <meta name="robots" content="noindex,nofollow">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/icon.css">
-    <link rel="stylesheet" type="text/css" href="./css/menu.css">
-   <script src="http://code.jquery.com/jquery-latest.js"></script><script src="./js/menu.js"></script>
-  <link rel="icon" href="img/logo-branar.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
-  <link rel="stylesheet" type="text/css" href="css/proyecto-branar/iconos.css">
-  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/bot.css">
+    <link rel="stylesheet" href="./assets/css/cards.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!--ANALITYCS-->
+    <!-- Google Fonts (Preconnect) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0TTSQRCJ"></script>
+    <!-- Material Icons (Preload) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="print" onload="this.media='all'">
+
+    <!-- CDN Bootstrap (Preload and Async) -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+    <style>
+    @media only screen and (max-width:400px) {
+        /* Estilo para las imágenes dentro del carrusel */
+        #carouselExampleInterval .carousel-inner .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    </style>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    $(document).ready(function () {
+        $('#button_courses').click(function(event){
+            event.preventDefault(); // Evita la acción predeterminada del botón
+    
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {action: 'courses'}).then(function(token) {
+                    // Agrega el token al formulario
+                    $('#form-courses').prepend(`<input type="hidden" name="token" value="${token}">`);
+                    $('#form-courses').prepend(`<input type="hidden" name="action" value="courses">`);
+                    
+                    // Envía el formulario por AJAX
+                    $.ajax({
+                        type: "POST",
+                        url: "./src/controller/sendEmail.php",
+                        data: $('#form-courses').serialize(), // Serializa el formulario
+                        success: function(response) {
+                            // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
+                            alert(response);
+                            // Puedes redirigir aquí si es necesario
+                        },
+                        error: function(xhr, status, error) {
+                            // Maneja errores de AJAX, si es necesario
+                            console.log("Error: " + error);
+                        }
+                    });
+                });
+            });
+        });
+    
+        $('#button_plan_social_media').click(function(event){
+            event.preventDefault(); // Evita la acción predeterminada del botón
+    
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {action: 'plan_social_media'}).then(function(token) {
+                    // Agrega el token al formulario
+                    $('#form-plan-social-media').prepend(`<input type="hidden" name="token" value="${token}">`);
+                    $('#form-plan-social-media').prepend(`<input type="hidden" name="action" value="plan_social_media">`);
+    
+                    // Envía el formulario por AJAX
+                    $.ajax({
+                        type: "POST",
+                        url: "./src/controller/sendEmail.php",
+                        data: $('#form-plan-social-media').serialize(), // Serializa el formulario
+                        success: function(response) {
+                            // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
+                            alert(response);
+                            // Puedes redirigir aquí si es necesario
+                        },
+                        error: function(xhr, status, error) {
+                            // Maneja errores de AJAX, si es necesario
+                            console.log("Error: " + error);
+                        }
+                    });
+                });
+            });
+        });
+    });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0TTSQRCJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-VE0TTSQRCJ');
+    </script>
 
-  gtag('config', 'G-VE0TTSQRCJ');
-</script>
-
+<meta name="google-site-verification" content="24wjTYuMbQJIbk8lDwHf2x-FJY-INU-8Ifl9ao7-cpM" />
 
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57GHTKM"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0" nonce="OqbZNH4G"></script>
-
-    <header>
-        <div class="menu_bar">
-            <a href="#" class="bt-menu"><img src="./img/logo.png" alt=""><span class="icon-list2"><i class="fa-solid fa-bars"></i></span></a>
-        </div>
-    
-        <nav>
-            <ul>
-                <li><a href="" class="log"><img src="./img/logo.png" alt="" class="log"></a></li>
-                <li><a href="index.html"><span class="icon-house"></span>Inicio</a></li>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57GHTKM"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="cont-menu-logo">
+                <a href="index.html"><img src="./assets/images/navbar-logo.png" class="menu-logo" alt="Branar - Servicios en Tecnologia | Logo" width="90" height="70"></a>
+            </div>
+            <ul class="nav">
                
-                <li class="submenu">
-                    <a href="#"><span class="icon-rocket"></span>Servicios<span class="caret icon-arrow-down6"></span></a>
-                    <ul class="children">
-                        <li><a href="mantenimiento-impresoras-epson.html">Csa Epson <span class="icon-dot"></span></a></li>
-                        <li><a href="instalacion-redes.html">infraestructura <span class="icon-dot"></span></a></li>
-                        <li><a href="social-media.html">Marketing <span class="icon-dot"></span></a></li>
-                        <li><a href="software-administrativo.html">Profit Plus <span class="icon-dot"></span></a></li>
-                        <li><a href="mantenimiento-computadoras.html">Service-Pack <span class="icon-dot"></span></a></li>
-                        <li><a href="servidores.html">Virtualización <span class="icon-dot"></span></a></li>
+                <li class="menu">
+                    <a href="#" class="line-down underline">Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <ul class="submenu">
+                        <li><a href="csa.html" class="underline">Csa Epson<span class="icon-dot"></span></a></li>
+                        <li><a href="infraestructure.html" class="underline">Infraestructura<span class="icon-dot"></span></a></li>
+                        <li><a href="social-media.html" class="underline">Social Media<span class="icon-dot"></span></a></li>
+                        <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
+                        <li><a href="servipack.html" class="underline">Service Pack<span class="icon-dot"></span></a></li>
+                        <li><a href="devweb.html" class="underline">Desarrollo Web<span class="icon-dot"></span></a></li>
                     </ul>
                 </li>
-                <li class="submenu">
-                    <a href="#"><span class="icon-rocket"></span>Productos<span class="caret icon-arrow-down6"></span></a>
-                    <ul class="children">
-                        <li><a href="productos.html#2">Equipos <span class="icon-dot"></span></a></li>
-                        <li><a href="productos.html#3">Repuestos<span class="icon-dot"></span></a></li>
-                        <li><a href="productos.html#4">Consumibles <span class="icon-dot"></span></a></li>
-                        <li><a href="productos.html#5">Redes <span class="icon-dot"></span></a></li>
-                        <li><a href="productos.html#7">Seguridad <span class="icon-dot"></span></a></li>
-                        <li><a href="productos.html#8">Accesorios <span class="icon-dot"></span></a></li>
-                    </ul>
-                </li>
-                <li><a href="sobre-nosotros.html"><span class="icon-house"></span>Nosotros</a></li>
-                <li><a href="index.html#contacto"><span class="icon-mail"></span>Contacto</a></li>
+                <li><a href="aboutme.html" class="underline"><span class="icon-house"></span>Nosotros</a></li>
+                <li><a href="contact.html" class="underline"><span class="icon-mail"></span>Contacto</a></li>
             </ul>
+            <div class="menu-icon inactive">
+                <ion-icon name="reorder-four-outline" id="icon-hamburguer"></ion-icon>
+            </div>
         </nav>
+        <div class="mobile-navbar">
+            <ul>
+                <li class="mobile-menu" id="submenu-down">
+                    <a href="#" class="line-down underline" >Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="csa.html" class="underline">Csa Epson <span class="icon-dot"></span></a></li>
+                        <li><a href="infraestructure.html" class="underline">Infraestructura <span class="icon-dot"></span></a></li>
+                        <li><a href="social-media.html" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
+                        <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
+                        <li><a href="servipack.html" class="underline">ServiPack<span class="icon-dot"></span></a></li>
+                        <li><a href="devweb.html" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html" class="underline">Nosotros</a></li>
+                <li><a href="contact.html" class="underline">Contacto</a></li>
+            </ul>
+        </div>
     </header>
 
-
-
-
-
-
-<br>
-<br>
-<br>
-    <div class="head">
-    <main>
-        <div class="social-bar">
-    
-            <a class="icon icon-insta" href="https://www.instagram.com/contactobranar/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a class="icon icon-facebook" href="https://es-la.facebook.com/BranarContacto/" target="_blank"><i class="fa fa-facebook-square"> <br></i></a>
-            <a class="icon icon-youtube" href="https://ve.linkedin.com/company/branar-c-a-" target="_blank"><i class="fa fa-linkedin"></i></a> 
-            <a class="icon icon-ws" href="https://wa.me/message/GZDFOHPWZTTAB1" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    <!-- carrousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./nuevas/banner1.jpg" class="d-block w-100" alt="Transformamos tu vision digital">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./nuevas/banner2.jpg" class="d-block w-100" alt="Grandes Oportunidades">
+            </div>
+        </div>
+        <button class="carousel-control-prev button-carrousel-circle" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon button-carrousel-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next button-carrousel-circle" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon button-carrousel-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-      <section id="carrusel" class="row">
-         <div class="cub-carrusel">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-               <ol class="carousel-indicators" style="transform: translateY(-20%);">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-              </ol>
-              <div class="carousel-inner">
-                  <div class="item active">
-                    <a href="mantenimiento-impresoras-epson.html">
-                      <img src="./img/banner1.png" alt="Marketing Digital slide" title="Ver información de CSA EPSON">
-                      <div class="header-text hidden-xs">
-                    </a>
-                     </div>
-                 </div>
-                 <div class="item">
-                    <a href="https://appsource.microsoft.com/es-es/marketplace/partner-dir/19ae6dfb-29ff-4936-acc0-7fc07dfba4a4/overview">
-                      <img src="./img/banner2.png" alt="Mantenimiento de impresoras Epson slide" title="Somos socios de negocio Microsoft">
-                      <div class="header-text hidden-xs">
-                    </a>
-                   </div>
-               </div>
-               <div class="item">
-                  <a href="servicios.html">
-                    <img src="./img/banner3.png" alt="Desarrollos PNP slide" title="Ver información servicios TI">
-                    <div class="header-text hidden-xs">
-                  </a>
-                   </div>
+    <!-- end carrousel -->
+
+<!--BOT-->
+<div >
+    <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <!--<i class="material-icons">android</i>-->
+        <img class="chat-circle_robot" src="./nuevas/robot .png" alt="Branbot">
+    </div>
+    <div class="chat-box">
+        <div class="chat-box-body">
+            <!--welcome message-->
+            <div class="chat-box-welcome__header">
+                <div class="chat-box__header-text">
+                    <p3 class="chat-box-welcome__company-name">Branar C.A.</p3>
+                    <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
                 </div>
-               <div class="item">
-                  <a href="social-media.html">
-                    <img src="./img/banner4.png" alt="Plan Servi-Pack slide" title="Te ayudamos a impulsar el crecimiento de tu empresa">
-                    <div class="header-text hidden-xs">
-                  </a>
-                   </div>
+                <div id="chat-box-welcome__ava">
+                    <!--<i class="material-icons">android</i>-->
+                    <img class="chat-box-welcome_robot" src="./nuevas/robot .png" alt="Branbot">
+                </div>
+                <div class="chat-box-welcome__welcome-text">
+                    <p>¡Hola! Soy Branbot y estoy diseñado para ayudarte</p>
+                </div>
+            </div>
+            <!--chat-bot after welcome was toggled-->
+            <div id="chat-box__wraper">
+                <div class="chat-box-header">
+                    Branar C.A.
+                    <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+                </div>
+                <div class="chat-box-overlay">
+                </div>
+                <div class="chat-logs">
+                    <div id="cm-msg-0" class="chat-msg bot">
+                        <span class="msg-avatar">
+                   <!--<i class="material-icons">android</i>-->
+                   <img class="chat-box-overlay_robot" src="./nuevas/robot .png" alt="Branbot">          
+                   </span>
+                        <div class="cm-msg-text">
+                            ¡Hola! Soy Branbot y estoy diseñado para ayudarte.
+                        </div>
+                    </div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Centro de Servicio
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            Confía en nuestro equipo para el mantenimiento y reparación de tus equipos. Garantizamos un rendimiento óptimo y mayor vida útil para tus dispositivos.     </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Infraestructura
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            Diseñamos y construimos una infraestructura de red confiable y eficiente, para garantizar la conectividad y el flujo de datos en tu empresa.  </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Marketing Digital
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            Creamos campañas personalizadas, optimizamos tus perfiles en redes sociales y generamos contenido atractivo para impulsar tus ventas.  </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Profit Plus
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            Nuestro equipo de expertos se encargará de todo el proceso, y obtendras una instalacion adecuada a tus necesidades     </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Service-Pack
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            Ofrecemos mantenimiento completo y actualización de software para tus equipos, asegurando un rendimiento óptimo y protección contra amenazas.      </div>
+                      </div>
+                      <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Desarrollo Web
+                        </a>
+                       
+                      </p>
+                      <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                            Estamos listos para crear la plataforma perfecta para tu negocio. Diseñamos soluciones digitales que te ayudarán a destacarte en el competitivo mundo digital.      </div>
+                      </div>
+                    <!--<div class="text-center"><p>loader 1</p><div class="loader1"></div></div>-->
+                    <div class="spin-container">
+                        <div class="spiner">
+                            <div aria-hidden="true"></div>
+                            <div aria-hidden="true"></div>
+                            <div aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!--chat-log-->
+            </div>
+
+        </div>
+        <div class="chat-input-box">
+            <form class="chat-input__form">
+                <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Escribir..." />
+                <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+            </form>
+            <p6 class="chat-box__sign">Desarrollado por Branar C.A.</p6>
+        </div>
+    </div>
+</div>
+<!--END BOT-->
+
+<!-- main -->
+<main>
+    <!-- Servicios -->
+    <div class="encabezado">
+        <h1>Tu mejor alternativa tecnológica</h2>
+        <p class="subtitle">¡Optimiza y protege tu negocio con nuestros <strong>servicios especializados en tecnología</strong>!</p>
+    </div>        
+    <section class="wrapper-cards">
+        <div class="container_card">
+            <div class="card_content">
+               <div class="front_card">
+                  <div class="front__img" style="background-image: url(./nuevas/epson.jpg)"></div>
+                  <div class="front__content">
+                     <div class="front__content--header">Centro de Servicio Autorizado EPSON</div>
+                  </div>
                </div>
-                
+               <div class="back_card">
+                  <div class="back__content">
+                    <p>Confía en nuestro equipo para el mantenimiento y reparación de tus equipos. Garantizamos un rendimiento óptimo y mayor vida útil para tus dispositivos.</p>
+                  </div>
                </div>
-           </div>
-           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left"></span>
-           </a>
-           <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right"></span>
-           </a>
-       </div>
-   </section>
-
-   <div class="l-diag"></div>
-</main></div>
-
-<br>
-<br>
-<br>
-   <section class="section-service" id="servicios">
-    <h3 >Nuestros servicios</h3>
-    <!-- Slider automático -->
-    <div class="container-slider" id="1">
-
-        <div class="slider" id="slider">
-            <div class="slider__section">
-                <img src="./img/Servicios/Ban1.png" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="./img/Servicios/Ban2.png" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="./img/Servicios/Ban3.png" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="./img/Servicios/Ban4.jpg" alt="" class="slider__img">
             </div>
         </div>
-       
-        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div> 
-        
-    </div>
+        <div class="container_card">
+            <div class="card_content">
+               <div class="front_card">
+                  <div class="front__img" style="background-image: url(assets/images/section_servi_pack.jpg)"></div>
+                  <div class="front__content">
+                     <div class="front__content--header">Service Pack</div>
+                  </div>
+               </div>
+               <div class="back_card">
+                  <div class="back__content">
+                    <p>Ofrecemos mantenimiento completo y actualización de software para tus equipos, asegurando un rendimiento óptimo y protección contra amenazas.</p>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="container_card">
+            <div class="card_content">
+               <div class="front_card">
+                  <div class="front__img" style="background-image: url(assets/images/section_redes_inf.jpg)"></div>
+                  <div class="front__content">
+                     <div class="front__content--header">Redes e Infraestructura</div>
+                  </div>
+               </div>
+               <div class="back_card">
+                  <div class="back__content">
+                    <p>Diseñamos y construimos una infraestructura de red confiable y eficiente, para garantizar la conectividad y el flujo de datos en tu empresa.</p>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="container_card">
+            <div class="card_content">
+               <div class="front_card">
+                  <div class="front__img" style="background-image: url(assets/images/social-media.jpg)"></div>
+                  <div class="front__content">
+                     <div class="front__content--header">Social Media</div>
+                  </div>
+               </div>
+               <div class="back_card">
+                  <div class="back__content">
+                    <p>Creamos campañas personalizadas, optimizamos tus perfiles en redes sociales y generamos contenido atractivo para impulsar tus ventas.</p>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="container_card">
+            <div class="card_content">
+               <div class="front_card">
+                  <div class="front__img" style="background-image: url(assets/images/section_profit.jpg)"></div>
+                  <div class="front__content">
+                     <div class="front__content--header">Profit Plus</div>
+                  </div>
+               </div>
+               <div class="back_card">
+                  <div class="back__content">
+                    <p>Nuestro equipo de expertos se encargará de todo el proceso, y obtendras una instalacion adecuada a tus necesidades</p>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="container_card">
+            <div class="card_content">
+               <div class="front_card">
+                  <div class="front__img" style="background-image: url(assets/images/devweb.jpg)"></div>
+                  <div class="front__content">
+                     <div class="front__content--header">Desarrollo Web</div>
+                  </div>
+               </div>
+               <div class="back_card">
+                  <div class="back__content">
+                    <p>Estamos listos para crear la plataforma perfecta para tu negocio. Diseñamos soluciones digitales que te ayudarán a destacarte en el competitivo mundo digital.</p>
+                  </div>
+               </div>
+            </div>
+        </div>
     </section>
+        <!-- capacitacion -->
+        <aside class="capacitacion">
+            <div>
+                <img src="./assets/images/capacitacion-banner.png" alt="Capacitate con Branar">
+                <button type="button" class="button-promo" data-bs-toggle="modal" data-bs-target="#modalCourses" style="color: white; font-weight: bold;">
+                    Registrate ahora
+                </button>
+            </div>
+        </aside>
+        <!-- end capacitacion -->
+        <section class="promotions-service">
+            <header class="promotions-header">
+                <h2>Impulsa tu Presencia en las Redes Sociales</h2>
+            </header>
+            <article class="promotions-container">
+                <section class="promotion">
+                    <header>
+                        <h3>Plan Emprendedor</h3>
+                        <p>El impulso que necesitas para destacar en redes sociales</p>
+                    </header>
 
-    <script src="./js/slider.js"></script>
-   
-  
-  
+                    <button type="button" class="button-promo" id="button_plan" data="1"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+                        Contratar
+                    </button>
+                    <hr class="hr">
 
+                    <div class="list-promo">
+                        <div>
+                            <i class="fa-solid fa-check orange"></i>
+                            <p><strong>3 publicaciones semanales</strong></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check orange"></i>
+                            <p><strong>3 publicaciones interactivas en historias</strong> (Semanales)</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p>Efemérides</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>Métricas de crecimiento</strong> (Mensual)</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check orange"></i>
+                            <p><strong>Diseño de historias destacadas</strong> (5)</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="promotion">
+                    <header>
+                        <h3>Plan Ejecutivo</h3>
+                        <p>Maximiza tu presencia en redes con el Plan Ejecutivo</p>
+                    </header>
 
-  
-  <a href="servicios.html" style="text-decoration: none;">
-     <p class="ver-mas3">Ver todos los servicios</p>
- </a>
+                    <button type="button" class="button-promo" id="button_plan" data="2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+                        Contratar
+                    </button>
+                    <hr class="hr">
 
+                    <div class="list-promo">
+                        <div>
+                            <i class="fa-solid fa-check orange"></i>
+                            <p><strong>4 publicaciones semanales</strong></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check orange"></i>
+                            <p><strong>4 publicaciones interactivas en historias</strong> (Semanales)</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p>Efemérides</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>Métricas de crecimiento</strong> (Mensual)</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check orange"></i>
+                            <p><strong>Diseño de historias destacadas</strong> (5) y <strong>2 plantillas para historias</strong></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>Atención al usuario</strong></p>
+                        </div>
+                    </div>
+                </section>
+                <section class="promotion">
+                    <header>
+                        <h3>Plan Profesional</h3>
+                        <p>Destaca entre la competencia con el Plan Profesional</p>
+                    </header>
 
-<section id="promocion" class="row">
-   <div class="cub-promocion">
-      <div class="prom-cont">
-         <h2 class="col-md-12">Sube tu Negocio a la Nube</h2>
-         <p>Hospede el respaldo de los <strong>servicios de su empresa</strong> en internet a través de nuestro plan <strong>HOSTYPLACE</strong>, ofreciéndole el control total del servidor, seguridad para su información, plataformas que se ajusten a su sistema operativo, además de contar con soporte y asistencia técnica en línea cuando lo requiera.</p>
-         <a href="servidores.html">
-            <p class="ver-mas">Ver servicio de virtualización</p>
-        </a>
-    </div>
-</div>
-</section>
-<section id="promocion-2" class="row">
-   <div class="col-sm-6 col-md-5 prom">
-      <h3 class="col-md-12">Mantenimiento de Equipos Epson</h3>
-      <p>El <strong>Centro de Servicio Autorizado </strong>brinda soporte técnico en reparación y mantenimiento a equipos Epson en cualquiera de sus modelos.</p>
-      <a href="mantenimiento-impresoras-epson.html">
-        <p class="ver-mas">Ver más </p>
-    </a>
-</div>
-<div class="col-md-offset-1 col-md-6 col-sm-6 prom hidden-xs">
- <img src="img/impresora-epson.png" class="img-responsive" alt="impresora Epson" title="Impresora Epson">
-</div>
-</section>
-<section id="promocion-3" class="row">
-  <div class="col-sm-6 col-md-6 prom hidden-xs">
-     <img src="./img/65968.png"  class="img-responsive" alt="redes sociales" title="Redes sociales">
- </div>
- <div class="col-md-offset-1 col-sm-6 col-md-5 prom">
-     <h3 class="col-md-12">Impulsa tu marca</h3>
-     <p>Nuestro servicio de <strong>Social Media Marketing </strong>está enfocado en posicionar su empresa en el mercado mediante el uso de las redes sociales, creando un canal de comunicación directo con los clientes cautivos y potenciales. </p>
-     <a href="social-media.html">
-       <p class="ver-mas">Ver más </p>
-   </a>
-</div>
-</section>
-<section id="sobre-branar" >
- <div id="detalles" class="row">
-    <h4 class="col-md-12">Invierta en soluciones tecnológicas para su negocio</h4>
-       <p>Somos una empresa venezolana dedicada a la prestación de servicios en tecnología para otras empresas (Business to Business) ofreciendo una amplia gama de beneficios como:  <br>
-        <li>Mantenimiento de equipos informáticos.</li>
-      
-       <li> Instalación y administración de redes LAN.</li>
-       <li>  Creación de páginas web.</li>
-       <li>  Gestión de redes sociales.</li>
-       <li>  Reparación de impresoras Epson.</li>
-       <li> Soporte en sistemas administrativos Profit Plus (2K8 y 2KDoce).</li> 
-        <br>
-        Además brindamos planes de Maxibanda, Hostyplace y Service-Pack con el propósito de dar un excelente servicio con valor agregado a nuestros clientes.</p>
-   </div>
-   <div id="experiencia" class="row">
-       <div class="hidden-xs col-sm-4 col-md-4">
-          <div class="icono-exp">
-            <img src="./img/Icono EMPRESA.png" alt="">
-         </div>
-         <p>Empresa B2B</p>
-     </div>
-     <div class="hidden-xs col-sm-4 col-md-4">
-      <div class=" icono-exp">
-        <img src="./img/Icono EXPERIENCIA.png" alt="">
-     </div>
-     <p>19 Años de experiencia</p>
- </div>
- <div class="hidden-xs col-sm-4 col-md-4">
-  <div class="icono-exp">
-    <img src="./img/Icono LIDER.png" alt="">
- </div>
- <p>Líder en vanguardia del desarrollo tecnológico</p>
-</div>
-</div>
-</section>
-<br>
-<br>
-<br>
-<br>
-<a href="sobre-nosotros.html" style="text-decoration: none;">
-    <p class="ver-mas3">Ver más</p>
-</a> 
-<!--
-<section id="promocion2" class="row">
-    <div class="cub-promocion2">
-       <div class="prom-cont2">
-         
-          <p style="visibility: hidden;">Hospede los <strong>servicios de su empresa</strong> </p>
-         
-     </div>
- </div>
- </section>-->
- 
- <section class="micro">
-    <div class="micro">
-        <img src="./img/banner2.png" alt=""> 
-         
-    </div>
- </section>
-<br>
-<br>
-<a href="https://appsource.microsoft.com/es-es/marketplace/partner-dir/19ae6dfb-29ff-4936-acc0-7fc07dfba4a4/overview" style="text-decoration: none;">
-            <p class="ver-mas4">Ver </p>
-        </a>
-<br>
-<br>
-<section id="contacto" class="row">
-   <div class="cu-contac">
-    <h3 class=" text-center col-md-12">Contacto</h3>
-    <div class="col-md-6" >
-     <div id="formulario">
-      <div id="titulo-form" class="text-center">
-       <h4>¿Te interesan nuestros servicios?</h4>
-       <hr>
-       <p><strong> ¡Contáctanos! </strong></p>
-   </div>
-   <form id="form_contacto" method="post" action="correo.php" role="form">
-       <div class="input-group form-group">
-        <input  class="input" type="text" id="nombre" name="nombre" placeholder=" &#128100; Nombre y Apellido" required>
-        <span class="help-block"></span>
-    </div>
-    <div class="input-group form-group">
-        <input  class="input" type="email" id="email" name="email" placeholder=" &#128231; Correo" required>
-        <span class="help-block"></span>
-    </div>
- 
-  <div class="input-group form-group">
-    <textarea  class="input" type="text" id="mensaje" name="mensaje" placeholder=" &#128441; Mensaje"  required></textarea>
-    <span class="help-block"></span>
-</div>
-<div class="button">
-    <input tname="submit" type="submit" id="contact-submit" value="Enviar">
-</div>
-<br>
-<!-- <a href="gracias.html">Ver página de gracias</a> -->
-</form>
-</div>
-</div>
-<div class="col-md-6 hidden-xs hidden-sm" id="datos-empresa">
- <p><i class="fa-solid fa-store"></i> Branar C.A – RIF: J-31045139-7</p>
- <p><i class="fa-solid fa-phone"></i> +58 0412 3290719 - 0251 4453083</p>
- <p><i class="fa-solid fa-location-dot"></i> Av. Libertador, Cruce Calle 41, Local 41-12. Barquisimeto-Lara.</p>
- <p><i class="fa-solid fa-envelope"></i> contacto@branar.com</p>
- <div id="redes-sociales">
-  
-    <a href="https://ve.linkedin.com/in/branar-servicios-de-tecnologia-669667106" target="_blink">
-        <div class="iconos-redes icon-2">
-            <i class="fa-brands fa-linkedin-in"></i>
-            <p>Linkedin</p>
+                    <button type="button" class="button-promo" id="button_plan" data="3" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+                        Contratar
+                    </button>
+                    <hr class="hr">
+
+                    <div class="list-promo">
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>1 publicación diaria</strong></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>5 publicaciones interactivas en historias</strong> (Semanales)</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p>Efemérides</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>Métricas de crecimiento</strong> (Mensual)</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>Diseño de historias destacadas</strong>, <strong>2 plantillas para historias</strong> y <strong>1 plantilla para feed</strong></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>Campaña paga de ADS</strong></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check green"></i>
+                            <p><strong>1 reels mensual</strong></p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de Servicio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form action="./src/controller/sendEmail.php" method="post" id="form-plan-social-media">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon" required>
+                        <label for="first_name">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2" required>
+                        <label for="last_name">Apellido</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" id="email2" placeholder="name@example.com">
+                        <label for="email2">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="comment" id="comment" placeholder="comment" required></textarea>
+                        <label for="comment">Comentario</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <select class="form-select" name="plan" id="select_plan" required>
+                          <option id="1" value="Plan Emprendedor - Social Media">Plan Emprendedor - Social Media</option>
+                          <option id="2" value="Plan Ejecutivo - Social Media">Plan Ejecutivo - Social Media</option>
+                          <option id="3" value="Plan Profesional - Social Media">Plan Profesional - Social Media</option>
+                        </select>
+                        <label for="floatingSelect">Plan</label>
+                    </div>
+
+                    <button type="button" class="btn btn-primary mt-3" id="button_plan_social_media">Enviar</button>
+                  </form>
+                </div>
+            </div>
+            </div>
         </div>
-    </a>
-    <a href="https://www.facebook.com/BranarContacto/" target="_blink">
-        <div class="iconos-redes icon-3">
-            <i class="fa-brands fa-facebook-f"></i>
-            <p>Facebook</p>
+
+        <div class="modal fade" id="modalCourses" tabindex="-1" aria-labelledby="modalCoursesLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalCoursesLabel">Formulario de Servicio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form action="./src/controller/sendEmail.php" method="post" id="form-courses">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="jhon@emil.com" required>
+                        <label for="email">Correo Electronico</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="full_name" id="full_name" placeholder="jhon2" required>
+                        <label for="full_name">Nombre Completo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="dni" id="dni" placeholder="" required>
+                        <label for="dni">Documento de Identidad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="" required>
+                        <label for="phone_number">Numero de Telefono</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="address" id="address" placeholder="jhon2" required>
+                        <label for="address">Direccion</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="position" id="position" placeholder="jhon2" required>
+                        <label for="position">Cargo o ocupacion</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="enterprise" id="enterprise" placeholder="jhon2" required>
+                        <label for="enterprise">Empresa</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="availability">Días disponibles para realizar el curso</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="availability" id="availability" value="Lunes a viernes" required>
+                        <label class="form-check-label" for="availability">
+                            Lunes a viernes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="availability" id="availability2" value="Sabatinos" required>
+                        <label class="form-check-label" for="availability2">
+                            Sabatinos
+                        </label>
+                      </div>
+
+                    <button type="button" class="btn btn-primary mt-3" id="button_courses">Enviar</button>
+                    <!-- <button class="g-recaptcha" 
+                      data-sitekey="6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7" 
+                      data-callback='onSubmit' 
+                      data-action='submit'>Submit</button> -->
+                  </form>
+                </div>
+            </div>
+            </div>
         </div>
-    </a>
-    <a href="https://www.instagram.com/contactobranar/" target="_blink">
-        <div class="iconos-redes icon-4">
-            <i class="fa-brands fa-instagram"></i>
-            <p>Instagram</p>
+
+        <!-- sobre nosotros -->
+        <div class="encabezado">
+            <h2 class="title-h2">Transforma tu empresa con nuestro respaldo</h2>
+            <p class="subtitle">Bienvenido a Branar, C.a, <strong>donde la excelencia en servicios tecnológicos se encuentra con la innovación constante</strong>. Somos una empresa dedicada a proporcionar soluciones tecnológicas avanzadas para empresas de todos los tamaños.</p>
         </div>
-    </a>
-</div>
-</div>
-</div>
-<h3 class=" text-center col-md-12">Ubicación</h3>
-<container class="mapa">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.2299702297105!2d-69.33538428524454!3d10.080233774413554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767ab02d95f41%3A0x7704b1c5d591db07!2sBranar%20CA!5e0!3m2!1ses!2sve!4v1638893052516!5m2!1ses!2sve" width="90%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+        <section class="about-us">
+            <article>
+                <a href="#">
+                    <div class="circle-div">
+                        <ion-icon name="business-outline" class="icon-div"></ion-icon>
+                        <p>Empresa B2B</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="circle-div">
+                        <i class="fa-solid fa-hand-sparkles icon-div"></i>
+                        <p>Más de 20 años de experiencia</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="circle-div">
+                        <ion-icon name="ribbon-outline" class="icon-div"></ion-icon>
+                        <p>Líder en vanguardia del desarrollo tecnológico</p>
+                    </div>
+                </a>
+            </article>
+            <a href="aboutme.html" class="button-azul"><button>Saber mas</button></a>
+        </section>
+
+        <section class="contact">
+            <header class="header_sec">
+                <h2 class="contact-title">¿TE INTERESAN NUESTROS SERVICIOS?</h2>
+            </header>
+            <article class="contact_container">
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.2299702297105!2d-69.33538428524454!3d10.080233774413554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767ab02d95f41%3A0x7704b1c5d591db07!2sBranar%20CA!5e0!3m2!1ses!2sve!4v1638893052516!5m2!1ses!2sve" width="80%" height="500" style="border:0;" allowfullscreen="" title="map" loading="lazy"></iframe> 
+                </div>
+                
+                <div>
+                    <article class="content-form">
+                        <form method="post" action="correo.php" class="form">
+                            <div class="form-floating mb-3" style="width: 100%;">
+                                <input type="text" class="form-control" name="name" id="nombre" placeholder="Nombre o Razon social" required>
+                                <label for="nombre">Nombre o razon social</label>
+                            </div>
+                            <div class="form-floating mb-3" style="width: 100%;">
+                                <input type="email" class="form-control" name="email" id="correo" placeholder="Nombre o Razon social" required>
+                                <label for="correo">Correo Electronico</label>
+                            </div>
+                            <div class="form-floating mb-3" style="width: 100%;">
+                                <textarea class="form-control" name="comment" id="mensaje" placeholder="comment" style="width: 100%;"></textarea>
+                                <label for="mensaje">Mensaje</label>
+                            </div>
+                            <button class="button">Enviar</button>
+                        </form>
+                        
+                        <div class="social">
+                            <a href="https://www.facebook.com/BranarContacto" target="_blink"><button class="facebook"><ion-icon name="logo-facebook"></ion-icon>Facebook</button></a>
+
+                            <a href="https://www.instagram.com/contactobranar/" target="_blink"><button class="instagram"><ion-icon name="logo-instagram"></ion-icon>Instagram</button></a>
+
+                            <a href="https://www.linkedin.com/company/branar-c-a-/" target="_blink"><button class="linkedin"><ion-icon name="logo-linkedin"></ion-icon>Linkedin</button></a>
+
+                            <a href="https://wa.link/rc1mal"  aria-label="Telefono de contacto"><button class="whatsapp" target="_blink"><ion-icon name="logo-whatsapp"></ion-icon>Whatsapp</button></a>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <ul>
+                        <li>
+                            <a href="./">
+                                <img src="./assets/images/logo-para-fondo-oscuro.png" class="image_footer" alt="Branar - Servicios en Tecnología">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_container">
+            <div class="footer_column">
+                <header>
+                    <h3>Unete a nosotros</h3>
+                </header>
+                <ul>
+                    <li><a href="csa.html" class="underline-footer">Csa Epson<span class="icon-dot"></span></a></li>
+                    <li><a href="infraestructure.html" class="underline-footer">Infraestructura<span class="icon-dot"></span></a></li>
+                    <li><a href="social-media.html" class="underline-footer">SocialMedia<span class="icon-dot"></span></a></li>
+                    <li><a href="profitplus.html" class="underline-footer">Profit Plus<span class="icon-dot"></span></a></li>
+                    <li><a href="servipack.html" class="underline-footer">ServiPack<span class="icon-dot"></span></a></li>
+                    <li><a href="devweb.html" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <header>
+                    <h3>Nosotros</h3>
+                </header>
+                <ul>
+                    <li><a href="aboutme.html" class="underline-footer">Quienes somos?<span class="icon-dot"></span></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/BranarContacto" target="_blink" class="underline-footer">
+                            <ion-icon name="logo-facebook"></ion-icon>Facebook<span class="icon-dot"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/contactobranar/" target="_blink" class="underline-footer">
+                            <ion-icon name="logo-instagram"></ion-icon>Instagram<span class="icon-dot"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.link/rc1mal" target="_blink" class="underline-footer">
+                            <ion-icon name="logo-whatsapp"></ion-icon>Whatsapp<span class="icon-dot"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <header>
+                    <h3>Soporte</h3>
+                </header>
+                <ul>
+                    <li><a href="contact.html" class="underline-footer">Contactanos<span class="icon-dot"></span></a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <header>
+                    <h3>Contacto</h3>
+                </header>
+                <div>
+                    <p>Teléfono: (0251) – 4453083 / 0412 - 3290719</p>
+                    <p>Dirección: Av. Libertador, Cruce Calle 41, Local 41-12. Barquisimeto-Lara.</p>
+                    <p>Correo: contacto@branar.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <p style="color: #6c6c6c; text-align: center;">Branar, C.A. J-310451397 © Copyright 2023 Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
-</container>
-</section>
-<div class="redes">
-<h3 class=" text-center col-md-12">Nuestras redes</h3>
+    <!-- cdn Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-<div class="red">
-    <div class="fb-page" 
-    data-tabs="timeline,messages"
-    data-href="https://www.facebook.com/BranarContacto"
-    data-width="500" 
-    data-hide-cover="false">
-</div>
-</div>
-
-
-
-
-
-</div>
-<br>
-<br>
-</main>
-<footer>
- <div class="row">
-  <div class="col-md-3 col-sm-4">
-   <img src="img/logoblanco.png" class="img-responsive" alt="Logo fondo oscuro de branar" title="Branar - Servicios en Tecnología">
-   <p class="letra-blanca">Nuestra misión es suplir a nuestros clientes con soluciones tecnológicas actualizadas y satisfacer todos sus requerimientos informáticos relacionados con:
-    <br>
-    -El control de los procesos.
-    <br>
-    -La comunicación.
-    <br>
-    -Los sistemas de gestión.
-    <br>
-    -La seguridad de los recursos.</p>
- </div>
- <div class="col-md-3 col-sm-4">
-   <h5>Menú</h5>
-   <ul>
-    <li><a href="#" class="activo">Inicio</a></li>
-    <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="productos.html">Productos</a></li>
-    <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-    
-    <li><a href="index.html#contacto">Contacto</a></li>
-  </ul>
-</div>
-<div class="col-md-3 col-sm-4">
- <h5>Servicios</h5>
- <ul>
-    <li><a href="mantenimiento-impresoras-epson.html" >CSA Epson</a></li>
-    <li><a href="instalacion-redes.html">Redes e infraestructura</a></li>
-    <li><a href="social-media.html">Marketing Digital</a></li>
-    <li><a href="software-administrativo.html">Sistema administrativo Profit Plus</a></li>
-    <li><a href="mantenimiento-computadoras.html">Mantenimiento de equipos</a></li>
-    <li><a href="servidores.html">Virtualización</a></li>
-    
-
-</ul>
-</div>
-
-
-
-<div class="col-md-3">
- <h5>Contacto</h5>
- <ul>
-  <li> <span class="letra-blanca">Teléfono: </span> (0251) – 4453083 / 0412 - 3290719</li>
-  <li> <span class="letra-blanca">Dirección: </span> Av. Libertador, Cruce Calle 41, Local 41-12. Barquisimeto-Lara.</li>
-  <li> <span class="letra-blanca">Correo: </span> contacto@branar.com</li>
-</ul>
-</div>
-</div>
-<div class="row" id="pie-pagina">
-  <hr>
-  <p>&copy; 2022 Branar C.A. Todos los derechos reservados</p>
-</div>
-</footer>
-</div>
-
-</div>
-
-
-
-<script src="js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/bot.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/plan.js"></script>
 </body>
 </html>

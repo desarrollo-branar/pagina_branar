@@ -1,0 +1,407 @@
+/* ---- container service csa ---- */
+
+/* ---- contenido principal ---- */
+.container-service-csa .article-csa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 48px 24px 24px 24px;
+    place-items: center;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+.container-service-csa .article-csa div h2 {
+    position: relative;
+    line-height: 5vh;
+    font-size: var(--lg);
+    color: var(--light-blue);
+    font-weight: 600;
+}
+.container-service-csa .article-csa p {
+    font-size: var(--md);
+
+    margin-top: 24px;
+    padding-left: 12px;
+}
+.container-service-csa .article-csa .image-imp {
+    width: 80%;
+}
+/* ---- end contenido principal ---- */
+
+/* ---- servicios csa ---- */
+.servicios-csa {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin: 24px;
+}
+
+.services-csa {
+    padding-top: 80px;
+    background: #f4f4f4;
+    padding-bottom: 40px;
+}
+.services-csa header {
+    text-align: center;
+}
+
+.services-csa header h2 {
+    position: relative;
+    line-height: 7vh;
+    font-size: 38px;
+    color: #275a9d;
+    font-weight: 600;
+}
+
+.services-csa header h2::after{
+    border-bottom: 3px solid var(--orange);
+    content: ""; 
+    display: block;
+    position: absolute;
+    left: 20%;
+    width: 50%;
+    top: 120%;
+}
+
+.servicios-csa article {
+    margin-left: 7.5%;
+    margin-top: 40px;
+}
+
+.servicios-csa article .div_serv_csa {
+    background-color: var(--orange);
+    background-size: cover;
+    position: relative;
+    width: 90%;
+    height: 400px;
+    padding: 18px;
+    border-radius: 15px;
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+/* Pseudo-elemento ::after */
+.servicios-csa article .div_serv_csa::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.servicios-csa .div_serv_csa:hover {
+    transform: translateY(-15px);
+}
+
+.servicios-csa .div_serv_csa div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    z-index: 2;
+
+    padding-top: 4%;
+    text-align: left;
+}
+
+.div_serv_csa div h3 {
+    font-size: var(--md);
+}
+.div_serv_csa p {
+    padding: 0;
+    font-size: var(--sm);
+    z-index: 2;
+    text-align: justify;
+}
+
+.div_serv_csa .svg-inline--fa {
+    font-size: var(--lg);
+}
+
+
+/* ---- list_service ---- */
+/* ---- reparacion equipos ---- */
+.list_service {
+    height: 650px;
+    background-image: url("../../nuevas/fondo_imp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #607D8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content-design {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    place-items: center;
+}
+
+.content-design span { font-size: var(--md); }
+
+.reparaciones-equipos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 48px;
+}
+
+.reparaciones-equipos .lista-reparaciones {
+    display: flex;
+    flex-direction: column;
+    background: var(--facebook);
+    padding-top: 20px;
+}
+
+.reparaciones-equipos .lista-reparaciones header h2 {
+    position: relative;
+    line-height: 7vh;
+    font-size: var(--lg);
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 2px 2px #5a5e5e;
+    padding-bottom: 20px;
+}
+
+.reparaciones-equipos .lista-reparaciones header h2::after {
+    border-bottom: 3px solid var(--white);
+    content: "";
+    display: block;
+    position: absolute;
+    left: 27.5%;
+    width: 50%;
+  }
+.reparaciones-equipos .lista-reparaciones ul li {
+    width: 100%;
+    padding-bottom: 12px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.reparaciones-equipos .lista-reparaciones ul li p {
+    margin-bottom: 0;
+    padding-left: 5%;
+    font-size: var(--md);
+}
+.reparaciones-equipos .lista-reparaciones ul li ion-icon {
+    font-size: var(--md);
+}
+.reparaciones-equipos .impresoras div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 12px;
+}
+
+.reparaciones-equipos .impresoras div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reparaciones-equipos .impresoras h3 {
+    position: relative;
+    line-height: 7vh;
+    font-size: 38px;
+    color: var(--orange);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+.reparaciones-equipos .impresoras div img{
+    width: 60%;
+}
+
+.reparaciones-equipos .impresoras div p{
+    font-weight: 600;
+    font-size: var(--md);
+}
+
+
+@media only screen and (max-width: 870px)  {
+    .servicios-csa {
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+    }
+    .servicios-csa article {
+        margin-left: 0;
+    }
+    .servicios-csa div{
+        margin: auto;
+    }
+    .servicios-csa div:hover{
+        width: 95%;
+        box-shadow: 5px 8px 8px rgba(0, 0, 10, 0.41);
+    }
+
+    .reparaciones-equipos {
+        grid-template-columns: 1fr;
+    }
+    .reparaciones-equipos ul {
+        margin: auto;
+    }
+    .reparaciones-equipos .impresoras div {
+        margin: auto;
+        gap: 24px;
+    }
+    .reparaciones-equipos .impresoras div div {
+        width: 90%;
+        margin: auto;
+        margin-top: 24px;
+    }
+
+    .contactanos h2{
+        font-size: var(--lg);
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .aside_div { width: 100% !important; }
+}
+
+@media only screen and (max-width: 730px) {
+    .aside_div { width: 100%; }
+    .container-service-csa .article-csa div h2 {
+        font-size: var(--lg);
+        text-align: center;
+    }
+    .services-csa { padding: 40px; }
+    .services-csa header h2 { 
+        font-size: var(--lg);
+        line-height: 4vh;
+    }
+    .services-csa header h2::after { display: none;}
+    .container-service-csa .article-csa p { font-size: var(--md); }
+
+    .contactanos {
+        grid-template-columns: 1fr !important;
+        place-items: center;
+    }
+    .services-csa { padding: 20px; }
+    .contactanos h2 { font-size: var(--md) !important; }
+    .servicios-csa article .div_serv_csa { height: 300px; }
+
+    .list_service {
+        height: 650px;
+        background-image: url(../../nuevas/fondo_imp.png);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-attachment: fixed;
+        color: #607D8B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .content-design { grid-template-columns: 1fr; }
+    .list_service { 
+        height: 100%;
+        color: var(--black);
+    
+
+
+        background-image: url(../../nuevas/fondo_imp.png);
+        background-repeat: no-repeat;
+         background-size:auto;
+        background-attachment: fixed;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+
+    .container-service-csa .article-csa {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin: 8%;
+    }
+    .banner-top {
+        height: 220px;
+    }
+    .servicios-csa {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container-service-csa .article-csa { margin: 2%;}
+    .aside_div { height: 200px !important; }
+    .aside_div .img_plana {
+        height: 200px !important;
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .reparaciones-equipos .impresoras div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 12px;
+    }
+    .contactanos {
+        flex-direction: column;
+    }
+    .contactanos h2 {
+        line-height: 4vh;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .services-csa header h2 {
+        line-height: 3vh;
+        font-size: var(--lg);
+    }
+    .reparaciones-equipos .lista-reparaciones header h2 {
+        line-height: 5vh;
+        font-size: var(--lg);
+    }
+    .reparaciones-equipos .lista-reparaciones ul li {
+        padding-right: 12px;
+    }
+    .reparaciones-equipos .lista-reparaciones ul li p {
+        margin-bottom: 0;
+        padding-left: 5%;
+        font-size: var(--md);
+    }
+    .reparaciones-equipos .lista-reparaciones ul li ion-icon {
+        display: none;
+    }
+
+    .reparaciones-equipos .impresoras div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .reparaciones-equipos .impresoras div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 12px;
+    }
+}

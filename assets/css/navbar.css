@@ -1,0 +1,197 @@
+.inactive {
+	display: none;
+}
+
+/* --- animacion para los href --- */
+.underline {
+    color: var(--dark-blue);
+    display: inline-block;
+    position: relative;
+}
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--light-blue);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+.underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* ---- navbar ---- */
+.header {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  width: 100%;
+  padding: 0px 12px 0px 12px;
+}
+
+.header-scrolled{
+    position: fixed;
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    background: var(--white);
+		transform: translateY(0);
+
+    transition: all 0.5s;
+	
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+.menu-logo {
+	width: 140px;
+	height: 71px;
+}
+.navbar ul{
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	font-size: var(--sm);
+}
+
+.menu .line-down {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu{
+	position: relative;
+}
+
+/* ---- submenu ---- */
+.menu .submenu{
+	position: absolute;
+	display: none;
+
+	background:var(--white);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	z-index: 989;
+
+	width: 200px;
+    padding: 10px 40px 10px 10px;
+}
+
+.menu:hover .submenu {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.submenu li{
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.submenu li a{
+	width: 100%;
+}
+
+/* ---- icono hamburguer ---- */
+
+.menu-icon ion-icon{
+	font-size: var(--lg);
+    cursor: pointer;
+}
+
+/* ---- mobile-navbar ---- */
+
+.mobile-navbar {
+    background: var(--white);
+	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+	top: 100%;
+    left: -250px;
+    width: 250px;
+	height: 100vh;
+    overflow-y: auto;
+    transition: 0.4s;
+	display: none;
+}
+
+.mobile-navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	width: 100%;
+	transition: 0.3s ease all;
+}
+
+.mobile-navbar ul li {
+	margin-bottom: 14px;
+	width: 90%;
+}
+
+.mobile-navbar ul li a{
+	width: 100%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mobile-menu .mobile-submenu{
+	max-height: 0;
+	overflow: hidden;
+	padding-left: 20px;
+	transition: max-height 0.5s ease;
+}
+
+@media only screen and (max-width: 810px) {
+    .navbar .nav{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+	.mobile-navbar {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.menu-icon ion-icon{
+		font-size: 34px;
+	}
+	.mobile-navbar ul li a{
+		font-size: var(--md);
+	}
+}
+@media only screen and (max-width: 400px) {
+	.menu-logo{
+		width: 80%;
+	}
+	.menu-icon ion-icon{
+		font-size: 34px;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.menu-logo{
+		width: 80%;
+	}
+	.menu-icon ion-icon{
+		font-size: 34px;
+	}
+}
