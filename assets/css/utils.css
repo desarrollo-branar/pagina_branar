@@ -112,7 +112,7 @@
 }
 
 .personal_image {
-    background-image: url('../../assets/images/foto_personal_larga.jpg');
+    background-image: url('../../assets/images/persons/6.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -350,6 +350,7 @@
     width: 400px;
     height: 400px;
 }
+
 @media only screen and (max-width: 930px) {
     .seccion_link div  {
         display: none !important;
