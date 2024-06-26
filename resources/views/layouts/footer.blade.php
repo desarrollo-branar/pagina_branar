@@ -59,7 +59,7 @@
         <h3>Soporte</h3>
       </header>
       <ul>
-        <li><a href="contact.html" class="underline-footer">Contactanos<span class="icon-dot"></span></a></li>
+        <li><a href="{{ route('contact') }}" class="underline-footer">Contactanos<span class="icon-dot"></span></a></li>
       </ul>
     </div>
     <div class="footer_column">
