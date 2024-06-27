@@ -18,7 +18,12 @@ class PageController extends Controller
         return view('pages.contact');
     }
     
+    // Services
     public function csa() {
         return view('pages.services.csa');
+    }
+
+    public function infraestructure() {
+        return view('pages.services.infraestructure');
     }
 }

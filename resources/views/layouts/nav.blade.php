@@ -11,7 +11,7 @@
         <a href="#" class="line-down underline">Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
         <ul class="submenu">
           <li><a href="{{ route('csa') }}" class="underline">Csa Epson<span class="icon-dot"></span></a></li>
-          <li><a href="infraestructure.html" class="underline">Infraestructura<span class="icon-dot"></span></a></li>
+          <li><a href="{{ route('infraestructure') }}" class="underline">Infraestructura<span class="icon-dot"></span></a></li>
           <li><a href="social-media.html" class="underline">Social Media<span class="icon-dot"></span></a>
           </li>
           <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
@@ -32,7 +32,7 @@
         <a href="#" class="line-down underline">Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
         <ul class="mobile-submenu">
           <li><a href="{{ route('csa') }}" class="underline">Csa Epson <span class="icon-dot"></span></a></li>
-          <li><a href="infraestructure.html" class="underline">Infraestructura <span class="icon-dot"></span></a></li>
+          <li><a href="{{ route('infraestructure') }}" class="underline">Infraestructura <span class="icon-dot"></span></a></li>
           <li><a href="social-media.html" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
           <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
           <li><a href="servipack.html" class="underline">ServiPack<span class="icon-dot"></span></a></li>
