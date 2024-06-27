@@ -27,7 +27,7 @@
         <li><a href="{{ route('profit_plus') }}" class="underline-footer">Profit Plus<span class="icon-dot"></span></a>
         </li>
         <li><a href="{{ route('servicepack') }}" class="underline-footer">ServiPack<span class="icon-dot"></span></a></li>
-        <li><a href="devweb.html" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>
+        <li><a href="{{route ('dev_web') }}" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>
       </ul>
     </div>
     <div class="footer_column">

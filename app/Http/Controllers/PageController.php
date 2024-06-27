@@ -38,4 +38,8 @@ class PageController extends Controller
     public function servicepack() {
         return view('pages.services.servicepack');
     }
+
+    public function dev_web() {
+        return view('pages.services.dev_web');
+    }
 }

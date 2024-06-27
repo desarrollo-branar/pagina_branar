@@ -21,3 +21,4 @@ Route::get('infraestructura/', [PageController::class, 'infraestructure'])->name
 Route::get('social-media/', [PageController::class, 'social_media'])->name('social_media');
 Route::get('profit-plus/', [PageController::class, 'profit_plus'])->name('profit_plus');
 Route::get('service-pack/', [PageController::class, 'servicepack'])->name('servicepack');
+Route::get('dev-web/', [PageController::class, 'dev_web'])->name('dev_web');

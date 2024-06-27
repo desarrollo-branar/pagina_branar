@@ -16,7 +16,7 @@
           </li>
           <li><a href="{{ route('profit_plus') }}" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
           <li><a href="{{ route('servicepack') }}" class="underline">Service Pack<span class="icon-dot"></span></a></li>
-          <li><a href="devweb.html" class="underline">Desarrollo Web<span class="icon-dot"></span></a></li>
+          <li><a href="{{ route('dev_web') }}" class="underline">Desarrollo Web<span class="icon-dot"></span></a></li>
         </ul>
       </li>
       <li><a href="{{ route('about') }}" class="underline"><span class="icon-house"></span>Nosotros</a></li>
@@ -36,7 +36,7 @@
           <li><a href="{{ route('social_media') }}" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
           <li><a href="{{ route('profit_plus') }}" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
           <li><a href="{{ route('servicepack') }}" class="underline">ServiPack<span class="icon-dot"></span></a></li>
-          <li><a href="devweb.html" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
+          <li><a href="{{ route('dev_web') }}" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
         </ul>
       </li>
       <li><a href="{{ route('about') }}" class="underline">Nosotros</a></li>
