@@ -19,7 +19,7 @@
         <h3>Unete a nosotros</h3>
       </header>
       <ul>
-        <li><a href="csa.html" class="underline-footer">Csa Epson<span class="icon-dot"></span></a></li>
+        <li><a href="{{ route('csa') }}" class="underline-footer">Csa Epson<span class="icon-dot"></span></a></li>
         <li><a href="infraestructure.html" class="underline-footer">Infraestructura<span class="icon-dot"></span></a>
         </li>
         <li><a href="social-media.html" class="underline-footer">SocialMedia<span class="icon-dot"></span></a>

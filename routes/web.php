@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'index'])->name('index');
 Route::get('about-us/', [PageController::class, 'about'])->name('about');
 Route::get('contact/', [PageController::class, 'contact'])->name('contact');
+Route::get('centro-de-servicio-autorizado/', [PageController::class, 'csa'])->name('csa');
