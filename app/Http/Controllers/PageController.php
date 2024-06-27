@@ -42,4 +42,9 @@ class PageController extends Controller
     public function dev_web() {
         return view('pages.services.dev_web');
     }
+
+    // Projects
+    public function projects() {
+        return view('pages.projects');
+    }
 }

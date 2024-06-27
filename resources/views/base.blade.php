@@ -35,9 +35,10 @@
   <meta property="og:url" content="@yield('og_url', url()->current())">
   <meta property="og:site_name" content="Branar - Servicios en Tecnologia">
   <meta property="article:modified_time" content="2021-05-11T04:12:39+00:00">
-
+  <meta property="og:image" content="@yield('og_image', asset('images/navbar-logo.png'))">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   @yield('head_content')
-
 
   {{-- Font Awesome --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

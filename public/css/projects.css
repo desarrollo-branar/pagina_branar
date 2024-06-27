@@ -1,0 +1,149 @@
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0px 54px 0px;
+  text-align: center;
+}
+
+.encabezado h1 {
+  position: relative;
+  line-height: 5vw;
+  font-size: var(--xlg);
+  color: #275a9d;
+  font-weight: 600;
+  text-shadow: 0 2px 2px #5a5e5e;
+}
+
+.encabezado h1::after {
+  content: "" !important;
+  height: 1px !important;
+  background-color: #f36b21 !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 100% !important;
+  transform: translateX(-50%) !important;
+  z-index: 10 !important;
+}
+
+.container_projects {
+  width: 90%;
+  margin: auto;
+}
+
+.container_projects .projects_cards {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 5rem;
+  margin-bottom: 6rem;
+}
+
+.projects_cards img {
+  width: 90%;
+}
+
+.container_projects .projects_content {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projects_content h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.projects_content p {
+  font-size: .9rem;
+  color: #666;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.projects_content a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  transition: transform .3s;
+  background: var(--light-blue);
+  color: #fff;
+  padding: .9rem 2rem;
+  font-size: .8rem;
+}
+
+/* Media Queries para Responsividad */
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+  .container_projects .projects_cards {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  
+  .projects_cards img {
+    width: 100%;
+  }
+  
+  .projects_content h2 {
+    font-size: 1.2rem;
+  }
+  
+  .projects_content p {
+    font-size: .8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects_content a {
+    padding: .7rem 1.5rem;
+    font-size: .7rem;
+  }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+  .container_projects {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .encabezado {
+    margin: 20px 0px 30px 0px;
+  }
+  
+  .encabezado h1 {
+    line-height: 10vw;
+    font-size: 1.5rem;
+  }
+  
+  .container_projects .projects_cards {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .projects_cards img {
+    width: 100%;
+  }
+  
+  .projects_content h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .projects_content p {
+    font-size: .75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects_content a {
+    padding: .5rem 1rem;
+    font-size: .6rem;
+  }
+}

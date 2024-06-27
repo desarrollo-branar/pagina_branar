@@ -62,3 +62,10 @@ elementos.forEach(elemento => {
     e.preventDefault();
   });
 });
+
+
+// 2. Concatenacion: Tempalte Literals
+const nombre = 'Anderson'
+const pais = 'Venezuela'
+const presentacion = `Hola, mi nombre es ${nombre} y soy de ${pais}`
+console.log(presentacion);

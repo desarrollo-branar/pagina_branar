@@ -16,9 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'index'])->name('index');
 Route::get('about-us/', [PageController::class, 'about'])->name('about');
 Route::get('contact/', [PageController::class, 'contact'])->name('contact');
+// Services
 Route::get('centro-de-servicio-autorizado/', [PageController::class, 'csa'])->name('csa');
 Route::get('infraestructura/', [PageController::class, 'infraestructure'])->name('infraestructure');
 Route::get('social-media/', [PageController::class, 'social_media'])->name('social_media');
 Route::get('profit-plus/', [PageController::class, 'profit_plus'])->name('profit_plus');
 Route::get('service-pack/', [PageController::class, 'servicepack'])->name('servicepack');
 Route::get('dev-web/', [PageController::class, 'dev_web'])->name('dev_web');
+
+// Projects
+Route::get('projects/', [PageController::class, 'projects'])->name('projects');
