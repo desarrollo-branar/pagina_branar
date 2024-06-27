@@ -34,4 +34,8 @@ class PageController extends Controller
     public function profit_plus() {
         return view('pages.services.profit_plus');
     }
+
+    public function servicepack() {
+        return view('pages.services.servicepack');
+    }
 }
