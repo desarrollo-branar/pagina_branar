@@ -12,7 +12,7 @@
         <ul class="submenu">
           <li><a href="{{ route('csa') }}" class="underline">Csa Epson<span class="icon-dot"></span></a></li>
           <li><a href="{{ route('infraestructure') }}" class="underline">Infraestructura<span class="icon-dot"></span></a></li>
-          <li><a href="social-media.html" class="underline">Social Media<span class="icon-dot"></span></a>
+          <li><a href="{{ route('social_media') }}" class="underline">Social Media<span class="icon-dot"></span></a>
           </li>
           <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
           <li><a href="servipack.html" class="underline">Service Pack<span class="icon-dot"></span></a></li>
@@ -33,7 +33,7 @@
         <ul class="mobile-submenu">
           <li><a href="{{ route('csa') }}" class="underline">Csa Epson <span class="icon-dot"></span></a></li>
           <li><a href="{{ route('infraestructure') }}" class="underline">Infraestructura <span class="icon-dot"></span></a></li>
-          <li><a href="social-media.html" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
+          <li><a href="{{ route('social_media') }}" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
           <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
           <li><a href="servipack.html" class="underline">ServiPack<span class="icon-dot"></span></a></li>
           <li><a href="devweb.html" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>

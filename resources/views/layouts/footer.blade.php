@@ -22,7 +22,7 @@
         <li><a href="{{ route('csa') }}" class="underline-footer">Csa Epson<span class="icon-dot"></span></a></li>
         <li><a href="{{ route('infraestructure') }}" class="underline-footer">Infraestructura<span class="icon-dot"></span></a>
         </li>
-        <li><a href="social-media.html" class="underline-footer">SocialMedia<span class="icon-dot"></span></a>
+        <li><a href="{{ route('social_media') }}l" class="underline-footer">SocialMedia<span class="icon-dot"></span></a>
         </li>
         <li><a href="profitplus.html" class="underline-footer">Profit Plus<span class="icon-dot"></span></a>
         </li>

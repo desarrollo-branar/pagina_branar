@@ -26,4 +26,8 @@ class PageController extends Controller
     public function infraestructure() {
         return view('pages.services.infraestructure');
     }
+
+    public function social_media() {
+        return view('pages.services.social_media');
+    }
 }
