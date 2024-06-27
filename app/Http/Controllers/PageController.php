@@ -30,4 +30,8 @@ class PageController extends Controller
     public function social_media() {
         return view('pages.services.social_media');
     }
+
+    public function profit_plus() {
+        return view('pages.services.profit_plus');
+    }
 }

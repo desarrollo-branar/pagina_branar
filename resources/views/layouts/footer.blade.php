@@ -24,7 +24,7 @@
         </li>
         <li><a href="{{ route('social_media') }}l" class="underline-footer">SocialMedia<span class="icon-dot"></span></a>
         </li>
-        <li><a href="profitplus.html" class="underline-footer">Profit Plus<span class="icon-dot"></span></a>
+        <li><a href="{{ route('profit_plus') }}" class="underline-footer">Profit Plus<span class="icon-dot"></span></a>
         </li>
         <li><a href="servipack.html" class="underline-footer">ServiPack<span class="icon-dot"></span></a></li>
         <li><a href="devweb.html" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>

@@ -19,3 +19,4 @@ Route::get('contact/', [PageController::class, 'contact'])->name('contact');
 Route::get('centro-de-servicio-autorizado/', [PageController::class, 'csa'])->name('csa');
 Route::get('infraestructura/', [PageController::class, 'infraestructure'])->name('infraestructure');
 Route::get('socialmedia/', [PageController::class, 'social_media'])->name('social_media');
+Route::get('profitplus/', [PageController::class, 'profit_plus'])->name('profit_plus');
