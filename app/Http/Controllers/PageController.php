@@ -19,6 +19,6 @@ class PageController extends Controller
     }
     
     public function csa() {
-        return view('pages.csa');
+        return view('pages.services.csa');
     }
 }
