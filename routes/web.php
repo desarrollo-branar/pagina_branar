@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +26,5 @@ Route::get('service-pack/', [PageController::class, 'servicepack'])->name('servi
 Route::get('dev-web/', [PageController::class, 'dev_web'])->name('dev_web');
 
 // Projects
-Route::get('projects/', [PageController::class, 'projects'])->name('projects');
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
+Route::get('/projects/{project}', [ProjectController::class, 'project_detail'])->name('projects.project_detail');
