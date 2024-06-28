@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>@yield('title', 'Branar - Servicios en Tecnologia')</title>
 
+  <link rel="shortcut icon" href="{{ asset('icons/favicon-32x32.png') }}" type="image/x-icon">
   <!-- Google Tag Manager -->
   <script>
     (function(w, d, s, l, i) {
