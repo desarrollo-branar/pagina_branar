@@ -21,7 +21,7 @@
       </li>
       <li><a href="{{ route('about') }}" class="underline"><span class="icon-house"></span>Nosotros</a></li>
       <li><a href="{{ route('contact') }}" class="underline"><span class="icon-mail"></span>Contacto</a></li>
-      <li><a href="{{ route('projects') }}" class="underline"><span class="icon-mail"></span>Proyectos</a></li>
+      <li><a href="{{ route('projects.index') }}" class="underline"><span class="icon-mail"></span>Proyectos</a></li>
     </ul>
     <div class="menu-icon inactive">
       <ion-icon name="reorder-four-outline" id="icon-hamburguer"></ion-icon>
@@ -42,7 +42,7 @@
       </li>
       <li><a href="{{ route('about') }}" class="underline">Nosotros</a></li>
       <li><a href="{{ route('contact') }}" class="underline">Contacto</a></li>
-      <li><a href="{{ route('projects') }}" class="underline">Proyectos</a></li>
+      <li><a href="{{ route('projects.index') }}" class="underline">Proyectos</a></li>
     </ul>
   </div>
 </header>
