@@ -86,6 +86,17 @@
     grid-template-columns: 1fr;
     grid-gap: 3rem;
   }
+  .encabezado h1::after {
+    display: none;
+  }
+  .container_projects .projects_cards {
+    margin-bottom: 2rem;
+  }
+  
+  .projects_cards .projects_content {
+    display: flex;
+    align-items: center;
+  }
   
   .projects_cards img {
     width: 100%;
