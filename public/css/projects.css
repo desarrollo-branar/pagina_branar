@@ -227,15 +227,21 @@
 }
 
 .detail_content {
+  margin: 34px 0px;
   text-align: left; /* Mantiene el texto alineado a la izquierda */
+  width: 80%;
 }
 
 .detail_content header h2 {
   margin-bottom: 10px; /* Espacio debajo del encabezado */
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 24px;
 }
 
 .detail_content p {
-  margin: 0;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
 }
 
 /* Media Queries para responsividad */
@@ -287,4 +293,11 @@
   .project_bg_top header p {
     font-size: 1rem;
   }
+
+.detail_content p {
+  font-size: .9rem;
+}
+.detail_content {
+  width: 100%;
+}
 }
