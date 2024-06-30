@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->text('description');
+            $table->text('description', 500);
             $table->string('image');
             $table->text('features');
+            $table->string('short_description', 255); // Agregar esta línea
             $table->timestamps();
         });
     }
