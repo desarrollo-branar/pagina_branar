@@ -11,7 +11,12 @@ class Project extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'description', 'image', 'features'
+        'name',
+        'slug',
+        'description',
+        'image',
+        'features',
+        'short_description', // Agregar esta línea
     ];
 
     protected static function boot()
