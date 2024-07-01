@@ -18,6 +18,7 @@ $dotenv->load(__DIR__ . '/../.env');
     <title>Centro de Servicio Autorizado Epson | Branar C.A.</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="<?= $_ENV['BASE_URL'] ?>/assets/icons/favicon-32x32.png">
+
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -50,9 +51,6 @@ $dotenv->load(__DIR__ . '/../.env');
     <meta property="og:image" content="<?= $_ENV['BASE_URL'] ?>/assets/images/navbar-logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="<?= $_ENV['BASE_URL'] ?>/assets/icons/favicon-32x32.png">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -97,49 +95,7 @@ $dotenv->load(__DIR__ . '/../.env');
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="cont-menu-logo">
-                <a href="index.html"><img src="../assets/images/navbar-logo.png" class="menu-logo" alt="Branar - Servicios en Tecnologia | Logo" width="90" height="70"></a>
-            </div>
-            <ul class="nav">
-
-                <li class="menu">
-                    <a href="#" class="line-down underline">Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
-                    <ul class="submenu">
-                        <li><a href="csa.html" class="underline">Csa Epson<span class="icon-dot"></span></a></li>
-                        <li><a href="infraestructure.html" class="underline">Infraestructura<span class="icon-dot"></span></a></li>
-                        <li><a href="social-media.html" class="underline">Social Media<span class="icon-dot"></span></a></li>
-                        <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
-                        <li><a href="servipack.html" class="underline">Service Pack<span class="icon-dot"></span></a></li>
-                        <li><a href="devweb.html" class="underline">Desarrollo Web<span class="icon-dot"></span></a></li>
-                    </ul>
-                </li>
-                <li><a href="aboutme.html" class="underline"><span class="icon-house"></span>Nosotros</a></li>
-                <li><a href="contact.html" class="underline"><span class="icon-mail"></span>Contacto</a></li>
-            </ul>
-            <div class="menu-icon inactive">
-                <ion-icon name="reorder-four-outline" id="icon-hamburguer"></ion-icon>
-            </div>
-        </nav>
-        <div class="mobile-navbar">
-            <ul>
-                <li class="mobile-menu" id="submenu-down">
-                    <a href="#" class="line-down underline">Servicios<ion-icon name="caret-down-outline"></ion-icon></a>
-                    <ul class="mobile-submenu">
-                        <li><a href="csa.html" class="underline">Csa Epson <span class="icon-dot"></span></a></li>
-                        <li><a href="infraestructure.html" class="underline">Infraestructura <span class="icon-dot"></span></a></li>
-                        <li><a href="social-media.html" class="underline">SocialMedia<span class="icon-dot"></span></a></li>
-                        <li><a href="profitplus.html" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
-                        <li><a href="servipack.html" class="underline">ServiPack<span class="icon-dot"></span></a></li>
-                        <li><a href="devweb.html" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
-                    </ul>
-                </li>
-                <li><a href="aboutme.html" class="underline">Nosotros</a></li>
-                <li><a href="contact.html" class="underline">Contacto</a></li>
-            </ul>
-        </div>
-    </header>
+    <?php include_once(__DIR__ . '/../includes/navbar.php'); ?>
 
     <?php
     include_once('../vendor/autoload.php');
@@ -187,84 +143,7 @@ $dotenv->load(__DIR__ . '/../.env');
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <ul>
-                        <li>
-                            <a href="./">
-                                <img src="../assets/images/logo-para-fondo-oscuro.png" class="image_footer" alt="Branar - Servicios en Tecnología">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer_container">
-            <div class="footer_column">
-                <header>
-                    <h3>Unete a nosotros</h3>
-                </header>
-                <ul>
-                    <li><a href="csa.html" class="underline-footer">Csa Epson<span class="icon-dot"></span></a></li>
-                    <li><a href="infraestructure.html" class="underline-footer">Infraestructura<span class="icon-dot"></span></a></li>
-                    <li><a href="social-media.html" class="underline-footer">SocialMedia<span class="icon-dot"></span></a></li>
-                    <li><a href="profitplus.html" class="underline-footer">Profit Plus<span class="icon-dot"></span></a></li>
-                    <li><a href="servipack.html" class="underline-footer">ServiPack<span class="icon-dot"></span></a></li>
-                    <li><a href="devweb.html" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>
-                </ul>
-            </div>
-            <div class="footer_column">
-                <header>
-                    <h3>Nosotros</h3>
-                </header>
-                <ul>
-                    <li><a href="aboutme.html" class="underline-footer">Quienes somos?<span class="icon-dot"></span></a></li>
-                    <li>
-                        <a href="https://www.facebook.com/BranarContacto" target="_blink" class="underline-footer">
-                            <ion-icon name="logo-facebook"></ion-icon>Facebook<span class="icon-dot"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/contactobranar/" target="_blink" class="underline-footer">
-                            <ion-icon name="logo-instagram"></ion-icon>Instagram<span class="icon-dot"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://wa.link/rc1mal" target="_blink" class="underline-footer" aria-label="Telefono de contacto">
-                            <ion-icon name="logo-whatsapp"></ion-icon>Whatsapp<span class="icon-dot"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer_column">
-                <header>
-                    <h3>Soporte</h3>
-                </header>
-                <ul>
-                    <li><a href="contact.html" class="underline-footer">Contactanos<span class="icon-dot"></span></a></li>
-                </ul>
-            </div>
-            <div class="footer_column">
-                <header>
-                    <h3>Contacto</h3>
-                </header>
-                <div>
-                    <p>Teléfono: (0251) – 4453083 / 0412 - 3290719</p>
-                    <p>Dirección: Av. Libertador, Cruce Calle 41, Local 41-12. Barquisimeto-Lara.</p>
-                    <p>Correo: contacto@branar.com</p>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-sm-12 d-flex justify-content-center">
-                    <p style="color: #6c6c6c; text-align: center;">Branar, C.A. J-310451397 © Copyright 2023 Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include_once(__DIR__ . '/../includes/footer.php'); ?>
 
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
