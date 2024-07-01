@@ -15,7 +15,7 @@ $dotenv->load(__DIR__ . '/../.env');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Centro de Servicio Autorizado Epson | Branar C.A.</title>
+    <title>Proyectos | Branar C.A.</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="<?= $_ENV['BASE_URL'] ?>/assets/icons/favicon-32x32.png">
 
@@ -43,10 +43,10 @@ $dotenv->load(__DIR__ . '/../.env');
     <link rel="canonical" href="<?= $_ENV['BASE_URL'] ?>/projects/">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Branar - Servicios en Tecnologia">
+    <meta property="og:title" content="royectos | Branar C.A.">
     <meta property="og:description" content="¿Desea invertir en Tecnologias de Información? Branar C.A. brinda servicios Avanzados en Tecnología a pequeñas y medianas empresas venezolanas...">
     <meta property="og:url" content="<?= $_ENV['BASE_URL'] ?>/projects/">
-    <meta property="og:site_name" content="Branar - Servicios en Tecnologia">
+    <meta property="og:site_name" content="royectos | Branar C.A.">
     <meta property="article:modified_time" content="2021-05-11T04:12:39+00:00">
     <meta property="og:image" content="<?= $_ENV['BASE_URL'] ?>/assets/images/navbar-logo.png">
     <meta property="og:image:width" content="1200">
