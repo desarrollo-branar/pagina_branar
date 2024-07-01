@@ -33,7 +33,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background: var(--white);
   width: 100%;
-  padding: 0px 12px 0px 12px;
+  padding: 0px 24px;
 }
 
 .header-scrolled{
@@ -56,10 +56,11 @@
 	height: 71px;
 }
 .navbar ul{
-	width: 70%;
+	width: 90%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	gap: 2rem;
 	margin: 0;
 }
 
@@ -157,12 +158,13 @@
 	transition: max-height 0.5s ease;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1040px) {
     .navbar .nav{
         display: none;
     }
     .menu-icon{
-        display: block;
+        display: flex;
+				justify-content: flex-end;
     }
 	.mobile-navbar {
 		display: block;
