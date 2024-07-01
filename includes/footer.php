@@ -19,12 +19,12 @@
         <h3>Unete a nosotros</h3>
       </header>
       <ul>
-        <li><a href="<?= $_ENV['BASE_URL']?>/csa.html" class="underline-footer">Csa Epson<span class="icon-dot"></span></a></li>
-        <li><a href="<?= $_ENV['BASE_URL']?>/infraestructure.html" class="underline-footer">Infraestructura<span class="icon-dot"></span></a></li>
-        <li><a href="<?= $_ENV['BASE_URL']?>/social-media.html" class="underline-footer">SocialMedia<span class="icon-dot"></span></a></li>
-        <li><a href="<?= $_ENV['BASE_URL']?>/profitplus.html" class="underline-footer">Profit Plus<span class="icon-dot"></span></a></li>
-        <li><a href="<?= $_ENV['BASE_URL']?>/servipack.html" class="underline-footer">ServiPack<span class="icon-dot"></span></a></li>
-        <li><a href="<?= $_ENV['BASE_URL']?>/devweb.html" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/csa.php" class="underline-footer">Csa Epson<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/infraestructure.php" class="underline-footer">Infraestructura<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/social-media.php" class="underline-footer">SocialMedia<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/profitplus.php" class="underline-footer">Profit Plus<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/servicepack.php" class="underline-footer">ServiPack<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/devweb.php" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>
       </ul>
     </div>
     <div class="footer_column">
@@ -32,7 +32,7 @@
         <h3>Nosotros</h3>
       </header>
       <ul>
-        <li><a href="<?= $_ENV['BASE_URL']?>/aboutme.html" class="underline-footer">Quienes somos?<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/about-us.php" class="underline-footer">Quienes somos?<span class="icon-dot"></span></a></li>
         <li>
           <a href="https://www.facebook.com/BranarContacto" target="_blink" class="underline-footer">
             <ion-icon name="logo-facebook"></ion-icon>Facebook<span class="icon-dot"></span>
@@ -55,7 +55,7 @@
         <h3>Soporte</h3>
       </header>
       <ul>
-        <li><a href="<?= $_ENV['BASE_URL']?>/contact.html" class="underline-footer">Contactanos<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/contact.php" class="underline-footer">Contactanos<span class="icon-dot"></span></a></li>
       </ul>
     </div>
     <div class="footer_column">
