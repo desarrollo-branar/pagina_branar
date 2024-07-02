@@ -25,6 +25,7 @@
         <li><a href="<?= $_ENV['BASE_URL']?>/profitplus.php" class="underline-footer">Profit Plus<span class="icon-dot"></span></a></li>
         <li><a href="<?= $_ENV['BASE_URL']?>/servicepack.php" class="underline-footer">ServiPack<span class="icon-dot"></span></a></li>
         <li><a href="<?= $_ENV['BASE_URL']?>/devweb.php" class="underline-footer">Desarrollo Web<span class="icon-dot"></span></a></li>
+        <li><a href="<?= $_ENV['BASE_URL']?>/ciber_seguridad.php" class="underline-footer">CiberSeguridad<span class="icon-dot"></span></a></li>
       </ul>
     </div>
     <div class="footer_column">

@@ -17,6 +17,7 @@
           <li><a href="<?= $_ENV['BASE_URL'] ?>/profitplus.php" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
           <li><a href="<?= $_ENV['BASE_URL'] ?>/servicepack.php" class="underline">Service Pack<span class="icon-dot"></span></a></li>
           <li><a href="<?= $_ENV['BASE_URL'] ?>/devweb.php" class="underline">Desarrollo Web<span class="icon-dot"></span></a></li>
+          <li><a href="<?= $_ENV['BASE_URL'] ?>/ciber_seguridad.php" class="underline">CiberSeguridad<span class="icon-dot"></span></a></li>
         </ul>
       </li>
       <li><a href="<?= $_ENV['BASE_URL'] ?>/about-us.php" class="underline"><span class="icon-house"></span>Nosotros</a></li>
@@ -38,6 +39,7 @@
           <li><a href="<?= $_ENV['BASE_URL'] ?>/profitplus.php" class="underline">Profit Plus<span class="icon-dot"></span></a></li>
           <li><a href="<?= $_ENV['BASE_URL'] ?>/servipack.php" class="underline">ServiPack<span class="icon-dot"></span></a></li>
           <li><a href="<?= $_ENV['BASE_URL'] ?>/devweb.php" class="underline">Desarrollo Web <span class="icon-dot"></span></a></li>
+          <li><a href="<?= $_ENV['BASE_URL'] ?>/ciber_seguridad.php" class="underline">CiberSeguridad<span class="icon-dot"></span></a></li>
         </ul>
       </li>
       <li><a href="<?= $_ENV['BASE_URL'] ?>/about-us.php" class="underline">Nosotros</a></li>
