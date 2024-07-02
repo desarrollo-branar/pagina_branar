@@ -101,32 +101,28 @@ $dotenv->load(__DIR__ . '/.env');
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le2meAoAAAAAB2ezKyeu7asrxLJeUMqWQ9JUI-C"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7"></script>
     <script>
         $(document).ready(function() {
             $('#button_courses').click(function(event) {
-                event.preventDefault(); // Evita la acción predeterminada del botón
+                event.preventDefault();
 
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {
                         action: 'courses'
                     }).then(function(token) {
-                        // Agrega el token al formulario
                         $('#form-courses').prepend(`<input type="hidden" name="token" value="${token}">`);
                         $('#form-courses').prepend(`<input type="hidden" name="action" value="courses">`);
 
-                        // Envía el formulario por AJAX
                         $.ajax({
                             type: "POST",
                             url: "./src/controller/sendEmail.php",
-                            data: $('#form-courses').serialize(), // Serializa el formulario
+                            data: $('#form-courses').serialize(),
                             success: function(response) {
-                                // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
                                 alert(response);
-                                // Puedes redirigir aquí si es necesario
                             },
                             error: function(xhr, status, error) {
-                                // Maneja errores de AJAX, si es necesario
                                 console.log("Error: " + error);
                             }
                         });
@@ -135,28 +131,23 @@ $dotenv->load(__DIR__ . '/.env');
             });
 
             $('#button_plan_social_media').click(function(event) {
-                event.preventDefault(); // Evita la acción predeterminada del botón
+                event.preventDefault();
 
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {
                         action: 'plan_social_media'
                     }).then(function(token) {
-                        // Agrega el token al formulario
                         $('#form-plan-social-media').prepend(`<input type="hidden" name="token" value="${token}">`);
                         $('#form-plan-social-media').prepend(`<input type="hidden" name="action" value="plan_social_media">`);
 
-                        // Envía el formulario por AJAX
                         $.ajax({
                             type: "POST",
                             url: "./src/controller/sendEmail.php",
-                            data: $('#form-plan-social-media').serialize(), // Serializa el formulario
+                            data: $('#form-plan-social-media').serialize(),
                             success: function(response) {
-                                // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
                                 alert(response);
-                                // Puedes redirigir aquí si es necesario
                             },
                             error: function(xhr, status, error) {
-                                // Maneja errores de AJAX, si es necesario
                                 console.log("Error: " + error);
                             }
                         });
@@ -165,6 +156,7 @@ $dotenv->load(__DIR__ . '/.env');
             });
         });
     </script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0TTSQRCJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -444,14 +436,13 @@ $dotenv->load(__DIR__ . '/.env');
                                 <label for="last_name">Apellido</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email" id="email2" placeholder="name@example.com">
+                                <input type="email" class="form-control" name="email" id="email2" placeholder="name@example.com" required>
                                 <label for="email2">Email address</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" name="comment" id="comment" placeholder="comment" required></textarea>
                                 <label for="comment">Comentario</label>
                             </div>
-
                             <div class="form-floating mb-3">
                                 <select class="form-select" name="plan" id="select_plan" required>
                                     <option id="1" value="Plan Emprendedor - Social Media">Plan Emprendedor - Social Media</option>
@@ -460,9 +451,9 @@ $dotenv->load(__DIR__ . '/.env');
                                 </select>
                                 <label for="floatingSelect">Plan</label>
                             </div>
-
                             <button type="button" class="btn btn-primary mt-3" id="button_plan_social_media">Enviar</button>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -520,13 +511,9 @@ $dotenv->load(__DIR__ . '/.env');
                                     Sabatinos
                                 </label>
                             </div>
-
                             <button type="button" class="btn btn-primary mt-3" id="button_courses">Enviar</button>
-                            <!-- <button class="g-recaptcha" 
-                      data-sitekey="6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7" 
-                      data-callback='onSubmit' 
-                      data-action='submit'>Submit</button> -->
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -607,7 +594,7 @@ $dotenv->load(__DIR__ . '/.env');
         </section>
     </main>
 
-    <?php include_once('./includes/footer.php');?>
+    <?php include_once('./includes/footer.php'); ?>
 
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

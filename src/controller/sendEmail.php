@@ -1,10 +1,9 @@
 <?php
-
 require_once '../../vendor/autoload.php';
 require_once '../model/Email.php';
 require_once '../model/Navegation.php';
 
-define('CLAVE', '6Le2meAoAAAAAHpeI1S7054ddwoeEMfev7b0zM-B');
+define('CLAVE', '6LcRLuEoAAAAADBWAPTI2i8gQL7_8Mwb_ilseLG7');
 
 $token = $_POST['token'];
 $action = $_POST['action'];
@@ -26,9 +25,7 @@ $datos = json_decode($response, true);
 if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
   $email = Navegation::validateInput($_POST['email']);
 
-  if ($datos['action'] == 'courses' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email']) ) { # Correo para los registros de Cursos Branar
-  
-
+  if ($action == 'courses' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) {
     $asunto = 'Inscripcion de cursos';
     $full_name = Navegation::validateInput($_POST['full_name']);
     $dni = Navegation::validateInput($_POST['dni']);
@@ -73,13 +70,10 @@ if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
     
     $email = new Email($email, $asunto, $body, $full_name); 
 
-    // Llama al método sendEmail y captura la respuesta
     $emailResponse = $email->sendEmail();
 
-    // Devuelve la respuesta como JSON
     echo json_encode($emailResponse);
-  }elseif ($datos['action'] != 'courses' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) { # Correo para los planes de servicio
-    
+  } elseif ($action == 'plan_social_media' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) {
     $asunto = '¡Bienvenido a nuestros planes de servicio personalizados!';
     $first_name = Navegation::validateInput($_POST['first_name']);
     $last_name = Navegation::validateInput($_POST['last_name']);
@@ -117,15 +111,13 @@ if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
     </body>
     </html>";
 
-    $email = new Email($email, $asunto, $body, $first_name.' '.$last_name); 
+    $email = new Email($email, $asunto, $body, $first_name . ' ' . $last_name);
 
-    // Llama al método sendEmail y captura la respuesta
     $emailResponse = $email->sendEmail();
 
-    // Devuelve la respuesta como JSON
     echo json_encode($emailResponse);
   }
-}else{
+} else {
   $response = array("success" => false, "message" => "ERES UN ROBOT");
   echo json_encode($response);
 }
