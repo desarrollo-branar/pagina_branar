@@ -98,7 +98,7 @@ $dotenv->load(__DIR__ . '/.env');
   <?php include_once('./includes/navbar.php'); ?>
 
   <main>
-    <div class="banner-top" style="background: url(<?= $_ENV['BASE_URL'] ?>/assets/images/banners/binary-code-background.jpg)">
+    <div class="banner-top" style="background: url(<?= $_ENV['BASE_URL'] ?>/assets/images/banners/binary-code-background.webp)">
       <div></div>
       <h1>CiberSeguridad: Protege lo que más importa</h1>
     </div>
