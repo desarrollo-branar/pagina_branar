@@ -10,7 +10,7 @@
         <form action="./src/controller/sendEmail.php" method="post" id="form-plan-social-media">
           <div class="mb-3">
             <label for="input_name-plan_social_media">Nombre o Razon Social</label>
-            <input type="text" class="form-control" name="first_name" id="input_name-plan_social_media">
+            <input type="text" class="form-control" name="full_name" id="input_name-plan_social_media">
             <div class="invalid-feedback" style="display: none;">
               Por favor, ingresa un nombre válido. Solo se permiten letras, espacios, apóstrofes y guiones bajos, sin caracteres especiales o espacios al principio o al final.
             </div>
