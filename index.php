@@ -103,26 +103,31 @@ $dotenv->load(__DIR__ . '/.env');
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7"></script>
-    <!-- <script>
+    <script>
         $(document).ready(function() {
             $('#button_courses').click(function(event) {
-                event.preventDefault();
+                event.preventDefault(); // Evita la acción predeterminada del botón
 
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {
                         action: 'courses'
                     }).then(function(token) {
+                        // Agrega el token al formulario
                         $('#form-courses').prepend(`<input type="hidden" name="token" value="${token}">`);
                         $('#form-courses').prepend(`<input type="hidden" name="action" value="courses">`);
 
+                        // Envía el formulario por AJAX
                         $.ajax({
                             type: "POST",
                             url: "./src/controller/sendEmail.php",
-                            data: $('#form-courses').serialize(),
+                            data: $('#form-courses').serialize(), // Serializa el formulario
                             success: function(response) {
+                                // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
                                 alert(response);
+                                // Puedes redirigir aquí si es necesario
                             },
                             error: function(xhr, status, error) {
+                                // Maneja errores de AJAX, si es necesario
                                 console.log("Error: " + error);
                             }
                         });
@@ -130,24 +135,29 @@ $dotenv->load(__DIR__ . '/.env');
                 });
             });
 
-            $('#button_plan_social_media').click(function(event) {
-                event.preventDefault();
+            $('#button-plan_social_media').click(function(event) {
+                event.preventDefault(); // Evita la acción predeterminada del botón
 
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {
                         action: 'plan_social_media'
                     }).then(function(token) {
+                        // Agrega el token al formulario
                         $('#form-plan-social-media').prepend(`<input type="hidden" name="token" value="${token}">`);
                         $('#form-plan-social-media').prepend(`<input type="hidden" name="action" value="plan_social_media">`);
 
+                        // Envía el formulario por AJAX
                         $.ajax({
                             type: "POST",
                             url: "./src/controller/sendEmail.php",
-                            data: $('#form-plan-social-media').serialize(),
+                            data: $('#form-plan-social-media').serialize(), // Serializa el formulario
                             success: function(response) {
+                                // Muestra la respuesta del servidor (éxito o error) en una ventana emergente
                                 alert(response);
+                                // Puedes redirigir aquí si es necesario
                             },
                             error: function(xhr, status, error) {
+                                // Maneja errores de AJAX, si es necesario
                                 console.log("Error: " + error);
                             }
                         });
@@ -155,7 +165,7 @@ $dotenv->load(__DIR__ . '/.env');
                 });
             });
         });
-    </script> -->
+    </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0TTSQRCJ"></script>
     <script>
@@ -509,8 +519,6 @@ $dotenv->load(__DIR__ . '/.env');
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/bot.js"></script>
     <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/main.js"></script>
-    <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/plan.js"></script>
-    <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/validateForm.js"></script>
 </body>
 
 </html>

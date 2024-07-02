@@ -73,14 +73,14 @@ $dotenv->load(__DIR__ . '/.env');
   <link rel="stylesheet" type="text/css" href="<?= $_ENV['BASE_URL'] ?>/assets/css/utils.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-  <script src="https://www.google.com/recaptcha/api.js?render=6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7"></script>
-  <!-- <script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Le2meAoAAAAAB2ezKyeu7asrxLJeUMqWQ9JUI-C"></script>
+  <script>
     $(document).ready(function() {
-      $('#button_plan_social_media').click(function(event) {
+      $('#button-plan_social_media').click(function(event) {
         event.preventDefault(); // Evita la acción predeterminada del botón
 
         grecaptcha.ready(function() {
-          grecaptcha.execute('6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7', {
+          grecaptcha.execute('6Le2meAoAAAAAB2ezKyeu7asrxLJeUMqWQ9JUI-C', {
             action: 'plan_social_media'
           }).then(function(token) {
             // Agrega el token al formulario
@@ -106,7 +106,7 @@ $dotenv->load(__DIR__ . '/.env');
         });
       });
     });
-  </script> -->
+  </script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0TTSQRCJ"></script>
@@ -469,7 +469,6 @@ $dotenv->load(__DIR__ . '/.env');
 
   <!-- scripts -->
   <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/main.js"></script>
-  <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/validateForm.js"></script>
 </body>
 
 </html>

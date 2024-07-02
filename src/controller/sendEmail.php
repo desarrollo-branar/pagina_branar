@@ -75,8 +75,7 @@ if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
     echo json_encode($emailResponse);
   } elseif ($action == 'plan_social_media' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) {
     $asunto = '¡Bienvenido a nuestros planes de servicio personalizados!';
-    $first_name = Navegation::validateInput($_POST['first_name']);
-    $last_name = Navegation::validateInput($_POST['last_name']);
+    $full_name = Navegation::validateInput($_POST['full_name']);
     $comment = Navegation::validateInput($_POST['comment']);
     $plan = Navegation::validateInput($_POST['plan']);
 
@@ -91,11 +90,10 @@ if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
     </head>
     <body>
         <div>
-            <p style='margin-bottom: 1px'>Estimado/a {$first_name} {$last_name}</p>
+            <p style='margin-bottom: 1px'>Estimado/a {$full_name}</p>
             <p style='margin-bottom: 1px'>Es un placer darle la bienvenida a nuestros planes de servicio personalizados. Agradecemos su interés en Branar, C.A. Estamos comprometidos a brindarle las soluciones más efectivas y adaptadas a sus necesidades.</p>
             </br>
-            <p style='margin-bottom: 1px'><strong>Nombre:</strong> {$first_name}</p>
-            <p style='margin-bottom: 1px'><strong>Apellido:</strong> {$last_name}</p>
+            <p style='margin-bottom: 1px'><strong>Nombre:</strong> {$full_name}</p>
             <p style='margin-bottom: 1px'><strong>Correo Electrónico:</strong> {$email}</p>
             <p style='margin-bottom: 1px'><strong>Plan Seleccionado:</strong> {$plan}</p>
             <p style='margin-bottom: 1px'><strong>Comentario Adicional:</strong> {$comment}</p>
@@ -111,7 +109,7 @@ if ($datos['success'] == 1 && $datos['score'] >= 0.5) {
     </body>
     </html>";
 
-    $email = new Email($email, $asunto, $body, $first_name . ' ' . $last_name);
+    $email = new Email($email, $asunto, $body, $full_name);
 
     $emailResponse = $email->sendEmail();
 
