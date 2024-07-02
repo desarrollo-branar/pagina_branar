@@ -1,6 +1,6 @@
 /* ---- banner-top ---- */
 .banner-top {
-    background-size: cover;
+    background-size: cover !important;
     background-position: center;
   
     width: 100%;
