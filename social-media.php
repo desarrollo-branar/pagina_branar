@@ -74,7 +74,7 @@ $dotenv->load(__DIR__ . '/.env');
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
   <script src="https://www.google.com/recaptcha/api.js?render=6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7"></script>
-  <script>
+  <!-- <script>
     $(document).ready(function() {
       $('#button_plan_social_media').click(function(event) {
         event.preventDefault(); // Evita la acción predeterminada del botón
@@ -106,7 +106,7 @@ $dotenv->load(__DIR__ . '/.env');
         });
       });
     });
-  </script>
+  </script> -->
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0TTSQRCJ"></script>
@@ -221,7 +221,7 @@ $dotenv->load(__DIR__ . '/.env');
             <p>El impulso que necesitas para destacar en redes sociales</p>
           </header>
 
-          <button type="button" class="button-promo" id="button_plan" data="1" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+          <button type="button" class="button-promo" id="button_plan" data="1" data-bs-toggle="modal" data-bs-target="#formServiceSocialMedia" style="color: white; font-weight: bold;">
             Contratar
           </button>
           <hr class="hr" />
@@ -258,7 +258,7 @@ $dotenv->load(__DIR__ . '/.env');
             <p>Maximiza tu presencia en redes con el Plan Ejecutivo</p>
           </header>
 
-          <button type="button" class="button-promo" id="button_plan" data="1" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+          <button type="button" class="button-promo" id="button_plan" data="2" data-bs-toggle="modal" data-bs-target="#formServiceSocialMedia" style="color: white; font-weight: bold;">
             Contratar
           </button>
           <hr class="hr" />
@@ -302,7 +302,7 @@ $dotenv->load(__DIR__ . '/.env');
             <p>Destaca entre la competencia con el Plan Profesional</p>
           </header>
 
-          <button type="button" class="button-promo" id="button_plan" data="1" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+          <button type="button" class="button-promo" id="button_plan" data="3" data-bs-toggle="modal" data-bs-target="#formServiceSocialMedia" style="color: white; font-weight: bold;">
             Contratar
           </button>
           <hr class="hr" />
@@ -347,47 +347,9 @@ $dotenv->load(__DIR__ . '/.env');
         </section>
       </article>
     </section>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de Servicio</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="./src/controller/sendEmail.php" method="post" id="form-plan-social-media">
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon" required>
-                <label for="first_name">Nombre</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2" required>
-                <label for="last_name">Apellido</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" name="email" id="email2" placeholder="name@example.com" required>
-                <label for="email2">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <textarea class="form-control" name="comment" id="comment" placeholder="comment" required></textarea>
-                <label for="comment">Comentario</label>
-              </div>
 
-              <div class="form-floating mb-3">
-                <select class="form-select" name="plan" id="select_plan">
-                  <option id="1" value="Plan Emprendedor - Social Media">Plan Emprendedor - Social Media</option>
-                  <option id="2" value="Plan Ejecutivo - Social Media">Plan Ejecutivo - Social Media</option>
-                  <option id="3" value="Plan Profesional - Social Media">Plan Profesional - Social Media</option>
-                </select>
-                <label for="floatingSelect">Plan</label>
-              </div>
+    <?php include_once(__DIR__ . '/includes/modalSocialMedia.php'); ?>
 
-              <button type="button" class="btn btn-primary mt-3" id="button_plan_social_media">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <section class="info-service-art">
       <article>
         <h2>Gestión Integral de Redes Sociales</h2>
@@ -507,6 +469,7 @@ $dotenv->load(__DIR__ . '/.env');
 
   <!-- scripts -->
   <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/main.js"></script>
+  <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/validateForm.js"></script>
 </body>
 
 </html>

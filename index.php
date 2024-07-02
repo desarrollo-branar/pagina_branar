@@ -103,7 +103,7 @@ $dotenv->load(__DIR__ . '/.env');
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LcRLuEoAAAAANp06sYfR8ePjm_9D24T65mx-eU7"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function() {
             $('#button_courses').click(function(event) {
                 event.preventDefault();
@@ -155,7 +155,7 @@ $dotenv->load(__DIR__ . '/.env');
                 });
             });
         });
-    </script>
+    </script> -->
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0TTSQRCJ"></script>
     <script>
@@ -307,7 +307,7 @@ $dotenv->load(__DIR__ . '/.env');
                         <p>El impulso que necesitas para destacar en redes sociales</p>
                     </header>
 
-                    <button type="button" class="button-promo" id="button_plan" data="1" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+                    <button type="button" class="button-promo" id="button_plan" data="1" data-bs-toggle="modal" data-bs-target="#formServiceSocialMedia" style="color: white; font-weight: bold;">
                         Contratar
                     </button>
                     <hr class="hr">
@@ -341,7 +341,7 @@ $dotenv->load(__DIR__ . '/.env');
                         <p>Maximiza tu presencia en redes con el Plan Ejecutivo</p>
                     </header>
 
-                    <button type="button" class="button-promo" id="button_plan" data="2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+                    <button type="button" class="button-promo" id="button_plan" data="2" data-bs-toggle="modal" data-bs-target="#formServiceSocialMedia" style="color: white; font-weight: bold;">
                         Contratar
                     </button>
                     <hr class="hr">
@@ -379,7 +379,7 @@ $dotenv->load(__DIR__ . '/.env');
                         <p>Destaca entre la competencia con el Plan Profesional</p>
                     </header>
 
-                    <button type="button" class="button-promo" id="button_plan" data="3" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; font-weight: bold;">
+                    <button type="button" class="button-promo" id="button_plan" data="3" data-bs-toggle="modal" data-bs-target="#formServiceSocialMedia" style="color: white; font-weight: bold;">
                         Contratar
                     </button>
                     <hr class="hr">
@@ -417,107 +417,9 @@ $dotenv->load(__DIR__ . '/.env');
                 </section>
             </article>
         </section>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de Servicio</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="./src/controller/sendEmail.php" method="post" id="form-plan-social-media">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="jhon" required>
-                                <label for="first_name">Nombre</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="jhon2" required>
-                                <label for="last_name">Apellido</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email" id="email2" placeholder="name@example.com" required>
-                                <label for="email2">Email address</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" name="comment" id="comment" placeholder="comment" required></textarea>
-                                <label for="comment">Comentario</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <select class="form-select" name="plan" id="select_plan" required>
-                                    <option id="1" value="Plan Emprendedor - Social Media">Plan Emprendedor - Social Media</option>
-                                    <option id="2" value="Plan Ejecutivo - Social Media">Plan Ejecutivo - Social Media</option>
-                                    <option id="3" value="Plan Profesional - Social Media">Plan Profesional - Social Media</option>
-                                </select>
-                                <label for="floatingSelect">Plan</label>
-                            </div>
-                            <button type="button" class="btn btn-primary mt-3" id="button_plan_social_media">Enviar</button>
-                        </form>
+        <?php include_once(__DIR__ . '/includes/modalSocialMedia.php'); ?>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="modalCourses" tabindex="-1" aria-labelledby="modalCoursesLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="modalCoursesLabel">Formulario de Servicio</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="./src/controller/sendEmail.php" method="post" id="form-courses">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="jhon@emil.com" required>
-                                <label for="email">Correo Electronico</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="full_name" id="full_name" placeholder="jhon2" required>
-                                <label for="full_name">Nombre Completo</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="dni" id="dni" placeholder="" required>
-                                <label for="dni">Documento de Identidad</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="" required>
-                                <label for="phone_number">Numero de Telefono</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="address" id="address" placeholder="jhon2" required>
-                                <label for="address">Direccion</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="position" id="position" placeholder="jhon2" required>
-                                <label for="position">Cargo o ocupacion</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="enterprise" id="enterprise" placeholder="jhon2" required>
-                                <label for="enterprise">Empresa</label>
-                            </div>
-                            <div class="mb-3">
-                                <label for="availability">Días disponibles para realizar el curso</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="availability" id="availability" value="Lunes a viernes" required>
-                                <label class="form-check-label" for="availability">
-                                    Lunes a viernes
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="availability" id="availability2" value="Sabatinos" required>
-                                <label class="form-check-label" for="availability2">
-                                    Sabatinos
-                                </label>
-                            </div>
-                            <button type="button" class="btn btn-primary mt-3" id="button_courses">Enviar</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include_once(__DIR__ . '/includes/modalCourses.php'); ?>
 
         <!-- sobre nosotros -->
         <div class="encabezado">
@@ -608,6 +510,7 @@ $dotenv->load(__DIR__ . '/.env');
     <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/bot.js"></script>
     <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/main.js"></script>
     <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/plan.js"></script>
+    <script src="<?= $_ENV['BASE_URL'] ?>/assets/js/validateForm.js"></script>
 </body>
 
 </html>
