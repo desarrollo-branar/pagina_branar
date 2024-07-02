@@ -41,7 +41,7 @@ $dotenv->load(__DIR__ . '/.env');
     <meta name="description" content="¿Desea invertir en Tecnologias de Información? Branar C.A. brinda servicios Avanzados en Tecnología a pequeñas y medianas empresas venezolanas...">
     <meta name="keywords" content="empresas en tecnologia,servicios en tecnologia,empresas informaticas">
     <link rel="canonical" href="<?= $_ENV['BASE_URL'] ?>/">
-    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale" content="es_VE">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Branar - Servicios en Tecnologia">
     <meta property="og:description" content="¿Desea invertir en Tecnologias de Información? Branar C.A. brinda servicios Avanzados en Tecnología a pequeñas y medianas empresas venezolanas...">

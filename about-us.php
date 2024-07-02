@@ -42,7 +42,7 @@ $dotenv->load(__DIR__ . '/.env');
     <meta name="description" content="Conecte todos sus equipos por medio de redes informaticas que le permitan un mejor control de sus procesos así como la seguridad de los datos">
     <meta name="keywords" content="instalacion de redes,redes informaticas,gestion de servidores">
     <link rel="canonical" href="<?= $_ENV['BASE_URL'] ?>/about-us.php/">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="es_VE">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sobre nosotros | Branar C.A.">
     <meta property="og:description" content="Conecte todos sus equipos por medio de redes informaticas que le permitan un mejor control de sus procesos así como la seguridad de los datos">

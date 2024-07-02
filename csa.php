@@ -41,7 +41,7 @@ $dotenv->load(__DIR__ . '/.env');
     <meta name="description" content="Mantenga operativa su computadora con nuestros planes de contratación, realizamos el mantenimiento lógico y físico de su equipo">
     <meta name="keywords" content="mantenimiento de computadoras,instalacion de camaras de seguridad,manteniemiento preventivo y correctivo,soporte tecnico en computadoras hp">
     <link rel="canonical" href="<?= $_ENV['BASE_URL'] ?>/csa.php">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="es_VE">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Centro de Servicio Autorizado Epson | Branar C.A.">
     <meta property="og:description" content="Mantenga operativa su computadora con nuestros planes de contratación, realizamos el mantenimiento lógico y físico de su equipo">
