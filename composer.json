@@ -1,0 +1,20 @@
+{
+    "name": "branar/blog",
+    "autoload": {
+        "psr-4": {
+            "Branar\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mrandersoncordero",
+            "email": "acorderofigueroa7@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^5.4",
+        "phpmailer/phpmailer": "^6.8",
+        "symfony/dotenv": "^7.1",
+        "erusev/parsedown": "^1.7"
+    }
+}
