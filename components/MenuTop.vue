@@ -4,7 +4,7 @@
       <div>
         <NuxtLink to="/">
           <img
-            src="@/assets/images/navbar-logo.png"
+            src="@/assets/images/navbar-logo.webp"
             class="w-[90px] sm:w-[110px] md:w-[110px] lg:w-[120px] py-2"
             alt="Logo"
           />

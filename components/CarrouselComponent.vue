@@ -3,13 +3,10 @@
     <div data-glide-el="track" class="glide__track">
       <ul class="glide__slides">
         <li class="glide__slide">
-          <img src="https://branar.com/nuevas/banner1.jpg" class="w-full" alt="" />
+          <img src="@/assets/images/navbar/banner1.webp" class="w-full" alt="" />
         </li>
         <li class="glide__slide">
-          <img src="https://branar.com/nuevas/banner2.jpg" class="w-full" alt="" />
-        </li>
-        <li class="glide__slide">
-          <img src="https://branar.com/nuevas/banner1.jpg" class="w-full" alt="" />
+          <img src="@/assets/images/navbar/banner2.webp" class="w-full" alt="" />
         </li>
       </ul>
     </div>
