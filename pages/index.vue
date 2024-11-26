@@ -15,14 +15,43 @@
     </div>
 
     <CardGrid :cards="cardData" />
+
+    <section class="relative flex items-center justify-center flex-col">
+      <header class="w-full bg-blue-900 pt-16 pb-24 text-center">
+        <h2 class="text-3xl text-gray-100">Elija el plan adecuado para usted</h2>
+        <p class="text-md text-gray-100 mt-2">
+          Precios diseñados para empresas de todos los tamaños. Elija el paquete que se adapte a sus
+          necesidades.
+        </p>
+      </header>
+      <TablePricingSocialMediaComponent />
+    </section>
+
+    <div class="flex flex-col items-center my-10 text-center">
+      <h2
+        class="relative text-[#275a9d] text-3xl sm:text-3xl md:text-5xl font-bold drop-shadow-md after:customAfter"
+      >
+        Transforma tu empresa con nuestro respaldo
+      </h2>
+      <p class="text-lg w-10/12 md:w-8/12 pt-2">
+        Bienvenido a Branar, C.a,
+        <strong class="text-[#ec8e39]">
+          donde la excelencia en servicios tecnológicos se encuentra con la innovación
+          constante.</strong
+        >
+        Somos una empresa dedicada a proporcionar soluciones tecnológicas avanzadas para empresas de
+        todos los tamaños.
+      </p>
+    </div>
   </main>
   <SocialFixed />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import CardGrid from '~/components/CardGrid.vue';
 import CarrouselComponent from '~/components/CarrouselComponent.vue';
 import SocialFixed from '~/components/SocialFixed.vue';
+import TablePricingSocialMediaComponent from '~/components/TablePricingSocialMediaComponent.vue';
 
 const cardData = [
   {
