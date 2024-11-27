@@ -37,20 +37,3 @@ import InstagramIcon from '~/assets/icons/InstagramIcon.vue';
 import LinkedinIcon from '~/assets/icons/LinkedinIcon.vue';
 import WhatsappIcon from '~/assets/icons/WhatsappIcon.vue';
 </script>
-
-<style scoped>
-.instagram-gradient {
-  background: linear-gradient(
-    #405de6,
-    #5b51d8,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d,
-    #f56040,
-    #f77737,
-    #fcaf45,
-    #ffdc80
-  );
-}
-</style>
