@@ -10,7 +10,28 @@ export default defineNuxtConfig({
           disallow: '/admin', // Bloquear la ruta `/admin`
         }
       ],
-      sitemap: 'https://tusitio.com/sitemap.xml', // URL del sitemap
+      sitemap: 'https://branar.netlify.app/sitemap.xml', // URL del sitemap
+    }],
+    ['@nuxtjs/sitemap', {
+      rules: [
+        {
+          hostname: 'https://branar.netlify.app', // URL base de tu sitio
+          gzip: true, // Comprime el archivo sitemap para optimización
+          routes: [
+            '/', // Página principal
+            '/about', // Agrega rutas estáticas
+            '/contact',
+            '/projects',
+            '/services/csa',
+            '/services/infraestructura',
+            '/services/social-media',
+            '/services/profit-plus',
+            '/services/service-pack',
+            '/services/desarrollo-web',
+            '/services/ciber-seguridad',
+          ],
+        },
+      ]
     }],
   ],
   devtools: { enabled: true },
