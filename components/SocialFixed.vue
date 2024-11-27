@@ -3,6 +3,7 @@
     <a
       href="https://www.facebook.com/BranarContacto"
       target="_blank"
+      aria-label="Ir a Facebook de Branar"
       class="bg-[#3b5998] flex justify-center items-center w-[50px] text-white rounded-tl-lg rounded-bl-lg transition-all hover:pr-2"
     >
       <FacebookIcon class="w-12 h-12 py-2" />
@@ -10,6 +11,7 @@
     <a
       href="https://www.instagram.com/contactobranar/"
       target="_blank"
+      aria-label="Ir a Instagram de Branar"
       class="instagram-gradient flex justify-center items-center w-[50px] text-white rounded-tl-lg rounded-bl-lg transition-all hover:pr-2"
     >
       <InstagramIcon class="w-12 h-12 py-2" />
@@ -17,6 +19,7 @@
     <a
       href="https://wa.link/rc1mal"
       target="_blank"
+      aria-label="Ir a Whatsapp de Branar"
       class="bg-[#25d366] flex justify-center items-center w-[50px] text-white rounded-tl-lg rounded-bl-lg transition-all hover:pr-2"
     >
       <WhatsappIcon class="w-12 h-12 py-2" />
@@ -24,6 +27,7 @@
     <a
       href="https://www.linkedin.com/company/branar-c-a-/"
       target="_blank"
+      aria-label="Ir a Linkedin de Branar"
       class="bg-[#0077b5] flex justify-center items-center w-[50px] text-white rounded-tl-lg rounded-bl-lg transition-all hover:pr-2"
     >
       <LinkedinIcon class="w-12 h-12 py-2" />

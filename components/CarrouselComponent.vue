@@ -13,7 +13,11 @@
     <!-- Navegación si la necesitas -->
     <div class="glide" style="position: initial">
       <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        <button
+          class="glide__arrow glide__arrow--left"
+          data-glide-dir="<"
+          aria-label="Flecha Izquierda"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
@@ -26,7 +30,11 @@
             ></path>
           </svg>
         </button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+        <button
+          class="glide__arrow glide__arrow--right"
+          data-glide-dir=">"
+          aria-label="Flecha Derecha"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
