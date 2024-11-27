@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
+    "@nuxtjs/robots": "^5.0.0",
     "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-router": "latest"
