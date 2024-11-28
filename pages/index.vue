@@ -302,14 +302,68 @@ const cardData = [
 useHead({
   title: 'Empresa de Servicios Tecnológicos Venezuela - Branar C.A.',
   meta: [
+    // Metaetiquetas estándar
     {
       name: 'description',
       content:
-        '¿Desea invertir en Tecnologias de Información? Branar C.A. brinda servicios Avanzados en Tecnología a pequeñas y medianas empresas venezolanas...',
+        'Branar C.A. ofrece servicios tecnológicos avanzados en Venezuela para pequeñas y medianas empresas. Soluciones de tecnología, reparación Epson y desarrollo web.',
     },
     {
       name: 'keywords',
       content: 'Reparación de impresoras EPSON, Empresa de Servicios Tecnológicos, Desarrollo web',
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1',
+    },
+
+    // Open Graph (para redes sociales como Facebook y LinkedIn)
+    {
+      property: 'og:title',
+      content: 'Empresa de Servicios Tecnológicos Venezuela - Branar C.A.',
+    },
+    {
+      property: 'og:description',
+      content:
+        'Branar C.A. ofrece servicios tecnológicos avanzados en Venezuela para pequeñas y medianas empresas. Soluciones de tecnología, reparación Epson y desarrollo web.',
+    },
+    {
+      property: 'og:image',
+      content: 'https://branar.netlify.app/images/banner/banner1.webp',
+    },
+    {
+      property: 'og:url',
+      content: 'https://branar.netlify.app',
+    },
+    {
+      property: 'og:type',
+      content: 'website',
+    },
+
+    // Twitter Cards
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:title',
+      content: 'Empresa de Servicios Tecnológicos Venezuela - Branar C.A.',
+    },
+    {
+      name: 'twitter:description',
+      content:
+        'Branar C.A. ofrece servicios tecnológicos avanzados en Venezuela para pequeñas y medianas empresas. Soluciones de tecnología, reparación Epson y desarrollo web.',
+    },
+    {
+      name: 'twitter:image',
+      content: 'https://branar.netlify.app/images/banner/banner1.webp',
+    },
+  ],
+  link: [
+    // Enlace canónico para evitar contenido duplicado
+    {
+      rel: 'canonical',
+      href: 'https://branar.netlify.app',
     },
   ],
 });
