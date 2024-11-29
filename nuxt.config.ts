@@ -22,7 +22,7 @@ export default defineNuxtConfig({
             '/about', // Agrega rutas estáticas
             '/contact',
             '/projects',
-            '/services/csa',
+            '/services/centro_autorizado_epson',
             '/services/infraestructura',
             '/services/social-media',
             '/services/profit-plus',

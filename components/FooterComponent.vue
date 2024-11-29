@@ -14,7 +14,9 @@
         <h3 class="font-bold text-lg mb-4">Únete a nosotros</h3>
         <ul class="space-y-2">
           <li>
-            <NuxtLink to="/services/csa" class="hover:text-orange-500">Csa Epson</NuxtLink>
+            <NuxtLink to="/services/centro_autorizado_epson" class="hover:text-orange-500"
+              >Csa Epson</NuxtLink
+            >
           </li>
           <li>
             <NuxtLink to="/services/infraestructura" class="hover:text-orange-500"

@@ -118,6 +118,7 @@
         Saber más
       </NuxtLink>
     </section>
+
     <section
       class="mt-6 bg-cover bg-[url('/images/navbar/fondofor.webp')] bg-no-repeat bg-fixed pb-6"
     >
@@ -259,7 +260,7 @@ const cardData = [
     description:
       'Confía en nuestro equipo para el mantenimiento y reparación de tus equipos. Garantizamos un rendimiento óptimo y mayor vida útil para tus dispositivos.',
     image: '/images/navbar/epson.webp',
-    url: '/services/csa',
+    url: '/services/centro_autorizado_epson',
   },
   {
     title: 'Service Pack',

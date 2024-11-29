@@ -15,7 +15,7 @@
           <a class="text-[#145bc6] font-medium text-lg cursor-pointer"> Servicios </a>
           <ul class="hidden">
             <li>
-              <NuxtLink to="/services/csa">Csa Epson</NuxtLink>
+              <NuxtLink to="/services/centro_autorizado_epson">Csa Epson</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/services/infraestructura">Infraestructura</NuxtLink>
@@ -80,7 +80,7 @@
           <ul class="ml-4">
             <li>
               <NuxtLink
-                to="/services/csa"
+                to="/services/centro_autorizado_epson"
                 class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
               >
                 Csa Epson
