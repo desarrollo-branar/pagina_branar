@@ -11,29 +11,70 @@
         </NuxtLink>
       </div>
       <ul :class="['gap-12', isSmallScreen ? 'hidden' : 'flex']">
-        <li class="menu">
-          <a class="text-[#145bc6] font-medium text-lg cursor-pointer"> Servicios </a>
-          <ul class="hidden">
+        <li class="relative" @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
+          <span class="text-[#145bc6] font-medium text-lg cursor-pointer flex items-center">
+            Servicios
+          </span>
+          <!-- Dropdown menu -->
+          <ul
+            v-show="showDropdown"
+            class="absolute top-full left-0 w-48 bg-white border border-gray-200 shadow-md rounded-md z-50"
+          >
             <li>
-              <NuxtLink to="/services/centro_autorizado_epson">Csa Epson</NuxtLink>
+              <NuxtLink
+                to="/services/centro_autorizado_epson"
+                class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
+              >
+                Csa Epson
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services/infraestructura">Infraestructura</NuxtLink>
+              <NuxtLink
+                to="/services/infraestructura"
+                class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
+              >
+                Infraestructura
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services/social-media">Social Media</NuxtLink>
+              <NuxtLink
+                to="/services/social-media"
+                class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
+              >
+                Social Media
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services/profit-plus">Profit Plus</NuxtLink>
+              <NuxtLink
+                to="/services/profit-plus"
+                class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
+              >
+                Profit Plus
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink>Service Pack</NuxtLink>
+              <NuxtLink
+                to="/services/service-pack"
+                class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
+              >
+                Service Pack
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services/desarrollo-web">Desarrollo Web</NuxtLink>
+              <NuxtLink
+                to="/services/desarrollo-web"
+                class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
+              >
+                Desarrollo Web
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink>CiberSeguridad</NuxtLink>
+              <NuxtLink
+                to="/services/ciber-seguridad"
+                class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
+              >
+                CiberSeguridad
+              </NuxtLink>
             </li>
           </ul>
         </li>
@@ -115,7 +156,7 @@
                 to="/services/service-pack"
                 class="block px-4 py-2 text-sm text-[#145bc6] hover:bg-gray-100"
               >
-                ServicePack
+                Service Pack
               </NuxtLink>
             </li>
             <li>
@@ -169,6 +210,7 @@ import IconMenu from '~/assets/icons/IconMenu.vue';
 const isMenuOpen = ref(false);
 const isSmallScreen = ref(false);
 const isScrolled = ref(false);
+const showDropdown = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -190,9 +232,3 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 </script>
-
-<style scoped>
-.mobile-navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-</style>
