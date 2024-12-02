@@ -137,11 +137,11 @@ useHead({
     },
     {
       property: 'og:image',
-      content: 'https://branar.netlify.app/images/centro_autorizado_epson.webp',
+      content: 'https://branar.netlify.app/images/social-media.webp',
     },
     {
       property: 'og:url',
-      content: 'https://branar.netlify.app/services/centro_autorizado_epson',
+      content: 'https://branar.netlify.app/services/service-pack',
     },
     {
       property: 'og:type',
@@ -164,14 +164,14 @@ useHead({
     },
     {
       name: 'twitter:image',
-      content: 'https://branar.netlify.app/images/centro_autorizado_epson.webp',
+      content: 'https://branar.netlify.app/images/social-media.webp',
     },
   ],
   link: [
     // Enlace canónico para evitar contenido duplicado
     {
       rel: 'canonical',
-      href: 'https://branar.netlify.app/services/centro_autorizado_epson',
+      href: 'https://branar.netlify.app/services/service-pack',
     },
   ],
 });

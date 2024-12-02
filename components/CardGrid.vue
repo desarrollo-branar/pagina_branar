@@ -32,7 +32,9 @@
             <p>
               {{ card.description }}
             </p>
-            <RouterLink :to="card.url" class="text-[#275a9d] font-bold">Ver más.</RouterLink>
+            <RouterLink v-if="card.url" :to="card.url" class="text-[#275a9d] font-bold"
+              >Ver más.</RouterLink
+            >
           </div>
         </div>
       </div>
